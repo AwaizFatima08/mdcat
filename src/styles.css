@@ -108,5 +108,19 @@ h3.section{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:va
 .review .ans{font-size:14px}
 .review .x{font-size:14px;color:var(--muted);margin-top:6px}
 
+/* rules & guidelines */
+.guide{padding:4px 16px 12px;margin-top:14px;font-size:15px}
+.guide h4{margin:18px 0 6px;font-size:15px;color:var(--brand)}
+.guide ul{padding-left:20px;margin:8px 0}
+.guide li{margin:6px 0}
+.guide table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
+.guide th,.guide td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.guide th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.callout{padding:12px;border-radius:10px;margin:12px 0;font-size:14px}
+.callout.tip{background:var(--brand-soft)}
+.callout.warn{background:var(--bad-soft)}
+.srcs{padding-left:20px;font-size:14px}
+.srcs a{color:var(--brand)}
+
 .empty{text-align:center;color:var(--muted);padding:40px 10px}
 .note{font-size:13px;color:var(--muted);margin-top:14px}

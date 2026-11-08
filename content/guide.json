@@ -1,0 +1,184 @@
+{
+  "updated": "9 Nov 2026",
+  "disclaimer": "Based on the PM&DC MDCAT Curriculum 2025 (which PM&DC applied to MDCAT 2026) and the UHS Lahore MDCAT-2025 Information Guide. Rules can change each year and differ slightly between provinces. Always confirm on pmdc.pk and your admitting university's website before the test.",
+  "sources": [
+    { "name": "PM&DC — MDCAT Curriculum 2025", "url": "https://pmdc.pk/Publication/Syllabus" },
+    { "name": "PM&DC — notices and registration", "url": "https://pmdc.pk" },
+    { "name": "UHS Lahore — MDCAT-2025 Information Guide", "url": "https://www.uhs.edu.pk/downloads/MDCAT-2025InformationGuide.pdf" }
+  ],
+  "sections": [
+    {
+      "id": "about", "icon": "🎓", "title": "What is MDCAT?",
+      "summary": "The one test every MBBS and BDS applicant in Pakistan must pass.",
+      "blocks": [
+        { "type": "p", "text": "MDCAT stands for Medical and Dental Colleges Admission Test. It is required for admission to MBBS and BDS in every public and private medical and dental college in Pakistan, under the PM&DC Act 2022." },
+        { "type": "list", "items": [
+          "PM&DC (Pakistan Medical & Dental Council) sets the curriculum, the number of questions and the subject weightage, and runs online registration.",
+          "An admitting university in each province conducts the test, runs the centres and announces results. For example, UHS Lahore does this for Punjab and KMU for Khyber Pakhtunkhwa.",
+          "The test is held once a year, on the same day across the country.",
+          "Passing MDCAT does not guarantee a seat. Admission depends on merit and on the other eligibility rules of PM&DC, the university and the province."
+        ] },
+        { "type": "tip", "text": "Armed-forces medical colleges (NUMS) have run their own separate entry test. If you are applying there, check their own table of specifications as well." }
+      ]
+    },
+    {
+      "id": "format", "icon": "📝", "title": "Paper format",
+      "summary": "180 MCQs, 3 hours, paper-based, no negative marking.",
+      "blocks": [
+        { "type": "table", "head": ["Item", "Rule"], "rows": [
+          ["Questions", "180 MCQs, 1 mark each (total 180)"],
+          ["Time", "3 hours (about 1 minute per question)"],
+          ["Format", "Printed question paper with an OMR bubble sheet"],
+          ["Options", "4 options (A–D), one correct answer"],
+          ["Negative marking", "None"],
+          ["Calculator", "Not allowed"]
+        ] },
+        { "type": "h", "text": "Subject weightage" },
+        { "type": "table", "head": ["Subject", "MCQs", "Share"], "rows": [
+          ["Biology", "81", "45%"],
+          ["Chemistry", "45", "25%"],
+          ["Physics", "36", "20%"],
+          ["English", "9", "5%"],
+          ["Logical Reasoning", "9", "5%"],
+          ["Total", "180", "100%"]
+        ] },
+        { "type": "h", "text": "Difficulty" },
+        { "type": "p", "text": "PM&DC's curriculum sets the mix at about 15% easy, 70% moderate and 15% difficult questions. Most marks come from moderate questions: solid understanding of the syllabus, not trick questions." },
+        { "type": "list", "items": [
+          "There are several versions of the paper (for example codes A, B, C, D). All have the same questions in a different order.",
+          "Questions come only from the PM&DC curriculum. It is narrower than the full FSc books. Biology, for example, is almost all human biology.",
+          "Physics and chemistry numericals are designed to be solved by hand, without a calculator."
+        ] }
+      ]
+    },
+    {
+      "id": "passing", "icon": "✅", "title": "Passing marks & merit",
+      "summary": "Pass with 55% for MBBS, 50% for BDS. Merit decides the seat.",
+      "blocks": [
+        { "type": "table", "head": ["Programme", "Minimum to pass"], "rows": [
+          ["MBBS", "55% (99 out of 180)"],
+          ["BDS", "50% (90 out of 180)"]
+        ] },
+        { "type": "p", "text": "Most candidates pass: news reports put the 2026 MBBS pass rate in Punjab at about 79%. So passing is not the real target: your score decides your place on the merit list." },
+        { "type": "h", "text": "How merit is usually calculated" },
+        { "type": "table", "head": ["Part", "Weight"], "rows": [
+          ["MDCAT score", "50%"],
+          ["FSc / HSSC (or equivalent)", "40%"],
+          ["Matric / SSC (or equivalent)", "10%"]
+        ] },
+        { "type": "warn", "text": "This is the common formula, but provinces and private colleges can use their own. Always check your admitting university's prospectus." },
+        { "type": "list", "items": [
+          "An MDCAT score stays valid for 3 years from the date of the test (PM&DC Act 2022). You can use your best valid score if you take the test again.",
+          "Public-sector seats are very competitive, so aim well above the pass mark."
+        ] }
+      ]
+    },
+    {
+      "id": "bring", "icon": "🎒", "title": "What to bring, what not to bring",
+      "summary": "Original ID, admit card, two blue ballpoints, clear board, water.",
+      "blocks": [
+        { "type": "h", "text": "Bring" },
+        { "type": "list", "items": [
+          "Original photo ID: CNIC, B-Form/juvenile card, passport, NICOP, or an original SSC/HSSC result card with your photo. Photocopies are not accepted.",
+          "Printed admit card (download it from your admitting university's website and print on plain white A4).",
+          "Two blue ballpoint pens.",
+          "A transparent clipboard with nothing written on it.",
+          "A small transparent water bottle."
+        ] },
+        { "type": "h", "text": "Do NOT bring" },
+        { "type": "list", "items": [
+          "Mobile phones, smart watches, earphones, Bluetooth devices, digital pens, cameras or fitness bands.",
+          "Calculators, geometry boxes, rulers, log tables, pencils, gel pens, markers.",
+          "Any paper, notes or books other than your admit card and ID.",
+          "Wallets, handbags, jewellery, caps, sunglasses or food."
+        ] },
+        { "type": "warn", "text": "Being found with a banned item counts as using unfair means, even if you never use it. The usual result is cancellation of your paper." }
+      ]
+    },
+    {
+      "id": "day", "icon": "⏰", "title": "On the test day",
+      "summary": "Arrive early: gates close an hour before the paper starts.",
+      "blocks": [
+        { "type": "p", "text": "Timings below are from UHS (Punjab) in 2025. Your admit card and university notices give the exact times for your centre." },
+        { "type": "table", "head": ["Time", "What happens"], "rows": [
+          ["8:00 am", "Centre gates open"],
+          ["9:00 am", "Gates close: no entry after this, for any reason"],
+          ["9:00–10:00 am", "Frisking, ID check, seating by roll number, bubble sheets handed out"],
+          ["9:50 am", "Question papers handed out"],
+          ["10:00 am", "Test starts"],
+          ["1:00 pm", "Test ends"]
+        ] },
+        { "type": "list", "items": [
+          "Visit your centre a day before so you know the route.",
+          "Sit only at the seat with your roll number. Sitting elsewhere can cancel your candidature.",
+          "Biometric (NADRA) verification may be done at the centre, sometimes for a small fee.",
+          "Check your question paper has all 180 questions. Report a missing or misprinted page in the first 15 minutes to get a replacement.",
+          "Parents cannot wait outside the centre. Plan to drop off and collect after the test."
+        ] }
+      ]
+    },
+    {
+      "id": "omr", "icon": "⚫", "title": "Filling the bubble sheet",
+      "summary": "One dark, complete bubble per question, in blue ballpoint, no changes.",
+      "blocks": [
+        { "type": "list", "items": [
+          "Use only a blue ballpoint pen.",
+          "Fill the circle completely and darkly. Light or half-filled bubbles are rejected by the machine and get no mark.",
+          "Fill only ONE circle per question. Two filled circles get no mark.",
+          "You cannot change an answer: no erasing, correction fluid or overwriting. Decide first, then fill.",
+          "Write and bubble your roll number exactly as shown on your admit card. Practise this at home.",
+          "Bubble the question paper code (A, B, C or D). A wrong or missing code can make your whole sheet mark incorrectly.",
+          "Do rough work only in the space given in the question paper, never on the bubble sheet.",
+          "Do not fold, tear or crumple the sheet, and do not separate its two layers until told to."
+        ] },
+        { "type": "tip", "text": "The sheet has a carbon copy underneath. You keep the copy, so you can check your score against the official answer key the same evening." }
+      ]
+    },
+    {
+      "id": "after", "icon": "📊", "title": "After the test",
+      "summary": "Answer key the same day, result within about a week.",
+      "blocks": [
+        { "type": "list", "items": [
+          "The official answer keys for every paper code are published on the admitting university's website on the test day.",
+          "Use your carbon copy and the key to work out your own score.",
+          "Complaints about a question, and challenges to the answer key, are taken online for only a short time. In 2025 UHS allowed question complaints until 6 pm on test day, and answer-key challenges until 6 pm the next day.",
+          "A panel of subject experts reviews the paper. A question found to be wrong or ambiguous is removed, and everyone's marks are adjusted.",
+          "Results are usually announced within about 7 days.",
+          "Requests to recount your score are accepted for a few days after the result (5 days in 2025, by email)."
+        ] }
+      ]
+    },
+    {
+      "id": "unfair", "icon": "🚫", "title": "Unfair means",
+      "summary": "What counts as cheating, and what happens.",
+      "blocks": [
+        { "type": "p", "text": "Any attempt to gain an unfair advantage is treated as using unfair means. The candidate's paper is cancelled and further action can follow. Examples:" },
+        { "type": "list", "items": [
+          "Having any banned item, even switched off.",
+          "Someone else sitting the test for you, or a false identity or documents.",
+          "Talking to, helping, or copying from another candidate.",
+          "Swapping question papers or bubble sheets.",
+          "Taking the bubble sheet's top sheet out of the hall, or copying questions out.",
+          "Leaving the hall without permission, or ignoring the invigilators' instructions."
+        ] }
+      ]
+    },
+    {
+      "id": "strategy", "icon": "🧭", "title": "How to prepare (tips)",
+      "summary": "Study by weightage, practise against the clock, review every mistake.",
+      "blocks": [
+        { "type": "p", "text": "These are study tips from the MDCAT Prep team, not official rules." },
+        { "type": "list", "items": [
+          "Study by weightage. Biology is 45% of the paper, so give it the most time. Don't skip English and Logical Reasoning, though: their 18 marks are often the quickest to gain.",
+          "Learn from the syllabus learning outcomes, not just the textbook. Each topic in this app lists its learning outcomes; every MDCAT question is written against one of them.",
+          "No negative marking means you answer every question. Never leave a bubble empty: if you're unsure, cut out the options you know are wrong and make your best guess.",
+          "Practise at about 1 minute per question. In full mocks, do a first pass answering everything you know, then come back to the hard ones.",
+          "Review every mistake. Read the explanation, then retry it later from 'Review mistakes' until you get it right.",
+          "Take full 3-hour mocks in the last months, under real conditions: no phone, no breaks, a printed bubble sheet if you can.",
+          "Logical Reasoning isn't in any FSc book. Practise its six question types early so they don't surprise you.",
+          "Learn the bubble sheet rules now. A perfect answer filled in wrongly scores zero."
+        ] }
+      ]
+    }
+  ]
+}

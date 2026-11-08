@@ -112,9 +112,40 @@ function answerSpreadReport(questions) {
   }
 }
 
+// Rules & guidelines: sections of typed blocks; checks every block is renderable.
+const GUIDE_BLOCKS = {
+  p: ["text"], h: ["text"], tip: ["text"], warn: ["text"], list: ["items"], table: ["head", "rows"],
+};
+function loadGuide() {
+  const guide = readJson(path.join(CONTENT_DIR, "guide.json"));
+  for (const k of ["updated", "disclaimer", "sources", "sections"]) {
+    if (!(k in guide)) throw new Error(`guide.json: missing "${k}"`);
+  }
+  const ids = new Set();
+  guide.sections.forEach((s, i) => {
+    const at = `guide.json section ${i} (${s.id || "no id"})`;
+    for (const k of ["id", "icon", "title", "summary", "blocks"]) {
+      if (!(k in s)) throw new Error(`${at}: missing "${k}"`);
+    }
+    if (ids.has(s.id)) throw new Error(`${at}: duplicate id`);
+    ids.add(s.id);
+    s.blocks.forEach((b, j) => {
+      const need = GUIDE_BLOCKS[b.type];
+      if (!need) throw new Error(`${at} block ${j}: unknown type "${b.type}"`);
+      for (const k of need) if (!(k in b)) throw new Error(`${at} block ${j}: ${b.type} needs "${k}"`);
+      if (b.type === "table" && b.rows.some((r) => r.length !== b.head.length)) {
+        throw new Error(`${at} block ${j}: every table row needs ${b.head.length} cells`);
+      }
+    });
+  });
+  return guide;
+}
+
 function main() {
   console.log("Loading content...");
   const syllabus = readJson(path.join(CONTENT_DIR, "syllabus.json"));
+  const guide = loadGuide();
+  console.log(`  guide: ${guide.sections.length} sections`);
   const units = indexSyllabus(syllabus);
   const questions = loadQuestions(units);
   const bySubject = {};
@@ -131,7 +162,8 @@ function main() {
 
   const contentJs =
     `const SYLLABUS = ${JSON.stringify(syllabus)};\n` +
-    `const QUESTIONS = ${JSON.stringify(shipped)};\n`;
+    `const QUESTIONS = ${JSON.stringify(shipped)};\n` +
+    `const GUIDE = ${JSON.stringify(guide)};\n`;
 
   const finalJs = appJs.replace("/* __CONTENT_INJECTION_POINT__ */", contentJs);
   if (finalJs === appJs) throw new Error("Content injection point missing from src/app.js");

@@ -104,6 +104,7 @@ function render(){
   if(parts[0] === "play" && session) return renderPlayer();
   if(parts[0] === "results" && session) return renderResults();
   if(parts[0] === "mistakes") return renderMistakes();
+  if(parts[0] === "guide") return parts[1] ? renderGuideSection(parts[1]) : renderGuide();
   if(parts[0] === "soon") return renderSoon(decodeURIComponent(parts[1] || ""));
   return renderHome();
 }
@@ -138,7 +139,7 @@ function renderHome(){
   <div class="tiles">
     <button class="tile" data-go="#/mistakes"><div class="ic">🔁</div><div class="title">Review mistakes</div><div class="sub">${nMistakes} question${nMistakes===1?"":"s"}</div></button>
     <button class="tile" data-go="#/soon/Mock%20exams"><div class="ic">⏱️</div><div class="title">Mock exams</div><div class="sub">20 full papers · coming soon</div></button>
-    <button class="tile" data-go="#/soon/Rules%20%26%20guidelines"><div class="ic">📋</div><div class="title">Rules &amp; guidelines</div><div class="sub">coming soon</div></button>
+    <button class="tile" data-go="#/guide"><div class="ic">📋</div><div class="title">Rules &amp; guidelines</div><div class="sub">format, passing, exam day</div></button>
     <button class="tile" data-go="#/soon/Memory%20cheats"><div class="ic">🧠</div><div class="title">Memory cheats</div><div class="sub">coming soon</div></button>
     <button class="tile" data-go="#/soon/Important%20topics"><div class="ic">⭐</div><div class="title">Important topics</div><div class="sub">coming soon</div></button>
   </div>`;
@@ -272,6 +273,41 @@ function renderMistakes(){
       <span class="main"><span class="title">${esc(u.name)}</span><div class="sub">${esc(subjectById[u.subject].name)} · ${n} to review</div></span><span class="chev">›</span></button>`;
   }
   app.innerHTML = html + `</div>`;
+}
+
+/* ----- rules & guidelines ----- */
+function renderGuide(){
+  let html = bar("Rules & guidelines", "#/") + `<div class="list" style="margin-top:14px">`;
+  for(const s of GUIDE.sections){
+    html += `<button class="row" data-go="#/guide/${s.id}"><span class="badge" style="background:var(--brand-soft);font-size:22px">${s.icon}</span>
+      <span class="main"><span class="title">${esc(s.title)}</span><div class="sub">${esc(s.summary)}</div></span><span class="chev">›</span></button>`;
+  }
+  html += `</div><p class="note">${esc(GUIDE.disclaimer)}</p><p class="note">Last checked: ${esc(GUIDE.updated)}</p>
+    <h3 class="section">Official sources</h3><ul class="srcs">${GUIDE.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></li>`).join("")}</ul>`;
+  app.innerHTML = html;
+}
+
+function guideBlock(b){
+  switch(b.type){
+    case "p": return `<p>${esc(b.text)}</p>`;
+    case "h": return `<h4>${esc(b.text)}</h4>`;
+    case "tip": return `<div class="callout tip">💡 ${esc(b.text)}</div>`;
+    case "warn": return `<div class="callout warn">⚠️ ${esc(b.text)}</div>`;
+    case "list": return `<ul>${b.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul>`;
+    case "table": return `<table><thead><tr>${b.head.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead>
+      <tbody>${b.rows.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  }
+  return "";
+}
+
+function renderGuideSection(id){
+  const i = GUIDE.sections.findIndex(s => s.id === id);
+  if(i < 0) return renderGuide();
+  const s = GUIDE.sections[i], nextS = GUIDE.sections[i+1];
+  app.innerHTML = bar(s.title, "#/guide") +
+    `<article class="card guide">${s.blocks.map(guideBlock).join("")}</article>
+    ${nextS ? `<div class="actions"><button class="btn secondary" data-go="#/guide/${nextS.id}">Next: ${esc(nextS.title)} ›</button></div>` : ""}
+    <p class="note">${esc(GUIDE.disclaimer)}</p>`;
 }
 
 function renderSoon(name){
