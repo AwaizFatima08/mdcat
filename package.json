@@ -1,0 +1,9 @@
+{
+  "name": "mdcat-prep",
+  "version": "0.1.0",
+  "description": "MDCAT Prep - offline MDCAT practice app (PM&DC 2025 curriculum)",
+  "private": true,
+  "scripts": {
+    "build": "node build/build.js && mkdir -p www && cp dist/app.html www/index.html"
+  }
+}

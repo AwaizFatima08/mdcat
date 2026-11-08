@@ -1,0 +1,147 @@
+{
+  "source": "PM&DC Uniform Curriculum MDCAT-2025 (Final, 26-05-2025); applies to MDCAT-2026 (PM&DC notice 19 May 2026)",
+  "subjects": [
+    {
+      "id": "bio", "name": "Biology", "mcqsInPaper": 81, "bankTarget": 2250,
+      "units": [
+        { "id": "bio-01", "n": 1, "name": "Acellular Life", "topics": [
+          { "id": "bio-01-viruses", "name": "Viruses", "los": [ { "code": "BIO-1.1", "text": "Classify viruses on basis of their structure / number of strands / diseases / hosts." } ] },
+          { "id": "bio-01-hiv", "name": "AIDS and HIV infection", "los": [ { "code": "BIO-1.2", "text": "Identify symptoms, mode of transmission and cause of viral disease (AIDS)." } ] }
+        ] },
+        { "id": "bio-02", "n": 2, "name": "Bioenergetics", "topics": [
+          { "id": "bio-02-respiration", "name": "Respiration", "los": [ { "code": "BIO-2.1", "text": "Outline the cellular respiration of proteins and fats and correlate these with that of glucose." } ] }
+        ] },
+        { "id": "bio-03", "n": 3, "name": "Biological Molecules", "topics": [
+          { "id": "bio-03-intro", "name": "Biological molecules", "los": [ { "code": "BIO-3.1", "text": "Define and classify biological molecules." }, { "code": "BIO-3.2", "text": "Discuss the importance of biological molecules." } ] },
+          { "id": "bio-03-water", "name": "Biological importance of water", "los": [ { "code": "BIO-3.3", "text": "Describe biologically important properties of water (polarity, hydrolysis, specific heat, solvent and reagent, density, cohesion, ionization)." } ] },
+          { "id": "bio-03-carbs", "name": "Carbohydrates", "los": [ { "code": "BIO-3.4", "text": "Discuss monosaccharides, oligosaccharides and polysaccharides." } ] },
+          { "id": "bio-03-proteins", "name": "Proteins", "los": [ { "code": "BIO-3.5", "text": "Describe amino acids and the structure of proteins." } ] },
+          { "id": "bio-03-lipids", "name": "Lipids", "los": [ { "code": "BIO-3.6", "text": "Describe phospholipids, triglycerides, alcohols and esters (acylglycerols)." } ] },
+          { "id": "bio-03-rna", "name": "RNA", "los": [ { "code": "BIO-3.7", "text": "Give an account of structure and function of RNA." } ] },
+          { "id": "bio-03-conjugated", "name": "Conjugated molecules", "los": [ { "code": "BIO-3.8", "text": "Discuss conjugated molecules (glycolipids, glycoproteins)." } ] },
+          { "id": "bio-03-dna", "name": "Structure of DNA", "los": [ { "code": "BIO-3.9", "text": "Explain the double helical structure of DNA (Watson and Crick)." }, { "code": "BIO-3.10", "text": "Define a gene as a sequence of nucleotides coding for a polypeptide." } ] }
+        ] },
+        { "id": "bio-04", "n": 4, "name": "Cell Structure & Function", "topics": [
+          { "id": "bio-04-cell", "name": "Cell structure", "los": [ { "code": "BIO-4.1", "text": "Compare the structure of typical animal and plant cells." } ] },
+          { "id": "bio-04-prokeuk", "name": "Prokaryotic and eukaryotic cells", "los": [ { "code": "BIO-4.2", "text": "Compare and contrast prokaryotic and eukaryotic cells." } ] },
+          { "id": "bio-04-organelles", "name": "Cytoplasmic organelles", "los": [ { "code": "BIO-4.3", "text": "Outline structure and function of nucleus, ER, Golgi apparatus and mitochondria." } ] },
+          { "id": "bio-04-chromosomes", "name": "Chromosomes", "los": [ { "code": "BIO-4.4", "text": "Describe the structure, chemical composition and function of chromosomes." } ] }
+        ] },
+        { "id": "bio-05", "n": 5, "name": "Coordination & Control", "topics": [
+          { "id": "bio-05-receptors", "name": "Receptors", "los": [ { "code": "BIO-5.1", "text": "Recognize receptors as transducers sensitive to various stimuli." } ] },
+          { "id": "bio-05-neurons", "name": "Neurons and reflexes", "los": [ { "code": "BIO-5.2", "text": "Explain the structure of a typical neuron." }, { "code": "BIO-5.3", "text": "Define nerve impulse." }, { "code": "BIO-5.4", "text": "Classify reflexes." }, { "code": "BIO-5.5", "text": "Explain the functions of the components of a reflex arc." } ] },
+          { "id": "bio-05-brain", "name": "Brain", "los": [ { "code": "BIO-5.6", "text": "Discuss the main parts of the brain." }, { "code": "BIO-5.7", "text": "Describe the functions of each part." } ] }
+        ] },
+        { "id": "bio-06", "n": 6, "name": "Enzymes", "topics": [
+          { "id": "bio-06-enzymes", "name": "Enzymes and their action", "los": [ { "code": "BIO-6.1", "text": "Describe the distinguishing characteristics of enzymes." }, { "code": "BIO-6.2", "text": "Explain the mechanism of action of enzymes." } ] },
+          { "id": "bio-06-factors", "name": "Factors and inhibitors", "los": [ { "code": "BIO-6.3", "text": "Describe effects of temperature, pH and concentration on enzyme action." }, { "code": "BIO-6.4", "text": "Describe enzyme inhibitors." } ] }
+        ] },
+        { "id": "bio-07", "n": 7, "name": "Evolution", "topics": [
+          { "id": "bio-07-evolution", "name": "Origin of life, Lamarckism, Darwinism", "los": [ { "code": "BIO-7.1", "text": "Explain origin of life according to the concept of evolution." }, { "code": "BIO-7.2", "text": "Describe Lamarck's inheritance of acquired characters." }, { "code": "BIO-7.3", "text": "Explain Darwin's theory of natural selection." } ] }
+        ] },
+        { "id": "bio-08", "n": 8, "name": "Reproduction", "topics": [
+          { "id": "bio-08-system", "name": "Human reproductive system", "los": [ { "code": "BIO-8.1", "text": "Describe the male and female reproductive systems and their regulating hormones." } ] },
+          { "id": "bio-08-cycle", "name": "Menstrual cycle", "los": [ { "code": "BIO-8.2", "text": "Describe the menstrual cycle emphasizing the role of hormones." } ] },
+          { "id": "bio-08-std", "name": "Sexually transmitted diseases", "los": [ { "code": "BIO-8.3", "text": "List common STDs with causative agents and main symptoms." } ] }
+        ] },
+        { "id": "bio-09", "n": 9, "name": "Support & Movement", "topics": [
+          { "id": "bio-09-skeleton", "name": "Human skeleton", "los": [ { "code": "BIO-9.1", "text": "Describe cartilage, muscle and bone." }, { "code": "BIO-9.2", "text": "Explain the main characteristics and functions of cartilage and bone." } ] },
+          { "id": "bio-09-muscles", "name": "Muscles and contraction", "los": [ { "code": "BIO-9.3", "text": "Compare smooth, cardiac and skeletal muscle." }, { "code": "BIO-9.4", "text": "Explain the ultrastructure of skeletal muscle." }, { "code": "BIO-9.5", "text": "Describe the process of skeletal muscle contraction." } ] },
+          { "id": "bio-09-joints", "name": "Joints and arthritis", "los": [ { "code": "BIO-9.6", "text": "Classify joints." }, { "code": "BIO-9.7", "text": "Define arthritis." } ] }
+        ] },
+        { "id": "bio-10", "n": 10, "name": "Inheritance", "topics": [
+          { "id": "bio-10-mendel", "name": "Mendel's laws", "los": [ { "code": "BIO-10.1", "text": "Associate inheritance with the laws of Mendel." }, { "code": "BIO-10.2", "text": "Explain the law of independent assortment with an example." } ] },
+          { "id": "bio-10-linkage", "name": "Gene linkage and crossing over", "los": [ { "code": "BIO-10.3", "text": "Describe gene linkage and crossing over." }, { "code": "BIO-10.4", "text": "Explain how linkage counters independent assortment and crossing over modifies progeny." } ] },
+          { "id": "bio-10-sexlinked", "name": "Sex-linked inheritance", "los": [ { "code": "BIO-10.5", "text": "Describe the concept of sex-linkage." }, { "code": "BIO-10.6", "text": "Describe inheritance of sex-linked traits." }, { "code": "BIO-10.7", "text": "Analyze the inheritance of hemophilia." } ] }
+        ] },
+        { "id": "bio-11", "n": 11, "name": "Circulation", "topics": [
+          { "id": "bio-11-heart", "name": "Heart and cardiac cycle", "los": [ { "code": "BIO-11.1", "text": "Discuss the general structure of the human heart." }, { "code": "BIO-11.2", "text": "Describe the phases of heartbeat." } ] },
+          { "id": "bio-11-vessels", "name": "Blood vessels", "los": [ { "code": "BIO-11.3", "text": "List differences and functions of arteries, veins and capillaries." } ] },
+          { "id": "bio-11-lymph", "name": "Lymphatic system", "los": [ { "code": "BIO-11.4", "text": "Describe the lymphatic system (nodes, vessels, organs)." } ] }
+        ] },
+        { "id": "bio-12", "n": 12, "name": "Immunity", "topics": [
+          { "id": "bio-12-specific", "name": "Specific defence mechanism", "los": [ { "code": "BIO-12.1", "text": "Define and discuss the functions and importance of specific defence mechanisms." } ] }
+        ] },
+        { "id": "bio-13", "n": 13, "name": "Respiration", "topics": [
+          { "id": "bio-13-system", "name": "Human respiratory system", "los": [ { "code": "BIO-13.1", "text": "Discuss the functions of the main parts of the respiratory system." }, { "code": "BIO-13.2", "text": "Discuss gas exchange in human lungs." }, { "code": "BIO-13.3", "text": "Discuss the effect of smoking on the respiratory system." } ] }
+        ] },
+        { "id": "bio-14", "n": 14, "name": "Digestion", "topics": [
+          { "id": "bio-14-system", "name": "Human digestive system", "los": [ { "code": "BIO-14.1", "text": "Describe the parts of the human digestive system." }, { "code": "BIO-14.2", "text": "Explain functions of the main parts including associated structures and glands." } ] }
+        ] },
+        { "id": "bio-15", "n": 15, "name": "Homeostasis", "topics": [
+          { "id": "bio-15-kidney", "name": "Kidney", "los": [ { "code": "BIO-15.1", "text": "Explain organs of the urinary system; relate kidney structure to function." }, { "code": "BIO-15.2", "text": "Explain glomerular filtration, selective reabsorption and tubular secretion." }, { "code": "BIO-15.3", "text": "Justify kidneys as organs of both excretion and osmoregulation." }, { "code": "BIO-15.4", "text": "Compare glomerular and peritubular capillaries." }, { "code": "BIO-15.5", "text": "Explain causes and treatments of kidney stones." }, { "code": "BIO-15.6", "text": "Outline the causes of kidney failure." } ] },
+          { "id": "bio-15-thermo", "name": "Thermoregulation", "los": [ { "code": "BIO-15.7", "text": "Describe thermoregulation and explain its need." } ] },
+          { "id": "bio-15-excretion", "name": "Excretion", "los": [ { "code": "BIO-15.8", "text": "List nitrogenous compounds excreted." } ] }
+        ] },
+        { "id": "bio-16", "n": 16, "name": "Biotechnology", "topics": [
+          { "id": "bio-16-health", "name": "Biotechnology and health care", "los": [ { "code": "BIO-16.1", "text": "Describe how biotechnologists produce vaccines." }, { "code": "BIO-16.2", "text": "State the role of biotechnology in diagnosis (DNA/RNA probes, monoclonal antibodies)." }, { "code": "BIO-16.3", "text": "Describe products obtained for disease treatment." } ] }
+        ] }
+      ]
+    },
+    {
+      "id": "chem", "name": "Chemistry", "mcqsInPaper": 45, "bankTarget": 1250,
+      "units": [
+        { "id": "chem-01", "n": 1, "name": "Fundamental Concepts", "topics": [] },
+        { "id": "chem-02", "n": 2, "name": "Atomic Structure", "topics": [] },
+        { "id": "chem-03", "n": 3, "name": "Gases", "topics": [] },
+        { "id": "chem-04", "n": 4, "name": "Liquids", "topics": [] },
+        { "id": "chem-05", "n": 5, "name": "Solids", "topics": [] },
+        { "id": "chem-06", "n": 6, "name": "Chemical Equilibrium", "topics": [] },
+        { "id": "chem-07", "n": 7, "name": "Reaction Kinetics", "topics": [] },
+        { "id": "chem-08", "n": 8, "name": "Thermochemistry & Energetics", "topics": [] },
+        { "id": "chem-09", "n": 9, "name": "Electrochemistry", "topics": [] },
+        { "id": "chem-10", "n": 10, "name": "Chemical Bonding", "topics": [] },
+        { "id": "chem-11", "n": 11, "name": "s- and p-Block Elements", "topics": [] },
+        { "id": "chem-12", "n": 12, "name": "Transition Elements", "topics": [] },
+        { "id": "chem-13", "n": 13, "name": "Fundamental Principles of Organic Chemistry", "topics": [] },
+        { "id": "chem-14", "n": 14, "name": "Chemistry of Hydrocarbons", "topics": [] },
+        { "id": "chem-15", "n": 15, "name": "Alkyl Halides", "topics": [] },
+        { "id": "chem-16", "n": 16, "name": "Alcohols & Phenols", "topics": [] },
+        { "id": "chem-17", "n": 17, "name": "Aldehydes & Ketones", "topics": [] },
+        { "id": "chem-18", "n": 18, "name": "Carboxylic Acids", "topics": [] },
+        { "id": "chem-19", "n": 19, "name": "Macromolecules", "topics": [] },
+        { "id": "chem-20", "n": 20, "name": "Industrial Chemistry", "topics": [] }
+      ]
+    },
+    {
+      "id": "phy", "name": "Physics", "mcqsInPaper": 36, "bankTarget": 1000,
+      "units": [
+        { "id": "phy-01", "n": 1, "name": "Vectors & Equilibrium", "topics": [] },
+        { "id": "phy-02", "n": 2, "name": "Force & Motion", "topics": [] },
+        { "id": "phy-03", "n": 3, "name": "Work & Energy", "topics": [] },
+        { "id": "phy-04", "n": 4, "name": "Rotational & Circular Motion", "topics": [] },
+        { "id": "phy-05", "n": 5, "name": "Fluid Dynamics", "topics": [] },
+        { "id": "phy-06", "n": 6, "name": "Waves", "topics": [] },
+        { "id": "phy-07", "n": 7, "name": "Thermodynamics", "topics": [] },
+        { "id": "phy-08", "n": 8, "name": "Electrostatics", "topics": [] },
+        { "id": "phy-09", "n": 9, "name": "Current Electricity", "topics": [] },
+        { "id": "phy-10", "n": 10, "name": "Electromagnetism", "topics": [] },
+        { "id": "phy-11", "n": 11, "name": "Electromagnetic Induction", "topics": [] },
+        { "id": "phy-12", "n": 12, "name": "Alternating Current", "topics": [] },
+        { "id": "phy-13", "n": 13, "name": "Electronics", "topics": [] },
+        { "id": "phy-14", "n": 14, "name": "Dawn of Modern Physics", "topics": [] },
+        { "id": "phy-15", "n": 15, "name": "Atomic Spectra", "topics": [] },
+        { "id": "phy-16", "n": 16, "name": "Nuclear Physics", "topics": [] }
+      ]
+    },
+    {
+      "id": "eng", "name": "English", "mcqsInPaper": 9, "bankTarget": 250,
+      "units": [
+        { "id": "eng-01", "n": 1, "name": "Reading & Thinking Skills", "topics": [] },
+        { "id": "eng-02", "n": 2, "name": "Formal & Lexical Aspects of Language", "topics": [] },
+        { "id": "eng-03", "n": 3, "name": "Writing Skills", "topics": [] }
+      ]
+    },
+    {
+      "id": "lr", "name": "Logical Reasoning", "mcqsInPaper": 9, "bankTarget": 250,
+      "units": [
+        { "id": "lr-01", "n": 1, "name": "Critical Thinking", "topics": [] },
+        { "id": "lr-02", "n": 2, "name": "Letter & Symbol Series", "topics": [] },
+        { "id": "lr-03", "n": 3, "name": "Logical Deductions", "topics": [] },
+        { "id": "lr-04", "n": 4, "name": "Logical Problems", "topics": [] },
+        { "id": "lr-05", "n": 5, "name": "Course of Action", "topics": [] },
+        { "id": "lr-06", "n": 6, "name": "Cause & Effect", "topics": [] }
+      ]
+    }
+  ]
+}

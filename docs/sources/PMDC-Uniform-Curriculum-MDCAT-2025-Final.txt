@@ -1,0 +1,968 @@
+ 2025
+MEDICAL AND DENTAL COLLEGES ADMISSION TEST
+ (MDCAT)
+ CURRICULUM
+ (Biology, Chemistry, Physics, English, Logical Reasoning)
+ +92 051-9190000 examination@pmdc.pk Mauve Area G-10/4, Islamabad, Pakistan
+ info@pmdc.edu.pk
+TABLE OF CONTENTS
+ MDCAT GUIDE PAGE
+ PREAMBLE 1
+ STRUCTURE, WEIGHTAGE & DIFFICULTY LEVELS 2
+ MDCAT CURRICULUM PAGE
+ SECTION 1: BIOLOGY 3
+ SECTION 2: CHEMISTRY 7
+ SECTION 3: PHYSICS 14
+ 20
+ SECTION 4: ENGLISH
+ 21
+ SECTION 5: LOGICAL REASONING
+PREAMBLE
+In order to standardize the admission process, the Pakistan Medical & Dental Council (PM&DC) has
+decided to conduct a uniform admission test for all medical and dental institutions in Pakistan. This will
+ensure that all candidates are given equal opportunity to perform. This was a difficult task as the
+candidates appearing in this examination come from diverse backgrounds and different levels of
+education.
+One of the greatest challenges was to devise a common curriculum / syllabus which encompasses not
+only the content taught in the premedical years but to note the topics missing from various syllabus. The
+MDCAT curriculum / syllabus will not favor any group or place another to any disadvantage.
+The MDCAT is designed to evaluate the problem solving, critical thinking, and knowledge of natural,
+behavioral, and social sciences concepts and principles of a candidate required to the study of medicine.
+The MDCAT will be a standardized multiple-choice paper-based examination. It will also test the
+aspirants’ other abilities like intuitive and critical thinking skills.
+ 1
+ STRUCTURE, WEIGHTAGE AND DIFFICULTY LEVELS
+ • Total number of MCQs: 180
+ • Duration of MDCAT: 3hours
+ • Format: Paper-based MCQs
+STRUCTURE • Minimum pass marks for Medical College Admission: 55%
+ • Minimum pass marks for Dental College Admission: 50%
+ • No negative marking
+ WEIGHTAGE
+WEIGHTAGE Subject
+ Percentage No. of MCQs
+ Biology 45% 81
+ Chemistry 25% 45
+ Physics 20% 36
+ English 5% 09
+ Logical Reasoning 5% 09
+ TOTAL 100 180
+ 15% MCQs------Easy
+DIFFICULTY LEVEL 70% MCQs------Moderate
+ 15% MCQs------Difficult
+ 2
+ 1. BIOLOGY
+ Unit Topics/Subtopics Learning outcomes
+ 1.1. Classify viruses on basis of their structure/ number of
+ Viruses
+ strands/ diseases/ hosts etc.
+1- ACELLULAR LIFE
+ 1.2. Identify symptoms, mode of transmission and cause of
+ AIDS and HIV Infection
+ viral disease (AIDS)
+ 2.1. Outline the cellular respiration of proteins and fats and
+2- BIOENERGETICS Respiration
+ correlate these with that of glucose.
+ 3.1. Define and classify biological molecules.
+ Biological molecules 3.2. Discuss the importance of biological molecules
+ 3.3. Describe biologically important properties of water
+ Biological Importance of
+ (polarity, hydrolysis, specific heat, water as solvent and
+ Water
+ reagent, density, cohesion/ionization)
+ 3.4. Discuss carbohydrates: monosaccharaides (glucose),
+ oligosaccharides (cane sugar, sucrose, lactose),
+ Carbohydrates
+ polysaccharides (starches, cellulose, glycogen)
+3- BIOLOGICAL 3.5. Describe proteins: amino acids, structure of proteins
+MOLECULES Proteins
+ 3.6. Describe lipids: phospholipids, triglycerides, alcohol and
+ Lipids esters (acylglycerol)
+ 3.7. Give an account of structure and function RNA
+ Ribonucleic acid (RNA)
+ 3.8. Discuss conjugated molecules (glycol lipids, glycol
+ Conjugated molecules proteins)
+ 3.9. Explain the double helical structure of DNA as proposed
+ by Watson and Crick.
+ Structure of DNA 3.10. Define gene is a sequence of nucleotides as part of DNA,
+ which codes for the formation of a polypeptide.
+ 4.1. Compare the structure of typical animal and plant cell
+ Cell structure
+ Prokaryotic and 4.2. Compare and contrast the structure of prokaryotic cells
+ Eukaryotic cell with eukaryotic cells
+ 4.3 Outline the structure and function of the following
+4- CELL STRUCTURE
+ organelles: nucleus, Endoplasmic reticulum, Golgi apparatus a
+& FUNCTION Cytoplasmic Organelles
+ Mitochondria
+ 4.4. Describe the structure, chemical composition and function
+ Chromosomes of chromosomes.
+ 3
+ 1. BIOLOGY
+ 5.1. Recognize receptors as transducers sensitive to various
+ Receptors stimuli.
+ 5.2. Explain the structure of a typical neuron (cell body,
+ dendrites, axon and myelin sheath
+5- COORDINATION &
+CONTROL/ NERVOUS 5.3. Define nerve impulse
+& CHEMICAL
+ 5.4. Classify reflexes
+COORDINATION Neurons
+ 5.5. Briefly explain the functions of components of a reflex arc
+ 5.6. Discuss the main parts of the brain (e.g., components of
+ brain stem, mid brain, cerebellum, cerebrum)
+ Brain
+ 5.7. Describe the functions of each part.
+ 6.1. Describe the distinguishing characteristics of enzymes
+ Enzymes
+ 6.2. Explain mechanism of action of enzymes
+ Mode of Enzyme Action
+6- ENZYMES
+ Factors that Affect the 6.3. Describe effects of factor on enzyme action (temperature,
+ Rate of Enzyme Reactions pH and concentration)
+ 6.4. Describe enzyme inhibitors
+ Inhibitors
+ Concept of Evolution 7.1. Explain origin of life according to concept of evolution
+ 7.2. Describe the theory of inheritance of acquired characters,
+7- EVOLUTION Lamarckism
+ as proposed by Lamarck.
+ 7.3. Explain the theory of natural selection as proposed by
+ Darwinism
+ Darwin
+ 8.1. Describe the functions of various parts of the male &
+ Human Reproductive
+ female reproductive systems and the hormones that regulate
+ system
+ those functions
+8- REPRODUCTION 8.2. Describe the menstrual cycle (female reproductive cycle)
+ Menstrual cycle
+ emphasizing the role of hormones
+ Sexually transmitted 8.3. List the common sexually transmitted diseases along with
+ diseases their causative agents and main symptoms
+ 9.1. Describe cartilage, muscle and bone
+ Human skeleton 9.2. Explain the main characteristics of cartilage and bone
+9- SUPPORT & along with functions.
+MOVEMENT 9.3. Compare characteristics of smooth muscles, cardiac
+ Muscles muscles and skeletal muscles
+ 9.4. Explain the ultra-structure of skeletal muscles
+ Skeletal muscles
+ 4
+ 1. BIOLOGY
+ 9.5. Describe in brief the process of skeletal muscle
+ Muscle contraction contraction
+ 9.6. Classify joints
+ Joints
+ 9.7. Define arthritis
+ Arthritis
+ 10.1. Associate inheritance with the laws of Mendel.
+ Mendel’s laws of
+ 10.2. Explain the law of independent assortment, using a
+ Inheritance
+ suitable example.
+ 10.3. Describe the terms gene linkage and crossing over
+ Gene linkage and crossing
+ 10.4. Explain how gene linkage counters independent
+10- INHERITANCE over
+ assortment and crossing-over modifies the progeny
+ 10.5. Describe the concept of sex-linkage.
+ 10.6. Briefly describe Inheritance of sex –linked traits
+ X-linked Recessive
+ inheritance 10.7. Analyze the inheritance of hemophilia.
+ 11.1. Discuss general structure of human heart
+ Human Heart
+ Cardiac cycle and phases
+ 11.2. Describe the phases of heartbeat.
+11- CIRCULATION of Heartbeat
+ 11.3. List the differences and functions of arteries, veins and
+ Blood Vessels capillaries.
+ 11.4. Describe lymphatic system (nodes, vessels and organs)
+ Lymphatic system
+ 12.1. Define and discuss the functions and importance of
+12- IMMUNITY Specific Defense
+ specific defense mechanisms.
+ Mechanism
+ 13.1. Discuss the functions of main part of respiratory system.
+ 13.2. Discuss the process of gas exchange in human lungs.
+13- RESPIRATION
+ Human Respiratory
+ System
+ 13.3. Discuss the effect of smoking on respiratory system.
+ 14.1. Describe the parts of human digestive system
+14- DIGESTION
+ Human digestive system 14.2. Explain the functions of the main parts of the digestive
+ system including associated structures and glands
+ 15.1. Explain different organs of urinary system. Describe the
+15- HOMEOSTASIS
+ structure of kidney and relate it with its function.
+ 5
+ 1. BIOLOGY
+ Homeostasis (kidney 15.2. Explain the processes of glomerular filtration, selective
+ specifically) re-absorption and tubular secretion as the events in kidney
+ functioning.
+ 15.3. Justify the functioning of kidneys as both excretion and
+ osmoregulation.
+ 15.4. Compare the function of two major capillary beds in
+ kidney i.e. glomerular capillaries and peritubular capillaries.
+ 15.5. Explain the causes and treatments of kidney stones.
+ 15.6. Outline the causes of kidney failure.
+ Thermoregulation 15.7. Describe thermoregulation and explain its needs.
+ 15.8. List various nitrogenous compounds excreted during the
+ Excretion
+ process of excretion.
+ 16.1. Describe how biotechnologists can combat health
+ problems by producing vaccines.
+16-
+ 16.2. State the role played by biotechnology in disease
+BIOTECHNOLOGY
+ Biotechnology and Health diagnosis (DNA/RNA probes, monoclonal antibodies).
+ Care 16.3. Describe what products biotechnologists obtain for use
+ in disease treatment.
+ 6
+ 2. CHEMISTRY
+ Units Topics/subtopics Learning Objectives
+ 1.1 Construct mole ratios from balanced
+ equations for use as conversion factors in
+ Moles and stoichiometric problems.
+ Avogadro’s 1.2 Perform stoichiometric calculations with
+ Numbers balanced equations using moles,
+ representative particles, masses and volumes
+ of the gases (at ST).
+ 1.3 Explain the limiting reagent in reaction
+ 1. INTRODUCTION OF Limiting and Excess 1.4 Calculate the maximum number of products
+ FUNDAMENTALS Reactants produced and the amount of any un-reacted
+ CONCEPT OF excess reagent
+ CHEMISTRY 1.5 Given information from which any two the
+ following may be determine, calculate the
+ third: theoretical yield, actual yield,
+ percentage yield.
+ Yield
+ 1.6 . Calculate the theoretical yield and the
+ percent yield when given the balanced
+ equation, the amount of reactants and the
+ actual yield.
+ Discovery of Proton 2.1 Describe discovery and properties of proton
+ Planck’s Quantum (Positive rays)
+ Theory 2.2 Define Photon as a unit of radiation energy
+ 2.3 Describe the concept of orbitals.
+ Quantum Number 2.4 Distinguish among Principal energy level,
+ energy sub-level and atomic orbitals
+ 2.5 Describe the general shapes of S, P and
+2. ATOMIC STRUCTURE Shapes of orbitals
+ orbitals.
+ Spectrum of 2.6 Describe Hydrogen Atom using the quantum
+ Hydrogen theory
+ 2.7 Use the Aufbau principle, the Pauli
+ Electronic Exclusion Principle and Hund’s Rule to
+ Configuration write the Electronic Configuration of atoms.
+ 2.8 Write electronic configuration of atom
+ 3.1 List the postulates of Kinetic Molecular
+ Kinetic Molecular Theory
+3. GASES
+ Theory 3.2 Describe the motion of particles of the gas
+ according to kinetic theory.
+ 7
+ Standard
+ 3.3 State the values of standard temperature and
+ Temperature and
+ pressure (STP)
+ Pressure (STP)
+ 3.4 Describe the effect of change in pressure on
+ Boyle’s Law
+ the volume of gas.
+ 3.5 Describe the effect of change in temperature
+ Charles’s Law
+ on the volume of gas.
+ 3.6 Explain the significance of the absolute zero,
+ Absolute Zero
+ giving its value in degree.
+ 3.7 Derive Ideal Gas equation using Boyle’s
+ Ideal Gas Equation
+ Law, Charle’s Law and Avogadro’s Law.
+ 3.8 Explain the significance and different units
+ Unit of “R”
+ of ideal gas constant.
+ Real and Ideal Gas 3.9 Distinguish between Real and Ideal Gases.
+ 4.1 Describe simple properties of liquids e.g
+ Properties Of
+ diffusion, compression, expansion, motion
+ Liquids based on
+ of molecules, spaces between them, inter
+ Kinetic Molecular
+ molecular forces and kinetic energy based on
+ Theory
+ kinetic molecular theory.
+ Evaporation,
+ 4.2 Explain physical properties of liquid such as
+ Boiling point and
+ evaporation, vapor pressure, boiling point
+ Vapor Pressure
+ 4.3 Describe the hydrogen bonding in 𝐻2 O, 𝑁𝐻3
+ Hydrogen Bonding
+ and HF molecules.
+ 4.4 Anomalous behavior of water when its
+ Anomalous
+ density shows maximum at 4 degrees
+ behavior of Water
+ centigrade.
+ Crystalline Solids 5.1 Describe crystalline solid
+ Factors Affecting
+ 5.2 Name three factors that affect the shape of
+ the Shape of Ionic
+ the ionic crystals.
+ Crystals
+5. SOLID Difference between
+ 5.3 Give brief description of ionic and molecular
+ Ionic and Molecular
+ crystals.
+ Crystals
+ Crystal lattice 5.4 Explain the structure of a crystal lattice
+ Lattice Energy 5.5 Define Lattice Energy,
+ 6.1 Define chemical equilibrium in terms of
+ Chemical reversible reaction.
+ Equilibrium 6.2 Write both forward and reverse. Describe
+ them macroscopic characteristics of each
+6. CHEMICAL EQUILIBRUM 6.3 State Le Chatelier’s principle and be able to
+ Le Chatelier’s apply it to systems in equilibrium with
+ principle changes in concentration, pressure,
+ temperature or addition of catalyst.
+ Solubility Products 6.4 Define and explain solubility products.
+ 8
+ 6.5 Define and explain the common ion effect
+ Common Ion Effect
+ by giving suitable examples.
+ 6.6 Define buffer solution and explain types of
+ Buffer Solution
+ buffers.
+ 6.7 Explain synthesis of Ammonia by Haber’s
+ Haber’s Process
+ process.
+ 7.1 Define chemical kinetics.
+ Chemical Kinetics 7.2 Explain the terms: rate of reaction, rate
+ equation.
+ Factors affecting 7.3 Explain qualitatively factors affecting rate of
+ rate of reaction reaction.
+ 7.4 Give the order with respect to the reactant,
+7. REACTION KINETICS write the rate of law for reaction.
+ 7.5 Explain the meaning of the term “activation
+ Order of Reaction
+ energy” and “activated complex”.
+ 7.6 Relate the ideas of activation energy and the
+ activated complex to the rate of reaction.
+ 7.7 Describe the role of the rate constant in the
+ Rate Constant
+ theoretical determination of reaction rate.
+ Thermodynamics 8.1 Define Thermodynamics
+ Exothermic and
+ 8.2 Classify reactions as exothermic and
+ Endothermic
+ endothermic
+ Reaction
+ 8.3 Define the terms system, surrounding
+ Different Terms boundary, state function, heat, heat capacity,
+8. THERMO CHEMISTRY AND Used internal energy, work done and enthalpy of a
+ENERGETICS OF CHEMICAL substance.
+REACTION 8.4 Name and define the units of the Internal
+ Internal Energies
+ energy.
+ Law of 8.5 Explain the first law of thermodynamics of
+ Thermodynamics energy conservation.
+ 8.6 Apply Hess’s Law to construct simple
+ Hess’s Law
+ energy cycles.
+ Enthalpy 8.7 Describe enthalpy of the reaction
+ Redox Reaction 9.1 Give the characteristics of a redox reaction.
+ Oxidation and 9.2 Define oxidation and reduction in terms of a
+ Reduction change in oxidation number.
+ 9.3 Use the oxidation number change method to
+ Balancing Chemical
+ identify atoms being oxidized or reduced in
+9. ELECTROCHEMISTRY Reaction
+ redox reactions.
+ 9.4 Define Cathode, anode, electrode potential
+ Standard Hydrogen and S.H.E
+ Electrode (SHE) 9.5 Define the standard electrode potential of an
+ electrode.
+ 10.1 Use VSEPR Theory to describe the shapes
+10.CHEMICAL BONDING VSEPR Theory
+ of the molecules.
+ 9
+ 10.2 Describe the features of sigma and pi-
+ Sigma and Pi Bond
+ bonds.
+ 10.3 Describe the shapes of simple molecules
+ Hybridization
+ using orbital hybridization.
+ Application of 10.4 Determine the shapes of some molecules
+ VSEPR Theory from the number of the bonded pairs.
+ 10.5 Predict the molecular polarity from the
+ Dipole Movement
+ shapes of molecules.
+ 10.6 Explain what is meant by the term ionic
+ character of the covalent bond.
+ Application of 10.7 Describe how knowledge of molecular
+ Dipole Movement polarity can be used to explain some
+ physical and chemical properties of the
+ molecules.
+ 10.8 Define bond energies and explain how
+ Bond Energy they can be used to compare bonds strength
+ of different chemical bonds.
+ 11.1 Define and explain the terms atomic radii,
+ Properties and their ionic radii, covalent radii, ionization
+ Trends energy, electron affinity, electro negativity,
+ bond energy and bond length.
+ 11.2 Recognize the demarcation of the periodic
+ S-, P-, D- & F-
+ table into S-block, P-block, D-block and F-
+11. S- AND P- BLOCK Block Elements
+ block.
+ELEMENTS
+ Reaction of Group I 11.3 Describe reactions of Group I elements with
+ elements water, oxygen and chlorine.
+ Reaction of Group 11.4 Describe reactions of Group II elements
+ II elements with water, oxygen and chlorine.
+ Reaction of Group
+ 11.5 Describe reactions of Group IV Elements.
+ IV elements
+ 12.1 Describe the electronic structures of the
+12. TRANSITION ELEMENTS Electronic Structure
+ elements and ions of d-block Elements.
+ 13.1 Define organic chemistry and organic
+ Definition and
+ compound.
+13. FUNDAMENTAL Classification of
+ 13.2 Classify organic compounds on structural
+PRINCIPLES OF ORGANIC Organic Compound
+ basis.
+CHEMISTRY
+ Functional Group 13.3 Define functional group.
+ Isomerism 13.4 Explain stereoisomerism and its types.
+ Nomenclature of
+ 14.1 Describe the nomenclature of Alkanes.
+ Alkanes
+ 14.2 Define Free Radical Initiation, propagation
+14. CHEMISTRY OF
+ and termination.
+HYDROCARBONS Free Radical
+ 14.3 Describe the mechanism of the free radical
+ Mechanism
+ substitution in alkanes exemplified by
+ Methane and Ethane.
+ 10
+ Nomenclature of 14.4 Explain the IUPAC nomenclature of
+ Alkenes alkenes.
+ 14.5 Explain the shapes of the Ethene
+ Shapes of Alkenes molecules in terms of Sigma and Pi C-C
+ Bonds.
+ Structure and
+ 14.6 Describe the structure and reactivity of
+ Reactivity of
+ Alkenes as exemplified by Ethene.
+ Alkenes
+ 14.7 Explain Dehydration of Alcohols and
+ Preparation of
+ Dehydrohalogenation of RX for the
+ Alkanes
+ preparation of Ethane
+ 14.8 Explain the shape of Benzene Molecules
+ MOT of Benzene
+ (Molecular orbital treatment).
+ Resonance and
+ 14.9 Define resonance, resonance energy and
+ Resonance Energy
+ relative stability.
+ Reactivity of 14.10 Compare the reactivity of benzene with
+ Benzene alkanes and alkenes.
+ 14.11 Define addition reactions of benzene and
+ methylbenzene.
+ 14.12 Describe the mechanism of electrophilic
+ Chemical Reactions substitution in Benzene.
+ of Benzenes 14.13 Discuss chemistry of benzene and
+ methylbenzene by nitration, sulphonation,
+ halogenation, Friedal Craft’s Alkylation
+ and acylation.
+ 14.14 Apply the knowledge of positions of
+ Effect of
+ substituents in the electrophilic
+ Substituents
+ substitution of benzene.
+ IUPAC System of 14.15 Use the IUPAC naming System of
+ Alkynes Alkynes.
+ Preparation of 14.16 Describe the preparation of Alkynes using
+ Alkynes elimination reactions.
+ Acidity of Alkynes 14.17 Describe the acidity of alkynes
+ 14.18 Discuss chemistry of alkynes by
+ Reactions of
+ hydrogenation, hydro halogenation and
+ Alkynes
+ hydration.
+ Substitution vs 14.19 Describe and differentiate between
+ Addition substitution and Addition reactions.
+ Nomenclature 15.1 Name Alkyl Halides using IUPAC system.
+ Structure and
+ 15.2 Discuss the structure and reactivity of RX.
+ Reactivity
+15. ALKYL HALIDES Substitution vs 15.3 Describe the mechanism and types of
+ Elimination nucleophilic substitution reactions.
+ 15.4 Describe the mechanism and types of
+ elimination reactions.
+ 11
+ 16.1 Explain nomenclature and structure of
+ Nomenclature, Alcohols.
+ structure and 16.2 Explain the reactivity of Alcohols.
+ reactivity of Alcohol 16.3 Describe the chemistry of alcohols by
+ preparation of ethers and esters.
+ 16.4 Explain the nomenclature, structure and
+16. ALCOHOLS AND PHENOLS
+ Nomenclature, reactivity of Alcohol
+ structure and 16.5 Discuss the reactivity of phenol and their
+ reactivity of Phenols chemistry by electrophilic aromatic
+ substitution.
+ Alcohols and 16.6 Differentiate between an alcohol and
+ Phenols phenol.
+ Nomenclature and
+ structure of 17.1 Explain nomenclature and structure of
+ Aldehydes and Aldehydes and Ketones.
+ Ketones
+ 17.2 Discuss the preparation of aldehydes and
+ Preparation
+ ketones.
+ Reactivity of
+ 17.3 Describe Reactivity of Aldehydes and
+ Aldehydes and
+17. ALDEHYDES AND KETONES Ketones and their comparison.
+ Ketones
+ 17.4 Describe Acid and Base catalyzed
+ Nucleophilic addition reactions of
+ Reaction of aldehydes and ketones.
+ Aldehydes and 17.5 Discuss the chemistry of Aldehydes and
+ Ketones Ketones by their reduction to alcohols
+ 17.6 Describe oxidation reactions of aldehydes
+ and ketones.
+ Nomenclature,
+ Structure and 18.1 Describe nomenclature, Structure and
+ Preparation of Preparation of Carboxylic Acid.
+ Carboxylic Acid
+ Chemical
+ 18.2 Discuss reactivity of carboxylic acid.
+18. CARBOXYLIC ACIDS Reactions/Reactivity
+ 18.3 Describe the Chemistry of carboxylic acid
+ by conversion to carboxylic acid
+ Conversion of
+ derivative: acyl halides, an acid hydrides,
+ Carboxylic Acid
+ esters and reaction involving into
+ conversion of these.
+ Classification of 19.1 Explain the basis of classification and
+19. MACRO MOLECULES
+ Proteins structure function relationship of proteins.
+ 19.2 Describe the role of various proteins in
+ Importance of
+ maintaining body functions and their
+ Proteins
+ Nutritional importance.
+ 12
+ Enzymes as 19.3 Describe the role of enzymes as
+ Biocatalyst Biocatalyst.
+ 20.1 Know about types and application of
+ Adhesive
+ Adhesive.
+20. INDUSTRIAL CHEMISTRY Dyes 20.2 Know about types of dies and their uses.
+ 20.3 Know about condensation and addition
+ Polymers
+ polymers and their sub-types.
+ 13
+ 3. PHYSICS
+ Units Topics/subtopics Learning Outcomes
+ Addition of Vectors
+ 1.1 Determine the sum of vectors using perpendicular
+ (Rectangular
+ Components
+1. VECTORS AND Components)
+ EQUILIBRIUM Product of Vectors
+ 1.2 Describe Scalar Product of two vectors in term of
+ (Scalar Product)
+ angle between them
+ Product of Vectors
+ 1.3 Describe Vector product of two vectors in terms of
+ (Vector Product)
+ angle between them.
+ Displacement 2.1. Describe displacement.
+ Velocity 2.2. Describe average velocity of objects.
+ Displacement-time
+ 2.3. Interpret displacement-time graph of objects moving
+ Graph along the same straight line.
+ Acceleration 2.4. Describe acceleration
+ Uniform and variable
+ 2.5. Distinguish between uniform and variable
+ acceleration acceleration.
+ 2.6. Explain that projectile motion is two-dimensional
+ Projectile motion
+ motion in a vertical plane.
+ 2.7. Communicate the ideas of a projectile in the absence
+ Ideal Projectile
+ of air resistance.
+ 2.8. Explain Horizontal component (VH) of velocity is
+ constant.
+ Projectile motion 2.9. Acceleration is in the vertical direction and is the
+ (Velocity) same as that of a vertically free- falling object.
+ 2.10. Differentiate between the characteristics of
+2. FORCE AND MOTION horizontal motion and vertical motion
+ 2.11. Evaluate, using equations of uniformly accelerated
+ motion for a given initial velocity of frictionless
+ projectile, the following issues:
+ a. How much higher does it go?
+ Projectile motion:
+ b. How far would it go along the level land?
+ Maximum Height
+ c. Where would it be after a given time?
+ Range
+ d. How long will it remain in air?
+ Time of flight
+ e. Determine the parameters for a projectile launched
+ Maximum angle
+ from ground height
+ f. Launch angle that results in the maximum range
+ g. Relation between the launch angles that result in the
+ same range.
+ Newton’s Laws of 2.12. Apply Newton’s laws to explain the motion of
+ motion objects in a variety of context.
+ Newton’s Second Law 2.13. Describe the Newton’s second law of motion as
+ and Linear momentum rate of change of momentum.
+ 14
+ 3. PHYSICS
+ Newton’s third law of 2.14. Correlate Newton’s third law of motion and
+ motion conservation of momentum.
+ 2.15. Solve different problems of elastic and inelastic
+ Collision collisions between two bodies in one dimension by using
+ law of conservation of momentum.
+ Momentum and 2.16. Describe that momentum is conservational
+ Explosive forces situations.
+ Perfectly elastic 2.17. Identify that for a perfectly elastic collision, the
+ collision in one relative speed of approach is equal to the relative speed
+ dimension of separation.
+ 3.1. Describe the concept of work in terms of the
+ Work product of force F and displacement d in the direction of
+ force
+ Energy 3.2. Describe energy
+ Kinetic Energy 3.3. Explain kinetic energy
+ 3.4. Explain the difference between potential energy and
+ Potential energy
+ gravitational potential energy.
+ 3.5. Describe that the gravitational potential energy is
+3- WORK AND ENERGY Absolute potential measured from a reference level and can be positive or
+ energy negative, to denote the orientation from the reference
+ levels.
+ 3.6. Express power as scalar product of force and
+ Power
+ velocity.
+ Work energy theorem 3.7. Explain that work done against friction is dissipated
+ in resistive medium as heat in the environment.
+ Implications of energy
+ 3.8. State the implications of energy losses in practical
+ losses in practical
+ devices
+ devices and Efficiency
+ 4.1. Define angular displacement, express angular
+ displacement in radians.
+ Angular displacement
+ 4.2. Define revolution, degree and radian
+4- ROTATIONAL AND Angular Velocity 4.3. Describe the term angular velocity
+CIRCULAR MOTION 4.4. Find out the relationship between the following:
+ Relation between a. Relation between linear and angular variables
+ angular and linear b. Relation between linear and angular displacements
+ quantities c. Relation between linear and angular velocities
+ d. Relation between linear and angular accelerations
+ Terminal Velocity 5.1. Describe the terminal velocity of an object.
+5. FLUID DYNAMICS
+ Fluid Drag 5.2. Define and explain the term fluid drag.
+ 15
+ 3. PHYSICS
+ 5.3. Define the terms: Steady (Streamline or laminar)
+ flow, Incompressible flow and non-viscous flow as
+ applied to the motion of an ideal fluid.
+ 5.4. Explain that at the sufficiently high velocity, the
+ Fluid Flow flow of viscous fluid undergoes a transition from
+ laminar to turbulence conditions.
+ 5.5. Describe that majority of practical examples of fluid
+ flow and resistance to motion in fluid involve turbulent
+ rather than laminar conditions
+ 5.6. Describe equation of continuity Av= constant for
+ the flow of an ideal and incompressible fluid and solve
+ Equation of Continuity problems using it.
+ 5.7. Identify that the equation of continuity is the form
+ of principle of conservation of mass.
+ 5.8. Interpret and apply Bernoulli’s effect in Blood
+ physics.
+ 5.9. Derive Bernoulli’s equation for the case of
+ Bernoulli’s Equation
+ horizontal tube of flow
+ 5.10. Describe the pressure difference can arise from
+ different rates of flow of fluid (Bernoulli’s effect).
+ 6.1. Describe the meaning of wave motion as illustrated
+ Motion of wave
+ by vibrations in ropes and springs.
+ 6.2. Demonstrate that mechanical waves require a
+ Progressive waves medium for their propagation while electromagnetic
+ waves do not.
+ 6.3. Define and apply the following terms to the wave
+ model; medium, displacement, amplitude, period,
+ Characteristics of wave
+ compression, rarefaction, crest, trough, wavelength,
+ velocity.
+ Wave Speed 6.4. Solve problems using the equation: 𝑣 = 𝑓𝜆.
+ 6.5. Describe that energy is transferred due to a
+6- WAVES Progressive waves
+ progressive wave.
+ Classification of
+ 6.6. Compare transverse and longitudinal waves.
+ progressive waves
+ Speed of sound 6.7. Explain that speed of sound depends on the
+ Newton’s Formula for properties of medium in which it propagates and
+ speed of sound in air describe Newton’s formula of speed of waves.
+ 6.8. Describe the Laplace correction in Newton’s
+ Laplace’s Correction
+ formula for speed of sound in air.
+ Effect of various factors 6.9. Identify the factors on which speed of sound in air
+ on speed of sound depends.
+ 6.10. Describe the principle of super position of two
+ Superposition of waves
+ waves from coherent sources.
+ 16
+ 3. PHYSICS
+ Interference of sound 6.11. Describe the phenomenon of interference of sound
+ waves waves.
+ 6.12. Explain the formation of stationary waves using
+ graphical method
+ Stationary waves
+ 6.13. Define the terms, node and antinodes.
+ Stationary waves in a
+ 6.14. Describe modes of vibration of strings.
+ stretched string
+ 6.15. Describe formation of stationary waves in
+ Organ pipes
+ vibrating air columns.
+ Superposition of waves 6.16. Explain the principle of Superposition
+ Simple Harmonic
+ Motion, Terminologies 6.17. Explain Simple Harmonic Motion (S.H.M) and
+ of SHM, Circular explain the characteristics of S.H.M. (Chapter:
+ motion and SHM, Oscillation)
+ Energy
+ Circular Motion and 6.18 Describe that when an object moves in a circle, the
+ SHM (Acceleration and motion of its projection on the diameter of a circle is
+ Velocity of Projection) SHM.
+ 7.1. Describe that thermal energies transferred from a
+ Thermal equilibrium,
+ region of higher temperature to a region of lower
+ Heat
+ temperature.
+ Molar specific heat of 7.2. Differentiate between specific heat and molar
+ gas specific heat.
+ 7.3. Calculate work done by a thermodynamic system
+ Work
+ during a volume change.
+ 7.4. Describe the first law of thermodynamics expressed
+ in terms of the change in internal energy, the heating of
+7- THERMODYNAMI CS First law of
+ the system and work done on the system.
+ thermodynamics
+ 7.5. Explain that first law of thermodynamics expresses
+ the conservation of energy.
+ Molar specific heat of 7.6. Define the terms, specific heat and molar specific
+ gas heats of a gas.
+ Relation between molar
+ 7.7. Apply the first law of thermodynamics to derive the
+ specific heat at constant
+ relation Cp−Cv=RC for an ideal gas
+ volume and constant
+ pressure
+ 8.1. State Coulomb’s law and explain that force between
+ Columb’s Law two-point charges is reduced in a medium other than free
+8- ELECTROSTATICS space using Coulomb’s law
+ 8.2. Describe the concept of an electric field as an
+ Electric Field
+ example of a field of force
+ 17
+ 3. PHYSICS
+ 8.3. Calculate the magnitude and direction of the electric
+ Electric field intensity
+ field at a point due to two charges with the same or
+ due to a point charge
+ opposite signs
+ Representation of
+ 8.4. Sketch the electric field lines for two-point charges
+ electric field by lines
+ of equal magnitude with same or opposite signs
+ Electric field intensity 8.5. Describe and draw the electric field due to an
+ due to an infinite sheet infinite size conducting plate of positive or negative
+ of charges charge
+ Electric potential 8.6 Define electric potential at a point in terms of the
+ energy and potential work done in bringing unit positive charge from infinity
+ due to a point charge to that point
+ Electric potential 8.7. Define the unit of potential
+ Electric potential
+ 8.8. Derive an expression for electric potential at a point
+ energy and potential
+ due to a point charge
+ due to a point charge
+ Charging and
+ discharging of a 8.9. Demonstrate charging and discharging of a
+ capacitor through a capacitor through a resistance
+ resistance
+ Steady current 9.1. Describe the concept of steady current.
+ Ohm’s Law 9.2. State Ohm’s law.
+ Factors on which
+ resistance depends 9.3. Define resistivity and explain its dependence upon
+9- CURRENT ELECTRICITY Temperature coefficient temperature.
+ of resistivity
+ Internal resistance of 9.4. Explain the internal resistance of sources and its
+ sources consequences for external circuits.
+ Maximum power 9.5. Describe the conditions for maximum power
+ Output transfer.
+ Magnetic flux
+ 10.1. Define magnetic flux density and its units.
+ density/Magnetic field
+ 10.2. Describe the concept of magnetic flux Φ (Phi) as
+ Magnetic flux scalar product of magnetic field(B) and area(A)using the
+ relation ØB=B┴A=B.A.
+10- ELECTROMAGNETISM
+ 10.3. Describe quantitatively the path followed by a
+ Motion of charged charged particle hot into a magnetic field in a direction
+ particle in magnetic perpendicular to the field.
+ field 10.4. Explain that a force may act on a charged particle
+ in a uniform magnetic field.
+11- ELECTROMAGNETIC Faraday’s Law of
+ 11.1. State Faraday’s law of electromagnetic induction.
+INDUCTION electromagnetic
+ 18
+ 3. PHYSICS
+ induction
+ 11.2. Account for Lenz’s law to predict the direction of
+ Lenz’s Law an induced current and relate to the principle of
+ conservation of energy.
+ 11.3. Describe the construction of a transformer and
+ explain how it works.
+ Transformer 11.4. Describe how set-up and step-down transformers
+ can be used to ensure efficient transfer of electricity
+ along cables.
+ 12.1. Describe the phase of Alternating Current and
+ Phase of Alternating
+ explain how phase lag and phase lead occur in AC
+ Current
+ circuits
+ AC through
+12. ALTERNATING
+ a. Resistor 12.2. Explain the flow of AC through resistors,
+CURRENT
+ b. Capacitor. Capacitors and Inductor
+ c. Inductor
+ 12.3 Become familiar with EM spectrum (ranging from
+ Electromagnetic waves
+ radio waves to Gamma rays)
+ 13.1. Define rectification and describe the use of diodes
+ Rectification
+ for half and full wave rectifications.
+13- ELECTRONICS
+ 13.2 Describe the PN Junction and discuss its forward
+ PN Junction
+ and reverse biasing
+14- DAWN OF MODERN Quantum Theory and 14.1. Explain the particle model of light in terms of
+PHYSICS Radiation photons with energy
+15- ATOMIC SPECTRA Atomic Spectra 15.1. Describe and explain atomic spectra/ line spectrum
+ Composition of atomic 16.1. Describe a simple model for the atom to include
+ nuclei protons, neutrons and electrons
+ Spontaneous and 16.2. Identify the spontaneous and random nature of
+ random nuclear decay nuclear decay.
+16- NUCLEAR PHYSICS 16.3. Describe the term half-life and solve problems
+ Half-life and rate of 0.693
+ decay using the equation𝜆 = 𝑇 .
+ 1
+ 2
+ Biological and Medical 16.4. Describe biological effects of radiation state and
+ uses of radiation explain the different medical uses of radiation.
+ 19
+ 4. ENGLISH
+ Competencies-Themes Learning outcomes
+ 1.1 Scan to answer short Questions
+1. READING AND
+ 1.2 Deduce the meanings of the context
+THINKING SKILLS
+ 1.3 Analyze how a writer/poet uses language to apprehend to the senses for figurative
+ language
+ 2.1 deduce the meaning of difficult words from the context using contextual clues.
+ 2.2 Explore the use of Synonyms with varying shades of meaning used for irony,
+ parody and satire.
+ 2.3 Illustrate use of pronoun-antecedent agreement.
+ 2.4 Illustrate use of tenses.
+ 2.5 Illustrate use of infinitives and infinitives phrases.
+ 2.6 Illustrate the use of gerund and gerund phrases.
+ 2.7 Recognize varying position of adverbs in sentences according to their kinds and
+2. FORMAL AND
+ importance.
+LEXICAL ASPECT OF
+LANGUAGE 2.8 Illustrate use of prepositions of position, time, movements and directions.
+ 2.9 Use in speech and writing, all the appropriate transitional devices.
+ 2.10 Illustrate use of all punctuation marks wherever applicable
+ 2.11 Analyze sentences for different classes and phrases, evaluate how their position in
+ sentences when change meaning and different communication function.
+ 2.12 Recognize and use sentence in version for various purposes.
+ 2.13 Use active and passive voice appropriately in speech and writing according to the
+ required communicative function
+ 2.14 Use direct and indirect speech appropriately in speech and writing according to the
+ e required communicative function.
+ 3.1 Proof read and edit their own peers and given text for the error of usage and style.
+ 3.2 Faulty sentence structure
+3. WRITING SKILLS
+ 3.3 Subject verb agreement
+ 3.4 Errors of functions and spellings
+ 20
+ 5. LOGICAL REASONING
+ Themes Statements Learning Outcomes
+5.1 CRITICAL It is the process of evaluation which uses logic to 5.1.1 Develop logical arguments for
+THINKING separate truth from Falsehood, reasonable from the statements to be true or false.
+ unreasonable beliefs. 5.1.2 Give reasons for the right
+ beliefs.
+ 5.1.3 Identify and critically evaluate
+ false beliefs using logical reasoning.
+5.2 LETTER AND These are sequential order of letters, number or 5.2.1 Develop arithmetical operations
+SYMBOLS both arranged such a way that each term in the as per numbers.
+SERIES series is obtained according to some specific 5.2.2 Develop geometrical progression
+ rules. These rules can be based on the as per numbers
+ mathematical operations, c of letter in an 5.2.3 Develop series/sequential orders
+ alphabetical order. as per letter and symbols (according
+ to specific rules).
+5.3 LOGICAL Logical reasoning is the type of thinking in 5.3.1 Predict new relations on the
+DEDUCTIONS which statements and relation between basis of given relations.
+ statements are used in a precise manner to make 5.3.2 Develop new structure on the
+ conclusions that are meant (or implied) by the basis of information in already drawn
+ statements and the relations. Logical deduction is structures.
+ a type of reasoning; It assesses a candidate’s
+ ability to use structured thinking to deduce from
+ a short passage which of a number of statements
+ is the most accurate response to a posed question.
+5.4 LOGICAL These are the puzzles which require people to 5.4.1 Infer result of one problem to
+PROBLEMS use deductive reasoning skills, meaning they resolve another problem.
+ need to look at different pieces of information in 5.4.2 Develop skills to solve puzzles.
+ order to arrive at an answer
+5.5 COURSE OF A course of action is the step or administrative 5.5.1 Develop skills to gather different
+ACTION decision to be taken for improvement, follow-up parts of information.
+ or further action to the problem, policy etc. based 5.5.2 Use information for making
+ on the information given in the statement to be decisions.
+ true and test-takers should determine which of 5.5.3 Judge different courses by using
+ the suggested courses of action logically arguments
+ follow(s) for the pursuing.
+5.6 CAUSE AND It is the relationship between two things when
+ 5.6.1 Give reasons for
+EFFECT one thing makes something else happen. When
+ incidents/events and accidents.
+ examining even, people naturally seek to explain
+ why things happened. This search often results in 5.6.2 Reject false beliefs through
+ cause-and- effect reasoning, which assert or valid arguments.
+ denies that one thing causes another, or that one 5.6.3 Build positive thinking in the
+ thing is cause by another. society through strong arguments.
+ 21
+ Copyright © June 2025
+Pakistan Medical & Dental
+ Council
+ Mauve Area, G-10/4,
+ Islamabad Pakistan
+ examination@pmdc.pk

@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f5e6b">
+<title>MDCAT Prep</title>
+<style>
+:root{
+  --bg:#f4f7f8; --card:#ffffff; --ink:#14232a; --muted:#5d6f77; --line:#dde5e8;
+  --brand:#0f5e6b; --brand-2:#167a8a; --brand-soft:#e3f1f3;
+  --ok:#1f8a4c; --ok-soft:#e3f5ea; --bad:#c0392b; --bad-soft:#fbe9e7; --warn:#b7791f;
+  --bio:#2e8b57; --chem:#7b4fb3; --phy:#2c6fbf; --eng:#c2571a; --lr:#a0367a;
+  --radius:14px; --shadow:0 1px 2px rgba(20,35,42,.06),0 4px 14px rgba(20,35,42,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0f1719; --card:#172226; --ink:#e7eef0; --muted:#9db0b6; --line:#27363b;
+    --brand:#4fb3c2; --brand-2:#6cc5d2; --brand-soft:#173338;
+    --ok:#4cc27c; --ok-soft:#173a26; --bad:#ef6b5e; --bad-soft:#3d1d1a; --warn:#e2a64b;
+    --shadow:none;
+  }
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--ink);
+  font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;
+  -webkit-tap-highlight-color:transparent;
+}
+#app{max-width:620px;margin:0 auto;min-height:100vh;padding:0 16px 40px}
+button{font:inherit;color:inherit}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:8px;
+  margin:0 -16px;padding:calc(10px + env(safe-area-inset-top)) 16px 10px;background:var(--bg);
+  border-bottom:1px solid var(--line)}
+.bar h1{font-size:17px;margin:0;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.iconbtn{border:0;background:transparent;width:40px;height:40px;border-radius:10px;font-size:20px;cursor:pointer;flex:none}
+.iconbtn:active{background:var(--line)}
+
+/* hero */
+.hero{margin:16px 0;padding:20px;border-radius:var(--radius);color:#fff;
+  background:linear-gradient(135deg,#0f5e6b,#1b8496)}
+.hero h2{margin:0 0 4px;font-size:22px}
+.hero p{margin:0;opacity:.9;font-size:14px}
+.hero .stats{display:flex;gap:18px;margin-top:14px}
+.hero .stats b{display:block;font-size:20px}
+.hero .stats span{font-size:12px;opacity:.85}
+
+h3.section{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:22px 0 8px}
+
+/* cards & lists */
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line)}
+.list{display:flex;flex-direction:column;gap:10px}
+.row{display:flex;align-items:center;gap:12px;padding:14px;cursor:pointer;text-align:left;width:100%;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.row:active{transform:scale(.99)}
+.row.disabled{opacity:.55;cursor:default}
+.row .main{flex:1;min-width:0}
+.row .title{font-weight:600}
+.row .sub{font-size:13px;color:var(--muted)}
+.badge{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+  color:#fff;font-weight:700;font-size:13px;letter-spacing:-.02em}
+.chev{color:var(--muted);flex:none}
+.pbar{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-top:6px}
+.pbar i{display:block;height:100%;background:var(--brand-2);border-radius:6px}
+.tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:20px;background:var(--brand-soft);color:var(--brand);font-weight:600}
+.tag.soon{background:var(--line);color:var(--muted)}
+
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{padding:14px;text-align:left;cursor:pointer;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);box-shadow:var(--shadow)}
+.tile .ic{font-size:22px}
+.tile .title{font-weight:600;margin-top:6px}
+.tile .sub{font-size:12px;color:var(--muted)}
+
+/* buttons */
+.btn{display:block;width:100%;padding:14px;border-radius:12px;border:0;cursor:pointer;
+  background:var(--brand);color:#fff;font-weight:600;font-size:16px;text-align:center}
+.btn.secondary{background:var(--card);color:var(--brand);border:1.5px solid var(--brand)}
+.btn:disabled{opacity:.45;cursor:default}
+.btn+.btn{margin-top:10px}
+.actions{margin-top:18px}
+
+/* unit page */
+.lo{font-size:13px;color:var(--muted);margin:4px 0 0;padding-left:0;list-style:none}
+.lo li{margin:2px 0}
+.lo code{font-size:11px;color:var(--brand);font-weight:700;margin-right:4px}
+
+/* player */
+.qmeta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:14px 0 8px;font-size:13px;color:var(--muted)}
+.qprog{height:4px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:12px}
+.qprog i{display:block;height:100%;background:var(--brand-2)}
+.qtext{font-size:18px;font-weight:500;margin:6px 0 16px}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;padding:13px 14px;border-radius:12px;cursor:pointer;
+  background:var(--card);border:1.5px solid var(--line);font-size:16px}
+.opt .k{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;
+  background:var(--line);color:var(--muted)}
+.opt.correct{border-color:var(--ok);background:var(--ok-soft)}
+.opt.correct .k{background:var(--ok);color:#fff}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.wrong .k{background:var(--bad);color:#fff}
+.opt.locked{cursor:default}
+.explain{margin-top:16px;padding:14px;border-radius:12px;background:var(--brand-soft);font-size:15px}
+.explain b{display:block;margin-bottom:4px}
+.verdict-ok{color:var(--ok)} .verdict-bad{color:var(--bad)}
+
+/* results */
+.score{text-align:center;padding:24px 16px;margin-top:16px}
+.score .big{font-size:44px;font-weight:800;color:var(--brand)}
+.score .of{color:var(--muted)}
+.review{padding:14px;margin-top:10px}
+.review .q{font-weight:600;margin-bottom:6px}
+.review .ans{font-size:14px}
+.review .x{font-size:14px;color:var(--muted);margin-top:6px}
+
+.empty{text-align:center;color:var(--muted);padding:40px 10px}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+(function(){
+"use strict";
+
+/* ======================================================================
+   CONTENT — injected by build/build.js from content/syllabus.json and
+   content/questions/<subject>/<unit>.json. Edit the content files, never
+   this block.
+   ====================================================================== */
+const SYLLABUS = {"source":"PM&DC Uniform Curriculum MDCAT-2025 (Final, 26-05-2025); applies to MDCAT-2026 (PM&DC notice 19 May 2026)","subjects":[{"id":"bio","name":"Biology","mcqsInPaper":81,"bankTarget":2250,"units":[{"id":"bio-01","n":1,"name":"Acellular Life","topics":[{"id":"bio-01-viruses","name":"Viruses","los":[{"code":"BIO-1.1","text":"Classify viruses on basis of their structure / number of strands / diseases / hosts."}]},{"id":"bio-01-hiv","name":"AIDS and HIV infection","los":[{"code":"BIO-1.2","text":"Identify symptoms, mode of transmission and cause of viral disease (AIDS)."}]}]},{"id":"bio-02","n":2,"name":"Bioenergetics","topics":[{"id":"bio-02-respiration","name":"Respiration","los":[{"code":"BIO-2.1","text":"Outline the cellular respiration of proteins and fats and correlate these with that of glucose."}]}]},{"id":"bio-03","n":3,"name":"Biological Molecules","topics":[{"id":"bio-03-intro","name":"Biological molecules","los":[{"code":"BIO-3.1","text":"Define and classify biological molecules."},{"code":"BIO-3.2","text":"Discuss the importance of biological molecules."}]},{"id":"bio-03-water","name":"Biological importance of water","los":[{"code":"BIO-3.3","text":"Describe biologically important properties of water (polarity, hydrolysis, specific heat, solvent and reagent, density, cohesion, ionization)."}]},{"id":"bio-03-carbs","name":"Carbohydrates","los":[{"code":"BIO-3.4","text":"Discuss monosaccharides, oligosaccharides and polysaccharides."}]},{"id":"bio-03-proteins","name":"Proteins","los":[{"code":"BIO-3.5","text":"Describe amino acids and the structure of proteins."}]},{"id":"bio-03-lipids","name":"Lipids","los":[{"code":"BIO-3.6","text":"Describe phospholipids, triglycerides, alcohols and esters (acylglycerols)."}]},{"id":"bio-03-rna","name":"RNA","los":[{"code":"BIO-3.7","text":"Give an account of structure and function of RNA."}]},{"id":"bio-03-conjugated","name":"Conjugated molecules","los":[{"code":"BIO-3.8","text":"Discuss conjugated molecules (glycolipids, glycoproteins)."}]},{"id":"bio-03-dna","name":"Structure of DNA","los":[{"code":"BIO-3.9","text":"Explain the double helical structure of DNA (Watson and Crick)."},{"code":"BIO-3.10","text":"Define a gene as a sequence of nucleotides coding for a polypeptide."}]}]},{"id":"bio-04","n":4,"name":"Cell Structure & Function","topics":[{"id":"bio-04-cell","name":"Cell structure","los":[{"code":"BIO-4.1","text":"Compare the structure of typical animal and plant cells."}]},{"id":"bio-04-prokeuk","name":"Prokaryotic and eukaryotic cells","los":[{"code":"BIO-4.2","text":"Compare and contrast prokaryotic and eukaryotic cells."}]},{"id":"bio-04-organelles","name":"Cytoplasmic organelles","los":[{"code":"BIO-4.3","text":"Outline structure and function of nucleus, ER, Golgi apparatus and mitochondria."}]},{"id":"bio-04-chromosomes","name":"Chromosomes","los":[{"code":"BIO-4.4","text":"Describe the structure, chemical composition and function of chromosomes."}]}]},{"id":"bio-05","n":5,"name":"Coordination & Control","topics":[{"id":"bio-05-receptors","name":"Receptors","los":[{"code":"BIO-5.1","text":"Recognize receptors as transducers sensitive to various stimuli."}]},{"id":"bio-05-neurons","name":"Neurons and reflexes","los":[{"code":"BIO-5.2","text":"Explain the structure of a typical neuron."},{"code":"BIO-5.3","text":"Define nerve impulse."},{"code":"BIO-5.4","text":"Classify reflexes."},{"code":"BIO-5.5","text":"Explain the functions of the components of a reflex arc."}]},{"id":"bio-05-brain","name":"Brain","los":[{"code":"BIO-5.6","text":"Discuss the main parts of the brain."},{"code":"BIO-5.7","text":"Describe the functions of each part."}]}]},{"id":"bio-06","n":6,"name":"Enzymes","topics":[{"id":"bio-06-enzymes","name":"Enzymes and their action","los":[{"code":"BIO-6.1","text":"Describe the distinguishing characteristics of enzymes."},{"code":"BIO-6.2","text":"Explain the mechanism of action of enzymes."}]},{"id":"bio-06-factors","name":"Factors and inhibitors","los":[{"code":"BIO-6.3","text":"Describe effects of temperature, pH and concentration on enzyme action."},{"code":"BIO-6.4","text":"Describe enzyme inhibitors."}]}]},{"id":"bio-07","n":7,"name":"Evolution","topics":[{"id":"bio-07-evolution","name":"Origin of life, Lamarckism, Darwinism","los":[{"code":"BIO-7.1","text":"Explain origin of life according to the concept of evolution."},{"code":"BIO-7.2","text":"Describe Lamarck's inheritance of acquired characters."},{"code":"BIO-7.3","text":"Explain Darwin's theory of natural selection."}]}]},{"id":"bio-08","n":8,"name":"Reproduction","topics":[{"id":"bio-08-system","name":"Human reproductive system","los":[{"code":"BIO-8.1","text":"Describe the male and female reproductive systems and their regulating hormones."}]},{"id":"bio-08-cycle","name":"Menstrual cycle","los":[{"code":"BIO-8.2","text":"Describe the menstrual cycle emphasizing the role of hormones."}]},{"id":"bio-08-std","name":"Sexually transmitted diseases","los":[{"code":"BIO-8.3","text":"List common STDs with causative agents and main symptoms."}]}]},{"id":"bio-09","n":9,"name":"Support & Movement","topics":[{"id":"bio-09-skeleton","name":"Human skeleton","los":[{"code":"BIO-9.1","text":"Describe cartilage, muscle and bone."},{"code":"BIO-9.2","text":"Explain the main characteristics and functions of cartilage and bone."}]},{"id":"bio-09-muscles","name":"Muscles and contraction","los":[{"code":"BIO-9.3","text":"Compare smooth, cardiac and skeletal muscle."},{"code":"BIO-9.4","text":"Explain the ultrastructure of skeletal muscle."},{"code":"BIO-9.5","text":"Describe the process of skeletal muscle contraction."}]},{"id":"bio-09-joints","name":"Joints and arthritis","los":[{"code":"BIO-9.6","text":"Classify joints."},{"code":"BIO-9.7","text":"Define arthritis."}]}]},{"id":"bio-10","n":10,"name":"Inheritance","topics":[{"id":"bio-10-mendel","name":"Mendel's laws","los":[{"code":"BIO-10.1","text":"Associate inheritance with the laws of Mendel."},{"code":"BIO-10.2","text":"Explain the law of independent assortment with an example."}]},{"id":"bio-10-linkage","name":"Gene linkage and crossing over","los":[{"code":"BIO-10.3","text":"Describe gene linkage and crossing over."},{"code":"BIO-10.4","text":"Explain how linkage counters independent assortment and crossing over modifies progeny."}]},{"id":"bio-10-sexlinked","name":"Sex-linked inheritance","los":[{"code":"BIO-10.5","text":"Describe the concept of sex-linkage."},{"code":"BIO-10.6","text":"Describe inheritance of sex-linked traits."},{"code":"BIO-10.7","text":"Analyze the inheritance of hemophilia."}]}]},{"id":"bio-11","n":11,"name":"Circulation","topics":[{"id":"bio-11-heart","name":"Heart and cardiac cycle","los":[{"code":"BIO-11.1","text":"Discuss the general structure of the human heart."},{"code":"BIO-11.2","text":"Describe the phases of heartbeat."}]},{"id":"bio-11-vessels","name":"Blood vessels","los":[{"code":"BIO-11.3","text":"List differences and functions of arteries, veins and capillaries."}]},{"id":"bio-11-lymph","name":"Lymphatic system","los":[{"code":"BIO-11.4","text":"Describe the lymphatic system (nodes, vessels, organs)."}]}]},{"id":"bio-12","n":12,"name":"Immunity","topics":[{"id":"bio-12-specific","name":"Specific defence mechanism","los":[{"code":"BIO-12.1","text":"Define and discuss the functions and importance of specific defence mechanisms."}]}]},{"id":"bio-13","n":13,"name":"Respiration","topics":[{"id":"bio-13-system","name":"Human respiratory system","los":[{"code":"BIO-13.1","text":"Discuss the functions of the main parts of the respiratory system."},{"code":"BIO-13.2","text":"Discuss gas exchange in human lungs."},{"code":"BIO-13.3","text":"Discuss the effect of smoking on the respiratory system."}]}]},{"id":"bio-14","n":14,"name":"Digestion","topics":[{"id":"bio-14-system","name":"Human digestive system","los":[{"code":"BIO-14.1","text":"Describe the parts of the human digestive system."},{"code":"BIO-14.2","text":"Explain functions of the main parts including associated structures and glands."}]}]},{"id":"bio-15","n":15,"name":"Homeostasis","topics":[{"id":"bio-15-kidney","name":"Kidney","los":[{"code":"BIO-15.1","text":"Explain organs of the urinary system; relate kidney structure to function."},{"code":"BIO-15.2","text":"Explain glomerular filtration, selective reabsorption and tubular secretion."},{"code":"BIO-15.3","text":"Justify kidneys as organs of both excretion and osmoregulation."},{"code":"BIO-15.4","text":"Compare glomerular and peritubular capillaries."},{"code":"BIO-15.5","text":"Explain causes and treatments of kidney stones."},{"code":"BIO-15.6","text":"Outline the causes of kidney failure."}]},{"id":"bio-15-thermo","name":"Thermoregulation","los":[{"code":"BIO-15.7","text":"Describe thermoregulation and explain its need."}]},{"id":"bio-15-excretion","name":"Excretion","los":[{"code":"BIO-15.8","text":"List nitrogenous compounds excreted."}]}]},{"id":"bio-16","n":16,"name":"Biotechnology","topics":[{"id":"bio-16-health","name":"Biotechnology and health care","los":[{"code":"BIO-16.1","text":"Describe how biotechnologists produce vaccines."},{"code":"BIO-16.2","text":"State the role of biotechnology in diagnosis (DNA/RNA probes, monoclonal antibodies)."},{"code":"BIO-16.3","text":"Describe products obtained for disease treatment."}]}]}]},{"id":"chem","name":"Chemistry","mcqsInPaper":45,"bankTarget":1250,"units":[{"id":"chem-01","n":1,"name":"Fundamental Concepts","topics":[]},{"id":"chem-02","n":2,"name":"Atomic Structure","topics":[]},{"id":"chem-03","n":3,"name":"Gases","topics":[]},{"id":"chem-04","n":4,"name":"Liquids","topics":[]},{"id":"chem-05","n":5,"name":"Solids","topics":[]},{"id":"chem-06","n":6,"name":"Chemical Equilibrium","topics":[]},{"id":"chem-07","n":7,"name":"Reaction Kinetics","topics":[]},{"id":"chem-08","n":8,"name":"Thermochemistry & Energetics","topics":[]},{"id":"chem-09","n":9,"name":"Electrochemistry","topics":[]},{"id":"chem-10","n":10,"name":"Chemical Bonding","topics":[]},{"id":"chem-11","n":11,"name":"s- and p-Block Elements","topics":[]},{"id":"chem-12","n":12,"name":"Transition Elements","topics":[]},{"id":"chem-13","n":13,"name":"Fundamental Principles of Organic Chemistry","topics":[]},{"id":"chem-14","n":14,"name":"Chemistry of Hydrocarbons","topics":[]},{"id":"chem-15","n":15,"name":"Alkyl Halides","topics":[]},{"id":"chem-16","n":16,"name":"Alcohols & Phenols","topics":[]},{"id":"chem-17","n":17,"name":"Aldehydes & Ketones","topics":[]},{"id":"chem-18","n":18,"name":"Carboxylic Acids","topics":[]},{"id":"chem-19","n":19,"name":"Macromolecules","topics":[]},{"id":"chem-20","n":20,"name":"Industrial Chemistry","topics":[]}]},{"id":"phy","name":"Physics","mcqsInPaper":36,"bankTarget":1000,"units":[{"id":"phy-01","n":1,"name":"Vectors & Equilibrium","topics":[]},{"id":"phy-02","n":2,"name":"Force & Motion","topics":[]},{"id":"phy-03","n":3,"name":"Work & Energy","topics":[]},{"id":"phy-04","n":4,"name":"Rotational & Circular Motion","topics":[]},{"id":"phy-05","n":5,"name":"Fluid Dynamics","topics":[]},{"id":"phy-06","n":6,"name":"Waves","topics":[]},{"id":"phy-07","n":7,"name":"Thermodynamics","topics":[]},{"id":"phy-08","n":8,"name":"Electrostatics","topics":[]},{"id":"phy-09","n":9,"name":"Current Electricity","topics":[]},{"id":"phy-10","n":10,"name":"Electromagnetism","topics":[]},{"id":"phy-11","n":11,"name":"Electromagnetic Induction","topics":[]},{"id":"phy-12","n":12,"name":"Alternating Current","topics":[]},{"id":"phy-13","n":13,"name":"Electronics","topics":[]},{"id":"phy-14","n":14,"name":"Dawn of Modern Physics","topics":[]},{"id":"phy-15","n":15,"name":"Atomic Spectra","topics":[]},{"id":"phy-16","n":16,"name":"Nuclear Physics","topics":[]}]},{"id":"eng","name":"English","mcqsInPaper":9,"bankTarget":250,"units":[{"id":"eng-01","n":1,"name":"Reading & Thinking Skills","topics":[]},{"id":"eng-02","n":2,"name":"Formal & Lexical Aspects of Language","topics":[]},{"id":"eng-03","n":3,"name":"Writing Skills","topics":[]}]},{"id":"lr","name":"Logical Reasoning","mcqsInPaper":9,"bankTarget":250,"units":[{"id":"lr-01","n":1,"name":"Critical Thinking","topics":[]},{"id":"lr-02","n":2,"name":"Letter & Symbol Series","topics":[]},{"id":"lr-03","n":3,"name":"Logical Deductions","topics":[]},{"id":"lr-04","n":4,"name":"Logical Problems","topics":[]},{"id":"lr-05","n":5,"name":"Course of Action","topics":[]},{"id":"lr-06","n":6,"name":"Cause & Effect","topics":[]}]}]};
+const QUESTIONS = [{"id":"bio-01-001","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"E","q":"The genetic material of a virus is:","o":["Both DNA and RNA together","Always double-stranded DNA","Always single-stranded RNA","Either DNA or RNA, but never both"],"a":3,"x":"A virus carries only one kind of nucleic acid: DNA or RNA, never both. It may be single- or double-stranded. This is one of the main ways viruses are classified."},{"id":"bio-01-002","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"M","q":"The protein coat (capsid) of a virus is built from repeating subunits called:","o":["Nucleosomes","Ribosomes","Peplomers","Capsomeres"],"a":3,"x":"The capsid is made of many protein subunits called capsomeres. Nucleosomes are DNA–histone units in eukaryotic chromosomes. Peplomers are the glycoprotein spikes on a viral envelope, not the capsid."},{"id":"bio-01-003","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"M","q":"Which virus has a helical (rod-shaped) capsid?","o":["Adenovirus","Poliovirus","Tobacco mosaic virus","Bacteriophage T4"],"a":2,"x":"Tobacco mosaic virus (TMV) is the classic helical virus: its capsomeres wind around the RNA to form a rod. Adenovirus and poliovirus are polyhedral (icosahedral), and T4 is complex."},{"id":"bio-01-004","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"M","q":"On the basis of shape, bacteriophage T4 is classified as a:","o":["Complex virus with a polyhedral head and a helical tail","Purely helical virus","Purely polyhedral virus","Spherical enveloped virus"],"a":0,"x":"T4 combines two symmetries: a polyhedral head holding its DNA and a helical tail with a sheath, base plate and tail fibres. Viruses with such mixed structure are called complex viruses."},{"id":"bio-01-005","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"E","q":"Viruses that infect bacteria are called:","o":["Retroviruses","Prions","Bacteriophages","Mycoplasmas"],"a":2,"x":"Bacteriophages (phages) are viruses whose hosts are bacteria; the name means 'bacteria eaters'. Classifying viruses by host gives plant viruses, animal viruses and bacteriophages."},{"id":"bio-01-006","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"M","q":"The envelope present around some viruses, such as influenza virus and HIV, is derived from:","o":["The membranes of the host cell","The viral capsomeres","The bacterial cell wall","The viral nucleic acid"],"a":0,"x":"Enveloped viruses pick up their outer lipid envelope from host cell membranes as they bud out of the cell. Viral glycoproteins are inserted into this envelope."},{"id":"bio-01-007","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"M","q":"Which of the following is a DNA virus?","o":["Hepatitis B virus","Influenza virus","Poliovirus","Human immunodeficiency virus"],"a":0,"x":"Hepatitis B virus has DNA as its genetic material. Influenza virus, poliovirus and HIV are all RNA viruses."},{"id":"bio-01-008","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"M","q":"Which of the following is an RNA virus?","o":["Measles virus","Herpes simplex virus","Adenovirus","Smallpox virus"],"a":0,"x":"Measles virus contains RNA. Herpes simplex virus, adenovirus and the smallpox (pox) virus are DNA viruses."},{"id":"bio-01-009","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"D","q":"Which virus has double-stranded RNA as its genetic material?","o":["Poliovirus","Rotavirus","Tobacco mosaic virus","Human immunodeficiency virus"],"a":1,"x":"Rotavirus, a common cause of diarrhoea in children, has double-stranded RNA. Poliovirus and TMV have a single strand of RNA, and HIV carries two copies of single-stranded RNA."},{"id":"bio-01-010","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"M","q":"Tobacco mosaic virus was first crystallized in 1935 by:","o":["D. Ivanowsky","Louis Pasteur","Edward Jenner","W. M. Stanley"],"a":3,"x":"W. M. Stanley crystallized TMV in 1935, showing that a virus can behave like a chemical crystal outside a cell. Ivanowsky (1892) had earlier shown that the tobacco mosaic agent passes through bacteria-proof filters."},{"id":"bio-01-011","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"E","q":"Viruses are called obligate intracellular parasites because they:","o":["Can make their own food","Divide by binary fission","Can reproduce only inside a living host cell","Live only in soil and water"],"a":2,"x":"Viruses have no ribosomes or metabolism of their own. They must use a living host cell's machinery to make copies of themselves, so they can reproduce only inside host cells."},{"id":"bio-01-012","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"M","q":"The correct sequence of events in the lytic cycle of a bacteriophage is:","o":["Penetration → attachment → assembly → replication → lysis","Attachment → replication → penetration → lysis → assembly","Attachment → penetration → replication → assembly → lysis","Assembly → attachment → penetration → replication → lysis"],"a":2,"x":"The phage first attaches to the bacterium, then injects its DNA (penetration). The DNA is copied and phage proteins are made (replication), new phages are put together (assembly), and finally the cell bursts to release them (lysis)."},{"id":"bio-01-013","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"M","q":"In the lysogenic cycle, phage DNA that is inserted into the bacterial chromosome is called a:","o":["Virion","Prophage","Capsomere","Plasmid"],"a":1,"x":"In lysogeny the phage DNA joins the host chromosome and is copied along with it at each cell division. This integrated phage DNA is called a prophage."},{"id":"bio-01-014","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"M","q":"A bacteriophage that can enter the lysogenic cycle instead of killing its host straight away is called a:","o":["Virulent phage","Temperate phage","Retrovirus","Satellite virus"],"a":1,"x":"Temperate phages, such as lambda phage, can either kill the cell (lytic cycle) or integrate as a prophage (lysogenic cycle). Virulent phages, like T4, always follow the lytic cycle."},{"id":"bio-01-015","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"M","q":"During penetration, bacteriophage T4:","o":["Enters the bacterium whole by phagocytosis","Injects its DNA into the bacterium and leaves its protein coat outside","Injects its protein coat and leaves its DNA outside","Fuses its lipid envelope with the bacterial cell wall"],"a":1,"x":"T4 contracts its tail sheath and injects only its DNA through the bacterial wall. The empty protein coat stays outside. T4 has no lipid envelope."},{"id":"bio-01-016","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"D","q":"The enzyme in the tail of bacteriophage T4 that digests a hole in the bacterial cell wall is:","o":["Reverse transcriptase","Amylase","Lysozyme","DNA ligase"],"a":2,"x":"The phage tail carries lysozyme, which breaks down part of the bacterial cell wall so the DNA can be injected. Reverse transcriptase belongs to retroviruses such as HIV."},{"id":"bio-01-017","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"M","q":"A complete, infectious virus particle outside a host cell is called a:","o":["Capsomere","Prophage","Virion","Provirus"],"a":2,"x":"A virion is the complete virus particle: nucleic acid inside a capsid, with an envelope in some viruses. A capsomere is one capsid subunit. Prophage and provirus are viral DNA integrated into a host chromosome."},{"id":"bio-01-018","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"E","q":"According to classification by host, tobacco mosaic virus is a:","o":["Plant virus","Bacterial virus","Human virus","Fungal virus"],"a":0,"x":"TMV infects tobacco and related plants, causing mottled (mosaic) leaves. By host, viruses are grouped as plant viruses, animal viruses and bacteriophages."},{"id":"bio-01-019","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"E","q":"Which of the following diseases is caused by a virus?","o":["Tuberculosis","Cholera","Typhoid","Polio"],"a":3,"x":"Polio is caused by poliovirus. Tuberculosis, cholera and typhoid are bacterial diseases."},{"id":"bio-01-020","unit":"bio-01","topic":"bio-01-viruses","lo":"BIO-1.1","d":"D","q":"Antibiotics do not cure viral infections because viruses:","o":["Have capsids made of cellulose","Are larger than bacteria","Contain both DNA and RNA","Lack the cell walls, ribosomes and metabolism that antibiotics act on"],"a":3,"x":"Antibiotics work by attacking bacterial structures and processes, such as the cell wall, ribosomes and enzymes. Viruses have none of these of their own, so antibiotics have nothing to act on. Viral infections need antiviral drugs or vaccines."},{"id":"bio-01-021","unit":"bio-01","topic":"bio-01-hiv","lo":"BIO-1.2","d":"E","q":"AIDS is caused by:","o":["Hepatitis B virus","Human immunodeficiency virus (HIV)","Mycobacterium tuberculosis","Plasmodium"],"a":1,"x":"AIDS (acquired immunodeficiency syndrome) is the late stage of infection with HIV, a retrovirus that destroys the immune system."},{"id":"bio-01-022","unit":"bio-01","topic":"bio-01-hiv","lo":"BIO-1.2","d":"M","q":"HIV mainly infects and destroys:","o":["Red blood cells","Helper T lymphocytes (CD4 cells)","Platelets","Plasma cells only"],"a":1,"x":"HIV binds to the CD4 receptor found on helper T cells and destroys them. Helper T cells coordinate both antibody and cell-mediated immunity, so losing them cripples the whole immune system."},{"id":"bio-01-023","unit":"bio-01","topic":"bio-01-hiv","lo":"BIO-1.2","d":"M","q":"HIV is called a retrovirus because it:","o":["Copies its DNA into RNA","Has no protein coat","Infects only bacteria","Uses reverse transcriptase to make DNA from its RNA"],"a":3,"x":"Retroviruses reverse the usual flow of genetic information. The enzyme reverse transcriptase copies their RNA into DNA, which is then inserted into the host cell's DNA."},{"id":"bio-01-024","unit":"bio-01","topic":"bio-01-hiv","lo":"BIO-1.2","d":"M","q":"HIV is NOT transmitted by:","o":["Unprotected sexual contact","Sharing contaminated needles or syringes","Shaking hands or sharing food utensils","An infected mother to her baby"],"a":2,"x":"HIV spreads through sexual contact, blood (transfusion, shared needles and razors), and from mother to baby during pregnancy, birth or breastfeeding. Casual contact, food, utensils and mosquitoes do not spread it."},{"id":"bio-01-025","unit":"bio-01","topic":"bio-01-hiv","lo":"BIO-1.2","d":"M","q":"The genetic material of HIV consists of:","o":["One double-stranded DNA molecule","Two copies of single-stranded RNA","Single-stranded DNA","Double-stranded RNA"],"a":1,"x":"Each HIV particle carries two identical strands of single-stranded RNA, together with the enzymes reverse transcriptase, integrase and protease."},{"id":"bio-01-026","unit":"bio-01","topic":"bio-01-hiv","lo":"BIO-1.2","d":"M","q":"The HIV envelope glycoprotein that binds to the CD4 receptor of a helper T cell is:","o":["gp41","gp120","p24","Haemagglutinin"],"a":1,"x":"gp120 on the HIV envelope attaches to CD4 on helper T cells. gp41 then helps the viral envelope fuse with the cell membrane. p24 is a capsid protein, and haemagglutinin belongs to influenza virus."},{"id":"bio-01-027","unit":"bio-01","topic":"bio-01-hiv","lo":"BIO-1.2","d":"M","q":"Which group of symptoms is typical of AIDS?","o":["Yellow skin and dark urine only","Paralysis of the limbs from the start","Weight loss, persistent fever, swollen lymph nodes and repeated infections","High blood sugar and frequent urination"],"a":2,"x":"As helper T cells fall, patients develop weight loss, fever, night sweats, chronic diarrhoea, swollen lymph nodes and repeated opportunistic infections."},{"id":"bio-01-028","unit":"bio-01","topic":"bio-01-hiv","lo":"BIO-1.2","d":"M","q":"AIDS patients often die of other infections because:","o":["Loss of helper T cells leaves them unable to fight opportunistic infections","HIV directly destroys the lungs","HIV makes all antibiotics poisonous","HIV causes the body to produce too many antibodies"],"a":0,"x":"HIV itself is rarely the direct cause of death. Once the immune system collapses, infections that a healthy body controls easily become life-threatening. Examples are tuberculosis and Pneumocystis pneumonia."},{"id":"bio-01-029","unit":"bio-01","topic":"bio-01-hiv","lo":"BIO-1.2","d":"D","q":"A person recently infected with HIV may test negative on an antibody (ELISA) test because:","o":["Antibodies take several weeks to appear (the window period)","HIV leaves the blood within a few days","HIV is present only in saliva","The test detects only bacterial antibodies"],"a":0,"x":"Antibody tests detect the body's antibodies against HIV, not the virus itself. The immune system takes weeks to make enough antibodies. During this 'window period' the person can test negative but still pass on the virus."},{"id":"bio-01-030","unit":"bio-01","topic":"bio-01-hiv","lo":"BIO-1.2","d":"M","q":"The anti-HIV drug zidovudine (AZT) works by:","o":["Dissolving the viral envelope","Killing infected helper T cells","Increasing antibody production","Inhibiting reverse transcriptase"],"a":3,"x":"AZT blocks reverse transcriptase, so viral RNA cannot be copied into DNA and the virus cannot multiply. It slows the infection but does not cure it."},{"id":"bio-01-031","unit":"bio-01","topic":"bio-01-hiv","lo":"BIO-1.2","d":"E","q":"Which statement about the treatment of HIV infection is correct?","o":["Antibiotics completely cure HIV infection","A single vaccine dose cures AIDS","HIV infection heals on its own within a few weeks","Antiretroviral drugs control the virus but do not cure the infection"],"a":3,"x":"Antiretroviral therapy keeps HIV levels low and lets patients live long lives, but the virus remains in the body. There is no cure and no approved HIV vaccine yet, so prevention matters most."},{"id":"bio-01-032","unit":"bio-01","topic":"bio-01-hiv","lo":"BIO-1.2","d":"M","q":"Kaposi's sarcoma and Pneumocystis pneumonia are best described as:","o":["Opportunistic conditions common in AIDS patients","Bacteria that cause AIDS","Early symptoms of influenza","Genetic disorders unrelated to immunity"],"a":0,"x":"These conditions rarely affect people with healthy immune systems. Their appearance in a patient is a classic sign that HIV has severely weakened immunity, so they are called opportunistic conditions."}];
+
+
+const SET_SIZE = 10;
+const LETTERS = ["A","B","C","D"];
+const DIFF_LABEL = { E:"Easy", M:"Moderate", D:"Difficult" };
+const SUBJECT_COLOR = { bio:"var(--bio)", chem:"var(--chem)", phy:"var(--phy)", eng:"var(--eng)", lr:"var(--lr)" };
+const SUBJECT_ABBR = { bio:"Bio", chem:"Chem", phy:"Phy", eng:"Eng", lr:"LR" };
+
+/* ======================================================================
+   LOOKUPS
+   ====================================================================== */
+const subjectById = {}, unitById = {}, topicById = {};
+for(const s of SYLLABUS.subjects){
+  subjectById[s.id] = s;
+  for(const u of s.units){
+    unitById[u.id] = { ...u, subject:s.id };
+    for(const t of u.topics) topicById[t.id] = { ...t, unit:u.id };
+  }
+}
+const qById = {};
+const qByUnit = {}, qByTopic = {}, qBySubject = {};
+for(const q of QUESTIONS){
+  qById[q.id] = q;
+  (qByUnit[q.unit] = qByUnit[q.unit] || []).push(q);
+  (qByTopic[q.topic] = qByTopic[q.topic] || []).push(q);
+  const s = unitById[q.unit].subject;
+  (qBySubject[s] = qBySubject[s] || []).push(q);
+}
+
+/* ======================================================================
+   PROGRESS — localStorage, per device, no login.
+   progress.q[id] = { n: attempts, c: correct attempts, last: 1|0 }
+   ====================================================================== */
+const STORE_KEY = "mdcat-prep-v1";
+function loadProgress(){
+  try{ const raw = localStorage.getItem(STORE_KEY); if(raw) return JSON.parse(raw); }catch(e){}
+  return { q:{}, bm:{} };
+}
+let progress = loadProgress();
+progress.q = progress.q || {}; progress.bm = progress.bm || {};
+function saveProgress(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(progress)); }catch(e){} }
+
+function recordAnswer(id, isCorrect){
+  const p = progress.q[id] || { n:0, c:0, last:0 };
+  p.n++; if(isCorrect) p.c++; p.last = isCorrect ? 1 : 0;
+  progress.q[id] = p;
+  saveProgress();
+}
+// done = questions attempted at least once; right = last attempt correct.
+function stats(list){
+  let done = 0, right = 0;
+  for(const q of list || []){
+    const p = progress.q[q.id];
+    if(p){ done++; if(p.last) right++; }
+  }
+  return { total:(list||[]).length, done, right, pct: done ? Math.round(100*right/done) : 0 };
+}
+function mistakes(){ return QUESTIONS.filter(q => progress.q[q.id] && !progress.q[q.id].last); }
+
+/* ======================================================================
+   SET PICKER — unseen first, then last-wrong, then the rest; shuffled
+   within each group so repeats don't come in the same order.
+   ====================================================================== */
+function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function pickSet(pool, size){
+  const unseen = [], wrong = [], rest = [];
+  for(const q of pool){
+    const p = progress.q[q.id];
+    if(!p) unseen.push(q); else if(!p.last) wrong.push(q); else rest.push(q);
+  }
+  return shuffle(unseen).concat(shuffle(wrong), shuffle(rest)).slice(0, size);
+}
+
+/* ======================================================================
+   ROUTER — hash based so Android back / browser back work.
+   #/  #/s/bio  #/u/bio-01  #/play  #/results  #/mistakes  #/soon/<name>
+   ====================================================================== */
+const app = document.getElementById("app");
+let session = null;   // current practice set: { title, back, items:[q], i, answers:[idx|null] }
+
+function go(hash){ if(location.hash === hash) render(); else location.hash = hash; }
+window.addEventListener("hashchange", render);
+
+function esc(s){ return String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c])); }
+function bar(title, backHash){
+  return `<div class="bar">${backHash!=null ? `<button class="iconbtn" data-go="${backHash}" aria-label="Back">←</button>` : ""}<h1>${esc(title)}</h1></div>`;
+}
+function pbar(pct){ return `<div class="pbar"><i style="width:${pct}%"></i></div>`; }
+
+function render(){
+  const h = location.hash.replace(/^#/, "") || "/";
+  const parts = h.split("/").filter(Boolean);
+  window.scrollTo(0, 0);
+  if(parts[0] === "s" && subjectById[parts[1]]) return renderSubject(parts[1]);
+  if(parts[0] === "u" && unitById[parts[1]]) return renderUnit(parts[1]);
+  if(parts[0] === "play" && session) return renderPlayer();
+  if(parts[0] === "results" && session) return renderResults();
+  if(parts[0] === "mistakes") return renderMistakes();
+  if(parts[0] === "soon") return renderSoon(decodeURIComponent(parts[1] || ""));
+  return renderHome();
+}
+
+/* ----- home ----- */
+function renderHome(){
+  const all = stats(QUESTIONS);
+  const nMistakes = mistakes().length;
+  let html = `<div class="bar"><h1>MDCAT Prep</h1></div>
+  <div class="hero">
+    <h2>Prepare for MDCAT</h2>
+    <p>PM&amp;DC 2025 curriculum · 180 MCQs · 3 hours · no negative marking</p>
+    <div class="stats">
+      <div><b>${all.done}</b><span>of ${all.total} practised</span></div>
+      <div><b>${all.done ? all.pct + "%" : "–"}</b><span>accuracy</span></div>
+      <div><b>${nMistakes}</b><span>to review</span></div>
+    </div>
+  </div>
+  <h3 class="section">Practice by subject</h3><div class="list">`;
+  for(const s of SYLLABUS.subjects){
+    const st = stats(qBySubject[s.id]);
+    const avail = st.total;
+    html += `<button class="row" data-go="#/s/${s.id}">
+      <span class="badge" style="background:${SUBJECT_COLOR[s.id]}">${SUBJECT_ABBR[s.id]}</span>
+      <span class="main"><span class="title">${esc(s.name)}</span>
+        <div class="sub">${s.mcqsInPaper} MCQs in paper · ${s.units.length} units · ${avail ? `${st.done}/${avail} practised` : "questions coming soon"}</div>
+        ${avail ? pbar(Math.round(100*st.done/avail)) : ""}</span>
+      <span class="chev">›</span></button>`;
+  }
+  html += `</div>
+  <h3 class="section">More</h3>
+  <div class="tiles">
+    <button class="tile" data-go="#/mistakes"><div class="ic">🔁</div><div class="title">Review mistakes</div><div class="sub">${nMistakes} question${nMistakes===1?"":"s"}</div></button>
+    <button class="tile" data-go="#/soon/Mock%20exams"><div class="ic">⏱️</div><div class="title">Mock exams</div><div class="sub">20 full papers · coming soon</div></button>
+    <button class="tile" data-go="#/soon/Rules%20%26%20guidelines"><div class="ic">📋</div><div class="title">Rules &amp; guidelines</div><div class="sub">coming soon</div></button>
+    <button class="tile" data-go="#/soon/Memory%20cheats"><div class="ic">🧠</div><div class="title">Memory cheats</div><div class="sub">coming soon</div></button>
+    <button class="tile" data-go="#/soon/Important%20topics"><div class="ic">⭐</div><div class="title">Important topics</div><div class="sub">coming soon</div></button>
+  </div>`;
+  app.innerHTML = html;
+}
+
+/* ----- subject ----- */
+function renderSubject(sid){
+  const s = subjectById[sid];
+  let html = bar(s.name, "#/") + `<p class="note">${s.mcqsInPaper} of 180 MCQs in the real paper (${Math.round(s.mcqsInPaper/1.8)}%).</p><div class="list">`;
+  for(const u of s.units){
+    const st = stats(qByUnit[u.id]);
+    const has = st.total > 0;
+    html += `<button class="row${has ? "" : " disabled"}" ${has ? `data-go="#/u/${u.id}"` : ""}>
+      <span class="badge" style="background:${SUBJECT_COLOR[sid]}">${u.n}</span>
+      <span class="main"><span class="title">${esc(u.name)}</span>
+        <div class="sub">${has ? `${st.done}/${st.total} practised${st.done ? ` · ${st.pct}% right` : ""}` : `<span class="tag soon">coming soon</span>`}</div>
+        ${has ? pbar(Math.round(100*st.done/st.total)) : ""}</span>
+      ${has ? `<span class="chev">›</span>` : ""}</button>`;
+  }
+  app.innerHTML = html + `</div>`;
+}
+
+/* ----- unit ----- */
+function renderUnit(uid){
+  const u = unitById[uid];
+  const st = stats(qByUnit[uid]);
+  let html = bar(`${u.n}. ${u.name}`, `#/s/${u.subject}`) +
+    `<div class="card" style="padding:16px;margin-top:14px">
+      <div class="sub" style="color:var(--muted);font-size:14px">${st.done}/${st.total} practised${st.done ? ` · ${st.pct}% right` : ""}</div>
+      ${pbar(st.total ? Math.round(100*st.done/st.total) : 0)}
+      <div class="actions"><button class="btn" data-start="unit:${uid}">Practise ${Math.min(SET_SIZE, st.total)} questions</button></div>
+    </div>
+    <h3 class="section">Topics</h3><div class="list">`;
+  for(const t of u.topics){
+    const tq = qByTopic[t.id] || [];
+    const ts = stats(tq);
+    html += `<button class="row${tq.length ? "" : " disabled"}" ${tq.length ? `data-start="topic:${t.id}"` : ""}>
+      <span class="main"><span class="title">${esc(t.name)}</span>
+        <div class="sub">${tq.length ? `${ts.done}/${tq.length} practised${ts.done ? ` · ${ts.pct}% right` : ""}` : "no questions yet"}</div>
+        <ul class="lo">${(t.los||[]).map(lo => `<li><code>${esc(lo.code)}</code>${esc(lo.text)}</li>`).join("")}</ul></span>
+      ${tq.length ? `<span class="chev">▶</span>` : ""}</button>`;
+  }
+  app.innerHTML = html + `</div>`;
+}
+
+/* ----- practice ----- */
+function startSession(kind, id){
+  let pool, title, back;
+  if(kind === "unit"){ const u = unitById[id]; pool = qByUnit[id]; title = u.name; back = `#/u/${id}`; }
+  else if(kind === "topic"){ const t = topicById[id]; pool = qByTopic[id]; title = t.name; back = `#/u/${t.unit}`; }
+  else if(kind === "mistakes"){ pool = mistakes(); title = "Review mistakes"; back = "#/"; }
+  if(!pool || !pool.length) return;
+  session = { kind, id, title, back, items: pickSet(pool, SET_SIZE), i:0, answers:[] };
+  go("#/play");
+}
+
+function renderPlayer(){
+  const s = session, q = s.items[s.i], picked = s.answers[s.i];
+  const answered = picked != null;
+  const u = unitById[q.unit];
+  let html = bar(s.title, s.back) +
+    `<div class="qprog"><i style="width:${Math.round(100*(s.i + (answered?1:0))/s.items.length)}%"></i></div>
+    <div class="qmeta"><span>Question ${s.i+1} of ${s.items.length}</span>
+      <span class="tag">${esc(q.lo)}</span><span class="tag">${DIFF_LABEL[q.d]}</span>
+      <button class="iconbtn" data-bm="${q.id}" aria-label="Bookmark" style="margin-left:auto">${progress.bm[q.id] ? "★" : "☆"}</button></div>
+    <div class="qtext">${esc(q.q)}</div><div class="opts">`;
+  q.o.forEach((opt, i) => {
+    let cls = "opt";
+    if(answered){ cls += " locked"; if(i === q.a) cls += " correct"; else if(i === picked) cls += " wrong"; }
+    html += `<button class="${cls}" ${answered ? "" : `data-pick="${i}"`}><span class="k">${LETTERS[i]}</span><span>${esc(opt)}</span></button>`;
+  });
+  html += `</div>`;
+  if(answered){
+    const ok = picked === q.a;
+    html += `<div class="explain"><b class="${ok ? "verdict-ok" : "verdict-bad"}">${ok ? "✓ Correct" : `✗ Not quite — the answer is ${LETTERS[q.a]}`}</b>${esc(q.x)}</div>
+      <div class="actions"><button class="btn" data-next>${s.i+1 < s.items.length ? "Next question" : "See results"}</button></div>`;
+  }
+  html += `<p class="note">${esc(subjectById[u.subject].name)} · Unit ${u.n}: ${esc(u.name)}</p>`;
+  app.innerHTML = html;
+}
+
+function pick(i){
+  const s = session, q = s.items[s.i];
+  if(s.answers[s.i] != null) return;
+  s.answers[s.i] = i;
+  recordAnswer(q.id, i === q.a);
+  renderPlayer();
+}
+function next(){
+  if(session.i + 1 < session.items.length){ session.i++; renderPlayer(); window.scrollTo(0,0); }
+  else go("#/results");
+}
+
+function renderResults(){
+  const s = session;
+  const right = s.items.filter((q, i) => s.answers[i] === q.a).length;
+  const n = s.items.length;
+  let html = bar("Results", s.back) +
+    `<div class="card score"><div class="big">${right}/${n}</div><div class="of">${Math.round(100*right/n)}% correct · ${esc(s.title)}</div></div>
+    <div class="actions">
+      ${s.kind !== "mistakes" ? `<button class="btn" data-start="${s.kind}:${s.id}">Next ${SET_SIZE} questions</button>` : ""}
+      <button class="btn secondary" data-go="${s.back}">Done</button>
+    </div><h3 class="section">Review</h3>`;
+  s.items.forEach((q, i) => {
+    const ok = s.answers[i] === q.a;
+    html += `<div class="card review"><div class="q">${i+1}. ${esc(q.q)}</div>
+      <div class="ans ${ok ? "verdict-ok" : "verdict-bad"}">${ok ? "✓" : "✗"} ${s.answers[i] != null ? `You: ${LETTERS[s.answers[i]]}. ${esc(q.o[s.answers[i]])}` : "Not answered"}</div>
+      ${ok ? "" : `<div class="ans verdict-ok">Answer: ${LETTERS[q.a]}. ${esc(q.o[q.a])}</div>`}
+      <div class="x">${esc(q.x)}</div></div>`;
+  });
+  app.innerHTML = html;
+}
+
+/* ----- mistakes ----- */
+function renderMistakes(){
+  const list = mistakes();
+  let html = bar("Review mistakes", "#/");
+  if(!list.length){
+    app.innerHTML = html + `<div class="empty">No mistakes to review yet.<br>Questions you get wrong will collect here until you answer them right.</div>`;
+    return;
+  }
+  html += `<div class="card" style="padding:16px;margin-top:14px"><div>${list.length} question${list.length===1?"":"s"} you last got wrong.</div>
+    <div class="actions"><button class="btn" data-start="mistakes:all">Practise ${Math.min(SET_SIZE, list.length)} of them</button></div></div>
+    <h3 class="section">By unit</h3><div class="list">`;
+  const byUnit = {};
+  for(const q of list) byUnit[q.unit] = (byUnit[q.unit] || 0) + 1;
+  for(const [uid, n] of Object.entries(byUnit)){
+    const u = unitById[uid];
+    html += `<button class="row" data-go="#/u/${uid}"><span class="badge" style="background:${SUBJECT_COLOR[u.subject]}">${u.n}</span>
+      <span class="main"><span class="title">${esc(u.name)}</span><div class="sub">${esc(subjectById[u.subject].name)} · ${n} to review</div></span><span class="chev">›</span></button>`;
+  }
+  app.innerHTML = html + `</div>`;
+}
+
+function renderSoon(name){
+  app.innerHTML = bar(name || "Coming soon", "#/") + `<div class="empty">${esc(name)} is being built and will arrive in an update.</div>`;
+}
+
+/* ======================================================================
+   EVENTS — one delegated listener for the whole app.
+   ====================================================================== */
+app.addEventListener("click", e => {
+  const el = e.target.closest("[data-go],[data-start],[data-pick],[data-next],[data-bm]");
+  if(!el) return;
+  if(el.dataset.go != null) return go(el.dataset.go);
+  if(el.dataset.start){ const [k, id] = el.dataset.start.split(":"); return startSession(k, id); }
+  if(el.dataset.pick != null) return pick(Number(el.dataset.pick));
+  if(el.dataset.next != null) return next();
+  if(el.dataset.bm){ const id = el.dataset.bm; if(progress.bm[id]) delete progress.bm[id]; else progress.bm[id] = 1; saveProgress(); renderPlayer(); }
+});
+
+render();
+})();
+
+</script>
+</body>
+</html>
