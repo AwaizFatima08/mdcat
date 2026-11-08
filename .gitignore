@@ -5,3 +5,4 @@ releases/
 .~lock.*#
 android/app/build/
 android/.gradle/
+scripts/backup.log
