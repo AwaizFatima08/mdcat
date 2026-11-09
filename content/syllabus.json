@@ -2,145 +2,1699 @@
   "source": "PM&DC Uniform Curriculum MDCAT-2025 (Final, 26-05-2025); applies to MDCAT-2026 (PM&DC notice 19 May 2026)",
   "subjects": [
     {
-      "id": "bio", "name": "Biology", "mcqsInPaper": 81, "bankTarget": 2250,
+      "id": "bio",
+      "name": "Biology",
+      "mcqsInPaper": 81,
+      "bankTarget": 2250,
       "units": [
-        { "id": "bio-01", "n": 1, "name": "Acellular Life", "topics": [
-          { "id": "bio-01-viruses", "name": "Viruses", "los": [ { "code": "BIO-1.1", "text": "Classify viruses on basis of their structure / number of strands / diseases / hosts." } ] },
-          { "id": "bio-01-hiv", "name": "AIDS and HIV infection", "los": [ { "code": "BIO-1.2", "text": "Identify symptoms, mode of transmission and cause of viral disease (AIDS)." } ] }
-        ] },
-        { "id": "bio-02", "n": 2, "name": "Bioenergetics", "topics": [
-          { "id": "bio-02-respiration", "name": "Respiration", "los": [ { "code": "BIO-2.1", "text": "Outline the cellular respiration of proteins and fats and correlate these with that of glucose." } ] }
-        ] },
-        { "id": "bio-03", "n": 3, "name": "Biological Molecules", "topics": [
-          { "id": "bio-03-intro", "name": "Biological molecules", "los": [ { "code": "BIO-3.1", "text": "Define and classify biological molecules." }, { "code": "BIO-3.2", "text": "Discuss the importance of biological molecules." } ] },
-          { "id": "bio-03-water", "name": "Biological importance of water", "los": [ { "code": "BIO-3.3", "text": "Describe biologically important properties of water (polarity, hydrolysis, specific heat, solvent and reagent, density, cohesion, ionization)." } ] },
-          { "id": "bio-03-carbs", "name": "Carbohydrates", "los": [ { "code": "BIO-3.4", "text": "Discuss monosaccharides, oligosaccharides and polysaccharides." } ] },
-          { "id": "bio-03-proteins", "name": "Proteins", "los": [ { "code": "BIO-3.5", "text": "Describe amino acids and the structure of proteins." } ] },
-          { "id": "bio-03-lipids", "name": "Lipids", "los": [ { "code": "BIO-3.6", "text": "Describe phospholipids, triglycerides, alcohols and esters (acylglycerols)." } ] },
-          { "id": "bio-03-rna", "name": "RNA", "los": [ { "code": "BIO-3.7", "text": "Give an account of structure and function of RNA." } ] },
-          { "id": "bio-03-conjugated", "name": "Conjugated molecules", "los": [ { "code": "BIO-3.8", "text": "Discuss conjugated molecules (glycolipids, glycoproteins)." } ] },
-          { "id": "bio-03-dna", "name": "Structure of DNA", "los": [ { "code": "BIO-3.9", "text": "Explain the double helical structure of DNA (Watson and Crick)." }, { "code": "BIO-3.10", "text": "Define a gene as a sequence of nucleotides coding for a polypeptide." } ] }
-        ] },
-        { "id": "bio-04", "n": 4, "name": "Cell Structure & Function", "topics": [
-          { "id": "bio-04-cell", "name": "Cell structure", "los": [ { "code": "BIO-4.1", "text": "Compare the structure of typical animal and plant cells." } ] },
-          { "id": "bio-04-prokeuk", "name": "Prokaryotic and eukaryotic cells", "los": [ { "code": "BIO-4.2", "text": "Compare and contrast prokaryotic and eukaryotic cells." } ] },
-          { "id": "bio-04-organelles", "name": "Cytoplasmic organelles", "los": [ { "code": "BIO-4.3", "text": "Outline structure and function of nucleus, ER, Golgi apparatus and mitochondria." } ] },
-          { "id": "bio-04-chromosomes", "name": "Chromosomes", "los": [ { "code": "BIO-4.4", "text": "Describe the structure, chemical composition and function of chromosomes." } ] }
-        ] },
-        { "id": "bio-05", "n": 5, "name": "Coordination & Control", "topics": [
-          { "id": "bio-05-receptors", "name": "Receptors", "los": [ { "code": "BIO-5.1", "text": "Recognize receptors as transducers sensitive to various stimuli." } ] },
-          { "id": "bio-05-neurons", "name": "Neurons and reflexes", "los": [ { "code": "BIO-5.2", "text": "Explain the structure of a typical neuron." }, { "code": "BIO-5.3", "text": "Define nerve impulse." }, { "code": "BIO-5.4", "text": "Classify reflexes." }, { "code": "BIO-5.5", "text": "Explain the functions of the components of a reflex arc." } ] },
-          { "id": "bio-05-brain", "name": "Brain", "los": [ { "code": "BIO-5.6", "text": "Discuss the main parts of the brain." }, { "code": "BIO-5.7", "text": "Describe the functions of each part." } ] }
-        ] },
-        { "id": "bio-06", "n": 6, "name": "Enzymes", "topics": [
-          { "id": "bio-06-enzymes", "name": "Enzymes and their action", "los": [ { "code": "BIO-6.1", "text": "Describe the distinguishing characteristics of enzymes." }, { "code": "BIO-6.2", "text": "Explain the mechanism of action of enzymes." } ] },
-          { "id": "bio-06-factors", "name": "Factors and inhibitors", "los": [ { "code": "BIO-6.3", "text": "Describe effects of temperature, pH and concentration on enzyme action." }, { "code": "BIO-6.4", "text": "Describe enzyme inhibitors." } ] }
-        ] },
-        { "id": "bio-07", "n": 7, "name": "Evolution", "topics": [
-          { "id": "bio-07-evolution", "name": "Origin of life, Lamarckism, Darwinism", "los": [ { "code": "BIO-7.1", "text": "Explain origin of life according to the concept of evolution." }, { "code": "BIO-7.2", "text": "Describe Lamarck's inheritance of acquired characters." }, { "code": "BIO-7.3", "text": "Explain Darwin's theory of natural selection." } ] }
-        ] },
-        { "id": "bio-08", "n": 8, "name": "Reproduction", "topics": [
-          { "id": "bio-08-system", "name": "Human reproductive system", "los": [ { "code": "BIO-8.1", "text": "Describe the male and female reproductive systems and their regulating hormones." } ] },
-          { "id": "bio-08-cycle", "name": "Menstrual cycle", "los": [ { "code": "BIO-8.2", "text": "Describe the menstrual cycle emphasizing the role of hormones." } ] },
-          { "id": "bio-08-std", "name": "Sexually transmitted diseases", "los": [ { "code": "BIO-8.3", "text": "List common STDs with causative agents and main symptoms." } ] }
-        ] },
-        { "id": "bio-09", "n": 9, "name": "Support & Movement", "topics": [
-          { "id": "bio-09-skeleton", "name": "Human skeleton", "los": [ { "code": "BIO-9.1", "text": "Describe cartilage, muscle and bone." }, { "code": "BIO-9.2", "text": "Explain the main characteristics and functions of cartilage and bone." } ] },
-          { "id": "bio-09-muscles", "name": "Muscles and contraction", "los": [ { "code": "BIO-9.3", "text": "Compare smooth, cardiac and skeletal muscle." }, { "code": "BIO-9.4", "text": "Explain the ultrastructure of skeletal muscle." }, { "code": "BIO-9.5", "text": "Describe the process of skeletal muscle contraction." } ] },
-          { "id": "bio-09-joints", "name": "Joints and arthritis", "los": [ { "code": "BIO-9.6", "text": "Classify joints." }, { "code": "BIO-9.7", "text": "Define arthritis." } ] }
-        ] },
-        { "id": "bio-10", "n": 10, "name": "Inheritance", "topics": [
-          { "id": "bio-10-mendel", "name": "Mendel's laws", "los": [ { "code": "BIO-10.1", "text": "Associate inheritance with the laws of Mendel." }, { "code": "BIO-10.2", "text": "Explain the law of independent assortment with an example." } ] },
-          { "id": "bio-10-linkage", "name": "Gene linkage and crossing over", "los": [ { "code": "BIO-10.3", "text": "Describe gene linkage and crossing over." }, { "code": "BIO-10.4", "text": "Explain how linkage counters independent assortment and crossing over modifies progeny." } ] },
-          { "id": "bio-10-sexlinked", "name": "Sex-linked inheritance", "los": [ { "code": "BIO-10.5", "text": "Describe the concept of sex-linkage." }, { "code": "BIO-10.6", "text": "Describe inheritance of sex-linked traits." }, { "code": "BIO-10.7", "text": "Analyze the inheritance of hemophilia." } ] }
-        ] },
-        { "id": "bio-11", "n": 11, "name": "Circulation", "topics": [
-          { "id": "bio-11-heart", "name": "Heart and cardiac cycle", "los": [ { "code": "BIO-11.1", "text": "Discuss the general structure of the human heart." }, { "code": "BIO-11.2", "text": "Describe the phases of heartbeat." } ] },
-          { "id": "bio-11-vessels", "name": "Blood vessels", "los": [ { "code": "BIO-11.3", "text": "List differences and functions of arteries, veins and capillaries." } ] },
-          { "id": "bio-11-lymph", "name": "Lymphatic system", "los": [ { "code": "BIO-11.4", "text": "Describe the lymphatic system (nodes, vessels, organs)." } ] }
-        ] },
-        { "id": "bio-12", "n": 12, "name": "Immunity", "topics": [
-          { "id": "bio-12-specific", "name": "Specific defence mechanism", "los": [ { "code": "BIO-12.1", "text": "Define and discuss the functions and importance of specific defence mechanisms." } ] }
-        ] },
-        { "id": "bio-13", "n": 13, "name": "Respiration", "topics": [
-          { "id": "bio-13-system", "name": "Human respiratory system", "los": [ { "code": "BIO-13.1", "text": "Discuss the functions of the main parts of the respiratory system." }, { "code": "BIO-13.2", "text": "Discuss gas exchange in human lungs." }, { "code": "BIO-13.3", "text": "Discuss the effect of smoking on the respiratory system." } ] }
-        ] },
-        { "id": "bio-14", "n": 14, "name": "Digestion", "topics": [
-          { "id": "bio-14-system", "name": "Human digestive system", "los": [ { "code": "BIO-14.1", "text": "Describe the parts of the human digestive system." }, { "code": "BIO-14.2", "text": "Explain functions of the main parts including associated structures and glands." } ] }
-        ] },
-        { "id": "bio-15", "n": 15, "name": "Homeostasis", "topics": [
-          { "id": "bio-15-kidney", "name": "Kidney", "los": [ { "code": "BIO-15.1", "text": "Explain organs of the urinary system; relate kidney structure to function." }, { "code": "BIO-15.2", "text": "Explain glomerular filtration, selective reabsorption and tubular secretion." }, { "code": "BIO-15.3", "text": "Justify kidneys as organs of both excretion and osmoregulation." }, { "code": "BIO-15.4", "text": "Compare glomerular and peritubular capillaries." }, { "code": "BIO-15.5", "text": "Explain causes and treatments of kidney stones." }, { "code": "BIO-15.6", "text": "Outline the causes of kidney failure." } ] },
-          { "id": "bio-15-thermo", "name": "Thermoregulation", "los": [ { "code": "BIO-15.7", "text": "Describe thermoregulation and explain its need." } ] },
-          { "id": "bio-15-excretion", "name": "Excretion", "los": [ { "code": "BIO-15.8", "text": "List nitrogenous compounds excreted." } ] }
-        ] },
-        { "id": "bio-16", "n": 16, "name": "Biotechnology", "topics": [
-          { "id": "bio-16-health", "name": "Biotechnology and health care", "los": [ { "code": "BIO-16.1", "text": "Describe how biotechnologists produce vaccines." }, { "code": "BIO-16.2", "text": "State the role of biotechnology in diagnosis (DNA/RNA probes, monoclonal antibodies)." }, { "code": "BIO-16.3", "text": "Describe products obtained for disease treatment." } ] }
-        ] }
+        {
+          "id": "bio-01",
+          "n": 1,
+          "name": "Acellular Life",
+          "topics": [
+            {
+              "id": "bio-01-viruses",
+              "name": "Viruses",
+              "los": [
+                {
+                  "code": "BIO-1.1",
+                  "text": "Classify viruses on basis of their structure / number of strands / diseases / hosts."
+                }
+              ]
+            },
+            {
+              "id": "bio-01-hiv",
+              "name": "AIDS and HIV infection",
+              "los": [
+                {
+                  "code": "BIO-1.2",
+                  "text": "Identify symptoms, mode of transmission and cause of viral disease (AIDS)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-02",
+          "n": 2,
+          "name": "Bioenergetics",
+          "topics": [
+            {
+              "id": "bio-02-respiration",
+              "name": "Respiration",
+              "los": [
+                {
+                  "code": "BIO-2.1",
+                  "text": "Outline the cellular respiration of proteins and fats and correlate these with that of glucose."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-03",
+          "n": 3,
+          "name": "Biological Molecules",
+          "topics": [
+            {
+              "id": "bio-03-intro",
+              "name": "Biological molecules",
+              "los": [
+                {
+                  "code": "BIO-3.1",
+                  "text": "Define and classify biological molecules."
+                },
+                {
+                  "code": "BIO-3.2",
+                  "text": "Discuss the importance of biological molecules."
+                }
+              ]
+            },
+            {
+              "id": "bio-03-water",
+              "name": "Biological importance of water",
+              "los": [
+                {
+                  "code": "BIO-3.3",
+                  "text": "Describe biologically important properties of water (polarity, hydrolysis, specific heat, solvent and reagent, density, cohesion, ionization)."
+                }
+              ]
+            },
+            {
+              "id": "bio-03-carbs",
+              "name": "Carbohydrates",
+              "los": [
+                {
+                  "code": "BIO-3.4",
+                  "text": "Discuss monosaccharides, oligosaccharides and polysaccharides."
+                }
+              ]
+            },
+            {
+              "id": "bio-03-proteins",
+              "name": "Proteins",
+              "los": [
+                {
+                  "code": "BIO-3.5",
+                  "text": "Describe amino acids and the structure of proteins."
+                }
+              ]
+            },
+            {
+              "id": "bio-03-lipids",
+              "name": "Lipids",
+              "los": [
+                {
+                  "code": "BIO-3.6",
+                  "text": "Describe phospholipids, triglycerides, alcohols and esters (acylglycerols)."
+                }
+              ]
+            },
+            {
+              "id": "bio-03-rna",
+              "name": "RNA",
+              "los": [
+                {
+                  "code": "BIO-3.7",
+                  "text": "Give an account of structure and function of RNA."
+                }
+              ]
+            },
+            {
+              "id": "bio-03-conjugated",
+              "name": "Conjugated molecules",
+              "los": [
+                {
+                  "code": "BIO-3.8",
+                  "text": "Discuss conjugated molecules (glycolipids, glycoproteins)."
+                }
+              ]
+            },
+            {
+              "id": "bio-03-dna",
+              "name": "Structure of DNA",
+              "los": [
+                {
+                  "code": "BIO-3.9",
+                  "text": "Explain the double helical structure of DNA (Watson and Crick)."
+                },
+                {
+                  "code": "BIO-3.10",
+                  "text": "Define a gene as a sequence of nucleotides coding for a polypeptide."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-04",
+          "n": 4,
+          "name": "Cell Structure & Function",
+          "topics": [
+            {
+              "id": "bio-04-cell",
+              "name": "Cell structure",
+              "los": [
+                {
+                  "code": "BIO-4.1",
+                  "text": "Compare the structure of typical animal and plant cells."
+                }
+              ]
+            },
+            {
+              "id": "bio-04-prokeuk",
+              "name": "Prokaryotic and eukaryotic cells",
+              "los": [
+                {
+                  "code": "BIO-4.2",
+                  "text": "Compare and contrast prokaryotic and eukaryotic cells."
+                }
+              ]
+            },
+            {
+              "id": "bio-04-organelles",
+              "name": "Cytoplasmic organelles",
+              "los": [
+                {
+                  "code": "BIO-4.3",
+                  "text": "Outline structure and function of nucleus, ER, Golgi apparatus and mitochondria."
+                }
+              ]
+            },
+            {
+              "id": "bio-04-chromosomes",
+              "name": "Chromosomes",
+              "los": [
+                {
+                  "code": "BIO-4.4",
+                  "text": "Describe the structure, chemical composition and function of chromosomes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-05",
+          "n": 5,
+          "name": "Coordination & Control",
+          "topics": [
+            {
+              "id": "bio-05-receptors",
+              "name": "Receptors",
+              "los": [
+                {
+                  "code": "BIO-5.1",
+                  "text": "Recognize receptors as transducers sensitive to various stimuli."
+                }
+              ]
+            },
+            {
+              "id": "bio-05-neurons",
+              "name": "Neurons and reflexes",
+              "los": [
+                {
+                  "code": "BIO-5.2",
+                  "text": "Explain the structure of a typical neuron."
+                },
+                {
+                  "code": "BIO-5.3",
+                  "text": "Define nerve impulse."
+                },
+                {
+                  "code": "BIO-5.4",
+                  "text": "Classify reflexes."
+                },
+                {
+                  "code": "BIO-5.5",
+                  "text": "Explain the functions of the components of a reflex arc."
+                }
+              ]
+            },
+            {
+              "id": "bio-05-brain",
+              "name": "Brain",
+              "los": [
+                {
+                  "code": "BIO-5.6",
+                  "text": "Discuss the main parts of the brain."
+                },
+                {
+                  "code": "BIO-5.7",
+                  "text": "Describe the functions of each part."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-06",
+          "n": 6,
+          "name": "Enzymes",
+          "topics": [
+            {
+              "id": "bio-06-enzymes",
+              "name": "Enzymes and their action",
+              "los": [
+                {
+                  "code": "BIO-6.1",
+                  "text": "Describe the distinguishing characteristics of enzymes."
+                },
+                {
+                  "code": "BIO-6.2",
+                  "text": "Explain the mechanism of action of enzymes."
+                }
+              ]
+            },
+            {
+              "id": "bio-06-factors",
+              "name": "Factors and inhibitors",
+              "los": [
+                {
+                  "code": "BIO-6.3",
+                  "text": "Describe effects of temperature, pH and concentration on enzyme action."
+                },
+                {
+                  "code": "BIO-6.4",
+                  "text": "Describe enzyme inhibitors."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-07",
+          "n": 7,
+          "name": "Evolution",
+          "topics": [
+            {
+              "id": "bio-07-evolution",
+              "name": "Origin of life, Lamarckism, Darwinism",
+              "los": [
+                {
+                  "code": "BIO-7.1",
+                  "text": "Explain origin of life according to the concept of evolution."
+                },
+                {
+                  "code": "BIO-7.2",
+                  "text": "Describe Lamarck's inheritance of acquired characters."
+                },
+                {
+                  "code": "BIO-7.3",
+                  "text": "Explain Darwin's theory of natural selection."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-08",
+          "n": 8,
+          "name": "Reproduction",
+          "topics": [
+            {
+              "id": "bio-08-system",
+              "name": "Human reproductive system",
+              "los": [
+                {
+                  "code": "BIO-8.1",
+                  "text": "Describe the male and female reproductive systems and their regulating hormones."
+                }
+              ]
+            },
+            {
+              "id": "bio-08-cycle",
+              "name": "Menstrual cycle",
+              "los": [
+                {
+                  "code": "BIO-8.2",
+                  "text": "Describe the menstrual cycle emphasizing the role of hormones."
+                }
+              ]
+            },
+            {
+              "id": "bio-08-std",
+              "name": "Sexually transmitted diseases",
+              "los": [
+                {
+                  "code": "BIO-8.3",
+                  "text": "List common STDs with causative agents and main symptoms."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-09",
+          "n": 9,
+          "name": "Support & Movement",
+          "topics": [
+            {
+              "id": "bio-09-skeleton",
+              "name": "Human skeleton",
+              "los": [
+                {
+                  "code": "BIO-9.1",
+                  "text": "Describe cartilage, muscle and bone."
+                },
+                {
+                  "code": "BIO-9.2",
+                  "text": "Explain the main characteristics and functions of cartilage and bone."
+                }
+              ]
+            },
+            {
+              "id": "bio-09-muscles",
+              "name": "Muscles and contraction",
+              "los": [
+                {
+                  "code": "BIO-9.3",
+                  "text": "Compare smooth, cardiac and skeletal muscle."
+                },
+                {
+                  "code": "BIO-9.4",
+                  "text": "Explain the ultrastructure of skeletal muscle."
+                },
+                {
+                  "code": "BIO-9.5",
+                  "text": "Describe the process of skeletal muscle contraction."
+                }
+              ]
+            },
+            {
+              "id": "bio-09-joints",
+              "name": "Joints and arthritis",
+              "los": [
+                {
+                  "code": "BIO-9.6",
+                  "text": "Classify joints."
+                },
+                {
+                  "code": "BIO-9.7",
+                  "text": "Define arthritis."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-10",
+          "n": 10,
+          "name": "Inheritance",
+          "topics": [
+            {
+              "id": "bio-10-mendel",
+              "name": "Mendel's laws",
+              "los": [
+                {
+                  "code": "BIO-10.1",
+                  "text": "Associate inheritance with the laws of Mendel."
+                },
+                {
+                  "code": "BIO-10.2",
+                  "text": "Explain the law of independent assortment with an example."
+                }
+              ]
+            },
+            {
+              "id": "bio-10-linkage",
+              "name": "Gene linkage and crossing over",
+              "los": [
+                {
+                  "code": "BIO-10.3",
+                  "text": "Describe gene linkage and crossing over."
+                },
+                {
+                  "code": "BIO-10.4",
+                  "text": "Explain how linkage counters independent assortment and crossing over modifies progeny."
+                }
+              ]
+            },
+            {
+              "id": "bio-10-sexlinked",
+              "name": "Sex-linked inheritance",
+              "los": [
+                {
+                  "code": "BIO-10.5",
+                  "text": "Describe the concept of sex-linkage."
+                },
+                {
+                  "code": "BIO-10.6",
+                  "text": "Describe inheritance of sex-linked traits."
+                },
+                {
+                  "code": "BIO-10.7",
+                  "text": "Analyze the inheritance of hemophilia."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-11",
+          "n": 11,
+          "name": "Circulation",
+          "topics": [
+            {
+              "id": "bio-11-heart",
+              "name": "Heart and cardiac cycle",
+              "los": [
+                {
+                  "code": "BIO-11.1",
+                  "text": "Discuss the general structure of the human heart."
+                },
+                {
+                  "code": "BIO-11.2",
+                  "text": "Describe the phases of heartbeat."
+                }
+              ]
+            },
+            {
+              "id": "bio-11-vessels",
+              "name": "Blood vessels",
+              "los": [
+                {
+                  "code": "BIO-11.3",
+                  "text": "List differences and functions of arteries, veins and capillaries."
+                }
+              ]
+            },
+            {
+              "id": "bio-11-lymph",
+              "name": "Lymphatic system",
+              "los": [
+                {
+                  "code": "BIO-11.4",
+                  "text": "Describe the lymphatic system (nodes, vessels, organs)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-12",
+          "n": 12,
+          "name": "Immunity",
+          "topics": [
+            {
+              "id": "bio-12-specific",
+              "name": "Specific defence mechanism",
+              "los": [
+                {
+                  "code": "BIO-12.1",
+                  "text": "Define and discuss the functions and importance of specific defence mechanisms."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-13",
+          "n": 13,
+          "name": "Respiration",
+          "topics": [
+            {
+              "id": "bio-13-system",
+              "name": "Human respiratory system",
+              "los": [
+                {
+                  "code": "BIO-13.1",
+                  "text": "Discuss the functions of the main parts of the respiratory system."
+                },
+                {
+                  "code": "BIO-13.2",
+                  "text": "Discuss gas exchange in human lungs."
+                },
+                {
+                  "code": "BIO-13.3",
+                  "text": "Discuss the effect of smoking on the respiratory system."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-14",
+          "n": 14,
+          "name": "Digestion",
+          "topics": [
+            {
+              "id": "bio-14-system",
+              "name": "Human digestive system",
+              "los": [
+                {
+                  "code": "BIO-14.1",
+                  "text": "Describe the parts of the human digestive system."
+                },
+                {
+                  "code": "BIO-14.2",
+                  "text": "Explain functions of the main parts including associated structures and glands."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-15",
+          "n": 15,
+          "name": "Homeostasis",
+          "topics": [
+            {
+              "id": "bio-15-kidney",
+              "name": "Kidney",
+              "los": [
+                {
+                  "code": "BIO-15.1",
+                  "text": "Explain organs of the urinary system; relate kidney structure to function."
+                },
+                {
+                  "code": "BIO-15.2",
+                  "text": "Explain glomerular filtration, selective reabsorption and tubular secretion."
+                },
+                {
+                  "code": "BIO-15.3",
+                  "text": "Justify kidneys as organs of both excretion and osmoregulation."
+                },
+                {
+                  "code": "BIO-15.4",
+                  "text": "Compare glomerular and peritubular capillaries."
+                },
+                {
+                  "code": "BIO-15.5",
+                  "text": "Explain causes and treatments of kidney stones."
+                },
+                {
+                  "code": "BIO-15.6",
+                  "text": "Outline the causes of kidney failure."
+                }
+              ]
+            },
+            {
+              "id": "bio-15-thermo",
+              "name": "Thermoregulation",
+              "los": [
+                {
+                  "code": "BIO-15.7",
+                  "text": "Describe thermoregulation and explain its need."
+                }
+              ]
+            },
+            {
+              "id": "bio-15-excretion",
+              "name": "Excretion",
+              "los": [
+                {
+                  "code": "BIO-15.8",
+                  "text": "List nitrogenous compounds excreted."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bio-16",
+          "n": 16,
+          "name": "Biotechnology",
+          "topics": [
+            {
+              "id": "bio-16-health",
+              "name": "Biotechnology and health care",
+              "los": [
+                {
+                  "code": "BIO-16.1",
+                  "text": "Describe how biotechnologists produce vaccines."
+                },
+                {
+                  "code": "BIO-16.2",
+                  "text": "State the role of biotechnology in diagnosis (DNA/RNA probes, monoclonal antibodies)."
+                },
+                {
+                  "code": "BIO-16.3",
+                  "text": "Describe products obtained for disease treatment."
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
-      "id": "chem", "name": "Chemistry", "mcqsInPaper": 45, "bankTarget": 1250,
+      "id": "chem",
+      "name": "Chemistry",
+      "mcqsInPaper": 45,
+      "bankTarget": 1250,
       "units": [
-        { "id": "chem-01", "n": 1, "name": "Fundamental Concepts", "topics": [] },
-        { "id": "chem-02", "n": 2, "name": "Atomic Structure", "topics": [] },
-        { "id": "chem-03", "n": 3, "name": "Gases", "topics": [] },
-        { "id": "chem-04", "n": 4, "name": "Liquids", "topics": [] },
-        { "id": "chem-05", "n": 5, "name": "Solids", "topics": [] },
-        { "id": "chem-06", "n": 6, "name": "Chemical Equilibrium", "topics": [] },
-        { "id": "chem-07", "n": 7, "name": "Reaction Kinetics", "topics": [] },
-        { "id": "chem-08", "n": 8, "name": "Thermochemistry & Energetics", "topics": [] },
-        { "id": "chem-09", "n": 9, "name": "Electrochemistry", "topics": [] },
-        { "id": "chem-10", "n": 10, "name": "Chemical Bonding", "topics": [] },
-        { "id": "chem-11", "n": 11, "name": "s- and p-Block Elements", "topics": [] },
-        { "id": "chem-12", "n": 12, "name": "Transition Elements", "topics": [] },
-        { "id": "chem-13", "n": 13, "name": "Fundamental Principles of Organic Chemistry", "topics": [] },
-        { "id": "chem-14", "n": 14, "name": "Chemistry of Hydrocarbons", "topics": [] },
-        { "id": "chem-15", "n": 15, "name": "Alkyl Halides", "topics": [] },
-        { "id": "chem-16", "n": 16, "name": "Alcohols & Phenols", "topics": [] },
-        { "id": "chem-17", "n": 17, "name": "Aldehydes & Ketones", "topics": [] },
-        { "id": "chem-18", "n": 18, "name": "Carboxylic Acids", "topics": [] },
-        { "id": "chem-19", "n": 19, "name": "Macromolecules", "topics": [] },
-        { "id": "chem-20", "n": 20, "name": "Industrial Chemistry", "topics": [] }
+        {
+          "id": "chem-01",
+          "n": 1,
+          "name": "Fundamental Concepts",
+          "topics": [
+            {
+              "id": "chem-01-moles",
+              "name": "Moles and Avogadro's number",
+              "los": [
+                {
+                  "code": "CHEM-1.1",
+                  "text": "Construct mole ratios from balanced equations for use as conversion factors in stoichiometric problems."
+                },
+                {
+                  "code": "CHEM-1.2",
+                  "text": "Perform stoichiometric calculations with balanced equations using moles, representative particles, masses and volumes of gases (at STP)."
+                }
+              ]
+            },
+            {
+              "id": "chem-01-limiting",
+              "name": "Limiting and excess reactants",
+              "los": [
+                {
+                  "code": "CHEM-1.3",
+                  "text": "Explain the limiting reagent in a reaction."
+                },
+                {
+                  "code": "CHEM-1.4",
+                  "text": "Calculate the maximum amount of product and the amount of any unreacted excess reagent."
+                }
+              ]
+            },
+            {
+              "id": "chem-01-yield",
+              "name": "Yield",
+              "los": [
+                {
+                  "code": "CHEM-1.5",
+                  "text": "Given any two of theoretical yield, actual yield and percentage yield, calculate the third."
+                },
+                {
+                  "code": "CHEM-1.6",
+                  "text": "Calculate the theoretical yield and percentage yield from a balanced equation, the amounts of reactants and the actual yield."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-02",
+          "n": 2,
+          "name": "Atomic Structure",
+          "topics": [
+            {
+              "id": "chem-02-proton",
+              "name": "Discovery of the proton",
+              "los": [
+                {
+                  "code": "CHEM-2.1",
+                  "text": "Describe the discovery and properties of the proton (positive rays)."
+                }
+              ]
+            },
+            {
+              "id": "chem-02-quantum",
+              "name": "Planck's quantum theory and the hydrogen spectrum",
+              "los": [
+                {
+                  "code": "CHEM-2.2",
+                  "text": "Define the photon as a unit of radiation energy."
+                },
+                {
+                  "code": "CHEM-2.6",
+                  "text": "Describe the hydrogen atom using quantum theory."
+                }
+              ]
+            },
+            {
+              "id": "chem-02-orbitals",
+              "name": "Quantum numbers and orbitals",
+              "los": [
+                {
+                  "code": "CHEM-2.3",
+                  "text": "Describe the concept of orbitals."
+                },
+                {
+                  "code": "CHEM-2.4",
+                  "text": "Distinguish among principal energy level, energy sub-level and atomic orbital."
+                },
+                {
+                  "code": "CHEM-2.5",
+                  "text": "Describe the general shapes of s and p orbitals."
+                }
+              ]
+            },
+            {
+              "id": "chem-02-config",
+              "name": "Electronic configuration",
+              "los": [
+                {
+                  "code": "CHEM-2.7",
+                  "text": "Use the Aufbau principle, Pauli exclusion principle and Hund's rule to write electronic configurations."
+                },
+                {
+                  "code": "CHEM-2.8",
+                  "text": "Write the electronic configuration of atoms."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-03",
+          "n": 3,
+          "name": "Gases",
+          "topics": [
+            {
+              "id": "chem-03-kmt",
+              "name": "Kinetic molecular theory",
+              "los": [
+                {
+                  "code": "CHEM-3.1",
+                  "text": "List the postulates of the kinetic molecular theory."
+                },
+                {
+                  "code": "CHEM-3.2",
+                  "text": "Describe the motion of gas particles according to kinetic theory."
+                }
+              ]
+            },
+            {
+              "id": "chem-03-laws",
+              "name": "STP, Boyle's and Charles's laws, absolute zero",
+              "los": [
+                {
+                  "code": "CHEM-3.3",
+                  "text": "State the values of standard temperature and pressure (STP)."
+                },
+                {
+                  "code": "CHEM-3.4",
+                  "text": "Describe the effect of a change in pressure on the volume of a gas."
+                },
+                {
+                  "code": "CHEM-3.5",
+                  "text": "Describe the effect of a change in temperature on the volume of a gas."
+                },
+                {
+                  "code": "CHEM-3.6",
+                  "text": "Explain the significance of absolute zero, giving its value."
+                }
+              ]
+            },
+            {
+              "id": "chem-03-ideal",
+              "name": "Ideal gas equation and real gases",
+              "los": [
+                {
+                  "code": "CHEM-3.7",
+                  "text": "Derive the ideal gas equation using Boyle's, Charles's and Avogadro's laws."
+                },
+                {
+                  "code": "CHEM-3.8",
+                  "text": "Explain the significance and different units of the gas constant R."
+                },
+                {
+                  "code": "CHEM-3.9",
+                  "text": "Distinguish between real and ideal gases."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-04",
+          "n": 4,
+          "name": "Liquids",
+          "topics": [
+            {
+              "id": "chem-04-properties",
+              "name": "Properties of liquids",
+              "los": [
+                {
+                  "code": "CHEM-4.1",
+                  "text": "Describe simple properties of liquids (diffusion, compression, expansion, molecular motion, intermolecular forces) using kinetic molecular theory."
+                },
+                {
+                  "code": "CHEM-4.2",
+                  "text": "Explain evaporation, vapour pressure and boiling point."
+                }
+              ]
+            },
+            {
+              "id": "chem-04-hbond",
+              "name": "Hydrogen bonding and water",
+              "los": [
+                {
+                  "code": "CHEM-4.3",
+                  "text": "Describe hydrogen bonding in H₂O, NH₃ and HF."
+                },
+                {
+                  "code": "CHEM-4.4",
+                  "text": "Explain the anomalous behaviour of water (maximum density at 4 °C)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-05",
+          "n": 5,
+          "name": "Solids",
+          "topics": [
+            {
+              "id": "chem-05-crystals",
+              "name": "Crystalline solids",
+              "los": [
+                {
+                  "code": "CHEM-5.1",
+                  "text": "Describe crystalline solids."
+                },
+                {
+                  "code": "CHEM-5.2",
+                  "text": "Name three factors that affect the shape of ionic crystals."
+                },
+                {
+                  "code": "CHEM-5.3",
+                  "text": "Describe ionic and molecular crystals."
+                }
+              ]
+            },
+            {
+              "id": "chem-05-lattice",
+              "name": "Crystal lattice and lattice energy",
+              "los": [
+                {
+                  "code": "CHEM-5.4",
+                  "text": "Explain the structure of a crystal lattice."
+                },
+                {
+                  "code": "CHEM-5.5",
+                  "text": "Define lattice energy."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-06",
+          "n": 6,
+          "name": "Chemical Equilibrium",
+          "topics": [
+            {
+              "id": "chem-06-equilibrium",
+              "name": "Chemical equilibrium and Le Chatelier's principle",
+              "los": [
+                {
+                  "code": "CHEM-6.1",
+                  "text": "Define chemical equilibrium in terms of a reversible reaction."
+                },
+                {
+                  "code": "CHEM-6.2",
+                  "text": "Write forward and reverse reactions and describe the macroscopic characteristics of equilibrium."
+                },
+                {
+                  "code": "CHEM-6.3",
+                  "text": "State Le Chatelier's principle and apply it to changes in concentration, pressure, temperature or catalyst."
+                }
+              ]
+            },
+            {
+              "id": "chem-06-ksp",
+              "name": "Solubility product, common ion effect, buffers",
+              "los": [
+                {
+                  "code": "CHEM-6.4",
+                  "text": "Define and explain the solubility product."
+                },
+                {
+                  "code": "CHEM-6.5",
+                  "text": "Define and explain the common ion effect with examples."
+                },
+                {
+                  "code": "CHEM-6.6",
+                  "text": "Define buffer solutions and explain their types."
+                }
+              ]
+            },
+            {
+              "id": "chem-06-haber",
+              "name": "Haber process",
+              "los": [
+                {
+                  "code": "CHEM-6.7",
+                  "text": "Explain the synthesis of ammonia by the Haber process."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-07",
+          "n": 7,
+          "name": "Reaction Kinetics",
+          "topics": [
+            {
+              "id": "chem-07-rate",
+              "name": "Rate of reaction and factors",
+              "los": [
+                {
+                  "code": "CHEM-7.1",
+                  "text": "Define chemical kinetics."
+                },
+                {
+                  "code": "CHEM-7.2",
+                  "text": "Explain rate of reaction and rate equation."
+                },
+                {
+                  "code": "CHEM-7.3",
+                  "text": "Explain qualitatively the factors affecting the rate of reaction."
+                }
+              ]
+            },
+            {
+              "id": "chem-07-order",
+              "name": "Order, activation energy and rate constant",
+              "los": [
+                {
+                  "code": "CHEM-7.4",
+                  "text": "Give the order with respect to a reactant and write the rate law."
+                },
+                {
+                  "code": "CHEM-7.5",
+                  "text": "Explain activation energy and activated complex."
+                },
+                {
+                  "code": "CHEM-7.6",
+                  "text": "Relate activation energy and the activated complex to the rate of reaction."
+                },
+                {
+                  "code": "CHEM-7.7",
+                  "text": "Describe the role of the rate constant in determining reaction rate."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-08",
+          "n": 8,
+          "name": "Thermochemistry & Energetics",
+          "topics": [
+            {
+              "id": "chem-08-terms",
+              "name": "Thermodynamic terms",
+              "los": [
+                {
+                  "code": "CHEM-8.1",
+                  "text": "Define thermodynamics."
+                },
+                {
+                  "code": "CHEM-8.2",
+                  "text": "Classify reactions as exothermic and endothermic."
+                },
+                {
+                  "code": "CHEM-8.3",
+                  "text": "Define system, surroundings, boundary, state function, heat, heat capacity, internal energy, work and enthalpy."
+                },
+                {
+                  "code": "CHEM-8.4",
+                  "text": "Name and define the units of internal energy."
+                }
+              ]
+            },
+            {
+              "id": "chem-08-laws",
+              "name": "First law, Hess's law and enthalpy",
+              "los": [
+                {
+                  "code": "CHEM-8.5",
+                  "text": "Explain the first law of thermodynamics."
+                },
+                {
+                  "code": "CHEM-8.6",
+                  "text": "Apply Hess's law to construct simple energy cycles."
+                },
+                {
+                  "code": "CHEM-8.7",
+                  "text": "Describe the enthalpy of reaction."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-09",
+          "n": 9,
+          "name": "Electrochemistry",
+          "topics": [
+            {
+              "id": "chem-09-redox",
+              "name": "Redox reactions and oxidation numbers",
+              "los": [
+                {
+                  "code": "CHEM-9.1",
+                  "text": "Give the characteristics of a redox reaction."
+                },
+                {
+                  "code": "CHEM-9.2",
+                  "text": "Define oxidation and reduction in terms of change in oxidation number."
+                },
+                {
+                  "code": "CHEM-9.3",
+                  "text": "Use oxidation-number change to identify atoms oxidised or reduced."
+                }
+              ]
+            },
+            {
+              "id": "chem-09-electrodes",
+              "name": "Electrodes and electrode potential",
+              "los": [
+                {
+                  "code": "CHEM-9.4",
+                  "text": "Define cathode, anode, electrode potential and the standard hydrogen electrode."
+                },
+                {
+                  "code": "CHEM-9.5",
+                  "text": "Define the standard electrode potential of an electrode."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-10",
+          "n": 10,
+          "name": "Chemical Bonding",
+          "topics": [
+            {
+              "id": "chem-10-shapes",
+              "name": "VSEPR, hybridisation and shapes",
+              "los": [
+                {
+                  "code": "CHEM-10.1",
+                  "text": "Use VSEPR theory to describe the shapes of molecules."
+                },
+                {
+                  "code": "CHEM-10.2",
+                  "text": "Describe the features of sigma and pi bonds."
+                },
+                {
+                  "code": "CHEM-10.3",
+                  "text": "Describe the shapes of simple molecules using orbital hybridisation."
+                },
+                {
+                  "code": "CHEM-10.4",
+                  "text": "Determine the shapes of molecules from the number of bonded pairs."
+                }
+              ]
+            },
+            {
+              "id": "chem-10-polarity",
+              "name": "Polarity and bond energy",
+              "los": [
+                {
+                  "code": "CHEM-10.5",
+                  "text": "Predict molecular polarity from molecular shape."
+                },
+                {
+                  "code": "CHEM-10.6",
+                  "text": "Explain the ionic character of a covalent bond."
+                },
+                {
+                  "code": "CHEM-10.7",
+                  "text": "Use molecular polarity to explain physical and chemical properties."
+                },
+                {
+                  "code": "CHEM-10.8",
+                  "text": "Define bond energy and use it to compare bond strengths."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-11",
+          "n": 11,
+          "name": "s- and p-Block Elements",
+          "topics": [
+            {
+              "id": "chem-11-trends",
+              "name": "Periodic trends and blocks",
+              "los": [
+                {
+                  "code": "CHEM-11.1",
+                  "text": "Define and explain atomic, ionic and covalent radii, ionisation energy, electron affinity, electronegativity, bond energy and bond length."
+                },
+                {
+                  "code": "CHEM-11.2",
+                  "text": "Recognise the division of the periodic table into s-, p-, d- and f-blocks."
+                }
+              ]
+            },
+            {
+              "id": "chem-11-groups",
+              "name": "Groups I, II and IV",
+              "los": [
+                {
+                  "code": "CHEM-11.3",
+                  "text": "Describe reactions of Group I elements with water, oxygen and chlorine."
+                },
+                {
+                  "code": "CHEM-11.4",
+                  "text": "Describe reactions of Group II elements with water, oxygen and chlorine."
+                },
+                {
+                  "code": "CHEM-11.5",
+                  "text": "Describe reactions of Group IV elements."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-12",
+          "n": 12,
+          "name": "Transition Elements",
+          "topics": [
+            {
+              "id": "chem-12-structure",
+              "name": "Electronic structure of d-block elements",
+              "los": [
+                {
+                  "code": "CHEM-12.1",
+                  "text": "Describe the electronic structures of d-block elements and their ions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-13",
+          "n": 13,
+          "name": "Fundamental Principles of Organic Chemistry",
+          "topics": [
+            {
+              "id": "chem-13-classification",
+              "name": "Organic compounds and functional groups",
+              "los": [
+                {
+                  "code": "CHEM-13.1",
+                  "text": "Define organic chemistry and organic compound."
+                },
+                {
+                  "code": "CHEM-13.2",
+                  "text": "Classify organic compounds on a structural basis."
+                },
+                {
+                  "code": "CHEM-13.3",
+                  "text": "Define functional group."
+                }
+              ]
+            },
+            {
+              "id": "chem-13-isomerism",
+              "name": "Isomerism",
+              "los": [
+                {
+                  "code": "CHEM-13.4",
+                  "text": "Explain stereoisomerism and its types."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-14",
+          "n": 14,
+          "name": "Chemistry of Hydrocarbons",
+          "topics": [
+            {
+              "id": "chem-14-alkanes",
+              "name": "Alkanes",
+              "los": [
+                {
+                  "code": "CHEM-14.1",
+                  "text": "Describe the nomenclature of alkanes."
+                },
+                {
+                  "code": "CHEM-14.2",
+                  "text": "Define free-radical initiation, propagation and termination."
+                },
+                {
+                  "code": "CHEM-14.3",
+                  "text": "Describe free-radical substitution in alkanes (methane, ethane)."
+                },
+                {
+                  "code": "CHEM-14.7",
+                  "text": "Explain dehydration of alcohols and dehydrohalogenation of RX for preparing alkenes."
+                }
+              ]
+            },
+            {
+              "id": "chem-14-alkenes",
+              "name": "Alkenes",
+              "los": [
+                {
+                  "code": "CHEM-14.4",
+                  "text": "Explain the IUPAC nomenclature of alkenes."
+                },
+                {
+                  "code": "CHEM-14.5",
+                  "text": "Explain the shape of ethene in terms of sigma and pi C–C bonds."
+                },
+                {
+                  "code": "CHEM-14.6",
+                  "text": "Describe the structure and reactivity of alkenes (ethene)."
+                }
+              ]
+            },
+            {
+              "id": "chem-14-benzene",
+              "name": "Benzene and its reactions",
+              "los": [
+                {
+                  "code": "CHEM-14.8",
+                  "text": "Explain the shape of benzene (molecular orbital treatment)."
+                },
+                {
+                  "code": "CHEM-14.9",
+                  "text": "Define resonance, resonance energy and relative stability."
+                },
+                {
+                  "code": "CHEM-14.10",
+                  "text": "Compare the reactivity of benzene with alkanes and alkenes."
+                },
+                {
+                  "code": "CHEM-14.11",
+                  "text": "Define addition reactions of benzene and methylbenzene."
+                },
+                {
+                  "code": "CHEM-14.12",
+                  "text": "Describe the mechanism of electrophilic substitution in benzene."
+                },
+                {
+                  "code": "CHEM-14.13",
+                  "text": "Discuss nitration, sulphonation, halogenation and Friedel–Crafts alkylation and acylation of benzene and methylbenzene."
+                },
+                {
+                  "code": "CHEM-14.14",
+                  "text": "Apply the directing effects of substituents in electrophilic substitution of benzene."
+                }
+              ]
+            },
+            {
+              "id": "chem-14-alkynes",
+              "name": "Alkynes; substitution vs addition",
+              "los": [
+                {
+                  "code": "CHEM-14.15",
+                  "text": "Use the IUPAC naming system for alkynes."
+                },
+                {
+                  "code": "CHEM-14.16",
+                  "text": "Describe the preparation of alkynes by elimination reactions."
+                },
+                {
+                  "code": "CHEM-14.17",
+                  "text": "Describe the acidity of alkynes."
+                },
+                {
+                  "code": "CHEM-14.18",
+                  "text": "Discuss hydrogenation, hydrohalogenation and hydration of alkynes."
+                },
+                {
+                  "code": "CHEM-14.19",
+                  "text": "Describe and distinguish substitution and addition reactions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-15",
+          "n": 15,
+          "name": "Alkyl Halides",
+          "topics": [
+            {
+              "id": "chem-15-structure",
+              "name": "Naming, structure and reactivity",
+              "los": [
+                {
+                  "code": "CHEM-15.1",
+                  "text": "Name alkyl halides using the IUPAC system."
+                },
+                {
+                  "code": "CHEM-15.2",
+                  "text": "Discuss the structure and reactivity of RX."
+                }
+              ]
+            },
+            {
+              "id": "chem-15-mechanisms",
+              "name": "Substitution and elimination",
+              "los": [
+                {
+                  "code": "CHEM-15.3",
+                  "text": "Describe the mechanisms and types of nucleophilic substitution (SN1, SN2)."
+                },
+                {
+                  "code": "CHEM-15.4",
+                  "text": "Describe the mechanisms and types of elimination (E1, E2)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-16",
+          "n": 16,
+          "name": "Alcohols & Phenols",
+          "topics": [
+            {
+              "id": "chem-16-alcohols",
+              "name": "Alcohols",
+              "los": [
+                {
+                  "code": "CHEM-16.1",
+                  "text": "Explain the nomenclature and structure of alcohols."
+                },
+                {
+                  "code": "CHEM-16.2",
+                  "text": "Explain the reactivity of alcohols."
+                },
+                {
+                  "code": "CHEM-16.3",
+                  "text": "Describe the preparation of ethers and esters from alcohols."
+                }
+              ]
+            },
+            {
+              "id": "chem-16-phenols",
+              "name": "Phenols, and alcohols vs phenols",
+              "los": [
+                {
+                  "code": "CHEM-16.4",
+                  "text": "Explain the nomenclature, structure and reactivity of phenol."
+                },
+                {
+                  "code": "CHEM-16.5",
+                  "text": "Discuss the electrophilic aromatic substitution of phenol."
+                },
+                {
+                  "code": "CHEM-16.6",
+                  "text": "Distinguish between an alcohol and a phenol."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-17",
+          "n": 17,
+          "name": "Aldehydes & Ketones",
+          "topics": [
+            {
+              "id": "chem-17-structure",
+              "name": "Naming, structure and preparation",
+              "los": [
+                {
+                  "code": "CHEM-17.1",
+                  "text": "Explain the nomenclature and structure of aldehydes and ketones."
+                },
+                {
+                  "code": "CHEM-17.2",
+                  "text": "Discuss the preparation of aldehydes and ketones."
+                }
+              ]
+            },
+            {
+              "id": "chem-17-reactions",
+              "name": "Reactivity and reactions",
+              "los": [
+                {
+                  "code": "CHEM-17.3",
+                  "text": "Describe and compare the reactivity of aldehydes and ketones."
+                },
+                {
+                  "code": "CHEM-17.4",
+                  "text": "Describe acid- and base-catalysed nucleophilic addition reactions."
+                },
+                {
+                  "code": "CHEM-17.5",
+                  "text": "Discuss reduction of aldehydes and ketones to alcohols."
+                },
+                {
+                  "code": "CHEM-17.6",
+                  "text": "Describe oxidation reactions of aldehydes and ketones."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-18",
+          "n": 18,
+          "name": "Carboxylic Acids",
+          "topics": [
+            {
+              "id": "chem-18-acids",
+              "name": "Carboxylic acids and derivatives",
+              "los": [
+                {
+                  "code": "CHEM-18.1",
+                  "text": "Describe the nomenclature, structure and preparation of carboxylic acids."
+                },
+                {
+                  "code": "CHEM-18.2",
+                  "text": "Discuss the reactivity of carboxylic acids."
+                },
+                {
+                  "code": "CHEM-18.3",
+                  "text": "Describe conversion of carboxylic acids to acyl halides, anhydrides, esters and amides, and their interconversion."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-19",
+          "n": 19,
+          "name": "Macromolecules",
+          "topics": [
+            {
+              "id": "chem-19-proteins",
+              "name": "Proteins and enzymes",
+              "los": [
+                {
+                  "code": "CHEM-19.1",
+                  "text": "Explain the classification and structure–function relationship of proteins."
+                },
+                {
+                  "code": "CHEM-19.2",
+                  "text": "Describe the roles of proteins in body functions and their nutritional importance."
+                },
+                {
+                  "code": "CHEM-19.3",
+                  "text": "Describe the role of enzymes as biocatalysts."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chem-20",
+          "n": 20,
+          "name": "Industrial Chemistry",
+          "topics": [
+            {
+              "id": "chem-20-industrial",
+              "name": "Adhesives, dyes and polymers",
+              "los": [
+                {
+                  "code": "CHEM-20.1",
+                  "text": "Know the types and applications of adhesives."
+                },
+                {
+                  "code": "CHEM-20.2",
+                  "text": "Know the types of dyes and their uses."
+                },
+                {
+                  "code": "CHEM-20.3",
+                  "text": "Know about addition and condensation polymers and their sub-types."
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
-      "id": "phy", "name": "Physics", "mcqsInPaper": 36, "bankTarget": 1000,
+      "id": "phy",
+      "name": "Physics",
+      "mcqsInPaper": 36,
+      "bankTarget": 1000,
       "units": [
-        { "id": "phy-01", "n": 1, "name": "Vectors & Equilibrium", "topics": [] },
-        { "id": "phy-02", "n": 2, "name": "Force & Motion", "topics": [] },
-        { "id": "phy-03", "n": 3, "name": "Work & Energy", "topics": [] },
-        { "id": "phy-04", "n": 4, "name": "Rotational & Circular Motion", "topics": [] },
-        { "id": "phy-05", "n": 5, "name": "Fluid Dynamics", "topics": [] },
-        { "id": "phy-06", "n": 6, "name": "Waves", "topics": [] },
-        { "id": "phy-07", "n": 7, "name": "Thermodynamics", "topics": [] },
-        { "id": "phy-08", "n": 8, "name": "Electrostatics", "topics": [] },
-        { "id": "phy-09", "n": 9, "name": "Current Electricity", "topics": [] },
-        { "id": "phy-10", "n": 10, "name": "Electromagnetism", "topics": [] },
-        { "id": "phy-11", "n": 11, "name": "Electromagnetic Induction", "topics": [] },
-        { "id": "phy-12", "n": 12, "name": "Alternating Current", "topics": [] },
-        { "id": "phy-13", "n": 13, "name": "Electronics", "topics": [] },
-        { "id": "phy-14", "n": 14, "name": "Dawn of Modern Physics", "topics": [] },
-        { "id": "phy-15", "n": 15, "name": "Atomic Spectra", "topics": [] },
-        { "id": "phy-16", "n": 16, "name": "Nuclear Physics", "topics": [] }
+        {
+          "id": "phy-01",
+          "n": 1,
+          "name": "Vectors & Equilibrium",
+          "topics": []
+        },
+        {
+          "id": "phy-02",
+          "n": 2,
+          "name": "Force & Motion",
+          "topics": []
+        },
+        {
+          "id": "phy-03",
+          "n": 3,
+          "name": "Work & Energy",
+          "topics": []
+        },
+        {
+          "id": "phy-04",
+          "n": 4,
+          "name": "Rotational & Circular Motion",
+          "topics": []
+        },
+        {
+          "id": "phy-05",
+          "n": 5,
+          "name": "Fluid Dynamics",
+          "topics": []
+        },
+        {
+          "id": "phy-06",
+          "n": 6,
+          "name": "Waves",
+          "topics": []
+        },
+        {
+          "id": "phy-07",
+          "n": 7,
+          "name": "Thermodynamics",
+          "topics": []
+        },
+        {
+          "id": "phy-08",
+          "n": 8,
+          "name": "Electrostatics",
+          "topics": []
+        },
+        {
+          "id": "phy-09",
+          "n": 9,
+          "name": "Current Electricity",
+          "topics": []
+        },
+        {
+          "id": "phy-10",
+          "n": 10,
+          "name": "Electromagnetism",
+          "topics": []
+        },
+        {
+          "id": "phy-11",
+          "n": 11,
+          "name": "Electromagnetic Induction",
+          "topics": []
+        },
+        {
+          "id": "phy-12",
+          "n": 12,
+          "name": "Alternating Current",
+          "topics": []
+        },
+        {
+          "id": "phy-13",
+          "n": 13,
+          "name": "Electronics",
+          "topics": []
+        },
+        {
+          "id": "phy-14",
+          "n": 14,
+          "name": "Dawn of Modern Physics",
+          "topics": []
+        },
+        {
+          "id": "phy-15",
+          "n": 15,
+          "name": "Atomic Spectra",
+          "topics": []
+        },
+        {
+          "id": "phy-16",
+          "n": 16,
+          "name": "Nuclear Physics",
+          "topics": []
+        }
       ]
     },
     {
-      "id": "eng", "name": "English", "mcqsInPaper": 9, "bankTarget": 250,
+      "id": "eng",
+      "name": "English",
+      "mcqsInPaper": 9,
+      "bankTarget": 250,
       "units": [
-        { "id": "eng-01", "n": 1, "name": "Reading & Thinking Skills", "topics": [] },
-        { "id": "eng-02", "n": 2, "name": "Formal & Lexical Aspects of Language", "topics": [] },
-        { "id": "eng-03", "n": 3, "name": "Writing Skills", "topics": [] }
+        {
+          "id": "eng-01",
+          "n": 1,
+          "name": "Reading & Thinking Skills",
+          "topics": []
+        },
+        {
+          "id": "eng-02",
+          "n": 2,
+          "name": "Formal & Lexical Aspects of Language",
+          "topics": []
+        },
+        {
+          "id": "eng-03",
+          "n": 3,
+          "name": "Writing Skills",
+          "topics": []
+        }
       ]
     },
     {
-      "id": "lr", "name": "Logical Reasoning", "mcqsInPaper": 9, "bankTarget": 250,
+      "id": "lr",
+      "name": "Logical Reasoning",
+      "mcqsInPaper": 9,
+      "bankTarget": 250,
       "units": [
-        { "id": "lr-01", "n": 1, "name": "Critical Thinking", "topics": [] },
-        { "id": "lr-02", "n": 2, "name": "Letter & Symbol Series", "topics": [] },
-        { "id": "lr-03", "n": 3, "name": "Logical Deductions", "topics": [] },
-        { "id": "lr-04", "n": 4, "name": "Logical Problems", "topics": [] },
-        { "id": "lr-05", "n": 5, "name": "Course of Action", "topics": [] },
-        { "id": "lr-06", "n": 6, "name": "Cause & Effect", "topics": [] }
+        {
+          "id": "lr-01",
+          "n": 1,
+          "name": "Critical Thinking",
+          "topics": []
+        },
+        {
+          "id": "lr-02",
+          "n": 2,
+          "name": "Letter & Symbol Series",
+          "topics": []
+        },
+        {
+          "id": "lr-03",
+          "n": 3,
+          "name": "Logical Deductions",
+          "topics": []
+        },
+        {
+          "id": "lr-04",
+          "n": 4,
+          "name": "Logical Problems",
+          "topics": []
+        },
+        {
+          "id": "lr-05",
+          "n": 5,
+          "name": "Course of Action",
+          "topics": []
+        },
+        {
+          "id": "lr-06",
+          "n": 6,
+          "name": "Cause & Effect",
+          "topics": []
+        }
       ]
     }
   ]
