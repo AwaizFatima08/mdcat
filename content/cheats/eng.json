@@ -1,0 +1,517 @@
+[
+ {
+  "id": "eng-01-c01",
+  "unit": "eng-01",
+  "kind": "table",
+  "title": "Figures of speech at a glance",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Figure",
+     "What it does",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Simile",
+      "compares two unlike things using 'like' or 'as'",
+      "\"as quiet as a graveyard\""
+     ],
+     [
+      "Metaphor",
+      "says one thing is another, with no 'like' or 'as'",
+      "\"Time is a thief.\""
+     ],
+     [
+      "Personification",
+      "gives human actions or feelings to a thing",
+      "\"The wind whispered.\""
+     ],
+     [
+      "Alliteration",
+      "repeats the same first consonant sound",
+      "\"silent snow slipped slowly\""
+     ],
+     [
+      "Hyperbole",
+      "deliberate, obvious exaggeration",
+      "\"I've told you a thousand times.\""
+     ],
+     [
+      "Onomatopoeia",
+      "a word that imitates a sound",
+      "buzz, sizzle, crash"
+     ],
+     [
+      "Oxymoron",
+      "two opposite words side by side",
+      "\"a deafening silence\""
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Two UNLIKE things compared with 'like' or 'as' → simile; the same comparison without them → metaphor."
+   },
+   {
+    "type": "warn",
+    "text": "\"Ali is as tall as his brother\" is NOT a simile: it compares two things of the same kind, literally."
+   }
+  ]
+ },
+ {
+  "id": "eng-01-c02",
+  "unit": "eng-01",
+  "kind": "trick",
+  "title": "Context clues and scanning",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Guess a hard word from the words around it. Look for the clue type:"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Contrast (unlike, but, although): the word means the opposite of the clue. \"Unlike his talkative brother, Bilal was reticent\" → reticent = quiet.",
+     "Restatement (that is, or, a dash or commas): the meaning is given right after.",
+     "Example (such as, for example): the examples show the meaning.",
+     "Cause and effect (so … that, because): the result explains the word."
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Scanning for facts"
+   },
+   {
+    "type": "p",
+    "text": "Pick the key word or number from the question, find it in the passage, then read that sentence and the one around it."
+   },
+   {
+    "type": "warn",
+    "text": "An option that is true in real life but not stated in the passage is wrong. Answer only from the passage."
+   }
+  ]
+ },
+ {
+  "id": "eng-02-c01",
+  "unit": "eng-02",
+  "kind": "table",
+  "title": "Irony, sarcasm, satire, parody",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Term",
+     "What it is",
+     "Target"
+    ],
+    "rows": [
+     [
+      "Irony",
+      "the result or meaning is the opposite of what is expected or said",
+      "a situation"
+     ],
+     [
+      "Sarcasm",
+      "bitter, mocking irony meant to hurt: \"Oh, brilliant work!\" to someone who broke a glass",
+      "a person"
+     ],
+     [
+      "Satire",
+      "uses humour and exaggeration to expose the faults of society or rulers, hoping for change",
+      "society, institutions"
+     ],
+     [
+      "Parody",
+      "a comic imitation of a particular writer, work or style",
+      "a work or style"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "A column saying roads have \"so many potholes that people swim in them\" mocks the city government → satire."
+   },
+   {
+    "type": "tip",
+    "text": "Shades of meaning: frugal (careful, positive) vs stingy (mean, negative). Check whether the context praises or blames."
+   }
+  ]
+ },
+ {
+  "id": "eng-02-c02",
+  "unit": "eng-02",
+  "kind": "rule",
+  "title": "Tense traps and conditionals",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Since (point of time) / for (period) → present perfect. ✓ \"We have known each other since 2015.\" ✗ \"We know each other since 2015.\"",
+     "Interrupted action → past continuous + simple past. ✓ \"While Sara was cooking, the lights went out.\" ✗ \"While Sara cooked, the lights were going out.\"",
+     "After when / if / as soon as with future meaning, use the present. ✓ \"I will call you when he arrives.\" ✗ \"… when he will arrive.\""
+    ]
+   },
+   {
+    "type": "table",
+    "head": [
+     "Type",
+     "If-clause",
+     "Main clause"
+    ],
+    "rows": [
+     [
+      "1 real future",
+      "present: If it rains,",
+      "will + verb: we will stay in."
+     ],
+     [
+      "2 unreal present",
+      "past: If I were a bird,",
+      "would + verb: I would fly."
+     ],
+     [
+      "3 unreal past",
+      "had + V3: If I had known,",
+      "would have + V3: I would have studied."
+     ]
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Formal English uses 'were' for every person in type 2: ✓ \"If I were\" ✗ \"If I would be\"."
+   }
+  ]
+ },
+ {
+  "id": "eng-02-c03",
+  "unit": "eng-02",
+  "kind": "rule",
+  "title": "Infinitive or gerund?",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "No 'to' after make, let, had better, would rather and modals. ✓ \"The teacher made us rewrite the essay.\" ✗ \"made us to rewrite\"",
+     "Passive brings 'to' back. ✓ \"We were made to rewrite the essay.\"",
+     "-ing after enjoy, avoid, finish, mind, keep, suggest. ✓ \"Sara enjoys reading novels.\" ✗ \"enjoys to read\"",
+     "When 'to' is a preposition, use -ing: look forward to, be used to, object to, with a view to. ✓ \"I look forward to meeting you.\" ✗ \"look forward to meet you\""
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "A gerund is an -ing word working as a noun: \"Swimming is good exercise.\" In \"He is swimming\" it is part of the verb, not a gerund."
+   },
+   {
+    "type": "warn",
+    "text": "Meaning changes: \"He stopped smoking\" (gave it up) vs \"He stopped to smoke\" (paused in order to smoke)."
+   }
+  ]
+ },
+ {
+  "id": "eng-02-c04",
+  "unit": "eng-02",
+  "kind": "table",
+  "title": "Prepositions of time and place",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Use",
+     "Preposition",
+     "Example"
+    ],
+    "rows": [
+     [
+      "clock time, night",
+      "at",
+      "at 7 o'clock, at night"
+     ],
+     [
+      "days and dates",
+      "on",
+      "on Monday, on 14 August"
+     ],
+     [
+      "months, years, parts of the day",
+      "in",
+      "in 1947, in the morning"
+     ],
+     [
+      "deadline: not later than",
+      "by",
+      "Submit it by Friday."
+     ],
+     [
+      "continuing up to a time",
+      "until",
+      "Wait until Friday."
+     ],
+     [
+      "position inside",
+      "in",
+      "Sara was walking in the garden."
+     ],
+     [
+      "movement to the inside",
+      "into",
+      "Sara walked into the garden."
+     ]
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "\"walking in the garden\" = already there, moving about; \"walked into the garden\" = entered it from outside."
+   }
+  ]
+ },
+ {
+  "id": "eng-02-c05",
+  "unit": "eng-02",
+  "kind": "rule",
+  "title": "Inversion after negative openers",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "When a negative or limiting word starts the sentence, use question order: helping verb + subject."
+   },
+   {
+    "type": "list",
+    "items": [
+     "✓ \"Never have I seen such rain.\" ✗ \"Never I have seen such rain.\"",
+     "Fixed pairs: Hardly / Scarcely … when; No sooner … than. ✓ \"No sooner had the train left than it started raining.\" ✗ \"No sooner had the train left when …\"",
+     "✓ \"Little did he know that his friends were planning a surprise.\" ✗ \"Little he knew …\"",
+     "If dropped: ✓ \"Had I known about the test, I would have studied harder.\" = If I had known …"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "No inversion when the word is not first: \"He had hardly sat down when the phone rang.\""
+   }
+  ]
+ },
+ {
+  "id": "eng-02-c06",
+  "unit": "eng-02",
+  "kind": "table",
+  "title": "Passive voice and reported speech",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Active",
+     "Passive"
+    ],
+    "rows": [
+     [
+      "Ali repairs the fan.",
+      "The fan is repaired by Ali."
+     ],
+     [
+      "Ali is repairing the fan.",
+      "The fan is being repaired by Ali."
+     ],
+     [
+      "Ali has repaired the fan.",
+      "The fan has been repaired by Ali."
+     ],
+     [
+      "Did Hamza break the glass?",
+      "Was the glass broken by Hamza?"
+     ],
+     [
+      "The principal gave Bilal a prize.",
+      "Bilal was given a prize by the principal."
+     ]
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Reported speech (past reporting verb)"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Tense moves one step back: is → was, has → had, will → would.",
+     "Question → asked if / whether + statement order, no question mark: Ali asked me if I was coming to the party.",
+     "Request or order → asked / told + to-infinitive: Fatima asked Ali to lend her his pen."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "✗ \"Ali asked me was I coming.\" Reported questions never keep question order."
+   }
+  ]
+ },
+ {
+  "id": "eng-02-c07",
+  "unit": "eng-02",
+  "kind": "rule",
+  "title": "Pronoun agreement and adverb position",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Two subjects joined by 'and' → plural pronoun. ✓ \"Ayesha and Sara finished their homework.\" ✗ \"… finished her homework.\"",
+     "Each / every + noun → singular pronoun and verb. ✓ \"Each of the boys has his own bag.\" ✗ \"Each of the boys have their own bag.\"",
+     "One clear antecedent only. ✗ \"Ali told Bilal that he had passed.\" (who passed?) ✓ \"Ali told Bilal, 'You have passed.'\"",
+     "who for people, which for things. ✓ \"The machine which makes the ice has broken.\" ✗ \"The machine who makes …\""
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Adverb position"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Frequency adverbs go before the main verb but after 'be' or the first helping verb. ✓ \"She always arrives early.\" ✓ \"She is always late.\" ✗ \"She arrives always early.\"",
+     "'Only' goes next to what it limits: \"Only Bilal passed the test\" (nobody else) vs \"Bilal passed only the English test\" (no other test)."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eng-02-c08",
+  "unit": "eng-02",
+  "kind": "rule",
+  "title": "Transition words and punctuation",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Job",
+     "Transition words"
+    ],
+    "rows": [
+     [
+      "result",
+      "therefore, consequently, as a result"
+     ],
+     [
+      "contrast",
+      "however, nevertheless, on the other hand"
+     ],
+     [
+      "addition",
+      "moreover, furthermore, in addition"
+     ],
+     [
+      "warning / alternative",
+      "otherwise"
+     ],
+     [
+      "example",
+      "for example, for instance"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Joining two full sentences with a transition: semicolon before, comma after. ✓ \"Submit the form by Friday; otherwise, your admission will be cancelled.\" ✗ \"Submit the form by Friday, otherwise your admission …\"",
+     "Plural owner: apostrophe after the s. ✓ \"the two students' results\" ✗ \"the two student's results\"",
+     "its = belonging to it; it's = it is. ✓ \"The cat hurt its paw.\" ✗ \"The cat hurt it's paw.\"",
+     "A reported question ends with a full stop. ✓ \"She asked where I lived.\" ✗ \"She asked where I lived?\""
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eng-03-c01",
+  "unit": "eng-03",
+  "kind": "rule",
+  "title": "Subject–verb agreement traps",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Each / every / either / neither (of + plural) → singular verb. ✓ \"Each of the students has a laptop.\" ✗ \"Each of the students have …\"",
+     "as well as, along with, together with do not make the subject plural. ✓ \"The captain, as well as his players, is happy.\" ✗ \"… are happy.\"",
+     "A sum of money, time or distance as one amount → singular. ✓ \"Five hundred rupees is too much for this book.\"",
+     "Neither … nor / either … or → verb agrees with the nearer subject. ✓ \"Neither the teacher nor the students were late.\"",
+     "The number of → singular; a number of → plural. ✓ \"The number of patients has risen.\" ✓ \"A number of patients have recovered.\""
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Cross out the words between the subject and the verb, then match."
+   }
+  ]
+ },
+ {
+  "id": "eng-03-c02",
+  "unit": "eng-03",
+  "kind": "rule",
+  "title": "Common editing errors",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "No preposition after discuss, reach, resemble, or enter (a place). ✓ \"We discussed the plan.\" ✗ \"We discussed about the plan.\"",
+     "Cope with, not 'cope up with'. ✓ \"He could not cope with the pressure.\" ✗ \"cope up with\"",
+     "Hardly, scarcely and barely are already negative. ✓ \"I could hardly hear the speaker.\" ✗ \"I couldn't hardly hear.\"",
+     "Not only … but also: put both parts before the same kind of word. ✓ \"He is not only clever but also hard-working.\" ✗ \"He not only is clever but also hard-working.\"",
+     "A sentence needs a subject and a finite verb, and a 'because' clause cannot stand alone. ✗ \"Because the bus was late.\""
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Doubles to cut: 'return back', 'repeat again', 'reason … is because'."
+   }
+  ]
+ },
+ {
+  "id": "eng-03-c03",
+  "unit": "eng-03",
+  "kind": "trick",
+  "title": "Word forms and spelling",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "The gap comes …",
+     "It needs",
+     "Example"
+    ],
+    "rows": [
+     [
+      "after 'the', 'a' or 'his', with no noun after the gap",
+      "a noun",
+      "The construction of the bridge took three years."
+     ],
+     [
+      "before a noun",
+      "an adjective",
+      "a careful driver"
+     ],
+     [
+      "after an action verb, telling how",
+      "an adverb",
+      "She spoke so movingly that …"
+     ],
+     [
+      "after be, seem, feel, look (linking)",
+      "an adjective",
+      "The soup tastes good."
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "accommodation: double c, double m",
+     "necessary: one c, double s",
+     "receive, ceiling: i before e, except after c",
+     "occurred, beginning: double the last consonant before -ed/-ing when the stress is at the end",
+     "advice (noun) / advise (verb)"
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "✗ \"She spoke so moving that …\" — the gap tells how she spoke, so it needs the adverb."
+   }
+  ]
+ }
+]

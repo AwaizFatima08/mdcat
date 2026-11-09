@@ -1,0 +1,2285 @@
+[
+ {
+  "id": "bio-01-c01",
+  "unit": "bio-01",
+  "kind": "table",
+  "title": "Classifying viruses: genome and shape",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "A virus has DNA or RNA, never both. Capsid = protein coat made of capsomeres."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Genome",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "dsDNA",
+      "Pox (smallpox), herpes, adenovirus, hepatitis B, phage T4"
+     ],
+     [
+      "ssDNA",
+      "Parvovirus, phage φX174"
+     ],
+     [
+      "ssRNA",
+      "TMV, polio, influenza, measles, rabies, HIV"
+     ],
+     [
+      "dsRNA",
+      "Reovirus (rotavirus)"
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "head": [
+     "Shape",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Helical (rod)",
+      "TMV"
+     ],
+     [
+      "Polyhedral",
+      "Adenovirus, polio"
+     ],
+     [
+      "Complex (head + tail)",
+      "Bacteriophage T4"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Most plant viruses are RNA viruses. Envelope (influenza, HIV, herpes) comes from the host cell membrane."
+   },
+   {
+    "type": "warn",
+    "text": "T4 tail lysozyme digests the bacterial wall; only DNA enters. Lysogenic phage DNA in the host chromosome = prophage."
+   }
+  ]
+ },
+ {
+  "id": "bio-01-c02",
+  "unit": "bio-01",
+  "kind": "map",
+  "title": "HIV: how it takes over a helper T cell",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "gp120 on the envelope binds the CD4 receptor of a helper T cell (also macrophages)",
+     "→ envelope fuses; RNA core enters",
+     "→ reverse transcriptase: viral RNA → DNA (hence 'retrovirus')",
+     "→ integrase inserts it into host DNA = provirus",
+     "→ host makes new viral RNA and proteins",
+     "→ new virions bud off, taking host membrane"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Genome: two copies of ssRNA. Falling CD4 count tracks progress to AIDS; patients die of opportunistic infections (e.g. Pneumocystis pneumonia) and cancers such as Kaposi's sarcoma."
+   },
+   {
+    "type": "tip",
+    "text": "Spread: blood, semen, vaginal fluid, breast milk, shared needles, mother to baby. NOT by mosquitoes, touch, sharing food or coughing."
+   },
+   {
+    "type": "warn",
+    "text": "Window period: a newly infected person may test antibody-negative. AZT blocks reverse transcriptase; there is no cure or vaccine."
+   }
+  ]
+ },
+ {
+  "id": "bio-02-c01",
+  "unit": "bio-02",
+  "kind": "map",
+  "title": "Glucose respiration: where and how much",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Stage",
+     "Site",
+     "Per glucose"
+    ],
+    "rows": [
+     [
+      "Glycolysis",
+      "Cytoplasm",
+      "2 pyruvate, net 2 ATP, 2 NADH (uses 2 ATP first)"
+     ],
+     [
+      "Link reaction",
+      "Matrix",
+      "2 acetyl CoA, 2 CO₂, 2 NADH"
+     ],
+     [
+      "Krebs cycle (×2 turns)",
+      "Matrix",
+      "4 CO₂, 6 NADH, 2 FADH₂, 2 ATP"
+     ],
+     [
+      "ETC + ATP synthase",
+      "Inner membrane (cristae)",
+      "Most ATP; O₂ → H₂O"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "One Krebs turn: acetyl CoA (2C) + oxaloacetate (4C) → citrate (6C); releases 2 CO₂, 3 NADH, 1 FADH₂, 1 ATP."
+   },
+   {
+    "type": "tip",
+    "text": "NADH ≈ 3 ATP, FADH₂ ≈ 2 ATP. O₂ is the final electron acceptor; cyanide blocks cytochrome oxidase and stops the chain."
+   },
+   {
+    "type": "warn",
+    "text": "No O₂ → only glycolysis, net 2 ATP. Muscle: pyruvate → lactic acid. Yeast: → ethanol + CO₂. Both regenerate NAD⁺."
+   }
+  ]
+ },
+ {
+  "id": "bio-02-c02",
+  "unit": "bio-02",
+  "kind": "trick",
+  "title": "Proteins and fats as fuel: entry points",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Everything funnels into acetyl CoA or a Krebs/glycolysis intermediate."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Fuel",
+     "First step",
+     "Enters as"
+    ],
+    "rows": [
+     [
+      "Amino acids",
+      "Deamination (liver): NH₂ → NH₃ → urea",
+      "Alanine → pyruvate; glutamate → α-ketoglutarate; aspartate → oxaloacetate"
+     ],
+     [
+      "Glycerol",
+      "Lipase splits fat",
+      "PGAL (glyceraldehyde-3-phosphate) → glycolysis"
+     ],
+     [
+      "Fatty acids",
+      "β-oxidation (mitochondrial matrix)",
+      "2C acetyl CoA units → Krebs"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "β-oxidation count: n-carbon fatty acid → n/2 acetyl CoA in (n/2 − 1) rounds. Palmitic acid (16C) → 8 acetyl CoA, 7 rounds. Each round gives 1 NADH + 1 FADH₂."
+   },
+   {
+    "type": "warn",
+    "text": "Fat gives about twice the energy of carbohydrate per gram (more H, less O). RQ: carbohydrate 1.0, protein ≈ 0.9, fat ≈ 0.7."
+   }
+  ]
+ },
+ {
+  "id": "bio-03-c01",
+  "unit": "bio-03",
+  "kind": "table",
+  "title": "Water: property → why it matters",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Water is 70–90% of a cell. Polar (O δ−, H δ+), bond angle 104.5°; each molecule can H-bond with up to 4 others."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Property",
+     "Biological use"
+    ],
+    "rows": [
+     [
+      "Solvent for polar/ionic substances",
+      "Transport in blood and xylem; reactions in solution"
+     ],
+     [
+      "Reagent",
+      "Hydrolysis; photosynthesis (water is split, gives O₂)"
+     ],
+     [
+      "High specific heat (1 cal/g/°C)",
+      "Body and ponds resist temperature change"
+     ],
+     [
+      "High heat of vaporisation",
+      "Sweating and transpiration cool"
+     ],
+     [
+      "Max density at 4 °C; ice floats",
+      "Ice insulates pond; fish survive below"
+     ],
+     [
+      "Cohesion and adhesion",
+      "Water column in xylem; surface tension"
+     ],
+     [
+      "Slight ionization",
+      "H₂O ⇌ H⁺ + OH⁻; [H⁺] = [OH⁻] = 10⁻⁷ mol/L, neutral"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Almost every answer here traces back to one cause: hydrogen bonding."
+   }
+  ]
+ },
+ {
+  "id": "bio-03-c02",
+  "unit": "bio-03",
+  "kind": "table",
+  "title": "Sugars and polysaccharides at a glance",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Carbohydrate",
+     "Made of",
+     "Note"
+    ],
+    "rows": [
+     [
+      "Maltose",
+      "glucose + glucose (α1→4)",
+      "Reducing"
+     ],
+     [
+      "Sucrose",
+      "glucose + fructose",
+      "Non-reducing; transported in phloem"
+     ],
+     [
+      "Lactose",
+      "glucose + galactose",
+      "Milk sugar; reducing"
+     ],
+     [
+      "Starch",
+      "α-glucose: amylose (unbranched) + amylopectin (α1→6 branches)",
+      "Plant store; iodine → blue-black"
+     ],
+     [
+      "Glycogen",
+      "α-glucose, more branched than amylopectin",
+      "Animal starch; liver and muscle"
+     ],
+     [
+      "Cellulose",
+      "β-glucose, β1→4, unbranched",
+      "Plant wall; most abundant carbohydrate"
+     ],
+     [
+      "Chitin",
+      "N-acetylglucosamine",
+      "Arthropod exoskeleton, fungal wall"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Glucose is an aldose (aldohexose), fructose a ketose (ketohexose); same formula C₆H₁₂O₆, so isomers. Maltose = C₁₂H₂₂O₁₁ (one H₂O lost)."
+   },
+   {
+    "type": "warn",
+    "text": "Humans lack cellulase, so cannot break the β1→4 glucose links of cellulose (lactase does split the β-link in lactose)."
+   }
+  ]
+ },
+ {
+  "id": "bio-03-c03",
+  "unit": "bio-03",
+  "kind": "table",
+  "title": "Four levels of protein structure",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Level",
+     "What it is",
+     "Held by",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Primary",
+      "Amino acid sequence",
+      "Peptide bonds",
+      "Insulin: 51 aa, chains A (21) + B (30); Sanger"
+     ],
+     [
+      "Secondary",
+      "α-helix or β-pleated sheet",
+      "H-bonds (C=O…H–N)",
+      "Keratin (α); silk fibroin (β)"
+     ],
+     [
+      "Tertiary",
+      "3-D folding of one chain",
+      "Disulphide, ionic, H-bonds, hydrophobic",
+      "Myoglobin"
+     ],
+     [
+      "Quaternary",
+      "Two or more chains together",
+      "Same bonds as tertiary",
+      "Haemoglobin: 2α + 2β"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "n amino acids in one chain → n − 1 peptide bonds and n − 1 H₂O released. Disulphide bridge (cysteine–cysteine) is the only covalent bond in tertiary structure."
+   },
+   {
+    "type": "warn",
+    "text": "Denaturation (heat, pH, heavy metals) breaks 2°–4° structure but leaves the primary sequence intact. α-helix and β-sheet: Pauling and Corey."
+   }
+  ]
+ },
+ {
+  "id": "bio-03-c04",
+  "unit": "bio-03",
+  "kind": "formula",
+  "title": "DNA numbers and base-pairing sums",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Watson and Crick, 1953 (X-ray data from Franklin and Wilkins)",
+     "A=T: 2 H-bonds; G≡C: 3 H-bonds; purine always pairs with pyrimidine",
+     "Chargaff: A = T, G = C, so A + G = T + C = 50%",
+     "Rise per base pair 0.34 nm; 10 bp per turn; 3.4 nm per turn; diameter 2 nm",
+     "Strands antiparallel (5′→3′ against 3′→5′), joined within a strand by phosphodiester bonds"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Example: A = 20% → T = 20%, G = C = 30%. Length of 1000 bp = 1000 × 0.34 nm = 340 nm."
+   },
+   {
+    "type": "tip",
+    "text": "H-bonds = 2 × (A–T pairs) + 3 × (G–C pairs). More G–C → harder to separate strands."
+   },
+   {
+    "type": "warn",
+    "text": "RNA swaps thymine for uracil and deoxyribose for ribose. Chargaff's rule does not apply to single-stranded mRNA."
+   }
+  ]
+ },
+ {
+  "id": "bio-04-c01",
+  "unit": "bio-04",
+  "kind": "table",
+  "title": "Prokaryotic vs eukaryotic cells",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Feature",
+     "Prokaryote (bacteria)",
+     "Eukaryote"
+    ],
+    "rows": [
+     [
+      "Nucleus",
+      "None; DNA in nucleoid",
+      "Membrane-bound nucleus"
+     ],
+     [
+      "DNA",
+      "Circular, no histones; plus plasmids",
+      "Linear, with histones"
+     ],
+     [
+      "Ribosomes",
+      "70S (50S + 30S)",
+      "80S (60S + 40S) in cytoplasm"
+     ],
+     [
+      "Wall",
+      "Peptidoglycan (murein)",
+      "Plants cellulose; fungi chitin; animals none"
+     ],
+     [
+      "Organelles",
+      "No mitochondria, ER, Golgi",
+      "Present"
+     ],
+     [
+      "Size",
+      "About 1–10 μm",
+      "About 10–100 μm"
+     ],
+     [
+      "Division",
+      "Binary fission",
+      "Mitosis / meiosis"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Respiration enzymes in bacteria sit on the cell membrane. Mitochondria and chloroplasts have 70S ribosomes and circular DNA, like bacteria."
+   },
+   {
+    "type": "warn",
+    "text": "Gram-positive: thick peptidoglycan. Gram-negative: thin layer + outer lipopolysaccharide membrane. Mycoplasma has no wall at all."
+   }
+  ]
+ },
+ {
+  "id": "bio-04-c02",
+  "unit": "bio-04",
+  "kind": "table",
+  "title": "Organelles: job and exam hook",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Organelle",
+     "Main job",
+     "Exam hook"
+    ],
+    "rows": [
+     [
+      "Nucleus",
+      "Holds DNA; controls cell",
+      "Double envelope with pores; outer membrane continuous with ER"
+     ],
+     [
+      "Nucleolus",
+      "Makes rRNA, assembles ribosomes",
+      "Large in protein-making cells"
+     ],
+     [
+      "Rough ER",
+      "Protein synthesis for export",
+      "Ribosomes attached; rich in pancreas"
+     ],
+     [
+      "Smooth ER",
+      "Lipid and steroid synthesis, detox",
+      "Liver, adrenal cortex, testes; muscle = sarcoplasmic reticulum (Ca²⁺)"
+     ],
+     [
+      "Golgi (Camillo Golgi, 1898)",
+      "Modify (add sugars), package, secrete",
+      "Makes lysosomes; cell plate in plants"
+     ],
+     [
+      "Mitochondria",
+      "Aerobic respiration",
+      "Krebs in matrix; ETC on cristae; own DNA; maternal"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Secretory route: RER → vesicle → Golgi (cis face in, trans face out) → secretory vesicle → plasma membrane."
+   }
+  ]
+ },
+ {
+  "id": "bio-04-c03",
+  "unit": "bio-04",
+  "kind": "mnemonic",
+  "title": "Chromosome types by centromere",
+  "blocks": [
+   {
+    "type": "mn",
+    "text": "M-S-A-T: Middle, Slightly off, Almost at the end, Tip",
+    "items": [
+     "M = Metacentric: centromere in the Middle, arms equal",
+     "S = Submetacentric: Slightly off centre, one arm a bit longer",
+     "A = Acrocentric: Almost at the end, one arm very short",
+     "T = Telocentric: at the Tip, one arm only; not found in humans"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Chromosome = DNA + histone proteins (chromatin). Nucleosome = DNA wound round 8 histones; H1 sits on linker DNA. Ends = telomeres."
+   },
+   {
+    "type": "tip",
+    "text": "Humans: 46 in body cells (44 autosomes + XX or XY), 23 in gametes. Karyotypes are made at metaphase. Trisomy 21 (47) = Down syndrome."
+   },
+   {
+    "type": "warn",
+    "text": "Euchromatin: loosely coiled, light-staining, active. Heterochromatin: tightly coiled, dark, mostly inactive (e.g. Barr body)."
+   }
+  ]
+ },
+ {
+  "id": "bio-05-c01",
+  "unit": "bio-05",
+  "kind": "table",
+  "title": "Receptor types",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Receptors are transducers: they change stimulus energy into nerve impulses (via a receptor/generator potential)."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Type",
+     "Detects",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "Mechanoreceptor",
+      "touch, pressure, sound, stretch",
+      "Meissner's, Pacinian, cochlear hair cells, baroreceptors, muscle spindles"
+     ],
+     [
+      "Chemoreceptor",
+      "chemicals",
+      "taste buds, olfactory cells, carotid & aortic bodies (CO₂, O₂, pH)"
+     ],
+     [
+      "Thermoreceptor",
+      "heat, cold",
+      "free nerve endings in skin"
+     ],
+     [
+      "Nociceptor",
+      "damaging stimuli → pain",
+      "free (naked) nerve endings"
+     ],
+     [
+      "Photoreceptor",
+      "light",
+      "rods (dim light, no colour), cones (colour)"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Meissner's corpuscle: light touch, just under the epidermis (many in fingertips, lips).",
+     "Pacinian corpuscle: deep pressure, deep dermis; onion-like layers around a nerve ending."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "A stronger stimulus gives MORE impulses per second, not bigger impulses."
+   }
+  ]
+ },
+ {
+  "id": "bio-05-c02",
+  "unit": "bio-05",
+  "kind": "map",
+  "title": "Nerve impulse step by step",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Resting (≈ −70 mV): inside negative. Na⁺ high outside, K⁺ high inside. Na⁺/K⁺ pump: 3 Na⁺ out, 2 K⁺ in per ATP.",
+     "Threshold stimulus → Na⁺ channels open → Na⁺ rushes IN → depolarisation (inside becomes +).",
+     "K⁺ channels open → K⁺ moves OUT → repolarisation.",
+     "K⁺ channels close slowly → membrane dips below rest (hyperpolarisation, 'undershoot') → Na⁺/K⁺ pump keeps the ion gradients → back to resting potential."
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "All-or-none: below threshold = no impulse; above = full-size impulse.",
+     "Myelinated axon: impulse jumps node to node (saltatory) → fastest in thick myelinated fibres.",
+     "Synapse: Ca²⁺ enters knob → vesicles release neurotransmitter (e.g. acetylcholine) → one-way only, because vesicles are only presynaptic."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Block acetylcholinesterase → ACh is not broken down → continuous stimulation of the next cell."
+   }
+  ]
+ },
+ {
+  "id": "bio-05-c03",
+  "unit": "bio-05",
+  "kind": "trick",
+  "title": "Reflex arc and reflex types",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Arc: receptor → sensory neuron (dorsal root; cell body in dorsal root ganglion) → interneuron (grey matter) → motor neuron (ventral root; cell body in ventral horn) → effector."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Basis",
+     "Types",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Centre",
+      "spinal / cranial",
+      "knee jerk / pupil narrowing in bright light"
+     ],
+     [
+      "Learning",
+      "unconditioned (inborn) / conditioned (learned)",
+      "baby's grasp / Pavlov's dog salivating at a bell"
+     ],
+     [
+      "Synapses",
+      "monosynaptic / polysynaptic",
+      "knee jerk / withdrawal from heat"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Knee jerk = 2 neurons, 1 synapse, no interneuron; effector = quadriceps (thigh) muscle, so the leg kicks."
+   },
+   {
+    "type": "warn",
+    "text": "Cut dorsal roots → no sensation and no reflex. A spinal reflex below a cut spinal cord still works."
+   }
+  ]
+ },
+ {
+  "id": "bio-05-c04",
+  "unit": "bio-05",
+  "kind": "table",
+  "title": "Brain parts and jobs",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Part",
+     "Division",
+     "Main job"
+    ],
+    "rows": [
+     [
+      "Cerebrum",
+      "forebrain",
+      "thinking, memory, senses, voluntary movement"
+     ],
+     [
+      "Thalamus",
+      "forebrain",
+      "relay station for sensory impulses to cortex"
+     ],
+     [
+      "Hypothalamus",
+      "forebrain",
+      "thirst, hunger, body temperature; controls pituitary"
+     ],
+     [
+      "Midbrain",
+      "midbrain",
+      "visual and auditory reflexes (turning head to a sound or flash)"
+     ],
+     [
+      "Cerebellum",
+      "hindbrain",
+      "balance, smooth coordinated movement"
+     ],
+     [
+      "Pons",
+      "hindbrain",
+      "relay; helps control breathing"
+     ],
+     [
+      "Medulla",
+      "hindbrain",
+      "breathing, heart rate, blood pressure"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Lobes: frontal (motor area in front of central sulcus, Broca's speech), parietal (touch/pain sensory area behind it), temporal (hearing, Wernicke's understanding), occipital (vision).",
+     "Brainstem = midbrain + pons + medulla. Corpus callosum joins the hemispheres; limbic system (hippocampus) = emotion and memory."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Control is crossed: left motor area damage → weakness on the RIGHT side."
+   }
+  ]
+ },
+ {
+  "id": "bio-06-c01",
+  "unit": "bio-06",
+  "kind": "table",
+  "title": "Enzyme parts and models",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Apoenzyme (protein only, inactive) + cofactor = holoenzyme (active)."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Cofactor",
+     "Nature",
+     "Binding",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Prosthetic group",
+      "organic",
+      "tight, covalent, permanent",
+      "haem of cytochromes"
+     ],
+     [
+      "Coenzyme",
+      "organic (often from vitamins)",
+      "loose, detachable",
+      "NAD⁺, FAD"
+     ],
+     [
+      "Activator",
+      "inorganic metal ion",
+      "detachable",
+      "Mg²⁺, Zn²⁺, Fe²⁺"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Lock and key (Emil Fischer): rigid active site fits one substrate.",
+     "Induced fit (Koshland): active site changes shape around the substrate; explains enzymes that act on related substrates."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Enzymes speed reactions by lowering activation energy; they are not used up and do not change the products or ΔH."
+   }
+  ]
+ },
+ {
+  "id": "bio-06-c02",
+  "unit": "bio-06",
+  "kind": "trick",
+  "title": "Rate graphs: temperature, pH, concentration",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Temperature: rate rises to the optimum (≈37 °C for human enzymes), then falls sharply as H-bonds break and the enzyme denatures.",
+     "Cold only slows enzymes (reversible); boiling denatures them for good.",
+     "pH: bell-shaped curve; wrong pH changes charges in the active site.",
+     "Enzyme concentration (substrate in excess): rate rises in a straight line.",
+     "Substrate concentration: rate rises, then levels off when all active sites are full (saturation)."
+    ]
+   },
+   {
+    "type": "table",
+    "head": [
+     "Enzyme",
+     "Optimum pH"
+    ],
+    "rows": [
+     [
+      "Pepsin",
+      "2.0"
+     ],
+     [
+      "Salivary amylase",
+      "6.8"
+     ],
+     [
+      "Pancreatic lipase",
+      "9.0"
+     ]
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "At saturation, adding more substrate does nothing; only more enzyme raises the rate."
+   }
+  ]
+ },
+ {
+  "id": "bio-06-c03",
+  "unit": "bio-06",
+  "kind": "table",
+  "title": "Enzyme inhibitors",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Type",
+     "Binds to",
+     "Beaten by more substrate?",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Competitive",
+      "active site (looks like substrate)",
+      "yes",
+      "malonate on succinate dehydrogenase"
+     ],
+     [
+      "Non-competitive",
+      "another site; changes enzyme shape",
+      "no",
+      "heavy-metal ions"
+     ],
+     [
+      "Irreversible",
+      "enzyme, by strong covalent bonds",
+      "no; enzyme lost for good",
+      "nerve gases on acetylcholinesterase"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Feedback inhibition: the end product binds the allosteric site of the FIRST enzyme in its pathway; when the product level falls, the enzyme works again. It stops waste of raw materials."
+   },
+   {
+    "type": "tip",
+    "text": "Inhibition strong at low substrate but gone at high substrate = competitive."
+   }
+  ]
+ },
+ {
+  "id": "bio-07-c01",
+  "unit": "bio-07",
+  "kind": "map",
+  "title": "Origin of life: chemical evolution",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Earth ≈ 4.6 billion years old. Early atmosphere: CH₄, NH₃, H₂, H₂O vapour, no free O₂."
+   },
+   {
+    "type": "list",
+    "items": [
+     "Gases → (lightning, UV light, heat) → simple organic monomers (amino acids, sugars, bases)",
+     "Monomers → polymers (proteins, nucleic acids)",
+     "Polymers cluster in water → coacervates (Oparin)",
+     "Coacervates → first cells: anaerobic, heterotrophic prokaryotes",
+     "Later: photosynthesis → free O₂ → ozone layer, aerobic life"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Miller–Urey (1953) passed sparks through CH₄ + NH₃ + H₂ + H₂O; after a week the water held amino acids."
+   },
+   {
+    "type": "warn",
+    "text": "Organic molecules can't build up today: O₂ oxidises them and microbes eat them. RNA was likely the first hereditary molecule (it can store information and act as a catalyst)."
+   }
+  ]
+ },
+ {
+  "id": "bio-07-c02",
+  "unit": "bio-07",
+  "kind": "table",
+  "title": "Lamarck vs Darwin",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "",
+     "Lamarck",
+     "Darwin"
+    ],
+    "rows": [
+     [
+      "Book",
+      "Philosophie Zoologique (1809)",
+      "On the Origin of Species (1859)"
+     ],
+     [
+      "Key idea",
+      "use and disuse; inheritance of acquired characters",
+      "natural selection of inherited variations"
+     ],
+     [
+      "Giraffe",
+      "stretched its neck; longer neck passed on",
+      "long-necked variants survived and bred more"
+     ],
+     [
+      "Influences",
+      "-",
+      "Malthus (population outgrows food), Galápagos finches, pigeon breeders"
+     ],
+     [
+      "Status",
+      "rejected",
+      "accepted; updated as Neo-Darwinism (genetics + mutation)"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Weismann cut the tails of mice for many generations; babies were still born with tails. Germplasm theory: only changes in germ (sex) cells are inherited."
+   },
+   {
+    "type": "tip",
+    "text": "'Survival of the fittest' was coined by Herbert Spencer, not Darwin."
+   }
+  ]
+ },
+ {
+  "id": "bio-07-c03",
+  "unit": "bio-07",
+  "kind": "trick",
+  "title": "Natural selection in action",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "1. Overproduction of offspring, yet population size stays fairly steady",
+     "2. Struggle for existence, fiercest within the same species",
+     "3. Variation, and only inherited variation matters",
+     "4. Survival of the fittest: fittest = leaves the most offspring",
+     "5. Favourable traits accumulate → new species"
+    ]
+   },
+   {
+    "type": "table",
+    "head": [
+     "Example",
+     "Selecting agent"
+    ],
+    "rows": [
+     [
+      "Peppered moth: dark form spread with soot, light form returned after clean air",
+      "birds eating visible moths"
+     ],
+     [
+      "Antibiotic-resistant bacteria",
+      "antibiotic"
+     ],
+     [
+      "DDT-resistant houseflies",
+      "DDT"
+     ],
+     [
+      "Sickle-cell allele common in malaria areas",
+      "malaria"
+     ]
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "The drug or spray does NOT cause resistance; it kills the rest, leaving resistant variants that were already there. No variation = no selection."
+   }
+  ]
+ },
+ {
+  "id": "bio-08-c01",
+  "unit": "bio-08",
+  "kind": "mnemonic",
+  "title": "Male system: SEVEN UP",
+  "blocks": [
+   {
+    "type": "mn",
+    "text": "SEVEN UP: the path of sperm",
+    "items": [
+     "S: Seminiferous tubules (testis), where sperm are made",
+     "E: Epididymis, sperm mature and are stored",
+     "V: Vas deferens",
+     "E: Ejaculatory duct (vas deferens + seminal vesicle duct)",
+     "N: Nothing",
+     "U: Urethra",
+     "P: Penis"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Glands: seminal vesicles, prostate (around urethra below bladder), Cowper's (bulbourethral; mucus)."
+   },
+   {
+    "type": "p",
+    "text": "Hypothalamus GnRH → pituitary FSH + LH. LH → Leydig (interstitial) cells → testosterone. FSH + testosterone → spermatogenesis. High testosterone → less GnRH and LH (negative feedback)."
+   },
+   {
+    "type": "tip",
+    "text": "1 primary spermatocyte → 4 sperm; 1 primary oocyte → 1 ovum + polar bodies."
+   }
+  ]
+ },
+ {
+  "id": "bio-08-c02",
+  "unit": "bio-08",
+  "kind": "table",
+  "title": "Menstrual cycle (28 days)",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Days",
+     "Phase",
+     "Hormones",
+     "Uterus lining"
+    ],
+    "rows": [
+     [
+      "1–5",
+      "Menstrual",
+      "oestrogen and progesterone low",
+      "shed (bleeding)"
+     ],
+     [
+      "6–13",
+      "Follicular (proliferative)",
+      "FSH → follicle grows → oestrogen rises",
+      "rebuilds"
+     ],
+     [
+      "~14",
+      "Ovulation",
+      "LH surge (high oestrogen: positive feedback)",
+      "thick"
+     ],
+     [
+      "15–28",
+      "Luteal (secretory)",
+      "corpus luteum → progesterone (+ oestrogen); FSH, LH low",
+      "thick, glandular, ready for implantation"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "No fertilisation → corpus luteum breaks down → progesterone falls → menstruation.",
+     "Pregnancy → hCG keeps the corpus luteum alive → no menstruation."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Ovulation releases a SECONDARY oocyte; fertilisation is in the oviduct. Bleeding starts 1 March → ovulation ≈ 14 March."
+   }
+  ]
+ },
+ {
+  "id": "bio-08-c03",
+  "unit": "bio-08",
+  "kind": "table",
+  "title": "Sexually transmitted diseases",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Disease",
+     "Cause",
+     "Key signs"
+    ],
+    "rows": [
+     [
+      "Gonorrhoea",
+      "Neisseria gonorrhoeae (Gram-negative diplococcus)",
+      "pus discharge, burning urination; women often have no symptoms"
+     ],
+     [
+      "Syphilis",
+      "Treponema pallidum (spirochaete)",
+      "painless chancre → skin rash → years later heart, brain and nerve damage"
+     ],
+     [
+      "Genital herpes",
+      "Herpes simplex virus (HSV-2)",
+      "painful blisters that come back; virus hides in nerve ganglia"
+     ],
+     [
+      "AIDS",
+      "HIV (retrovirus)",
+      "destroys helper T cells → opportunistic infections and cancers (Kaposi's sarcoma)"
+     ]
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "The syphilis chancre heals by itself but the infection goes on. Treponema can cross the placenta to the fetus."
+   },
+   {
+    "type": "tip",
+    "text": "Bacteria (gonorrhoea, syphilis) respond to antibiotics; viruses (herpes, HIV) do not."
+   }
+  ]
+ },
+ {
+  "id": "bio-09-c01",
+  "unit": "bio-09",
+  "kind": "table",
+  "title": "Three cartilages and three bone cells",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Cartilage",
+     "Matrix fibres",
+     "Perichondrium",
+     "Found in"
+    ],
+    "rows": [
+     [
+      "Hyaline",
+      "Fine collagen (glassy look)",
+      "Yes (not on joint surfaces)",
+      "Trachea rings, nose, ends of long bones"
+     ],
+     [
+      "Elastic",
+      "Many elastic fibres",
+      "Yes",
+      "Pinna, epiglottis"
+     ],
+     [
+      "Fibrocartilage",
+      "Thick collagen bundles (toughest)",
+      "No",
+      "Intervertebral discs, pubic symphysis"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Osteoblast = bone Builder (secretes matrix)",
+     "Osteocyte = blast trapped in a lacuna (maintains bone)",
+     "Osteoclast = Clears bone (large, multinucleate, resorbs matrix)"
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Cartilage has no blood vessels: chondrocytes get food by diffusion through the matrix, so cartilage heals slowly."
+   }
+  ]
+ },
+ {
+  "id": "bio-09-c02",
+  "unit": "bio-09",
+  "kind": "table",
+  "title": "Skeletal vs cardiac vs smooth muscle",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Feature",
+     "Skeletal",
+     "Cardiac",
+     "Smooth"
+    ],
+    "rows": [
+     [
+      "Cell shape",
+      "Long cylinders, unbranched",
+      "Branched",
+      "Spindle, unbranched"
+     ],
+     [
+      "Nuclei",
+      "Many, at edge",
+      "One (or two), central",
+      "One, central"
+     ],
+     [
+      "Striations",
+      "Yes",
+      "Yes",
+      "No"
+     ],
+     [
+      "Control",
+      "Voluntary",
+      "Involuntary (myogenic)",
+      "Involuntary (autonomic)"
+     ],
+     [
+      "Special feature",
+      "Fibres = multinucleate cells",
+      "Intercalated discs",
+      "Walls of gut, vessels, uterus"
+     ],
+     [
+      "Fatigue",
+      "Fatigues quickly",
+      "Does not fatigue (rests in each diastole)",
+      "Fatigues very little (slow, sustained contraction)"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Striated + involuntary = cardiac only. Intercalated discs let the impulse pass quickly so heart cells contract together."
+   }
+  ]
+ },
+ {
+  "id": "bio-09-c03",
+  "unit": "bio-09",
+  "kind": "map",
+  "title": "Sliding filament: from nerve to contraction",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Nerve impulse → acetylcholine released at neuromuscular junction",
+     "→ sarcolemma depolarised → impulse runs down T-tubules",
+     "→ sarcoplasmic reticulum releases Ca²⁺",
+     "→ Ca²⁺ binds troponin → tropomyosin moves off actin's binding sites",
+     "→ myosin heads bind actin (cross-bridges) → power stroke pulls thin filaments to the centre",
+     "→ new ATP binds myosin → head detaches → ATP split, head re-cocks"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Thick filament = myosin. Thin filament = actin + tropomyosin + troponin. Sarcomere = Z line to Z line."
+   },
+   {
+    "type": "tip",
+    "text": "On contraction, H zone and I band shorten (\"HI shrink\"); the A band stays the same length; Z lines move closer."
+   },
+   {
+    "type": "warn",
+    "text": "Rigor mortis: no ATP after death, so myosin heads cannot detach from actin."
+   }
+  ]
+ },
+ {
+  "id": "bio-09-c04",
+  "unit": "bio-09",
+  "kind": "table",
+  "title": "Joints and the three arthritis types",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Joint type",
+     "Movement",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "Fibrous",
+      "Immovable",
+      "Skull sutures, teeth in sockets"
+     ],
+     [
+      "Cartilaginous",
+      "Slight",
+      "Between vertebral bodies, pubic symphysis"
+     ],
+     [
+      "Synovial: ball-and-socket",
+      "All directions",
+      "Hip, shoulder"
+     ],
+     [
+      "Synovial: hinge",
+      "One plane",
+      "Elbow, knee"
+     ],
+     [
+      "Synovial: saddle",
+      "Two planes",
+      "Base of thumb"
+     ]
+    ]
+   },
+   {
+    "type": "table",
+    "head": [
+     "Arthritis",
+     "Cause",
+     "Clue"
+    ],
+    "rows": [
+     [
+      "Osteoarthritis",
+      "Wear of articular cartilage",
+      "Elderly, bony spurs"
+     ],
+     [
+      "Rheumatoid",
+      "Autoimmune attack on synovial membrane",
+      "Swollen, deformed joints"
+     ],
+     [
+      "Gout",
+      "Uric acid (urate) crystals in joint",
+      "High blood uric acid, often big toe"
+     ]
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Ligament = bone to bone; tendon = muscle to bone."
+   }
+  ]
+ },
+ {
+  "id": "bio-10-c01",
+  "unit": "bio-10",
+  "kind": "table",
+  "title": "Mendel's ratios at a glance",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Cross",
+     "Phenotype ratio",
+     "Genotype ratio"
+    ],
+    "rows": [
+     [
+      "Monohybrid F2 (Tt × Tt)",
+      "3 : 1",
+      "1 : 2 : 1"
+     ],
+     [
+      "Monohybrid test cross (Tt × tt)",
+      "1 : 1",
+      "1 : 1"
+     ],
+     [
+      "Dihybrid F2 (RrYy × RrYy)",
+      "9 : 3 : 3 : 1",
+      "9 genotypes"
+     ],
+     [
+      "Dihybrid test cross (RrYy × rryy)",
+      "1 : 1 : 1 : 1",
+      "1 : 1 : 1 : 1"
+     ],
+     [
+      "Incomplete dominance F2 (red × white → pink)",
+      "1 : 2 : 1",
+      "1 : 2 : 1"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Segregation: the two alleles separate into different gametes (anaphase I). Independent assortment: genes on different chromosomes sort into gametes independently."
+   },
+   {
+    "type": "tip",
+    "text": "Of the tall F2 plants, 2/3 are heterozygous. A test cross giving all dominant offspring means the parent was homozygous (TT)."
+   }
+  ]
+ },
+ {
+  "id": "bio-10-c02",
+  "unit": "bio-10",
+  "kind": "trick",
+  "title": "Fast gamete and probability counts",
+  "blocks": [
+   {
+    "type": "h",
+    "text": "Gamete types = 2ⁿ"
+   },
+   {
+    "type": "p",
+    "text": "n = number of heterozygous gene pairs (homozygous pairs add nothing)."
+   },
+   {
+    "type": "list",
+    "items": [
+     "TT → 2⁰ = 1 type",
+     "RrYy → 2² = 4 types (RY, Ry, rY, ry)",
+     "AaBBCcDd → 2³ = 8 types (BB is homozygous)"
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Product rule"
+   },
+   {
+    "type": "p",
+    "text": "Split a dihybrid into two monohybrids and multiply. RrYy × RrYy: round green = 3/4 × 1/4 = 3/16; RrYy offspring = 1/2 × 1/2 = 1/4."
+   },
+   {
+    "type": "tip",
+    "text": "Punnett square boxes = (gamete types of parent 1) × (gamete types of parent 2): RrYy × RrYy = 4 × 4 = 16."
+   }
+  ]
+ },
+ {
+  "id": "bio-10-c03",
+  "unit": "bio-10",
+  "kind": "formula",
+  "title": "Linkage, crossing over and map units",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Recombination frequency (%) = (recombinant offspring ÷ total offspring) × 100"
+   },
+   {
+    "type": "list",
+    "items": [
+     "1 map unit (centimorgan) = 1% recombination",
+     "Crossing over: between non-sister chromatids in prophase I (pachytene); chiasmata visible in diplotene",
+     "Linked genes: parental classes outnumber recombinant classes in a test cross",
+     "No crossing over: coupling dihybrid AB/ab gives only 2 gamete types (AB, ab)",
+     "Morgan used Drosophila (4 pairs of chromosomes)"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Gene order: the two genes with the largest distance are at the ends. A–B 12, B–C 5, A–C 17 → order A–B–C."
+   },
+   {
+    "type": "warn",
+    "text": "Recombination never exceeds 50%; 50% looks like independent assortment (genes far apart or on different chromosomes)."
+   }
+  ]
+ },
+ {
+  "id": "bio-10-c04",
+  "unit": "bio-10",
+  "kind": "trick",
+  "title": "X-linked recessive rules (hemophilia, colour blindness)",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Father never passes an X-linked allele to his son (son gets his Y)",
+     "Affected father × normal mother → all daughters carriers, all sons normal",
+     "Carrier mother × normal father → ½ sons affected, ½ daughters carriers",
+     "Affected son of normal parents got the allele from his mother",
+     "More common in males: one X, so one recessive allele shows"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Hemophilia A = factor VIII missing; hemophilia B (Christmas disease) = factor IX. Blood clots very slowly."
+   },
+   {
+    "type": "tip",
+    "text": "Y-linked (holandric) traits pass from father to all sons and never to daughters."
+   },
+   {
+    "type": "warn",
+    "text": "Read the question: \"proportion of sons\" (½) is not \"proportion of all children\" (¼)."
+   }
+  ]
+ },
+ {
+  "id": "bio-11-c01",
+  "unit": "bio-11",
+  "kind": "map",
+  "title": "Heart: valves and the impulse pathway",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Right side: right atrium → tricuspid valve → right ventricle → pulmonary semilunar valve → pulmonary trunk",
+     "Left side: 4 pulmonary veins → left atrium → bicuspid (mitral) valve → left ventricle → aortic semilunar valve → aorta",
+     "Chordae tendineae (anchored to papillary muscles) stop AV valves turning inside out"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Impulse: SA node (pacemaker, wall of right atrium) → atria contract → AV node (short delay) → bundle of His → Purkinje fibres → ventricles contract."
+   },
+   {
+    "type": "tip",
+    "text": "\"Lubb\" = AV valves closing (start of ventricular systole); \"dub\" = semilunar valves closing."
+   },
+   {
+    "type": "warn",
+    "text": "Heart is myogenic: the beat starts in the SA node itself. Vagus nerve slows it; sympathetic nerves speed it up."
+   }
+  ]
+ },
+ {
+  "id": "bio-11-c02",
+  "unit": "bio-11",
+  "kind": "table",
+  "title": "Cardiac cycle timings at 75 beats/min",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Phase",
+     "Time (s)"
+    ],
+    "rows": [
+     [
+      "Whole cycle (60 ÷ 75)",
+      "0.8"
+     ],
+     [
+      "Atrial systole",
+      "0.1"
+     ],
+     [
+      "Ventricular systole",
+      "0.3"
+     ],
+     [
+      "Complete diastole (all relaxed)",
+      "0.4"
+     ],
+     [
+      "Ventricles relaxed in total",
+      "0.5"
+     ],
+     [
+      "Atria relaxed in total",
+      "0.7"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "ECG: P wave = atrial depolarisation; QRS = ventricular depolarisation; T wave = ventricular repolarisation."
+   },
+   {
+    "type": "tip",
+    "text": "Most ventricular filling happens passively during complete diastole, before the atria contract."
+   },
+   {
+    "type": "warn",
+    "text": "Left ventricle has the thickest wall: it pumps blood round the whole body. Normal adult BP is about 120/80 mmHg."
+   }
+  ]
+ },
+ {
+  "id": "bio-11-c03",
+  "unit": "bio-11",
+  "kind": "table",
+  "title": "Arteries, veins, capillaries and lymph",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Feature",
+     "Artery",
+     "Vein",
+     "Capillary"
+    ],
+    "rows": [
+     [
+      "Wall",
+      "Thick, muscular, elastic",
+      "Thin, less muscle",
+      "One cell thick (endothelium)"
+     ],
+     [
+      "Lumen",
+      "Narrow",
+      "Wide",
+      "About one RBC wide"
+     ],
+     [
+      "Valves",
+      "No",
+      "Yes",
+      "No"
+     ],
+     [
+      "Pressure",
+      "High",
+      "Low",
+      "Falling; slowest flow"
+     ],
+     [
+      "Role",
+      "Away from heart",
+      "To heart; blood reservoir",
+      "Exchange with tissues"
+     ]
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Exceptions: pulmonary artery carries deoxygenated blood; pulmonary veins carry oxygenated blood. Hepatic portal vein runs capillaries (gut) to capillaries (liver)."
+   },
+   {
+    "type": "tip",
+    "text": "Lymph: one-way system with no pump; moved by skeletal muscle squeeze and valves. Lacteals in villi carry milky chyle. Thoracic duct empties into the left subclavian vein."
+   }
+  ]
+ },
+ {
+  "id": "bio-12-c01",
+  "unit": "bio-12",
+  "kind": "table",
+  "title": "Five antibody classes",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Class",
+     "Form",
+     "Key fact"
+    ],
+    "rows": [
+     [
+      "IgG",
+      "Monomer",
+      "Most abundant in plasma; crosses placenta; main antibody of secondary response"
+     ],
+     [
+      "IgA",
+      "Dimer in secretions",
+      "Tears, saliva, breast milk, mucus"
+     ],
+     [
+      "IgM",
+      "Pentamer (largest)",
+      "First made in a primary response"
+     ],
+     [
+      "IgE",
+      "Monomer",
+      "Binds mast cells; allergy"
+     ],
+     [
+      "IgD",
+      "Monomer",
+      "Receptor on B-cell surface; tiny amount in plasma"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Each antibody: 4 polypeptide chains (2 heavy + 2 light) held by disulphide bonds; Y-shaped; 2 antigen-binding sites at the variable regions of the arm tips."
+   },
+   {
+    "type": "tip",
+    "text": "Remember the classes as GAMED. Antibody actions: agglutination (clumps cells), precipitation (soluble antigen), neutralisation (toxins), complement activation (lysis)."
+   }
+  ]
+ },
+ {
+  "id": "bio-12-c02",
+  "unit": "bio-12",
+  "kind": "table",
+  "title": "B cells vs T cells",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Feature",
+     "B lymphocytes",
+     "T lymphocytes"
+    ],
+    "rows": [
+     [
+      "Made in",
+      "Bone marrow",
+      "Bone marrow"
+     ],
+     [
+      "Mature in",
+      "Bone marrow (bursa of Fabricius in birds)",
+      "Thymus"
+     ],
+     [
+      "Immunity",
+      "Humoral (antibody-mediated)",
+      "Cell-mediated"
+     ],
+     [
+      "Cell types",
+      "Plasma cells (secrete antibodies), memory B cells",
+      "Killer (cytotoxic), helper, suppressor, memory T cells"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Clonal selection: antigen activates only the B cells whose receptors fit it; they divide into a clone",
+     "Secondary response: faster, larger, longer-lasting (memory cells); mainly IgG",
+     "Infection or vaccine = active immunity; ready-made antibodies (from mother or injection) = passive"
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "HIV destroys helper T cells, so both humoral and cell-mediated responses fail."
+   }
+  ]
+ },
+ {
+  "id": "bio-13-c01",
+  "unit": "bio-13",
+  "kind": "trick",
+  "title": "How blood carries O₂ and CO₂",
+  "blocks": [
+   {
+    "type": "h",
+    "text": "Oxygen"
+   },
+   {
+    "type": "list",
+    "items": [
+     "About 97% as oxyhaemoglobin, about 3% dissolved in plasma",
+     "O₂ binds the iron (Fe²⁺) of haem; one Hb carries at most 4 O₂"
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Carbon dioxide"
+   },
+   {
+    "type": "list",
+    "items": [
+     "About 70% as bicarbonate (HCO₃⁻) in plasma",
+     "About 23% as carbaminohaemoglobin (CO₂ on the globin part)",
+     "About 7% dissolved in plasma",
+     "Carbonic anhydrase in RBCs: CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻",
+     "HCO₃⁻ leaves the RBC, Cl⁻ enters: the chloride shift"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Bohr effect: more CO₂ / more H⁺ (lower pH) shifts the O₂ curve to the RIGHT, so Hb releases O₂ to busy tissues. Higher temperature also shifts it right."
+   }
+  ]
+ },
+ {
+  "id": "bio-13-c02",
+  "unit": "bio-13",
+  "kind": "formula",
+  "title": "Lung volumes",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Volume",
+     "Meaning",
+     "Typical adult"
+    ],
+    "rows": [
+     [
+      "Tidal volume (TV)",
+      "in or out in one quiet breath",
+      "≈ 500 mL"
+     ],
+     [
+      "Inspiratory reserve (IRV)",
+      "extra air you can force in",
+      "≈ 3000 mL"
+     ],
+     [
+      "Expiratory reserve (ERV)",
+      "extra air you can force out",
+      "≈ 1100 mL"
+     ],
+     [
+      "Residual volume (RV)",
+      "left after the hardest breath out",
+      "≈ 1200 mL"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Vital capacity VC = TV + IRV + ERV",
+     "Total lung capacity TLC = VC + RV",
+     "Air breathed per minute = breathing rate × TV (16 × 500 = 8000 mL)"
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Residual volume is NOT part of vital capacity. Books differ slightly in the typical values; the sums are what MCQs test."
+   }
+  ]
+ },
+ {
+  "id": "bio-13-c03",
+  "unit": "bio-13",
+  "kind": "table",
+  "title": "Smoking: what does what",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "In smoke / disease",
+     "Main effect"
+    ],
+    "rows": [
+     [
+      "Nicotine",
+      "addictive; raises heart rate and BP, narrows arteries, makes platelets sticky (clots)"
+     ],
+     [
+      "Carbon monoxide",
+      "binds Hb about 200–250× more tightly than O₂ → carboxyhaemoglobin, less O₂ carried"
+     ],
+     [
+      "Tar",
+      "holds most carcinogens; paralyses and destroys cilia"
+     ],
+     [
+      "Chronic bronchitis",
+      "extra mucus + no cilia → blocked, inflamed bronchi, smoker's cough"
+     ],
+     [
+      "Emphysema",
+      "phagocyte enzymes break alveolar walls → less surface area, lost elastic recoil"
+     ],
+     [
+      "Lung cancer",
+      "carcinogens in tar; usually starts in bronchial epithelium"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "COPD = chronic bronchitis + emphysema. Emphysema damage is permanent and makes breathing OUT hard."
+   }
+  ]
+ },
+ {
+  "id": "bio-14-c01",
+  "unit": "bio-14",
+  "kind": "table",
+  "title": "Digestive enzymes at a glance",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Enzyme",
+     "Made by",
+     "Acts on",
+     "Gives"
+    ],
+    "rows": [
+     [
+      "Salivary amylase",
+      "salivary glands",
+      "starch",
+      "maltose"
+     ],
+     [
+      "Pepsin",
+      "chief cells (as pepsinogen)",
+      "proteins",
+      "polypeptides"
+     ],
+     [
+      "Pancreatic amylase",
+      "pancreas",
+      "starch",
+      "maltose"
+     ],
+     [
+      "Trypsin",
+      "pancreas (as trypsinogen)",
+      "proteins",
+      "polypeptides"
+     ],
+     [
+      "Lipase",
+      "pancreas",
+      "fats",
+      "fatty acids + glycerol"
+     ],
+     [
+      "Maltase / sucrase / lactase",
+      "small intestine wall",
+      "disaccharides",
+      "monosaccharides"
+     ],
+     [
+      "Peptidases",
+      "small intestine wall",
+      "peptides",
+      "amino acids"
+     ]
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "HCl (from parietal cells) activates pepsinogen; enterokinase activates trypsinogen. Bile has NO enzyme: it only emulsifies fat."
+   }
+  ]
+ },
+ {
+  "id": "bio-14-c02",
+  "unit": "bio-14",
+  "kind": "trick",
+  "title": "Gut hormones: who calls whom",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Gastrin: made in the stomach wall when food arrives → more gastric juice",
+     "Secretin: made in the duodenum when acid chyme arrives → pancreas releases watery bicarbonate-rich juice",
+     "Cholecystokinin (CCK): made in the duodenum after a fatty meal → gall bladder contracts, pancreas releases enzymes"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Only gastrin comes from the stomach; secretin and CCK both come from the duodenum. \"Chole\" = bile, \"cysto\" = bladder: CCK squeezes the gall bladder."
+   },
+   {
+    "type": "p",
+    "text": "Secretin was the first hormone ever discovered (Bayliss and Starling, 1902)."
+   }
+  ]
+ },
+ {
+  "id": "bio-15-c01",
+  "unit": "bio-15",
+  "kind": "map",
+  "title": "Down the nephron",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Glomerulus → Bowman's capsule: ultrafiltration (no blood cells, no plasma proteins)",
+     "→ PCT: reabsorbs ALL glucose and amino acids, most water and salts; brush border + many mitochondria",
+     "→ Descending limb: permeable to water, water leaves",
+     "→ Ascending limb: pumps out NaCl, impermeable to water (filtrate leaves hypotonic)",
+     "→ DCT: aldosterone → more Na⁺ in, K⁺ out; H⁺ secreted",
+     "→ Collecting duct: ADH → more water reabsorbed",
+     "→ Renal pelvis → ureter → bladder → urethra"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Three steps in order: filtration → selective reabsorption → tubular secretion. About 180 L filtrate a day becomes about 1.5 L urine."
+   }
+  ]
+ },
+ {
+  "id": "bio-15-c02",
+  "unit": "bio-15",
+  "kind": "table",
+  "title": "Glomerular vs peritubular capillaries",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Feature",
+     "Glomerular",
+     "Peritubular"
+    ],
+    "rows": [
+     [
+      "Blood comes from",
+      "afferent arteriole",
+      "efferent arteriole"
+     ],
+     [
+      "Blood pressure",
+      "high (efferent is narrower)",
+      "low"
+     ],
+     [
+      "Walls",
+      "fenestrated (many pores)",
+      "ordinary"
+     ],
+     [
+      "Main job",
+      "filtration",
+      "take back reabsorbed fluid; supply secreted substances"
+     ],
+     [
+      "Drains into",
+      "efferent arteriole",
+      "renal vein branches"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Net filtration pressure = blood pressure − (plasma protein osmotic pressure + capsule pressure). Example: 55 − (30 + 15) = 10 mmHg."
+   },
+   {
+    "type": "p",
+    "text": "Vasa recta = peritubular loops beside the long loops of Henle of juxtamedullary nephrons."
+   }
+  ]
+ },
+ {
+  "id": "bio-15-c03",
+  "unit": "bio-15",
+  "kind": "table",
+  "title": "Ammonia vs urea vs uric acid",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "",
+     "Ammonia",
+     "Urea",
+     "Uric acid"
+    ],
+    "rows": [
+     [
+      "Toxicity",
+      "highest",
+      "medium",
+      "lowest"
+     ],
+     [
+      "Water needed",
+      "most",
+      "medium",
+      "least (semi-solid)"
+     ],
+     [
+      "Energy to make",
+      "least",
+      "medium",
+      "most"
+     ],
+     [
+      "Animals",
+      "bony fish, aquatic invertebrates, tadpoles",
+      "mammals, adult frogs, sharks",
+      "birds, reptiles, insects"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Urea is made in the LIVER by the ornithine (urea) cycle: ornithine → citrulline → arginine → urea + ornithine (enzyme arginase). Kidneys only remove it."
+   },
+   {
+    "type": "warn",
+    "text": "In humans uric acid comes from purine (nucleic acid) breakdown; too much → gout. Creatinine comes from creatine in muscle."
+   }
+  ]
+ },
+ {
+  "id": "bio-15-c04",
+  "unit": "bio-15",
+  "kind": "trick",
+  "title": "Kidney stones and dialysis",
+  "blocks": [
+   {
+    "type": "h",
+    "text": "Stones (renal calculi)"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Commonest: calcium oxalate. Uric acid stones: gout, acidic urine. Struvite (Mg NH₄ phosphate): infection, alkaline urine",
+     "Main risk: too little water; also oxalate-rich food, high calcium in the urine",
+     "Lithotripsy = shock waves break the stone; bits pass out in urine. Big stones → keyhole surgery"
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Haemodialysis"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Dialysis fluid: glucose and salts at normal plasma levels, NO urea",
+     "Partially permeable membrane; countercurrent flow keeps a gradient",
+     "Heparin stops the blood clotting in the machine"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Peritoneal dialysis uses the patient's own peritoneum as the membrane."
+   }
+  ]
+ },
+ {
+  "id": "bio-15-c05",
+  "unit": "bio-15",
+  "kind": "table",
+  "title": "Thermoregulation: hot vs cold",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Thermostat: the hypothalamus, set near 37 °C. It works by negative feedback, so enzymes stay near their best temperature."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Response",
+     "Too hot",
+     "Too cold"
+    ],
+    "rows": [
+     [
+      "Skin arterioles",
+      "vasodilation: more blood to skin, flushed",
+      "vasoconstriction: less heat lost"
+     ],
+     [
+      "Sweating",
+      "more: evaporation removes heat",
+      "less"
+     ],
+     [
+      "Muscles",
+      "relaxed",
+      "shivering makes heat"
+     ],
+     [
+      "Hair",
+      "lies flat",
+      "erect: traps a layer of air"
+     ],
+     [
+      "Metabolism",
+      "normal",
+      "raised (thyroxine; brown fat in babies)"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Endotherms (birds, mammals) make their own heat; ectotherms (fish, amphibians, reptiles) depend on outside heat, e.g. a lizard basking in the sun."
+   },
+   {
+    "type": "warn",
+    "text": "Fever: pyrogens raise the set point, so you shiver and feel cold while temperature rises. Humid air slows sweat evaporation, so cooling is poorer."
+   }
+  ]
+ },
+ {
+  "id": "bio-16-c01",
+  "unit": "bio-16",
+  "kind": "table",
+  "title": "Types of vaccine",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Type",
+     "What is injected",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "Live attenuated",
+      "weakened living pathogen",
+      "BCG, oral (Sabin) polio, MMR"
+     ],
+     [
+      "Killed (inactivated)",
+      "pathogen killed by heat or chemicals",
+      "injected (Salk) polio"
+     ],
+     [
+      "Toxoid",
+      "inactivated toxin",
+      "tetanus, diphtheria"
+     ],
+     [
+      "Subunit / recombinant",
+      "one pathogen protein made by GM cells",
+      "hepatitis B (surface antigen made in yeast)"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Vaccines give active artificial immunity through memory cells. Killed vaccines need boosters because the pathogen cannot multiply."
+   },
+   {
+    "type": "warn",
+    "text": "Avoid live vaccines in people with a weak immune system; a subunit vaccine cannot cause the disease at all."
+   }
+  ]
+ },
+ {
+  "id": "bio-16-c02",
+  "unit": "bio-16",
+  "kind": "trick",
+  "title": "Diagnosis: probes, PCR, monoclonals",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "DNA probe: short SINGLE-stranded DNA, labelled radioactive or fluorescent; pairs (hybridises) with its complementary sequence",
+     "PCR cycle: denature (~95 °C) → anneal primers (~55 °C) → extend (~72 °C) with Taq polymerase from a hot-spring bacterium",
+     "PCR copies: 2ⁿ after n cycles (10 cycles → 1024)",
+     "Monoclonal antibodies: B lymphocyte + myeloma (cancer) cell = hybridoma; Köhler and Milstein, 1975",
+     "Pregnancy kits: monoclonals detect hCG, made by the placenta/embryo"
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Sample DNA must be denatured (made single-stranded) before a probe can bind. A probe 5'-AGCTTG-3' binds 3'-TCGAAC-5'."
+   }
+  ]
+ },
+ {
+  "id": "bio-16-c03",
+  "unit": "bio-16",
+  "kind": "table",
+  "title": "Recombinant products and their uses",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Product",
+     "Used for"
+    ],
+    "rows": [
+     [
+      "Human insulin",
+      "diabetes mellitus"
+     ],
+     [
+      "Human growth hormone",
+      "pituitary dwarfism (growth hormone deficiency)"
+     ],
+     [
+      "Interferon",
+      "viral infections (e.g. hepatitis) and some cancers"
+     ],
+     [
+      "Interleukin-2",
+      "boosting T cells, e.g. in some cancers"
+     ],
+     [
+      "Factor VIII",
+      "haemophilia A"
+     ],
+     [
+      "tPA (tissue plasminogen activator)",
+      "dissolving clots in heart attack and stroke"
+     ],
+     [
+      "Erythropoietin",
+      "anaemia in chronic kidney failure"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Big advantage over blood or animal sources: no risk of passing on infections (e.g. HIV in factor VIII), and identical to the human protein."
+   },
+   {
+    "type": "warn",
+    "text": "Interferon and interleukin are cytokines (immune signalling proteins), not classical endocrine hormones; growth hormone, insulin and erythropoietin are hormones."
+   }
+  ]
+ }
+]

@@ -13,6 +13,7 @@
  */
 const fs = require("fs");
 const path = require("path");
+const { checkCard } = require("./cheats");
 
 const ROOT = path.join(__dirname, "..");
 const CONTENT_DIR = path.join(ROOT, "content");
@@ -184,6 +185,33 @@ function loadGuide() {
   return guide;
 }
 
+// Memory cheats: content/cheats/<subject>.json. Once a subject has a file,
+// every one of its units must have at least one card.
+function loadCheats(syllabus, units) {
+  const dir = path.join(CONTENT_DIR, "cheats");
+  const cards = [];
+  if (!fs.existsSync(dir)) return cards;
+  const ids = new Set();
+  for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
+    const sid = f.replace(/\.json$/, "");
+    const subject = syllabus.subjects.find((s) => s.id === sid);
+    if (!subject) throw new Error(`cheats/${f}: "${sid}" is not a subject id`);
+    const items = readJson(path.join(dir, f));
+    if (!Array.isArray(items)) throw new Error(`cheats/${f} must be a JSON array`);
+    items.forEach((c, i) => {
+      const at = `cheats/${f} item ${i} (${c.id || "no id"})`;
+      checkCard(c, at, (u) => units.get(u)?.subject, ids);
+      if (units.get(c.unit).subject !== sid) throw new Error(`${at}: unit ${c.unit} is not a ${sid} unit`);
+      cards.push({ id: c.id, unit: c.unit, kind: c.kind, title: c.title, blocks: c.blocks });
+    });
+    const missing = subject.units.filter((u) => !items.some((c) => c.unit === u.id)).map((u) => u.id);
+    if (missing.length) throw new Error(`cheats/${f}: no cards for ${missing.join(", ")}`);
+  }
+  // Keep syllabus order so Prev/Next walks unit by unit.
+  const order = [...units.keys()];
+  return cards.sort((a, b) => order.indexOf(a.unit) - order.indexOf(b.unit) || a.id.localeCompare(b.id));
+}
+
 function main() {
   console.log("Loading content...");
   const syllabus = readJson(path.join(CONTENT_DIR, "syllabus.json"));
@@ -194,6 +222,8 @@ function main() {
   const stems = new Map();
   const questions = loadQuestions(units, ids, stems);
   const mocks = loadMocks(units, ids, stems);
+  const cheats = loadCheats(syllabus, units);
+  console.log(`  ${cheats.length} memory-cheat card(s)`);
   console.log(`  ${mocks.length} mock paper(s)${mocks.some((m) => m.test) ? " (incl. TEST mock — not for release)" : ""}`);
   const bySubject = {};
   for (const q of questions) bySubject[q.subject] = (bySubject[q.subject] || 0) + 1;
@@ -211,7 +241,8 @@ function main() {
     `const SYLLABUS = ${JSON.stringify(syllabus)};\n` +
     `const QUESTIONS = ${JSON.stringify(shipped)};\n` +
     `const GUIDE = ${JSON.stringify(guide)};\n` +
-    `const MOCKS = ${JSON.stringify(mocks)};\n`;
+    `const MOCKS = ${JSON.stringify(mocks)};\n` +
+    `const CHEATS = ${JSON.stringify(cheats)};\n`;
 
   const finalJs = appJs.replace("/* __CONTENT_INJECTION_POINT__ */", contentJs);
   if (finalJs === appJs) throw new Error("Content injection point missing from src/app.js");

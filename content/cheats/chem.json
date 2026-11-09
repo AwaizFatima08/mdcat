@@ -1,0 +1,2324 @@
+[
+ {
+  "id": "chem-01-c01",
+  "unit": "chem-01",
+  "kind": "formula",
+  "title": "The mole triangle: mass, particles, gas volume",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Moles (n) are the bridge. Convert everything to moles first, use the equation's mole ratio, then convert back."
+   },
+   {
+    "type": "table",
+    "head": [
+     "You have",
+     "Moles =",
+     "Units"
+    ],
+    "rows": [
+     [
+      "Mass m",
+      "m / M",
+      "g ÷ g mol⁻¹"
+     ],
+     [
+      "Particles N",
+      "N / Nₐ",
+      "Nₐ = 6.02 × 10²³ mol⁻¹"
+     ],
+     [
+      "Gas volume at STP",
+      "V / 22.4",
+      "dm³ ÷ 22.4 dm³ mol⁻¹"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Mole ratio = ratio of coefficients in the BALANCED equation (N₂ + 3H₂ → 2NH₃: H₂ : NH₃ = 3 : 2).",
+     "Mass of one molecule = M / Nₐ (one H₂O ≈ 18 / 6.02 × 10²³ ≈ 3 × 10⁻²³ g)."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Coefficients give mole (and gas volume) ratios, never mass ratios. Balance first, then read the ratio."
+   }
+  ]
+ },
+ {
+  "id": "chem-01-c02",
+  "unit": "chem-01",
+  "kind": "trick",
+  "title": "Limiting reactant and percentage yield",
+  "blocks": [
+   {
+    "type": "h",
+    "text": "Finding the limiting reactant"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Divide the moles of each reactant by its coefficient.",
+     "The smallest answer is the limiting reactant: it runs out first and fixes the maximum product.",
+     "Excess left = amount taken − amount used by the limiting reactant."
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Yield"
+   },
+   {
+    "type": "p",
+    "text": "% yield = (actual yield ÷ theoretical yield) × 100. Theoretical yield is calculated from the limiting reactant; actual yield is what you really collect."
+   },
+   {
+    "type": "list",
+    "items": [
+     "Actual = % yield × theoretical ÷ 100",
+     "Theoretical = actual × 100 ÷ % yield"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Actual < theoretical because of side reactions, incomplete (reversible) reactions and losses while handling. A yield above 100% means the product is impure or still wet."
+   }
+  ]
+ },
+ {
+  "id": "chem-02-c01",
+  "unit": "chem-02",
+  "kind": "table",
+  "title": "Positive rays vs cathode rays",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Feature",
+     "Positive (canal) rays",
+     "Cathode rays"
+    ],
+    "rows": [
+     [
+      "Discovered",
+      "Goldstein, 1886 (perforated cathode)",
+      "Studied by J. J. Thomson"
+     ],
+     [
+      "Particles",
+      "Positive ions of the gas",
+      "Electrons"
+     ],
+     [
+      "Travel",
+      "Towards the cathode, through its holes",
+      "From the cathode"
+     ],
+     [
+      "Deflection",
+      "Towards the negative plate",
+      "Towards the positive plate"
+     ],
+     [
+      "e/m",
+      "Depends on the gas; largest for H₂ (H⁺)",
+      "Same for every gas"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Proton: charge +1.602 × 10⁻¹⁹ C, mass 1.6726 × 10⁻²⁷ kg, about 1836 times the electron's mass."
+   },
+   {
+    "type": "warn",
+    "text": "Positive rays are made by electrons knocking electrons off gas atoms, so they come from the gas, not from the anode metal."
+   }
+  ]
+ },
+ {
+  "id": "chem-02-c02",
+  "unit": "chem-02",
+  "kind": "formula",
+  "title": "Photons and the Bohr hydrogen atom",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Photon energy: E = hν = hc/λ = hc·ν̄ (h = 6.63 × 10⁻³⁴ J s)",
+     "Wave number ν̄ = 1/λ, so E ∝ ν and E ∝ 1/λ: double λ, halve E",
+     "Bohr's allowed orbits: mvr = nh/2π",
+     "Radius rₙ = 0.529 n² Å (n = 2 → 2.12 Å)",
+     "Energy Eₙ ∝ −1/n²; gaps shrink as n rises",
+     "Emitted line: ΔE = E₂ − E₁ = hν (electron falls to a lower orbit)"
+    ]
+   },
+   {
+    "type": "table",
+    "head": [
+     "Series",
+     "Falls to n =",
+     "Region"
+    ],
+    "rows": [
+     [
+      "Lyman",
+      "1",
+      "Ultraviolet"
+     ],
+     [
+      "Balmer",
+      "2",
+      "Visible"
+     ],
+     [
+      "Paschen",
+      "3",
+      "Infrared"
+     ],
+     [
+      "Brackett",
+      "4",
+      "Infrared"
+     ],
+     [
+      "Pfund",
+      "5",
+      "Infrared"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "The series is named by the LOWER level the electron lands on. Bohr's model works only for hydrogen and one-electron ions (He⁺, Li²⁺)."
+   }
+  ]
+ },
+ {
+  "id": "chem-02-c03",
+  "unit": "chem-02",
+  "kind": "trick",
+  "title": "Quantum numbers and filling rules",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Number",
+     "Values",
+     "Tells you"
+    ],
+    "rows": [
+     [
+      "n",
+      "1, 2, 3 …",
+      "Shell: n² orbitals, 2n² electrons"
+     ],
+     [
+      "l",
+      "0 to n − 1 (s, p, d, f)",
+      "Shape; subshell holds 2, 6, 10, 14"
+     ],
+     [
+      "m",
+      "−l … 0 … +l",
+      "Orientation (p has 3, d has 5)"
+     ],
+     [
+      "s",
+      "+½ or −½",
+      "Spin"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Aufbau: lowest (n + l) fills first; if equal, lower n first (4s before 3d).",
+     "Pauli: one orbital holds at most 2 electrons, opposite spins.",
+     "Hund: degenerate orbitals fill singly with parallel spins before pairing (O has 2 unpaired)."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Exceptions: Cr = [Ar] 3d⁵ 4s¹, Cu = [Ar] 3d¹⁰ 4s¹ (half-filled and full d are extra stable). Ions lose 4s before 3d: Fe²⁺ = [Ar] 3d⁶, Fe³⁺ = [Ar] 3d⁵."
+   }
+  ]
+ },
+ {
+  "id": "chem-03-c01",
+  "unit": "chem-03",
+  "kind": "formula",
+  "title": "Gas laws formula sheet",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Law",
+     "Held constant",
+     "Formula"
+    ],
+    "rows": [
+     [
+      "Boyle",
+      "T, n",
+      "P₁V₁ = P₂V₂ (V ∝ 1/P)"
+     ],
+     [
+      "Charles",
+      "P, n",
+      "V₁/T₁ = V₂/T₂ (V ∝ T)"
+     ],
+     [
+      "Avogadro",
+      "P, T",
+      "V ∝ n"
+     ],
+     [
+      "General",
+      "n",
+      "P₁V₁/T₁ = P₂V₂/T₂"
+     ],
+     [
+      "Ideal gas",
+      "—",
+      "PV = nRT"
+     ],
+     [
+      "Density form",
+      "—",
+      "d = PM/RT; M = mRT/PV"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "STP: 273 K (0 °C) and 1 atm = 760 mm Hg = 760 torr = 101325 Pa. One mole occupies 22.4 dm³."
+   },
+   {
+    "type": "p",
+    "text": "Absolute zero: 0 K = −273.15 °C (often rounded to −273 °C). Charles: V changes by 1/273 of its 0 °C volume per °C."
+   },
+   {
+    "type": "warn",
+    "text": "Always use kelvin in Charles and ideal gas sums. Doubling 100 °C does not double V; doubling 100 K does."
+   }
+  ]
+ },
+ {
+  "id": "chem-03-c02",
+  "unit": "chem-03",
+  "kind": "table",
+  "title": "Values of the gas constant R",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Value of R",
+     "Units"
+    ],
+    "rows": [
+     [
+      "0.0821",
+      "dm³ atm K⁻¹ mol⁻¹"
+     ],
+     [
+      "82.1",
+      "cm³ atm K⁻¹ mol⁻¹"
+     ],
+     [
+      "62.4",
+      "dm³ mm Hg (torr) K⁻¹ mol⁻¹"
+     ],
+     [
+      "8.314",
+      "J K⁻¹ mol⁻¹ (= N m K⁻¹ mol⁻¹)"
+     ],
+     [
+      "1.987 ≈ 2",
+      "cal K⁻¹ mol⁻¹"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Origin: R = PV/nT = (1 atm × 22.4 dm³) ÷ (1 mol × 273 K) = 0.0821. Physically, R is work done per mole per kelvin."
+   },
+   {
+    "type": "tip",
+    "text": "R is the same for every gas; only its number changes with the units. Converting: × 760 gives mm Hg, × 1000 gives cm³, ÷ 4.184 turns joules into calories."
+   }
+  ]
+ },
+ {
+  "id": "chem-03-c03",
+  "unit": "chem-03",
+  "kind": "trick",
+  "title": "Kinetic theory and why real gases deviate",
+  "blocks": [
+   {
+    "type": "h",
+    "text": "Key postulates (ideal gas)"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Molecules move randomly in straight lines between collisions.",
+     "Collisions are perfectly elastic; wall collisions cause pressure.",
+     "Average KE ∝ absolute temperature (same for all gases at one T).",
+     "Molecules' own volume is negligible; no attractions between them."
+    ]
+   },
+   {
+    "type": "p",
+    "text": "rms speed = √(3RT/M): lighter gas moves faster (H₂ is 4 × faster than O₂); 4 × T gives 2 × speed."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Condition",
+     "Faulty postulate",
+     "Effect"
+    ],
+    "rows": [
+     [
+      "High pressure",
+      "Negligible volume",
+      "Real V larger than ideal"
+     ],
+     [
+      "Low temperature",
+      "No attractions",
+      "Real P smaller than ideal"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Real gases behave most ideally at LOW pressure and HIGH temperature. Easily liquefied gases (NH₃, SO₂, CO₂) deviate most; H₂ and He least."
+   }
+  ]
+ },
+ {
+  "id": "chem-04-c01",
+  "unit": "chem-04",
+  "kind": "table",
+  "title": "Evaporation vs boiling, and vapour pressure",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Feature",
+     "Evaporation",
+     "Boiling"
+    ],
+    "rows": [
+     [
+      "Temperature",
+      "Any temperature",
+      "One fixed temperature"
+     ],
+     [
+      "Where",
+      "Surface only",
+      "Throughout the liquid"
+     ],
+     [
+      "Cause",
+      "Fastest surface molecules escape",
+      "Vapour pressure = external pressure"
+     ],
+     [
+      "Effect",
+      "Cools the liquid left behind",
+      "T stays constant while heat is supplied"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Vapour pressure depends only on the nature of the liquid and its temperature, not on surface area or amount. Weaker intermolecular forces → higher vapour pressure → lower boiling point (ether > alcohol > water)."
+   },
+   {
+    "type": "list",
+    "items": [
+     "Murree (low pressure): water boils below 100 °C.",
+     "Pressure cooker (high pressure): water boils above 100 °C, food cooks faster.",
+     "Vacuum distillation: lower pressure lets heat-sensitive liquids boil below their decomposition point."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Surface area and wind change the RATE of evaporation, not the vapour pressure."
+   }
+  ]
+ },
+ {
+  "id": "chem-04-c02",
+  "unit": "chem-04",
+  "kind": "trick",
+  "title": "Hydrogen bonding and water's odd behaviour",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Hydrogen bond: attraction between H bonded to F, O or N and a lone pair on another F, O or N. Weaker than a covalent bond, stronger than dipole forces (London < dipole–dipole < H-bond)."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Compound",
+     "Boiling point",
+     "Why"
+    ],
+    "rows": [
+     [
+      "H₂O",
+      "100 °C",
+      "2 H + 2 lone pairs → up to 4 H-bonds each"
+     ],
+     [
+      "HF",
+      "≈ 20 °C",
+      "Strongest single H-bond, but fewer per molecule"
+     ],
+     [
+      "NH₃",
+      "≈ −33 °C",
+      "N less electronegative, 1 lone pair"
+     ],
+     [
+      "H₂S",
+      "Gas",
+      "S not electronegative enough"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Water is densest at 4 °C; it contracts from 0 to 4 °C, then expands.",
+     "Ice ≈ 0.92 g cm⁻³: open hydrogen-bonded cage, so ice floats and lakes freeze from the top (fish survive).",
+     "Water expands about 9% on freezing, so pipes burst."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "NH₃ dissolves well in water because it forms hydrogen bonds with water molecules."
+   }
+  ]
+ },
+ {
+  "id": "chem-05-c01",
+  "unit": "chem-05",
+  "kind": "table",
+  "title": "Crystal properties, ionic vs molecular crystals",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Crystalline solids: regular repeating order, definite shape, sharp melting point, cleavage planes, anisotropic (properties differ with direction). Amorphous solids (glass, plastic) soften over a range and are isotropic."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Feature",
+     "Ionic crystal",
+     "Molecular crystal"
+    ],
+    "rows": [
+     [
+      "Particles",
+      "Cations and anions",
+      "Molecules"
+     ],
+     [
+      "Forces",
+      "Strong electrostatic",
+      "Weak (London, dipole, H-bond)"
+     ],
+     [
+      "Melting point",
+      "High (NaCl 801 °C)",
+      "Low (I₂ 114 °C)"
+     ],
+     [
+      "Conducts",
+      "Only molten or dissolved",
+      "No"
+     ],
+     [
+      "Hardness",
+      "Hard but brittle",
+      "Soft, may sublime"
+     ],
+     [
+      "Examples",
+      "NaCl, MgO, CsCl",
+      "I₂, ice, dry ice, sugar"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Isomorphism: different substances, same crystal form (NaNO₃, CaCO₃).",
+     "Polymorphism: one substance, different crystal forms (calcite and aragonite).",
+     "Transition temperature: two forms coexist (rhombic ⇌ monoclinic sulphur, 95.5 °C)."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "chem-05-c02",
+  "unit": "chem-05",
+  "kind": "trick",
+  "title": "Radius ratio, unit cell and lattice energy",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Two key factors in ionic crystal shape: the radius ratio r⁺/r⁻ and the charges on the ions."
+   },
+   {
+    "type": "table",
+    "head": [
+     "r⁺/r⁻",
+     "Coordination no.",
+     "Geometry",
+     "Example"
+    ],
+    "rows": [
+     [
+      "0.225–0.414",
+      "4",
+      "Tetrahedral",
+      "ZnS"
+     ],
+     [
+      "0.414–0.732",
+      "6",
+      "Octahedral",
+      "NaCl"
+     ],
+     [
+      "above 0.732",
+      "8",
+      "Cubic",
+      "CsCl"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Unit cell: smallest repeating unit of the lattice; 7 crystal systems. Atoms per cell: simple cubic 1, face-centred cubic 4."
+   },
+   {
+    "type": "p",
+    "text": "Lattice energy: energy released when 1 mole of ionic crystal forms from its gaseous ions, e.g. Na⁺(g) + Cl⁻(g) → NaCl(s). Found indirectly by the Born–Haber cycle."
+   },
+   {
+    "type": "tip",
+    "text": "Higher charges and smaller ions → larger lattice energy → higher melting point: MgO > NaCl > KCl; NaF > NaCl > NaBr > NaI."
+   }
+  ]
+ },
+ {
+  "id": "chem-06-c01",
+  "unit": "chem-06",
+  "kind": "table",
+  "title": "Le Chatelier: which way it shifts",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Change",
+     "Equilibrium shifts",
+     "Kc changes?"
+    ],
+    "rows": [
+     [
+      "Add reactant / remove product",
+      "Forward",
+      "No"
+     ],
+     [
+      "Raise pressure (gases)",
+      "To side with fewer gas moles",
+      "No"
+     ],
+     [
+      "Pressure change, equal gas moles (H₂ + I₂ ⇌ 2HI)",
+      "No shift",
+      "No"
+     ],
+     [
+      "Raise T, forward exothermic",
+      "Backward",
+      "Yes, Kc falls"
+     ],
+     [
+      "Raise T, forward endothermic",
+      "Forward",
+      "Yes, Kc rises"
+     ],
+     [
+      "Add catalyst",
+      "No shift; equilibrium reached sooner",
+      "No"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Haber process: N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92 kJ. High pressure (about 200 atm) favours NH₃; a moderate 400–450 °C is a compromise between yield and rate; iron catalyst."
+   },
+   {
+    "type": "warn",
+    "text": "Only temperature changes the value of Kc."
+   }
+  ]
+ },
+ {
+  "id": "chem-06-c02",
+  "unit": "chem-06",
+  "kind": "formula",
+  "title": "Kc, Qc and Ksp in one sheet",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Kc = [products]^coefficients ÷ [reactants]^coefficients; leave out pure solids and liquids.",
+     "Reverse the equation → new K = 1/Kc (Kc 50 → 0.02).",
+     "Units: (mol dm⁻³)^Δn, Δn = total coefficients of products − reactants in the Kc expression. Δn = 0 → no units; N₂ + 3H₂ ⇌ 2NH₃ → mol⁻² dm⁶.",
+     "Qc < Kc → goes forward; Qc > Kc → goes backward; Qc = Kc → at equilibrium.",
+     "Ksp from solubility s: AB → s²; AB₂ or A₂B (CaF₂, Ag₂CrO₄) → 4s³; A₃B₂ (Ca₃(PO₄)₂) → 108s⁵.",
+     "Precipitate forms when ionic product > Ksp."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Very large Kc (10³⁰) → mixture is almost all products. Same formula type: smaller Ksp = less soluble."
+   }
+  ]
+ },
+ {
+  "id": "chem-06-c03",
+  "unit": "chem-06",
+  "kind": "table",
+  "title": "Common ion effect and buffers",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Common ion effect: adding an ion already present suppresses a weak electrolyte's ionisation or lowers a salt's solubility."
+   },
+   {
+    "type": "list",
+    "items": [
+     "HCl gas into saturated NaCl → pure NaCl crystallises.",
+     "HCl with H₂S → low [S²⁻], so only group II sulphides precipitate.",
+     "NH₄Cl with NH₄OH → low [OH⁻], so only group III hydroxides precipitate."
+    ]
+   },
+   {
+    "type": "table",
+    "head": [
+     "Buffer",
+     "Made of",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Acidic (pH < 7)",
+      "Weak acid + its salt with strong base",
+      "CH₃COOH + CH₃COONa"
+     ],
+     [
+      "Basic (pH > 7)",
+      "Weak base + its salt with strong acid",
+      "NH₄OH + NH₄Cl"
+     ],
+     [
+      "Blood (pH ≈ 7.4)",
+      "Carbonic acid + bicarbonate",
+      "H₂CO₃ / HCO₃⁻"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "pH = pKa + log([salt]/[acid]). Equal concentrations → pH = pKa (4.74 for acetic acid)."
+   },
+   {
+    "type": "warn",
+    "text": "Strong acid + its salt (HCl + NaCl) is NOT a buffer."
+   }
+  ]
+ },
+ {
+  "id": "chem-07-c01",
+  "unit": "chem-07",
+  "kind": "table",
+  "title": "Order and units of k",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Rate = k[A]ᵐ[B]ⁿ. Overall order = m + n, found only by experiment, not from the balanced equation."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Order",
+     "Double [A], rate becomes",
+     "Units of k"
+    ],
+    "rows": [
+     [
+      "0",
+      "Unchanged",
+      "mol dm⁻³ s⁻¹"
+     ],
+     [
+      "1",
+      "×2",
+      "s⁻¹"
+     ],
+     [
+      "2",
+      "×4",
+      "mol⁻¹ dm³ s⁻¹"
+     ],
+     [
+      "3",
+      "×8",
+      "mol⁻² dm⁶ s⁻¹"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "General unit of k: (mol dm⁻³)¹⁻ⁿ s⁻¹. Rate of a species ÷ its coefficient gives the rate of reaction. For N₂ + 3H₂ → 2NH₃: NH₃ formed at 0.40 → rate of reaction 0.20 → H₂ used at 0.60 mol dm⁻³ s⁻¹."
+   },
+   {
+    "type": "warn",
+    "text": "Order can be zero or a fraction; molecularity is always a whole number."
+   }
+  ]
+ },
+ {
+  "id": "chem-07-c02",
+  "unit": "chem-07",
+  "kind": "formula",
+  "title": "Half-life and the slow step",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "First order: t½ = 0.693/k, independent of starting concentration.",
+     "General: t½ ∝ 1/[A]₀ⁿ⁻¹ (zero order: t½ grows with [A]₀).",
+     "After n half-lives, fraction left = (½)ⁿ: 3 half-lives → 1/8.",
+     "0.80 → 0.10 in 60 min is three halvings, so t½ = 60 ÷ 3 = 20 min.",
+     "Rate-determining step = the slowest step; the rate law comes from it.",
+     "Pseudo-first order: one reactant in large excess (ester hydrolysis in water, sucrose inversion)."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "A species made in one step and used up in the next (like a free X atom) is an intermediate, not a catalyst."
+   }
+  ]
+ },
+ {
+  "id": "chem-07-c03",
+  "unit": "chem-07",
+  "kind": "trick",
+  "title": "Activation energy and catalysts",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Ea (forward) = peak energy − reactant energy.",
+     "Ea (reverse) = Ea (forward) − ΔH.",
+     "Exothermic: forward Ea < reverse Ea. Endothermic: forward Ea ≥ ΔH.",
+     "Activated complex sits at the peak: bonds partly broken, partly formed.",
+     "Catalyst lowers forward and reverse Ea by the same amount; ΔH, Kc and yield stay the same.",
+     "A 10 K rise roughly doubles the rate: more molecules have energy ≥ Ea (the Maxwell–Boltzmann curve flattens and shifts right)."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Example: reactants 50, peak 150, products 20 kJ mol⁻¹ → Ea = 100, ΔH = −30, reverse Ea = 130."
+   },
+   {
+    "type": "warn",
+    "text": "Light (H₂ + Cl₂ explodes in sunlight) and surface area are rate factors too; temperature works mainly by raising the fraction of molecules with energy ≥ Ea (Ea itself does not change), not by the small rise in collision count."
+   }
+  ]
+ },
+ {
+  "id": "chem-08-c01",
+  "unit": "chem-08",
+  "kind": "table",
+  "title": "Thermodynamic terms at a glance",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Term",
+     "Meaning",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Open system",
+      "Exchanges matter and energy",
+      "Open beaker"
+     ],
+     [
+      "Closed system",
+      "Exchanges energy only",
+      "Sealed flask"
+     ],
+     [
+      "Isolated system",
+      "Exchanges neither",
+      "Sealed thermos flask"
+     ],
+     [
+      "State function",
+      "Change depends only on start and end",
+      "H, E, P, V, T"
+     ],
+     [
+      "Not a state function",
+      "Depends on the path",
+      "Heat q, work w"
+     ],
+     [
+      "Exothermic",
+      "ΔH negative, heat given out",
+      "Combustion, neutralisation"
+     ],
+     [
+      "Endothermic",
+      "ΔH positive, heat taken in",
+      "NH₄NO₃ dissolving, N₂ + O₂ → 2NO"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Reverse a reaction → same size ΔH, opposite sign. Photosynthesis is endothermic; respiration is exothermic."
+   }
+  ]
+ },
+ {
+  "id": "chem-08-c02",
+  "unit": "chem-08",
+  "kind": "formula",
+  "title": "First law, heat and units",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "ΔE = q + w (FSc convention: q = heat absorbed, w = work done ON the system).",
+     "Heat absorbed or work done on the system → +; heat lost or work done by the system → −.",
+     "Constant volume: ΔE = qv (bomb calorimeter). Constant pressure: ΔH = qp.",
+     "ΔH = ΔE + PΔV; ΔH ≈ ΔE when gas moles do not change (H₂ + I₂ → 2HI).",
+     "Work of expansion = PΔV: 100 kPa × 0.010 m³ = 1000 J.",
+     "Heat = m c ΔT: 50 g × 4.2 × 10 K = 2100 J.",
+     "1 J = 1 N m = 1 kg m² s⁻²; 1 cal = 4.184 J."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Absorbs 200 J, does 50 J of work → ΔE = 200 + (−50) = +150 J. Isolated system → ΔE = 0."
+   }
+  ]
+ },
+ {
+  "id": "chem-08-c03",
+  "unit": "chem-08",
+  "kind": "trick",
+  "title": "Hess's law: build the cycle",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Total ΔH depends only on start and end, not on the route, because enthalpy is a state function."
+   },
+   {
+    "type": "list",
+    "items": [
+     "Reverse an equation → change the sign of ΔH.",
+     "Multiply or halve an equation → do the same to ΔH.",
+     "Add the steps → add their ΔH values.",
+     "ΔH(reaction) = ΣΔHf(products) − ΣΔHf(reactants).",
+     "ΔHf of an element in its standard state = 0."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "C + ½O₂ → CO: (C → CO₂, −394) minus (CO → CO₂, −283) = −111 kJ."
+   },
+   {
+    "type": "warn",
+    "text": "The Born–Haber cycle (lattice energy) is just Hess's law applied to an ionic solid."
+   }
+  ]
+ },
+ {
+  "id": "chem-09-c01",
+  "unit": "chem-09",
+  "kind": "mnemonic",
+  "title": "Redox and oxidation numbers",
+  "blocks": [
+   {
+    "type": "mn",
+    "text": "OIL RIG",
+    "items": [
+     "Oxidation Is Loss of electrons (oxidation number goes up)",
+     "Reduction Is Gain of electrons (oxidation number goes down)"
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Free element (O₂, P₄, S₈, Na) = 0; F is −1 in all its compounds.",
+     "O = −2, but −1 in peroxides (H₂O₂) and +2 in OF₂.",
+     "H = +1, but −1 in metal hydrides (NaH).",
+     "Sum = charge: S in H₂SO₄ +6, Mn in KMnO₄ +7, Cr in K₂Cr₂O₇ +6, N in NH₄⁺ −3, S in S₂O₃²⁻ +2."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "The oxidising agent is itself reduced; the reducing agent is itself oxidised. Electrons lost = electrons gained."
+   },
+   {
+    "type": "warn",
+    "text": "Middle oxidation states (H₂O₂, SO₂) can act both ways; the lowest (H₂S, S = −2) can only reduce."
+   }
+  ]
+ },
+ {
+  "id": "chem-09-c02",
+  "unit": "chem-09",
+  "kind": "table",
+  "title": "Electrodes, SHE and E°",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "",
+     "Galvanic cell",
+     "Electrolytic cell"
+    ],
+    "rows": [
+     [
+      "Anode",
+      "Oxidation, negative",
+      "Oxidation, positive"
+     ],
+     [
+      "Cathode",
+      "Reduction, positive",
+      "Reduction, negative"
+     ],
+     [
+      "Energy",
+      "Chemical → electrical",
+      "Electrical → chemical"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "SHE: platinised Pt, H₂ at 1 atm, 1 M H⁺, 25 °C; E° = 0.00 V by convention.",
+     "More negative E° = stronger reducing agent (Li); more positive = stronger oxidising agent (F₂).",
+     "E°cell = E°cathode − E°anode: Daniell = 0.34 − (−0.76) = 1.10 V; electrons flow Zn → Cu.",
+     "Metals with negative E° release H₂ from dilute acid; a lower-E° metal displaces a higher one."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "AN OX, RED CAT: oxidation at the anode, reduction at the cathode, in every cell."
+   }
+  ]
+ },
+ {
+  "id": "chem-10-c01",
+  "unit": "chem-10",
+  "kind": "table",
+  "title": "VSEPR shapes and angles",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Bond + lone pairs",
+     "Shape",
+     "Angle",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "2 + 0",
+      "Linear",
+      "180°",
+      "BeCl₂, CO₂"
+     ],
+     [
+      "3 + 0",
+      "Trigonal planar",
+      "120°",
+      "BF₃, BCl₃"
+     ],
+     [
+      "4 + 0",
+      "Tetrahedral",
+      "109.5°",
+      "CH₄, NH₄⁺"
+     ],
+     [
+      "3 + 1",
+      "Trigonal pyramidal",
+      "107°",
+      "NH₃, H₃O⁺"
+     ],
+     [
+      "2 + 2",
+      "Bent (V-shaped)",
+      "104.5°",
+      "H₂O"
+     ],
+     [
+      "5 + 0",
+      "Trigonal bipyramidal",
+      "120° and 90°",
+      "PCl₅"
+     ],
+     [
+      "6 + 0",
+      "Octahedral",
+      "90°",
+      "SF₆"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Repulsion: lone–lone > lone–bond > bond–bond, so each lone pair squeezes the angle (109.5 → 107 → 104.5)."
+   },
+   {
+    "type": "warn",
+    "text": "SO₂ (2 bonding regions + 1 lone pair) is bent, not linear like CO₂."
+   }
+  ]
+ },
+ {
+  "id": "chem-10-c02",
+  "unit": "chem-10",
+  "kind": "trick",
+  "title": "Counting σ and π; hybridisation",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Single bond = 1σ; double = 1σ + 1π; triple = 1σ + 2π.",
+     "Ethene 5σ 1π; ethyne 3σ 2π; benzene 12σ 3π; CO₂ 2σ 2π.",
+     "σ = head-on overlap (s–s, s–p, p–p or hybrid); π = sideways overlap of unhybridised p orbitals.",
+     "π is weaker than σ and stops free rotation about C=C."
+    ]
+   },
+   {
+    "type": "table",
+    "head": [
+     "Hybrid",
+     "s character",
+     "Angle",
+     "Carbon in"
+    ],
+    "rows": [
+     [
+      "sp",
+      "50%",
+      "180°",
+      "C≡C (ethyne)"
+     ],
+     [
+      "sp²",
+      "33%",
+      "120°",
+      "C=C (ethene)"
+     ],
+     [
+      "sp³",
+      "25%",
+      "109.5°",
+      "C–C (methane, ethane)"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "More s character → shorter, stronger bond: C–H in ethyne is shortest. Propene CH₃–CH=CH₂ is sp³, sp², sp²."
+   }
+  ]
+ },
+ {
+  "id": "chem-10-c03",
+  "unit": "chem-10",
+  "kind": "trick",
+  "title": "Polarity, ionic character, bond energy",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Symmetrical shape → bond dipoles cancel → zero dipole moment, even with polar bonds."
+   },
+   {
+    "type": "list",
+    "items": [
+     "μ = 0: CO₂, BeCl₂, BF₃, CH₄, CCl₄, PCl₅, SF₆.",
+     "Polar: H₂O, NH₃, SO₂, CHCl₃, HCl (bent or pyramidal, or unequal atoms).",
+     "μ = charge × distance, unit debye (D). % ionic = observed μ ÷ 100%-ionic μ × 100 (1.2/6.0 → 20%).",
+     "Ionic character grows with electronegativity difference; about 1.7 ≈ 50% ionic. H–H, Cl–Cl have none.",
+     "Higher bond energy = stronger bond: C≡C > C=C > C–C; H–F > H–Cl > H–Br > H–I."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "A polar XY₂ molecule must be bent; a linear one would have zero dipole moment."
+   }
+  ]
+ },
+ {
+  "id": "chem-11-c01",
+  "unit": "chem-11",
+  "kind": "trick",
+  "title": "Periodic trends and their exceptions",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Property",
+     "Across a period →",
+     "Down a group ↓"
+    ],
+    "rows": [
+     [
+      "Atomic radius",
+      "decreases (more nuclear charge, same shell)",
+      "increases (new shell)"
+     ],
+     [
+      "Ionisation energy",
+      "increases",
+      "decreases"
+     ],
+     [
+      "Electronegativity",
+      "increases (F highest, 4.0)",
+      "decreases"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "IE dips: Mg > Al (3p¹ easy to remove) and N > O (paired 2p electron repels).",
+     "Highest electron affinity: Cl, not F (F is tiny and crowded).",
+     "Isoelectronic ions: more protons = smaller. O²⁻ > F⁻ > Na⁺ > Mg²⁺.",
+     "Covalent radius = half the bond length (Cl–Cl 198 pm → 99 pm).",
+     "Blocks: last electron in ns = s, np = p, (n−1)d = d, (n−2)f = f."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "A big jump in successive IE marks a new inner shell: Na's 2nd IE is huge."
+   }
+  ]
+ },
+ {
+  "id": "chem-11-c02",
+  "unit": "chem-11",
+  "kind": "table",
+  "title": "Group I and II metals: water and oxygen",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Metal",
+     "With water",
+     "Burnt in excess O₂"
+    ],
+    "rows": [
+     [
+      "Li",
+      "steady: LiOH + H₂",
+      "Li₂O only (also Li₃N with N₂)"
+     ],
+     [
+      "Na",
+      "vigorous: NaOH + H₂",
+      "Na₂O₂ (peroxide)"
+     ],
+     [
+      "K",
+      "violent, H₂ ignites",
+      "KO₂ (superoxide, O = −½)"
+     ],
+     [
+      "Be",
+      "no reaction",
+      "BeO (amphoteric)"
+     ],
+     [
+      "Mg",
+      "steam: MgO + H₂",
+      "MgO; in air also Mg₃N₂"
+     ],
+     [
+      "Ca",
+      "cold water: Ca(OH)₂ + H₂",
+      "CaO"
+     ],
+     [
+      "Ba",
+      "fast: Ba(OH)₂ + H₂",
+      "BaO₂ (peroxide)"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Reactivity rises down both groups. With Cl₂: MCl and MCl₂; LiCl and BeCl₂ are the most covalent (BeCl₂ forms polymeric chains)."
+   },
+   {
+    "type": "tip",
+    "text": "Diagonal pair Li–Mg: both form a nitride and a normal oxide only."
+   }
+  ]
+ },
+ {
+  "id": "chem-11-c03",
+  "unit": "chem-11",
+  "kind": "table",
+  "title": "Group IV: oxidation states, chlorides, oxides",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Element",
+     "Type",
+     "More stable state",
+     "Oxide nature"
+    ],
+    "rows": [
+     [
+      "C",
+      "non-metal",
+      "+4",
+      "CO₂ acidic (gas, small molecules); CO neutral"
+     ],
+     [
+      "Si",
+      "metalloid",
+      "+4",
+      "SiO₂ acidic (giant covalent solid)"
+     ],
+     [
+      "Ge",
+      "metalloid",
+      "+4",
+      "GeO₂ amphoteric"
+     ],
+     [
+      "Sn",
+      "metal",
+      "+4 (Sn²⁺ is a reducing agent)",
+      "SnO, SnO₂ amphoteric"
+     ],
+     [
+      "Pb",
+      "metal",
+      "+2 (Pb⁴⁺ is an oxidising agent)",
+      "PbO, PbO₂ amphoteric"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Inert pair effect: down the group the ns² pair is held more tightly and stays out of bonding, so +2 becomes more stable than +4."
+   },
+   {
+    "type": "list",
+    "items": [
+     "CCl₄ is not hydrolysed: carbon has no vacant d orbitals for water to attack.",
+     "SiCl₄ + 4H₂O → Si(OH)₄ + 4HCl: Si uses vacant 3d orbitals.",
+     "PbCl₄ is the least stable tetrachloride: on gentle warming, PbCl₄ → PbCl₂ + Cl₂."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Oxides change from acidic to amphoteric down the group as metallic character rises. Catenation is greatest for carbon."
+   }
+  ]
+ },
+ {
+  "id": "chem-12-c01",
+  "unit": "chem-12",
+  "kind": "trick",
+  "title": "d-block configurations: the four traps",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Exceptions: Cr = [Ar] 3d⁵ 4s¹ and Cu = [Ar] 3d¹⁰ 4s¹ (half-full and full 3d are extra stable).",
+     "Making ions: 4s electrons leave FIRST, then 3d. Fe [Ar] 3d⁶ 4s² → Fe²⁺ 3d⁶ → Fe³⁺ 3d⁵.",
+     "Highest oxidation state = 4s + 3d electrons, up to Mn (+7). Cr in K₂Cr₂O₇ is +6.",
+     "Sc shows only +3 (Sc³⁺ = [Ar]). Zn is not a typical transition element: Zn and Zn²⁺ both have full 3d¹⁰. Cu is one, because Cu²⁺ is 3d⁹."
+    ]
+   },
+   {
+    "type": "p",
+    "text": "First series: Sc (21) to Zn (30). General outer configuration (n−1)d¹⁻¹⁰ ns¹⁻²."
+   },
+   {
+    "type": "warn",
+    "text": "Variable oxidation states come from 4s and 3d being close in energy."
+   }
+  ]
+ },
+ {
+  "id": "chem-12-c02",
+  "unit": "chem-12",
+  "kind": "table",
+  "title": "Unpaired electrons and magnetic moment",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Ion(s)",
+     "3d",
+     "Unpaired n",
+     "μ (BM)"
+    ],
+    "rows": [
+     [
+      "Sc³⁺",
+      "3d⁰",
+      "0",
+      "0"
+     ],
+     [
+      "V²⁺, Cr³⁺",
+      "3d³",
+      "3",
+      "3.87"
+     ],
+     [
+      "Mn²⁺, Fe³⁺",
+      "3d⁵",
+      "5",
+      "5.92"
+     ],
+     [
+      "Fe²⁺, Co³⁺",
+      "3d⁶",
+      "4",
+      "4.90"
+     ],
+     [
+      "Ni²⁺",
+      "3d⁸",
+      "2",
+      "2.83"
+     ],
+     [
+      "Cu²⁺",
+      "3d⁹",
+      "1",
+      "1.73"
+     ],
+     [
+      "Zn²⁺, Cu⁺",
+      "3d¹⁰",
+      "0",
+      "0"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Spin-only formula: μ = √(n(n + 2)) BM. Fill the five 3d boxes singly before pairing (Hund's rule)."
+   },
+   {
+    "type": "tip",
+    "text": "Most unpaired = 3d⁵ (5). Up to 3d⁵, n = number of d electrons; after it, n = 10 − d electrons."
+   }
+  ]
+ },
+ {
+  "id": "chem-13-c01",
+  "unit": "chem-13",
+  "kind": "table",
+  "title": "Functional groups to spot instantly",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Class",
+     "Group",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Ether",
+      "R–O–R′",
+      "CH₃OCH₃ methoxymethane"
+     ],
+     [
+      "Aldehyde",
+      "–CHO",
+      "CH₃CHO ethanal"
+     ],
+     [
+      "Ketone",
+      "R–CO–R′",
+      "CH₃COCH₃ propanone"
+     ],
+     [
+      "Carboxylic acid",
+      "–COOH",
+      "CH₃COOH ethanoic acid"
+     ],
+     [
+      "Ester",
+      "–COOR",
+      "CH₃COOC₂H₅ ethyl ethanoate"
+     ],
+     [
+      "Amine",
+      "–NH₂",
+      "CH₃CH₂NH₂ ethanamine"
+     ],
+     [
+      "Nitrile",
+      "–C≡N",
+      "CH₃CN ethanenitrile"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Structural classes: open-chain (acyclic); closed-chain homocyclic (alicyclic e.g. cyclohexane, or aromatic e.g. benzene); heterocyclic, with N, O or S in the ring (pyridine N, furan O, thiophene S)."
+   },
+   {
+    "type": "tip",
+    "text": "Same formula, different group = functional isomers: C₂H₆O ethanol vs methoxymethane; C₃H₆O propanal vs propanone."
+   }
+  ]
+ },
+ {
+  "id": "chem-13-c02",
+  "unit": "chem-13",
+  "kind": "trick",
+  "title": "Geometric vs optical isomerism tests",
+  "blocks": [
+   {
+    "type": "h",
+    "text": "Geometric (cis–trans)"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Needs a C=C (no free rotation) AND two different groups on EACH double-bond carbon.",
+     "But-2-ene and ClCH=CHCl: yes. But-1-ene and propene (CH₂= end): no.",
+     "cis-1,2-dichloroethene is polar (higher b.p.); trans is non-polar (higher m.p.)."
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Optical"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Needs a chiral carbon: four DIFFERENT groups, e.g. lactic acid CH₃CH(OH)COOH.",
+     "Enantiomers: non-superimposable mirror images; same physical properties except they rotate plane-polarised light equally in opposite directions.",
+     "Racemic mixture: 50 : 50 of both, rotations cancel → optically inactive."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Count chiral C one by one: CH₃CH(OH)CH(Cl)CH₃ has two."
+   }
+  ]
+ },
+ {
+  "id": "chem-14-c01",
+  "unit": "chem-14",
+  "kind": "map",
+  "title": "Free-radical chlorination of methane",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Initiation: Cl₂ —(UV / sunlight)→ 2Cl• (homolytic; Cl–Cl is weaker than C–H)",
+     "Propagation 1: Cl• + CH₄ → CH₃• + HCl",
+     "Propagation 2: CH₃• + Cl₂ → CH₃Cl + Cl• (Cl• regenerated → chain)",
+     "Termination: any two radicals join: Cl• + Cl• → Cl₂; CH₃• + Cl• → CH₃Cl; CH₃• + CH₃• → C₂H₆"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Excess Cl₂ goes on: CH₃Cl → CH₂Cl₂ → CHCl₃ → CCl₄. Halogen reactivity: F₂ > Cl₂ > Br₂ > I₂. In the dark at room temperature: no reaction."
+   },
+   {
+    "type": "tip",
+    "text": "Traces of ethane (from methane) or butane (from ethane) prove CH₃• / C₂H₅• radicals joined in termination."
+   }
+  ]
+ },
+ {
+  "id": "chem-14-c02",
+  "unit": "chem-14",
+  "kind": "map",
+  "title": "Ethene: made and reacted",
+  "blocks": [
+   {
+    "type": "h",
+    "text": "Making ethene (elimination)"
+   },
+   {
+    "type": "list",
+    "items": [
+     "C₂H₅OH —(conc. H₂SO₄, 170 °C; or Al₂O₃, 350 °C)→ CH₂=CH₂ + H₂O (at 140 °C with excess ethanol: diethyl ether)",
+     "C₂H₅Br + KOH —(alcoholic, heat)→ CH₂=CH₂ + KBr + H₂O"
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Reactions of CH₂=CH₂ (addition)"
+   },
+   {
+    "type": "list",
+    "items": [
+     "—(H₂, Ni, 200–300 °C)→ ethane",
+     "—(Br₂ in CCl₄, room temp)→ 1,2-dibromoethane (red-brown colour goes)",
+     "—(HBr)→ bromoethane; HI > HBr > HCl",
+     "—(cold conc. H₂SO₄, then boil with water)→ ethanol",
+     "—(cold dilute alkaline KMnO₄, Baeyer's)→ ethane-1,2-diol (pink goes)",
+     "—(O₃, then Zn/H₂O)→ 2 HCHO (methanal)",
+     "—(high pressure, heat, trace O₂)→ polythene"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Markovnikov: propene + HBr → 2-bromopropane (H goes to the carbon that already has more H)."
+   }
+  ]
+ },
+ {
+  "id": "chem-14-c03",
+  "unit": "chem-14",
+  "kind": "table",
+  "title": "Benzene: electrophilic substitution",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Reaction",
+     "Reagent, conditions",
+     "Electrophile",
+     "Product"
+    ],
+    "rows": [
+     [
+      "Nitration",
+      "conc. HNO₃ + conc. H₂SO₄, 50–55 °C",
+      "NO₂⁺",
+      "nitrobenzene"
+     ],
+     [
+      "Sulphonation",
+      "fuming H₂SO₄ (oleum); reversible",
+      "SO₃",
+      "benzenesulphonic acid"
+     ],
+     [
+      "Halogenation",
+      "Cl₂ / FeCl₃ (Br₂ / FeBr₃), dark",
+      "Cl⁺ (Br⁺)",
+      "chlorobenzene"
+     ],
+     [
+      "F–C alkylation",
+      "CH₃Cl / anhydrous AlCl₃",
+      "CH₃⁺",
+      "methylbenzene"
+     ],
+     [
+      "F–C acylation",
+      "CH₃COCl / anhydrous AlCl₃",
+      "CH₃CO⁺",
+      "acetophenone"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Steps: electrophile forms → attacks ring (slow) → arenium ion (one sp³ carbon) → loses H⁺ (fast), aromaticity restored."
+   },
+   {
+    "type": "tip",
+    "text": "o/p directors: –CH₃, –OH, –NH₂, halogens (but halogens deactivate). Meta directors: –NO₂, –CHO, –COOH, –CN, –SO₃H."
+   },
+   {
+    "type": "warn",
+    "text": "Above ~60 °C nitration also gives m-dinitrobenzene."
+   }
+  ]
+ },
+ {
+  "id": "chem-14-c04",
+  "unit": "chem-14",
+  "kind": "map",
+  "title": "Ethyne: preparation, addition, acidity",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "BrCH₂CH₂Br —(alcoholic KOH)→ CH₂=CHBr —(NaNH₂)→ HC≡CH (double dehydrohalogenation)",
+     "Br₂CHCHBr₂ —(Zn dust, heat)→ HC≡CH",
+     "HC≡CH —(H₂, Ni)→ ethene —(H₂, Ni)→ ethane",
+     "HC≡CH —(HBr)→ CH₂=CHBr —(HBr)→ CH₃CHBr₂ (1,1-dibromoethane, Markovnikov)",
+     "HC≡CH —(dil. H₂SO₄ + HgSO₄, 75 °C)→ [CH₂=CHOH, vinyl alcohol] → CH₃CHO; propyne gives propanone"
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Acidity of ≡C–H"
+   },
+   {
+    "type": "p",
+    "text": "sp carbon has 50% s character, so it holds electrons tightly: ethyne > ethene > ethane. Na → sodium acetylide + H₂; ammoniacal AgNO₃ → white ppt (Ag₂C₂); ammoniacal Cu₂Cl₂ → red ppt (Cu₂C₂)."
+   },
+   {
+    "type": "tip",
+    "text": "Only terminal alkynes give these precipitates: but-1-yne yes, but-2-yne no."
+   }
+  ]
+ },
+ {
+  "id": "chem-15-c01",
+  "unit": "chem-15",
+  "kind": "table",
+  "title": "SN2 vs SN1",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Feature",
+     "SN2",
+     "SN1"
+    ],
+    "rows": [
+     [
+      "Steps",
+      "one, concerted",
+      "two, via carbocation"
+     ],
+     [
+      "Rate law",
+      "k[RX][Nu⁻], 2nd order",
+      "k[RX], 1st order"
+     ],
+     [
+      "Nucleophile attacks",
+      "from the back, 180° to X",
+      "either face of flat carbocation"
+     ],
+     [
+      "Stereo result",
+      "inversion of configuration",
+      "mainly racemic mixture"
+     ],
+     [
+      "Fastest for",
+      "CH₃X > 1° > 2° > 3°",
+      "3° > 2° > 1° > CH₃X"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "C–X carbon is δ+ and sp³, so nucleophiles attack it. Reactivity R–I > R–Br > R–Cl > R–F: the weakest C–X bond breaks easiest, so I⁻ is the best leaving group."
+   },
+   {
+    "type": "warn",
+    "text": "Polarity is highest for C–F, but bond strength decides reactivity, not polarity."
+   }
+  ]
+ },
+ {
+  "id": "chem-15-c02",
+  "unit": "chem-15",
+  "kind": "trick",
+  "title": "Substitution or elimination? Read the solvent",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Aqueous KOH / NaOH, warm → alcohol (substitution).",
+     "Alcoholic KOH, heat → alkene (elimination): H lost from the β-carbon, X from the α-carbon.",
+     "E2: one step, rate = k[RX][B⁻], strong base. E1: two steps via carbocation, rate = k[RX]; same slow step as SN1.",
+     "Elimination is favoured by a strong, concentrated base, alcoholic solvent, high temperature and a 3° halide."
+    ]
+   },
+   {
+    "type": "p",
+    "text": "(CH₃)₃CBr + hot alcoholic KOH → 2-methylpropene. 1-bromopropane and 2-bromopropane both give propene."
+   },
+   {
+    "type": "warn",
+    "text": "No β-hydrogen, no alkene: CH₃Br and (CH₃)₃CCH₂Br cannot eliminate."
+   }
+  ]
+ },
+ {
+  "id": "chem-16-c01",
+  "unit": "chem-16",
+  "kind": "map",
+  "title": "Alcohol reaction map (ROH)",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "ROH —Na→ RO⁻Na⁺ (alkoxide) + ½H₂ (gentler than Na + water)",
+     "ROH —PCl₅→ RCl + POCl₃ + HCl",
+     "ROH —SOCl₂ (pyridine)→ RCl + SO₂↑ + HCl↑",
+     "ROH —conc. H₂SO₄, ~180 °C→ alkene + H₂O",
+     "2ROH —conc. H₂SO₄, ~140 °C (excess alcohol)→ ROR (ether)",
+     "ROH + R′COOH —conc. H₂SO₄, warm⇌ R′COOR (ester) + H₂O",
+     "ROH + R′COCl —room temp→ ester + HCl (fast, not reversible)",
+     "RO⁻Na⁺ + R′X → ROR′ + NaX (Williamson ether synthesis)"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "💡 SOCl₂ is preferred because both by-products are gases, leaving pure RCl."
+   },
+   {
+    "type": "warn",
+    "text": "⚠️ In esterification the acid loses –OH and the alcohol loses H, so ¹⁸O from the alcohol ends up in the ester, not in the water."
+   }
+  ]
+ },
+ {
+  "id": "chem-16-c02",
+  "unit": "chem-16",
+  "kind": "table",
+  "title": "Telling 1°, 2° and 3° alcohols apart",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Test",
+     "1° RCH₂OH",
+     "2° R₂CHOH",
+     "3° R₃COH"
+    ],
+    "rows": [
+     [
+      "Lucas (conc. HCl + anhydrous ZnCl₂)",
+      "no cloudiness at room temp",
+      "cloudy in ~5 min",
+      "cloudy at once"
+     ],
+     [
+      "K₂Cr₂O₇ / H⁺",
+      "aldehyde → carboxylic acid",
+      "ketone",
+      "no reaction"
+     ],
+     [
+      "Colour change",
+      "orange → green",
+      "orange → green",
+      "stays orange"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Example: propan-1-ol → propanal → propanoic acid; propan-2-ol → propanone; 2-methylpropan-2-ol is not oxidised."
+   },
+   {
+    "type": "tip",
+    "text": "💡 3° alcohols resist oxidation because the C bearing –OH has no H atom to lose."
+   },
+   {
+    "type": "warn",
+    "text": "⚠️ Iodoform (I₂ + NaOH → yellow CHI₃) is given by ethanol and by alcohols with CH₃CH(OH)– , not by methanol or propan-1-ol."
+   }
+  ]
+ },
+ {
+  "id": "chem-16-c03",
+  "unit": "chem-16",
+  "kind": "table",
+  "title": "Phenol vs ethanol, and phenol's ring reactions",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Test",
+     "Phenol",
+     "Ethanol"
+    ],
+    "rows": [
+     [
+      "Neutral FeCl₃",
+      "violet colour",
+      "no colour"
+     ],
+     [
+      "Bromine water",
+      "decolourised, white ppt",
+      "no change"
+     ],
+     [
+      "Aqueous NaOH",
+      "dissolves (sodium phenoxide)",
+      "no reaction"
+     ],
+     [
+      "NaHCO₃",
+      "no CO₂",
+      "no CO₂"
+     ],
+     [
+      "Sodium metal",
+      "H₂",
+      "H₂"
+     ],
+     [
+      "I₂ + NaOH (iodoform)",
+      "no",
+      "yellow CHI₃"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Br₂ water → 2,4,6-tribromophenol (3 Br₂ per phenol)",
+     "Br₂ in CS₂, low temp → 2- and 4-bromophenol",
+     "Dilute HNO₃ → 2- and 4-nitrophenol",
+     "Conc. HNO₃ + conc. H₂SO₄ → 2,4,6-trinitrophenol (picric acid)"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "💡 Acidity: RCOOH > phenol > water > ethanol. –OH activates the ring and directs ortho/para."
+   }
+  ]
+ },
+ {
+  "id": "chem-17-c01",
+  "unit": "chem-17",
+  "kind": "map",
+  "title": "Making aldehydes and ketones",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "1° alcohol —K₂Cr₂O₇ / dil. H₂SO₄, distil off at once→ aldehyde",
+     "2° alcohol —K₂Cr₂O₇ / dil. H₂SO₄→ ketone",
+     "Alkene —O₃, then Zn + H₂O→ aldehydes and/or ketones",
+     "Methanol vapour + air —hot Ag (or Cu) catalyst, ~500 °C→ methanal (industry)",
+     "Ethene + air —PdCl₂ / CuCl₂ in water→ ethanal (industry)"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Ozonolysis examples: propene → methanal + ethanal; 2,3-dimethylbut-2-ene → propanone only."
+   },
+   {
+    "type": "tip",
+    "text": "💡 Distilling the aldehyde off stops it being oxidised further to the carboxylic acid."
+   },
+   {
+    "type": "warn",
+    "text": "⚠️ Zn in ozonolysis removes H₂O₂, so the aldehyde is not oxidised to an acid."
+   }
+  ]
+ },
+ {
+  "id": "chem-17-c02",
+  "unit": "chem-17",
+  "kind": "map",
+  "title": "Nucleophilic addition reactions of C=O",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "+ HCN (trace base, makes CN⁻) → cyanohydrin; then H₃O⁺, boil → 2-hydroxy acid",
+     "+ saturated NaHSO₃ → crystalline bisulphite adduct (aldehydes, methyl ketones)",
+     "+ 2,4-DNPH → orange/yellow 2,4-dinitrophenylhydrazone (addition then loss of H₂O)",
+     "+ NaBH₄ or LiAlH₄ (H⁻), or H₂/Ni → aldehyde gives 1° alcohol, ketone gives 2° alcohol",
+     "Dilute NaOH, needs α-H → aldol (ethanal → 3-hydroxybutanal); heat → but-2-enal",
+     "Conc. NaOH, no α-H (HCHO, C₆H₅CHO) → Cannizzaro: alcohol + carboxylate salt"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Reactivity: HCHO > CH₃CHO > CH₃COCH₃. Carbon goes sp² → sp³; nucleophile adds to C, H to O."
+   },
+   {
+    "type": "warn",
+    "text": "⚠️ LiAlH₄ reacts violently with water, so it is used in dry ether; NaBH₄ works in water or alcohol."
+   }
+  ]
+ },
+ {
+  "id": "chem-17-c03",
+  "unit": "chem-17",
+  "kind": "table",
+  "title": "Carbonyl identification tests",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Reagent",
+     "Positive result",
+     "Given by"
+    ],
+    "rows": [
+     [
+      "2,4-DNPH (Brady's)",
+      "orange/yellow ppt",
+      "all aldehydes and ketones"
+     ],
+     [
+      "Tollens' (ammoniacal AgNO₃)",
+      "silver mirror",
+      "aldehydes only (incl. benzaldehyde)"
+     ],
+     [
+      "Fehling's (CuSO₄ + alkaline Rochelle salt)",
+      "brick-red Cu₂O",
+      "aliphatic aldehydes only"
+     ],
+     [
+      "I₂ + NaOH (iodoform)",
+      "yellow CHI₃, antiseptic smell",
+      "CH₃CO– compounds, e.g. ethanal, propanone"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Tollens': aldehyde is oxidised to the acid (as its salt); Ag⁺ is reduced to Ag. 1 mol RCHO deposits 2 mol Ag (methanal, HCHO, can give 4 mol)."
+   },
+   {
+    "type": "tip",
+    "text": "💡 Benzaldehyde: Tollens' positive, Fehling's negative. Propanal vs propanone: Tollens' or Fehling's. Ethanal vs propanal: iodoform."
+   },
+   {
+    "type": "warn",
+    "text": "⚠️ Methanal gives no iodoform. Strong oxidants split ketones into shorter acids."
+   }
+  ]
+ },
+ {
+  "id": "chem-18-c01",
+  "unit": "chem-18",
+  "kind": "map",
+  "title": "Carboxylic acid map: make it, change it",
+  "blocks": [
+   {
+    "type": "h",
+    "text": "Making RCOOH"
+   },
+   {
+    "type": "list",
+    "items": [
+     "RCH₂OH —K₂Cr₂O₇ / H⁺, reflux→ RCOOH",
+     "RX —KCN (ethanol)→ RCN —H₃O⁺, heat→ RCOOH (one C longer)",
+     "RMgX —CO₂, then H₃O⁺→ RCOOH (one C longer)"
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Reactions of RCOOH"
+   },
+   {
+    "type": "list",
+    "items": [
+     "—SOCl₂→ RCOCl + SO₂↑ + HCl↑ ; —PCl₅→ RCOCl + POCl₃ + HCl",
+     "—R′OH, conc. H₂SO₄⇌ RCOOR′ + H₂O",
+     "—NH₃→ RCOO⁻NH₄⁺ —heat→ RCONH₂ (amide) + H₂O",
+     "—LiAlH₄ (dry ether), then H₂O→ RCH₂OH",
+     "—NaHCO₃→ RCOONa + H₂O + CO₂↑ (alcohols and phenol don't)",
+     "RCOCl + RCOONa → (RCO)₂O (anhydride) + NaCl"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "chem-18-c02",
+  "unit": "chem-18",
+  "kind": "trick",
+  "title": "Acid strength and derivative reactivity orders",
+  "blocks": [
+   {
+    "type": "h",
+    "text": "Acid strength"
+   },
+   {
+    "type": "p",
+    "text": "Cl₃CCOOH > Cl₂CHCOOH > ClCH₂COOH > HCOOH > CH₃COOH > C₆H₅OH > H₂O > C₂H₅OH"
+   },
+   {
+    "type": "list",
+    "items": [
+     "RCOO⁻ is resonance-stabilised: charge shared equally over two O atoms",
+     "Electron-withdrawing Cl (–I) strengthens the acid; more Cl, stronger",
+     "Alkyl groups (+I) weaken it, so HCOOH > CH₃COOH"
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Reactivity towards nucleophiles (e.g. water)"
+   },
+   {
+    "type": "p",
+    "text": "acyl chloride > anhydride > ester > amide"
+   },
+   {
+    "type": "tip",
+    "text": "💡 Acyl chlorides fume in moist air (hydrolysis gives HCl) and give amides with NH₃ at room temperature."
+   },
+   {
+    "type": "warn",
+    "text": "⚠️ Ethanoic acid is weak: only partly ionised, so it conducts less than HCl of the same concentration."
+   }
+  ]
+ },
+ {
+  "id": "chem-19-c01",
+  "unit": "chem-19",
+  "kind": "table",
+  "title": "Four levels of protein structure",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Level",
+     "What it is",
+     "Held by"
+    ],
+    "rows": [
+     [
+      "Primary",
+      "sequence of amino acids",
+      "peptide bonds (–CO–NH–)"
+     ],
+     [
+      "Secondary",
+      "α-helix or β-pleated sheet",
+      "H-bonds between backbone C=O and N–H"
+     ],
+     [
+      "Tertiary",
+      "3-D folding of one chain",
+      "H-bonds, ionic, disulphide (–S–S–), hydrophobic"
+     ],
+     [
+      "Quaternary",
+      "two or more chains together",
+      "same forces, e.g. haemoglobin (4 chains)"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Peptide bond formation is condensation: H₂O is lost",
+     "n amino acids in one chain → n − 1 peptide bonds and n − 1 H₂O",
+     "Conjugated protein = protein + prosthetic group (haemoglobin: haem)",
+     "Fibrous (keratin, collagen) insoluble; globular (enzymes, haemoglobin) soluble"
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "⚠️ Denaturation (heat, acid, alcohol) destroys 2°, 3°, 4° structure; the primary structure stays."
+   }
+  ]
+ },
+ {
+  "id": "chem-19-c02",
+  "unit": "chem-19",
+  "kind": "table",
+  "title": "Enzymes and protein jobs to match",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Name",
+     "Does"
+    ],
+    "rows": [
+     [
+      "Urease",
+      "urea + H₂O → 2NH₃ + CO₂"
+     ],
+     [
+      "Zymase (yeast)",
+      "glucose → 2C₂H₅OH + 2CO₂"
+     ],
+     [
+      "Invertase",
+      "sucrose → glucose + fructose"
+     ],
+     [
+      "Haemoglobin",
+      "carries O₂ in blood"
+     ],
+     [
+      "Collagen / keratin",
+      "strength of skin, tendons, bone / hair, nails"
+     ],
+     [
+      "Actin + myosin",
+      "muscle contraction"
+     ],
+     [
+      "Casein",
+      "main protein of milk (contains P)"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Enzymes are proteins; they lower activation energy, not ΔH",
+     "Specific: lock-and-key fit at the active site",
+     "Coenzyme: non-protein organic helper, often from a vitamin",
+     "Above the optimum temperature the enzyme denatures"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "💡 Kwashiorkor = protein deficiency. Essential amino acids must come from food."
+   }
+  ]
+ },
+ {
+  "id": "chem-20-c01",
+  "unit": "chem-20",
+  "kind": "table",
+  "title": "Adhesives and dyes: key words",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Term",
+     "Key fact"
+    ],
+    "rows": [
+     [
+      "Cyanoacrylate (super glue)",
+      "polymerises in seconds with traces of moisture"
+     ],
+     [
+      "Epoxy",
+      "resin + hardener mixed before use; sets to a thermoset"
+     ],
+     [
+      "PVA white glue",
+      "sets as water evaporates"
+     ],
+     [
+      "Hot-melt / pressure-sensitive",
+      "sets on cooling / sticks by pressing (tapes)"
+     ],
+     [
+      "Chromophore / auxochrome",
+      "colour group (–N=N–, –NO₂) / helper (–OH, –NH₂)"
+     ],
+     [
+      "Vat dye (indigo)",
+      "reduced to soluble form, applied, air-oxidised back"
+     ],
+     [
+      "Mordant",
+      "metal salt that fixes dye to fibre"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "💡 Natural adhesives: animal glue (boiled bones and hides), casein glue (milk protein). Azo dyes have –N=N– (methyl orange, Congo red). Direct dyes (Congo red) colour cotton without mordant; acid dyes suit wool, silk, nylon; reactive dyes bond covalently to fibre."
+   }
+  ]
+ },
+ {
+  "id": "chem-20-c02",
+  "unit": "chem-20",
+  "kind": "table",
+  "title": "Polymers and their monomers",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Polymer",
+     "Monomer(s)",
+     "Type"
+    ],
+    "rows": [
+     [
+      "Polythene",
+      "ethene CH₂=CH₂",
+      "addition"
+     ],
+     [
+      "PVC",
+      "vinyl chloride CH₂=CHCl",
+      "addition"
+     ],
+     [
+      "Teflon",
+      "tetrafluoroethene CF₂=CF₂",
+      "addition"
+     ],
+     [
+      "Nylon-6,6",
+      "hexane-1,6-diamine + hexanedioic acid",
+      "condensation (polyamide)"
+     ],
+     [
+      "Terylene (Dacron)",
+      "ethane-1,2-diol + benzene-1,4-dicarboxylic acid",
+      "condensation (polyester)"
+     ],
+     [
+      "Bakelite",
+      "phenol + methanal",
+      "condensation, thermoset"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Addition: no by-product; polymer has same empirical formula as monomer",
+     "Condensation: small molecule (H₂O, HCl) lost at each link",
+     "Nylon-6,6: each monomer has 6 C atoms"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "💡 Units per chain = polymer Mr ÷ monomer Mr (ethene 28: 56 000 → 2000)."
+   }
+  ]
+ }
+]

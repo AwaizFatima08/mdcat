@@ -86,6 +86,7 @@ function pickSet(pool, size){
    ROUTER — hash based so Android back / browser back work.
    #/  #/s/bio  #/u/bio-01  #/play  #/results  #/mistakes  #/soon/<name>
    #/mocks  #/mock/<id>  #/mq  #/mgrid  #/mres/<id>/<attempt>
+   #/cheats  #/cheats/<subject>  #/cheat/<card id>
    ====================================================================== */
 const app = document.getElementById("app");
 let session = null;   // current practice set: { title, back, items:[q], i, answers:[idx|null] }
@@ -116,6 +117,8 @@ function render(){
   if(parts[0] === "results" && session) return renderResults();
   if(parts[0] === "mistakes") return renderMistakes();
   if(parts[0] === "guide") return parts[1] ? renderGuideSection(parts[1]) : renderGuide();
+  if(parts[0] === "cheats") return subjectById[parts[1]] ? renderCheatSubject(parts[1]) : renderCheats();
+  if(parts[0] === "cheat" && cheatById[parts[1]]) return renderCheat(parts[1]);
   if(parts[0] === "soon") return renderSoon(decodeURIComponent(parts[1] || ""));
   return renderHome();
 }
@@ -151,7 +154,7 @@ function renderHome(){
     <button class="tile" data-go="#/mistakes"><div class="ic">🔁</div><div class="title">Review mistakes</div><div class="sub">${nMistakes} question${nMistakes===1?"":"s"}</div></button>
     <button class="tile" data-go="#/mocks"><div class="ic">⏱️</div><div class="title">Mock exams</div><div class="sub">${progress.mock.active ? "paper in progress" : MOCKS.length ? `${MOCKS.length} full paper${MOCKS.length===1?"":"s"}` : "coming soon"}</div></button>
     <button class="tile" data-go="#/guide"><div class="ic">📋</div><div class="title">Rules &amp; guidelines</div><div class="sub">format, passing, exam day</div></button>
-    <button class="tile" data-go="#/soon/Memory%20cheats"><div class="ic">🧠</div><div class="title">Memory cheats</div><div class="sub">coming soon</div></button>
+    <button class="tile" data-go="#/cheats"><div class="ic">🧠</div><div class="title">Memory cheats</div><div class="sub">${CHEATS.length ? `${CHEATS.length} quick cards` : "coming soon"}</div></button>
     <button class="tile" data-go="#/soon/Important%20topics"><div class="ic">⭐</div><div class="title">Important topics</div><div class="sub">coming soon</div></button>
   </div>`;
   app.innerHTML = html;
@@ -304,6 +307,7 @@ function guideBlock(b){
     case "h": return `<h4>${esc(b.text)}</h4>`;
     case "tip": return `<div class="callout tip">💡 ${esc(b.text)}</div>`;
     case "warn": return `<div class="callout warn">⚠️ ${esc(b.text)}</div>`;
+    case "mn": return `<div class="mn"><div class="phrase">${esc(b.text)}</div><ul>${b.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul></div>`;
     case "list": return `<ul>${b.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul>`;
     case "table": return `<table><thead><tr>${b.head.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead>
       <tbody>${b.rows.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
@@ -319,6 +323,51 @@ function renderGuideSection(id){
     `<article class="card guide">${s.blocks.map(guideBlock).join("")}</article>
     ${nextS ? `<div class="actions"><button class="btn secondary" data-go="#/guide/${nextS.id}">Next: ${esc(nextS.title)} ›</button></div>` : ""}
     <p class="note">${esc(GUIDE.disclaimer)}</p>`;
+}
+
+/* ----- memory cheats: short revision cards, subject → unit → card ----- */
+const CHEAT_ICON = { mnemonic:"🧩", table:"📊", formula:"📐", map:"🗺️", rule:"📏", trick:"🎯" };
+const cheatById = {};
+CHEATS.forEach((c, i) => { cheatById[c.id] = { ...c, i }; });
+
+function renderCheats(){
+  let html = bar("Memory cheats", "#/") + `<p class="note">Short cards to revise in a minute each: mnemonics, tables, formula sheets, reaction maps, rules and tricks.</p><div class="list">`;
+  for(const s of SYLLABUS.subjects){
+    const n = CHEATS.filter(c => unitById[c.unit].subject === s.id).length;
+    html += `<button class="row${n ? "" : " disabled"}" ${n ? `data-go="#/cheats/${s.id}"` : ""}>
+      <span class="badge" style="background:${SUBJECT_COLOR[s.id]}">${SUBJECT_ABBR[s.id]}</span>
+      <span class="main"><span class="title">${esc(s.name)}</span><div class="sub">${n ? `${n} card${n===1?"":"s"}` : "coming soon"}</div></span>
+      ${n ? `<span class="chev">›</span>` : ""}</button>`;
+  }
+  app.innerHTML = html + `</div>`;
+}
+
+function renderCheatSubject(sid){
+  const s = subjectById[sid];
+  let html = bar(`${s.name} cheats`, "#/cheats");
+  for(const u of s.units){
+    const cards = CHEATS.filter(c => c.unit === u.id);
+    if(!cards.length) continue;
+    html += `<h3 class="section">${u.n}. ${esc(u.name)}</h3><div class="list">` + cards.map(c =>
+      `<button class="row" data-go="#/cheat/${c.id}"><span class="badge" style="background:var(--brand-soft);font-size:20px">${CHEAT_ICON[c.kind]}</span>
+        <span class="main"><span class="title">${esc(c.title)}</span><div class="sub">${c.kind}</div></span><span class="chev">›</span></button>`).join("") + `</div>`;
+  }
+  app.innerHTML = html;
+}
+
+// Prev/Next stay inside the subject; cards are in syllabus order from the build.
+function renderCheat(id){
+  const c = cheatById[id], u = unitById[c.unit];
+  const prev = CHEATS[c.i-1], next = CHEATS[c.i+1];
+  const same = x => x && unitById[x.unit].subject === u.subject;
+  app.innerHTML = bar(c.title, `#/cheats/${u.subject}`) +
+    `<p class="note">${CHEAT_ICON[c.kind]} ${c.kind} · ${SUBJECT_ABBR[u.subject]} unit ${u.n}: ${esc(u.name)}</p>
+    <article class="card guide cheat">${c.blocks.map(guideBlock).join("")}</article>
+    <div class="cnav">
+      <button class="btn secondary" ${same(prev) ? `data-go="#/cheat/${prev.id}"` : "disabled"}>‹ Prev</button>
+      ${(qByUnit[c.unit] || []).length ? `<button class="btn" data-start="unit:${c.unit}">Practise unit ${u.n}</button>` : ""}
+      <button class="btn secondary" ${same(next) ? `data-go="#/cheat/${next.id}"` : "disabled"}>Next ›</button>
+    </div>`;
 }
 
 /* ======================================================================

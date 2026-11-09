@@ -1,0 +1,1884 @@
+[
+ {
+  "id": "phy-01-c01",
+  "unit": "phy-01",
+  "kind": "formula",
+  "title": "Rectangular components and resultant",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Formula",
+     "Meaning",
+     "Unit"
+    ],
+    "rows": [
+     [
+      "Fx = F cos θ",
+      "x-component; θ measured from +x-axis",
+      "same as F"
+     ],
+     [
+      "Fy = F sin θ",
+      "y-component",
+      "same as F"
+     ],
+     [
+      "Rx = ΣFx, Ry = ΣFy",
+      "add all x parts, then all y parts",
+      "same as F"
+     ],
+     [
+      "R = √(Rx² + Ry²)",
+      "magnitude of resultant",
+      "same as F"
+     ],
+     [
+      "θ = tan⁻¹(|Ry| / |Rx|)",
+      "reference angle with the x-axis",
+      "degree / rad"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Quadrant from signs: (+,+) θ; (−,+) 180° − θ; (−,−) 180° + θ; (+,−) 360° − θ.",
+     "Equal components (5, 5) → R = 5√2 at 45°."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Calculator tan⁻¹ ignores signs: (−5, +5) is at 135°, not −45°. Always check the quadrant."
+   }
+  ]
+ },
+ {
+  "id": "phy-01-c02",
+  "unit": "phy-01",
+  "kind": "table",
+  "title": "Scalar (dot) vs vector (cross) product",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "",
+     "Scalar product A·B",
+     "Vector product A×B"
+    ],
+    "rows": [
+     [
+      "Size",
+      "AB cos θ",
+      "AB sin θ (area of parallelogram)"
+     ],
+     [
+      "Result",
+      "a scalar",
+      "a vector ⊥ to both A and B (right-hand rule)"
+     ],
+     [
+      "Order",
+      "A·B = B·A",
+      "A×B = −(B×A)"
+     ],
+     [
+      "Zero when",
+      "θ = 90°",
+      "θ = 0° or 180°"
+     ],
+     [
+      "Unit vectors",
+      "î·î = 1, î·ĵ = 0",
+      "î×ĵ = k̂, ĵ×î = −k̂, î×î = 0"
+     ],
+     [
+      "Components",
+      "AxBx + AyBy + AzBz",
+      "for 2-D: (AxBy − AyBx) k̂"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Dot product negative ⇒ 90° < θ ≤ 180°. Projection of A on B = A·B / |B|. Work W = F·d is a dot product."
+   }
+  ]
+ },
+ {
+  "id": "phy-02-c01",
+  "unit": "phy-02",
+  "kind": "formula",
+  "title": "Equations of motion and graphs",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "v = u + at",
+     "s = ut + ½at²",
+     "v² = u² + 2as",
+     "s = ½(u + v)t  (average velocity × time)"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "u = initial velocity, v = final velocity (m s⁻¹), a = acceleration (m s⁻²), s = displacement (m), t = time (s). Valid only for uniform acceleration in a straight line."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Graph",
+     "Slope gives",
+     "Area gives"
+    ],
+    "rows": [
+     [
+      "displacement–time",
+      "velocity",
+      "—"
+     ],
+     [
+      "velocity–time",
+      "acceleration",
+      "displacement"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "From rest with uniform a, distances in the 1st, 2nd, 3rd second are in the ratio 1 : 3 : 5."
+   },
+   {
+    "type": "warn",
+    "text": "Round trip X→Y→X at 40 and 60 km h⁻¹: average speed is 48 km h⁻¹ (not 50), and average velocity is zero."
+   }
+  ]
+ },
+ {
+  "id": "phy-02-c02",
+  "unit": "phy-02",
+  "kind": "formula",
+  "title": "Projectile formula sheet",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Launch speed v (m s⁻¹) at angle θ, level ground, no air resistance, g = 9.8 (or 10) m s⁻²."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Quantity",
+     "Formula"
+    ],
+    "rows": [
+     [
+      "Horizontal velocity",
+      "vx = v cos θ (constant)"
+     ],
+     [
+      "Vertical velocity",
+      "vy = v sin θ − gt"
+     ],
+     [
+      "Time of flight",
+      "T = 2v sin θ / g"
+     ],
+     [
+      "Maximum height",
+      "H = v² sin²θ / 2g"
+     ],
+     [
+      "Range",
+      "R = v² sin 2θ / g"
+     ],
+     [
+      "Maximum range",
+      "Rmax = v² / g at θ = 45°"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "θ and (90° − θ) give the same range (30° and 60°). Doubling v makes R, H four times."
+   },
+   {
+    "type": "warn",
+    "text": "At the top, vy = 0 but speed = v cos θ, and acceleration is still g downward. Mass does not matter."
+   }
+  ]
+ },
+ {
+  "id": "phy-02-c03",
+  "unit": "phy-02",
+  "kind": "table",
+  "title": "Newton's second law in common set-ups",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Situation",
+     "Result"
+    ],
+    "rows": [
+     [
+      "Lift accelerating up at a",
+      "scale reads m(g + a)"
+     ],
+     [
+      "Lift accelerating down at a",
+      "scale reads m(g − a)"
+     ],
+     [
+      "Lift at constant velocity",
+      "scale reads mg"
+     ],
+     [
+      "Lift in free fall",
+      "scale reads 0 (weightless)"
+     ],
+     [
+      "Smooth incline at θ",
+      "a = g sin θ; normal force = mg cos θ"
+     ],
+     [
+      "Atwood machine m₁ > m₂",
+      "a = (m₁ − m₂)g / (m₁ + m₂); T = 2m₁m₂g / (m₁ + m₂)"
+     ],
+     [
+      "Blocks pulled by F on smooth floor",
+      "a = F / (total mass); string tension = (mass behind string) × a"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Constant velocity ⇒ net force zero (first law), even with the engine running."
+   },
+   {
+    "type": "warn",
+    "text": "Action and reaction never cancel: they act on different bodies."
+   }
+  ]
+ },
+ {
+  "id": "phy-02-c04",
+  "unit": "phy-02",
+  "kind": "trick",
+  "title": "Momentum, impulse and collision shortcuts",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "p = mv; unit kg m s⁻¹ = N s. F = Δp / Δt.",
+     "Impulse = FΔt = Δp = area under the F–t graph.",
+     "Ball rebounding at the same speed: Δp = 2mv.",
+     "Recoil / explosion from rest: total p stays 0, so MV = mv. Speeds ∝ 1/mass; the lighter piece also gets more KE.",
+     "Elastic: speed of approach = speed of separation (u₁ − u₂ = v₂ − v₁); KE conserved.",
+     "Equal masses, one at rest, elastic: velocities swap.",
+     "Very heavy hits very light at rest: light one moves off at 2u.",
+     "Perfectly inelastic: bodies stick; largest KE loss."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Momentum is conserved in every collision with no external force; KE is conserved only in elastic ones."
+   }
+  ]
+ },
+ {
+  "id": "phy-03-c01",
+  "unit": "phy-03",
+  "kind": "formula",
+  "title": "Work, energy and power sheet",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Formula",
+     "Symbols",
+     "SI unit"
+    ],
+    "rows": [
+     [
+      "W = Fd cos θ = F·d",
+      "θ = angle between F and d",
+      "joule, J = N m"
+     ],
+     [
+      "K = ½mv²",
+      "m mass, v speed",
+      "J"
+     ],
+     [
+      "ΔU = mgh",
+      "h height change (near Earth only)",
+      "J"
+     ],
+     [
+      "P = W / t = F·v = Fv cos θ",
+      "rate of doing work",
+      "watt, W = J s⁻¹"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Work and energy dimensions: [ML²T⁻²]; power: [ML²T⁻³].",
+     "1 kWh = 3.6 × 10⁶ J (energy, not power). 1 hp ≈ 746 W.",
+     "Work–energy theorem: net work = change in KE."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Zero work when F ⊥ d: string tension in a circle, or carrying a bag along a level road."
+   }
+  ]
+ },
+ {
+  "id": "phy-03-c02",
+  "unit": "phy-03",
+  "kind": "trick",
+  "title": "Kinetic energy and momentum links",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "K = p² / 2m and p = √(2mK). Use these instead of finding v."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Change",
+     "Effect"
+    ],
+    "rows": [
+     [
+      "speed doubled",
+      "K × 4, p × 2"
+     ],
+     [
+      "K up by 300% (× 4)",
+      "p × 2, i.e. up by 100%"
+     ],
+     [
+      "equal K, masses m and 4m",
+      "p ratio 1 : 2 (p ∝ √m)"
+     ],
+     [
+      "equal p",
+      "K ∝ 1/m (lighter body has more K)"
+     ]
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "\"Increases by 300%\" means 4 times, not 3 times. K can never be negative, since v² ≥ 0."
+   }
+  ]
+ },
+ {
+  "id": "phy-03-c03",
+  "unit": "phy-03",
+  "kind": "table",
+  "title": "Potential energy signs, friction and efficiency",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Idea",
+     "Rule"
+    ],
+    "rows": [
+     [
+      "Above reference level",
+      "U = +mgh"
+     ],
+     [
+      "At reference level",
+      "U = 0"
+     ],
+     [
+      "Below reference level",
+      "U = −mgh"
+     ],
+     [
+      "Absolute GPE",
+      "U = −GMm / r; zero at infinity, always negative; rises towards 0 as r grows"
+     ],
+     [
+      "Work against friction",
+      "f × d, turned into heat"
+     ],
+     [
+      "Rough slope / falling in air",
+      "loss of PE = gain of KE + heat"
+     ],
+     [
+      "Efficiency",
+      "useful output ÷ total input × 100%; no unit; always below 100%"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Changing the reference level changes U but never ΔU. Gravity is conservative: ΔU depends only on start and end heights, not the path."
+   }
+  ]
+ },
+ {
+  "id": "phy-04-c01",
+  "unit": "phy-04",
+  "kind": "formula",
+  "title": "Angle units and angular velocity",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "θ = s / r  (arc length ÷ radius), in radians.",
+     "1 rev = 2π rad = 360°; 1 rad ≈ 57.3°; 1° = π/180 rad.",
+     "ω = Δθ / Δt = 2πf = 2π / T  (rad s⁻¹, dimensions [T⁻¹]).",
+     "rev per minute N → ω = 2πN / 60.  120 rpm = 4π rad s⁻¹, T = 0.5 s.",
+     "Earth: ω = 2π / (24 h) ≈ 7.3 × 10⁻⁵ rad s⁻¹."
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Direction of ω (and of a small angular displacement) is along the axis, by the right-hand rule: anticlockwise seen from above → upward."
+   },
+   {
+    "type": "tip",
+    "text": "Minute hand : hour hand angular velocity = 12 : 1. In 20 min the minute hand turns 120° = 2π/3 rad."
+   },
+   {
+    "type": "warn",
+    "text": "A radian is a ratio of two lengths, so it has no dimensions. One revolution is 2π rad for any radius."
+   }
+  ]
+ },
+ {
+  "id": "phy-04-c02",
+  "unit": "phy-04",
+  "kind": "table",
+  "title": "Linear ↔ angular relations",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Linear",
+     "Angular",
+     "Link"
+    ],
+    "rows": [
+     [
+      "arc length s (m)",
+      "θ (rad)",
+      "s = rθ"
+     ],
+     [
+      "speed v (m s⁻¹)",
+      "ω (rad s⁻¹)",
+      "v = rω"
+     ],
+     [
+      "tangential a (m s⁻²)",
+      "α (rad s⁻²)",
+      "a = rα"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Rigid body: every point has the same θ, ω, α; v grows with r (v₁ : v₂ = r₁ : r₂).",
+     "Belt or gears without slipping: rims share the same v, so ω ∝ 1/r.",
+     "Rolling without slipping: distance = n × 2πr; ω = v / r.",
+     "Linear velocity is along the tangent to the circle."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Use θ in radians in these links. Convert degrees or revolutions first."
+   }
+  ]
+ },
+ {
+  "id": "phy-05-c01",
+  "unit": "phy-05",
+  "kind": "formula",
+  "title": "Drag and terminal velocity",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Formula",
+     "Symbols",
+     "SI unit"
+    ],
+    "rows": [
+     [
+      "F = 6πηrv (Stokes' law)",
+      "η viscosity, r radius, v speed",
+      "F in N; η in Pa s = N s m⁻² = kg m⁻¹ s⁻¹"
+     ],
+     [
+      "v_t = 2ρgr²/9η (no upthrust)",
+      "ρ density of sphere, g gravity",
+      "m s⁻¹"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Drag is a resistive force from the fluid, always opposite to the motion (down for a ball thrown up).",
+     "At terminal velocity: weight = drag (+ upthrust), net force 0, acceleration 0.",
+     "v–t graph: curve rising, then flat line. Acceleration falls from g to zero."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "v_t ∝ r²: double the radius → 4× terminal speed. v_t ∝ 1/η: double viscosity → half speed."
+   },
+   {
+    "type": "warn",
+    "text": "Stokes' law needs a small sphere moving slowly (laminar flow). It fails at high speed, where flow turns turbulent."
+   }
+  ]
+ },
+ {
+  "id": "phy-05-c02",
+  "unit": "phy-05",
+  "kind": "table",
+  "title": "Ideal fluid: laminar vs turbulent",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "An ideal fluid is incompressible (density constant), non-viscous (no internal friction) and flows steadily."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Feature",
+     "Laminar (streamline)",
+     "Turbulent"
+    ],
+    "rows": [
+     [
+      "Velocity at a fixed point",
+      "Constant in time",
+      "Changes erratically"
+     ],
+     [
+      "Layers",
+      "Slide smoothly, never mix",
+      "Mix, form eddies and swirls"
+     ],
+     [
+      "Streamlines",
+      "Never cross",
+      "Not defined"
+     ],
+     [
+      "When",
+      "Low speed, narrow pipe, high viscosity",
+      "High speed, wide pipe, low viscosity"
+     ],
+     [
+      "Energy loss",
+      "Low",
+      "High"
+     ],
+     [
+      "Example",
+      "Tap opened slightly",
+      "Tap fully open, rivers, wind"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Tangent to a streamline gives the velocity direction. Streamlines closer together = faster flow."
+   },
+   {
+    "type": "warn",
+    "text": "Bernoulli's equation is exact only for an ideal fluid in steady (streamline) flow; Stokes' law needs slow, laminar flow round a small sphere."
+   }
+  ]
+ },
+ {
+  "id": "phy-05-c03",
+  "unit": "phy-05",
+  "kind": "formula",
+  "title": "Continuity and Bernoulli's equation",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Equation",
+     "Meaning",
+     "Conserves"
+    ],
+    "rows": [
+     [
+      "A₁v₁ = A₂v₂",
+      "A cross-section area (m²), v speed (m s⁻¹); Av = volume flow rate (m³ s⁻¹)",
+      "Mass"
+     ],
+     [
+      "P + ½ρv² + ρgh = constant",
+      "P pressure (Pa), ρ density, h height",
+      "Energy (per unit volume)"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Narrow part → faster flow → lower pressure (Bernoulli effect).",
+     "Horizontal tube: P₁ + ½ρv₁² = P₂ + ½ρv₂².",
+     "Uses: aeroplane wing lift, Venturi meter, spray gun, chimney draught.",
+     "Blood flow: at a narrowed (stenosed) artery, blood speeds up and its pressure drops, so the artery can be squeezed shut by outside pressure."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Speed depends on area, so v ∝ 1/r². Half the radius → 4× the speed, not 2×."
+   }
+  ]
+ },
+ {
+  "id": "phy-06-c01",
+  "unit": "phy-06",
+  "kind": "table",
+  "title": "Wave types and v = fλ",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Feature",
+     "Transverse",
+     "Longitudinal"
+    ],
+    "rows": [
+     [
+      "Particles vibrate",
+      "⊥ to wave direction",
+      "∥ to wave direction"
+     ],
+     [
+      "Made of",
+      "Crests and troughs",
+      "Compressions and rarefactions"
+     ],
+     [
+      "λ = distance between",
+      "Two adjacent crests",
+      "Two adjacent compressions"
+     ],
+     [
+      "Examples",
+      "Rope, light, all EM waves",
+      "Sound, slinky pushed along"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Mechanical waves (sound) need a medium; EM waves travel in vacuum at c = 3 × 10⁸ m s⁻¹.",
+     "v = fλ, T = 1/f. A wave moves one λ in one period.",
+     "A progressive wave carries energy, not matter."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Entering a new medium, f stays the same; v and λ change together."
+   },
+   {
+    "type": "warn",
+    "text": "Crest-to-next-trough is λ/2, and crest-to-trough height is 2 × amplitude."
+   }
+  ]
+ },
+ {
+  "id": "phy-06-c02",
+  "unit": "phy-06",
+  "kind": "formula",
+  "title": "Speed of sound: Newton and Laplace",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Formula",
+     "Idea",
+     "Value in air at 0 °C"
+    ],
+    "rows": [
+     [
+      "v = √(P/ρ) (Newton)",
+      "Assumed isothermal compressions",
+      "≈ 280 m s⁻¹ (too low)"
+     ],
+     [
+      "v = √(γP/ρ) (Laplace)",
+      "Compressions are adiabatic; γ = Cp/Cv = 1.4 for air",
+      "≈ 332 m s⁻¹ (matches)"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "v ∝ √T (T in kelvin): v_t ≈ v₀ + 0.61t m s⁻¹, t in °C.",
+     "Pressure change at constant temperature: no effect on v.",
+     "Moist air is less dense, so sound is faster.",
+     "Speed: solids > liquids > gases."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Use kelvin in v ∝ √T. Going from 27 °C to 927 °C is 300 K → 1200 K, so v doubles."
+   }
+  ]
+ },
+ {
+  "id": "phy-06-c03",
+  "unit": "phy-06",
+  "kind": "formula",
+  "title": "Stationary waves: strings and pipes",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Two identical waves moving in opposite directions superpose to give a stationary wave. Node = zero displacement; antinode = maximum. Node to next node = λ/2; node to next antinode = λ/4."
+   },
+   {
+    "type": "table",
+    "head": [
+     "System",
+     "Frequencies",
+     "Harmonics"
+    ],
+    "rows": [
+     [
+      "String fixed at both ends",
+      "fₙ = nv/2l, v = √(T/μ)",
+      "All: 1, 2, 3 …"
+     ],
+     [
+      "Pipe open at both ends",
+      "fₙ = nv/2l",
+      "All: 1, 2, 3 …"
+     ],
+     [
+      "Pipe closed at one end",
+      "fₙ = nv/4l",
+      "Odd only: 1, 3, 5 …"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "T tension (N), μ mass per unit length (kg m⁻¹), l length (m).",
+     "String ends and closed pipe ends are nodes; open ends are antinodes."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Same length: a closed pipe's fundamental is half an open pipe's."
+   }
+  ]
+ },
+ {
+  "id": "phy-06-c04",
+  "unit": "phy-06",
+  "kind": "formula",
+  "title": "Simple harmonic motion",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "SHM: acceleration ∝ displacement and always towards the mean position: a = −ω²x."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Quantity",
+     "Formula",
+     "Unit"
+    ],
+    "rows": [
+     [
+      "Mass on spring",
+      "T = 2π√(m/k)",
+      "s (k in N m⁻¹)"
+     ],
+     [
+      "Simple pendulum",
+      "T = 2π√(l/g)",
+      "s"
+     ],
+     [
+      "Angular frequency",
+      "ω = 2πf = 2π/T",
+      "rad s⁻¹"
+     ],
+     [
+      "Speed at x",
+      "v = ω√(x₀² − x²)",
+      "m s⁻¹"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Mean position: speed max (ωx₀), acceleration 0.",
+     "Extremes: speed 0, acceleration max (ω²x₀).",
+     "The projection of uniform circular motion on a diameter is SHM."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "A pendulum's period does not depend on its mass or (small) amplitude, only on l and g."
+   }
+  ]
+ },
+ {
+  "id": "phy-07-c01",
+  "unit": "phy-07",
+  "kind": "formula",
+  "title": "Specific heats and work by a gas",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Formula",
+     "Symbols",
+     "SI unit"
+    ],
+    "rows": [
+     [
+      "Q = mcΔT",
+      "c specific heat (per kg)",
+      "c: J kg⁻¹ K⁻¹"
+     ],
+     [
+      "Q = nCΔT",
+      "C molar specific heat (per mole)",
+      "C: J mol⁻¹ K⁻¹"
+     ],
+     [
+      "C = Mc",
+      "M molar mass in kg mol⁻¹",
+      "—"
+     ],
+     [
+      "Heat capacity = mc",
+      "whole body",
+      "J K⁻¹"
+     ],
+     [
+      "W = PΔV",
+      "P constant pressure, ΔV volume change",
+      "J (Pa m³ = J)"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Heat flows on its own from higher to lower temperature, until thermal equilibrium (same temperature).",
+     "Work = area under the P–V graph. Expansion: W by gas positive; compression: negative; rigid container: zero."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Specific heat is a property of the material: doubling the mass doubles heat capacity, not c. Convert litres: 1 L = 10⁻³ m³."
+   }
+  ]
+ },
+ {
+  "id": "phy-07-c02",
+  "unit": "phy-07",
+  "kind": "table",
+  "title": "First law: Q = ΔU + W",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "FSc convention: Q = heat supplied to the gas, W = work done BY the gas. The first law is conservation of energy."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Process",
+     "Kept fixed",
+     "Result"
+    ],
+    "rows": [
+     [
+      "Isochoric",
+      "Volume",
+      "W = 0, so Q = ΔU"
+     ],
+     [
+      "Isobaric",
+      "Pressure",
+      "W = PΔV, Q = ΔU + PΔV"
+     ],
+     [
+      "Isothermal",
+      "Temperature",
+      "ΔU = 0, so Q = W"
+     ],
+     [
+      "Adiabatic",
+      "No heat flow",
+      "Q = 0, so W = −ΔU (expansion cools)"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Heat given out → Q negative. Work done ON gas → W negative.",
+     "Ideal gas: U depends only on temperature, and ΔU is path-independent."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "500 J in, 200 J of work out → ΔU = 500 − 200 = +300 J."
+   },
+   {
+    "type": "warn",
+    "text": "Some books write ΔU = Q + W with W done ON the gas. Check which W the question uses."
+   }
+  ]
+ },
+ {
+  "id": "phy-07-c03",
+  "unit": "phy-07",
+  "kind": "trick",
+  "title": "Cp − Cv = R and γ",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Why Cp > Cv: at constant volume all heat raises U. At constant pressure the gas also expands and does work PΔV = nRΔT, so extra heat is needed."
+   },
+   {
+    "type": "list",
+    "items": [
+     "Cp − Cv = R = 8.31 J mol⁻¹ K⁻¹ (molar values, ideal gas).",
+     "γ = Cp/Cv, always > 1.",
+     "Monatomic gas (He, Ne): Cv = 3R/2, Cp = 5R/2, γ = 5/3.",
+     "Diatomic gas (air, O₂, N₂): Cv = 5R/2, Cp = 7R/2, γ = 7/5 = 1.4."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Heat at constant pressure: Q = nCpΔT. Work part = nRΔT, e.g. 2 mol, ΔT 50 K → W = 2 × 8.3 × 50 = 830 J."
+   },
+   {
+    "type": "warn",
+    "text": "Cp − Cv = R holds for molar heats only. For specific heats (per kg): cp − cv = R/M."
+   }
+  ]
+ },
+ {
+  "id": "phy-08-c01",
+  "unit": "phy-08",
+  "kind": "formula",
+  "title": "Coulomb's law and electric field",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Formula",
+     "Symbols",
+     "SI unit"
+    ],
+    "rows": [
+     [
+      "F = kq₁q₂/r²",
+      "k = 1/4πε₀ = 9 × 10⁹ N m² C⁻²",
+      "N"
+     ],
+     [
+      "F_medium = F/εr",
+      "εr relative permittivity (≥ 1, no unit)",
+      "N"
+     ],
+     [
+      "E = F/q₀",
+      "q₀ small positive test charge",
+      "N C⁻¹ = V m⁻¹"
+     ],
+     [
+      "E = kq/r²",
+      "field of a point charge",
+      "N C⁻¹"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "ε₀ = 8.85 × 10⁻¹² C² N⁻¹ m⁻². εr of air ≈ 1; water ≈ 80.",
+     "Forces on the two charges are equal and opposite, whatever their sizes.",
+     "Force on an electron is opposite to E."
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Double r → F and E fall to ¼. Double both charges and halve r → F × 16."
+   },
+   {
+    "type": "warn",
+    "text": "Fields add as vectors, potentials add as plain numbers. E does not depend on the test charge."
+   }
+  ]
+ },
+ {
+  "id": "phy-08-c02",
+  "unit": "phy-08",
+  "kind": "trick",
+  "title": "Zero-field points, field lines, plates",
+  "blocks": [
+   {
+    "type": "h",
+    "text": "Where is E = 0 on the line?"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Like charges: between them, nearer the smaller one. +q and +4q, 30 cm apart → 10 cm from +q.",
+     "Unlike, unequal charges: outside, beyond the smaller one.",
+     "Equal like charges: midpoint field = 0. Equal unlike, separation d: midpoint field = 8kq/d², pointing to −q."
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Field lines"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Start on +, end on −; never cross; closer lines = stronger field.",
+     "Tangent gives the direction of E."
+    ]
+   },
+   {
+    "type": "table",
+    "head": [
+     "Charged surface",
+     "Field"
+    ],
+    "rows": [
+     [
+      "Thin infinite sheet",
+      "σ/2ε₀"
+     ],
+     [
+      "Just outside a conducting plate",
+      "σ/ε₀"
+     ],
+     [
+      "Between plates +σ and −σ",
+      "σ/ε₀ (outside: 0)"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "A plate's field is uniform: it does not change with distance."
+   }
+  ]
+ },
+ {
+  "id": "phy-08-c03",
+  "unit": "phy-08",
+  "kind": "formula",
+  "title": "Potential and RC charging",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Formula",
+     "Meaning",
+     "SI unit"
+    ],
+    "rows": [
+     [
+      "V = W/q",
+      "work per unit + charge from infinity",
+      "V = J C⁻¹"
+     ],
+     [
+      "V = kq/r",
+      "potential of a point charge (scalar)",
+      "V"
+     ],
+     [
+      "E = ΔV/d",
+      "uniform field between plates",
+      "V m⁻¹"
+     ],
+     [
+      "τ = RC",
+      "time constant",
+      "s (Ω × F)"
+     ],
+     [
+      "q = q₀(1 − e^(−t/RC))",
+      "charging",
+      "C"
+     ],
+     [
+      "q = q₀e^(−t/RC)",
+      "discharging",
+      "C"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "1 eV = 1.6 × 10⁻¹⁹ J (a unit of energy). 1 V = kg m² s⁻³ A⁻¹.",
+     "After one τ: charging reaches 63%; discharging falls to 37%."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "V ∝ 1/r but E ∝ 1/r². No work is done moving a charge between points at the same potential."
+   }
+  ]
+ },
+ {
+  "id": "phy-09-c01",
+  "unit": "phy-09",
+  "kind": "formula",
+  "title": "Current, Ohm's law and resistivity",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Formula",
+     "Symbols",
+     "SI unit"
+    ],
+    "rows": [
+     [
+      "I = Q/t",
+      "charge Q passing in time t",
+      "A = C s⁻¹"
+     ],
+     [
+      "n = I/e",
+      "electrons passing per second",
+      "s⁻¹"
+     ],
+     [
+      "V = IR",
+      "p.d. V, current I, resistance R",
+      "Ω = V A⁻¹"
+     ],
+     [
+      "R = ρL/A",
+      "resistivity ρ, length L, cross-section area A",
+      "ρ in Ω m"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Ohm's law holds only if temperature and other physical conditions stay constant. Filament lamps, diodes and thermistors are non-ohmic."
+   },
+   {
+    "type": "warn",
+    "text": "Stretch a wire to n × its length (same volume): A falls n times, so R becomes n²R. Double the diameter: A is 4×, so R becomes R/4. ρ depends only on material and temperature, not on shape."
+   }
+  ]
+ },
+ {
+  "id": "phy-09-c02",
+  "unit": "phy-09",
+  "kind": "table",
+  "title": "Resistance and temperature",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "R_T = R₀(1 + αΔT), so α = (R_T − R₀)/(R₀ΔT). Unit of α: K⁻¹ (per °C is the same size)."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Material",
+     "Sign of α",
+     "Why / use"
+    ],
+    "rows": [
+     [
+      "Metals (copper, tungsten)",
+      "positive",
+      "atoms vibrate more, electrons collide more"
+     ],
+     [
+      "Carbon, semiconductors, thermistors",
+      "negative",
+      "more free charge carriers when hot"
+     ],
+     [
+      "Manganin, constantan (alloys)",
+      "very small",
+      "standard resistors: R hardly changes"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Worked check: R₀ = 10 Ω, α = 4 × 10⁻³ K⁻¹, ΔT = 50 K → R = 10(1 + 0.2) = 12 Ω."
+   }
+  ]
+ },
+ {
+  "id": "phy-09-c03",
+  "unit": "phy-09",
+  "kind": "formula",
+  "title": "emf, internal resistance, maximum power",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "I = E/(R + r): emf E, load R, internal resistance r",
+     "Terminal p.d. V = E − Ir (lost volts = Ir)",
+     "Open circuit (I = 0): V = E. Short circuit: I = E/r",
+     "V–I graph: straight line, y-intercept = E, slope = −r",
+     "Power wasted inside the cell = I²r"
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Maximum power transfer"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Happens when R = r",
+     "P_max = E²/4r, terminal p.d. = E/2, efficiency = 50%"
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Maximum power is not maximum efficiency. As R rises from 0, power to R rises, peaks at R = r, then falls."
+   }
+  ]
+ },
+ {
+  "id": "phy-10-c01",
+  "unit": "phy-10",
+  "kind": "formula",
+  "title": "Flux density B and flux Φ",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Formula",
+     "Meaning",
+     "SI unit"
+    ],
+    "rows": [
+     [
+      "F = ILB sin θ",
+      "force on wire; θ between wire and B",
+      "N"
+     ],
+     [
+      "B = F/(IL)",
+      "flux density (vector)",
+      "T = N A⁻¹ m⁻¹ = Wb m⁻²"
+     ],
+     [
+      "Φ = B·A = BA cos θ",
+      "flux (scalar); θ between B and the normal",
+      "Wb = T m²"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "1 T = 1 kg s⁻² A⁻¹ = 10⁴ gauss",
+     "Wire parallel to B: F = 0. Plane of coil ⊥ B: Φ = BA (maximum). Plane ∥ B: Φ = 0"
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "If the angle is given with the plane of the coil, not the normal, use Φ = BA sin θ."
+   }
+  ]
+ },
+ {
+  "id": "phy-10-c02",
+  "unit": "phy-10",
+  "kind": "trick",
+  "title": "Charged particle in a magnetic field",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "F = qvB sin θ, always ⊥ to v, so it does no work: speed and KE stay constant."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Motion relative to B",
+     "Force",
+     "Path"
+    ],
+    "rows": [
+     [
+      "at rest or along B",
+      "zero",
+      "rest / straight line"
+     ],
+     [
+      "at right angles to B",
+      "qvB",
+      "circle"
+     ],
+     [
+      "at another angle",
+      "qvB sin θ",
+      "helix"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Radius r = mv/(qB) = √(2mK)/(qB)",
+     "Period T = 2πm/(qB): does not depend on speed",
+     "e/m = v/(rB)"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Same KE: r ∝ √m/q. Proton (√1/1) and alpha (√4/2) give the same radius. Same speed: r ∝ m/q, so a deuteron's radius is twice a proton's."
+   }
+  ]
+ },
+ {
+  "id": "phy-11-c01",
+  "unit": "phy-11",
+  "kind": "formula",
+  "title": "Faraday's and Lenz's laws",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "ε = −N ΔΦ/Δt: N turns, ΔΦ change of flux (Wb) per turn, Δt time (s)",
+     "1 Wb s⁻¹ = 1 V",
+     "Moving rod: ε = BLv (B, L and v mutually ⊥)",
+     "Steady flux (magnet at rest) → no emf. Faster change → bigger emf"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Lenz: the induced current opposes the change that causes it (the minus sign). This is conservation of energy: you must do work to push the magnet."
+   },
+   {
+    "type": "tip",
+    "text": "N pole approaching → near end of coil becomes N (repels). N pole leaving → near end becomes S (attracts back). A cut ring carries no current, so a falling magnet accelerates at g."
+   }
+  ]
+ },
+ {
+  "id": "phy-11-c02",
+  "unit": "phy-11",
+  "kind": "formula",
+  "title": "Transformer and power transmission",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Works by mutual induction, so it needs AC; steady DC gives no changing flux. Frequency is unchanged."
+   },
+   {
+    "type": "p",
+    "text": "Ideal: Vs/Vp = Ns/Np = Ip/Is (power in = power out)."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Feature",
+     "Reason"
+    ],
+    "rows": [
+     [
+      "Soft iron core",
+      "easily magnetised, low hysteresis loss"
+     ],
+     [
+      "Laminated core",
+      "cuts eddy-current loss"
+     ],
+     [
+      "Thick wire on low-V side",
+      "carries high current, less I²R heat"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Step-up at power station, step-down near homes (to about 220 V). Line loss P = I²R with I = P/V."
+   },
+   {
+    "type": "warn",
+    "text": "Raise V by 10× → I falls 10× → loss falls 100×. E.g. 2 MW at 200 kV: I = 10 A, loss in 10 Ω = 1 kW."
+   }
+  ]
+ },
+ {
+  "id": "phy-12-c01",
+  "unit": "phy-12",
+  "kind": "table",
+  "title": "R, L and C in AC circuits",
+  "blocks": [
+   {
+    "type": "mn",
+    "text": "CIVIL",
+    "items": [
+     "C-I-V: in a Capacitor, I leads V by 90°",
+     "V-I-L: in an Inductor (L), V leads I by 90° (I lags)"
+    ]
+   },
+   {
+    "type": "table",
+    "head": [
+     "Element",
+     "Opposition",
+     "As f rises",
+     "DC (f = 0)"
+    ],
+    "rows": [
+     [
+      "Resistor",
+      "R, in phase",
+      "no change",
+      "R"
+     ],
+     [
+      "Inductor",
+      "X_L = 2πfL",
+      "rises (∝ f)",
+      "zero opposition"
+     ],
+     [
+      "Capacitor",
+      "X_C = 1/(2πfC)",
+      "falls (∝ 1/f)",
+      "blocks once charged"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "Reactance unit: Ω. Average power in pure L or C over a cycle = 0",
+     "90° = a quarter period: 5 ms at 50 Hz. In series RLC, V_L and V_C are 180° apart"
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "L = (1/π) H at 50 Hz → X_L = 100 Ω."
+   }
+  ]
+ },
+ {
+  "id": "phy-12-c02",
+  "unit": "phy-12",
+  "kind": "table",
+  "title": "Electromagnetic spectrum",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Wave (λ decreasing ↓)",
+     "Typical λ",
+     "Use"
+    ],
+    "rows": [
+     [
+      "Radio",
+      "m to km",
+      "broadcasting"
+     ],
+     [
+      "Microwave",
+      "mm to cm",
+      "radar, cooking, phones"
+     ],
+     [
+      "Infrared",
+      "≈ 700 nm to 1 mm",
+      "remote controls, heat imaging, optical-fibre communication"
+     ],
+     [
+      "Visible",
+      "400–700 nm",
+      "seeing, endoscopes (fibre optics)"
+     ],
+     [
+      "Ultraviolet",
+      "≈ 10–400 nm",
+      "sterilising, vitamin D"
+     ],
+     [
+      "X-rays",
+      "≈ 10⁻¹⁰ m",
+      "imaging bones"
+     ],
+     [
+      "Gamma rays",
+      "< 10⁻¹¹ m",
+      "cancer therapy, sterilising"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "All travel at c = 3 × 10⁸ m s⁻¹ in vacuum; c = fλ. Gamma: highest f and energy."
+   },
+   {
+    "type": "tip",
+    "text": "1 MHz radio → λ = 300 m. 3 cm microwave → f = 10¹⁰ Hz. UV lies just past violet."
+   }
+  ]
+ },
+ {
+  "id": "phy-13-c01",
+  "unit": "phy-13",
+  "kind": "table",
+  "title": "Half-wave vs full-wave rectifiers",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Rectification = changing AC into DC (current in one direction only)."
+   },
+   {
+    "type": "table",
+    "head": [
+     "",
+     "Half-wave",
+     "Full-wave (centre-tap)",
+     "Bridge"
+    ],
+    "rows": [
+     [
+      "Diodes",
+      "1",
+      "2",
+      "4"
+     ],
+     [
+      "Conducting per half-cycle",
+      "1 (other half: none)",
+      "1",
+      "2"
+     ],
+     [
+      "Halves used",
+      "positive only",
+      "both",
+      "both"
+     ],
+     [
+      "Pulses/s from 50 Hz AC",
+      "50",
+      "100",
+      "100"
+     ],
+     [
+      "Special need",
+      "—",
+      "centre-tapped transformer",
+      "no centre tap"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "In full-wave, load current flows in the same direction in both halves. Output without a filter is pulsating DC; a capacitor smooths it."
+   },
+   {
+    "type": "tip",
+    "text": "Full-wave output frequency = 2 × input frequency. 200 pulses/s means 100 Hz input."
+   }
+  ]
+ },
+ {
+  "id": "phy-13-c02",
+  "unit": "phy-13",
+  "kind": "table",
+  "title": "PN junction: forward vs reverse bias",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Depletion region: no free carriers, only fixed ions — negative ions on the p-side, positive ions on the n-side. Barrier: Si ≈ 0.7 V, Ge ≈ 0.3 V."
+   },
+   {
+    "type": "table",
+    "head": [
+     "",
+     "Forward bias",
+     "Reverse bias"
+    ],
+    "rows": [
+     [
+      "Connection",
+      "p to +, n to −",
+      "p to −, n to +"
+     ],
+     [
+      "Depletion region",
+      "narrows",
+      "widens"
+     ],
+     [
+      "Barrier",
+      "lowered",
+      "raised"
+     ],
+     [
+      "Current",
+      "large (majority carriers)",
+      "tiny leakage (minority carriers)"
+     ],
+     [
+      "Ideal diode acts as",
+      "closed switch",
+      "open switch"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Majority carriers: holes in p-type, electrons in n-type."
+   },
+   {
+    "type": "warn",
+    "text": "A Si diode conducts only above 0.7 V. With 0.4 V forward, current ≈ 0. In a circuit: I = (V − 0.7)/R, e.g. (5.7 − 0.7)/1 kΩ = 5 mA."
+   }
+  ]
+ },
+ {
+  "id": "phy-14-c01",
+  "unit": "phy-14",
+  "kind": "formula",
+  "title": "Photon energy",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "E = hf = hc/λ",
+     "E = photon energy (J); f = frequency (Hz); λ = wavelength (m)",
+     "h = Planck's constant ≈ 6.63 × 10⁻³⁴ J s (unit J s); c = 3 × 10⁸ m s⁻¹",
+     "1 eV = 1.6 × 10⁻¹⁹ J (divide J by 1.6 × 10⁻¹⁹ to get eV)",
+     "Power P = n·hf, so photons per second n = P/hf"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Light comes in packets (photons). Higher f / shorter λ → more energy per photon: violet > red, X-ray > UV > visible > IR."
+   },
+   {
+    "type": "warn",
+    "text": "E ∝ 1/λ, not λ. Halve the wavelength → energy doubles. Brighter light means more photons, not more energetic photons."
+   }
+  ]
+ },
+ {
+  "id": "phy-14-c02",
+  "unit": "phy-14",
+  "kind": "formula",
+  "title": "Photoelectric effect",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "hf = φ + K.E.max (Einstein's equation)",
+     "φ = work function = hf₀ = minimum energy to free an electron (J or eV)",
+     "f₀ = threshold frequency: below it, no electrons at any intensity",
+     "K.E.max = ½mv²max = eV₀ (V₀ = stopping potential)",
+     "Graph K.E.max vs f: straight line, slope = h, x-intercept = f₀"
+    ]
+   },
+   {
+    "type": "table",
+    "head": [
+     "Increase…",
+     "Number of electrons",
+     "K.E.max"
+    ],
+    "rows": [
+     [
+      "Intensity (f > f₀)",
+      "increases",
+      "no change"
+     ],
+     [
+      "Frequency",
+      "no change",
+      "increases"
+     ]
+    ]
+   },
+   {
+    "type": "tip",
+    "text": "Quick sum: 5 eV photon on a 2 eV metal → K.E.max = 3 eV. The effect proves light behaves as particles."
+   }
+  ]
+ },
+ {
+  "id": "phy-15-c01",
+  "unit": "phy-15",
+  "kind": "formula",
+  "title": "Energy levels and emitted photons",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Hydrogen: Eₙ = −13.6/n² eV (n = 1, 2, 3 …) → −13.6, −3.4, −1.51 eV",
+     "Emission: hf = E_upper − E_lower = ΔE",
+     "λ = hc/ΔE (bigger gap → shorter λ)",
+     "Ionisation from ground state = 13.6 eV",
+     "Lines possible from level n down to ground: n(n − 1)/2"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Levels are fixed (quantised), so only certain photon energies appear → line spectrum, unique for each element. Negative energy means the electron is bound (zero = free)."
+   },
+   {
+    "type": "tip",
+    "text": "−3.4 → −13.6 eV gives a 10.2 eV photon. An atom absorbs only photons that exactly match a gap (e.g. 10.2 eV or 12.09 eV from ground)."
+   }
+  ]
+ },
+ {
+  "id": "phy-15-c02",
+  "unit": "phy-15",
+  "kind": "mnemonic",
+  "title": "Hydrogen spectral series",
+  "blocks": [
+   {
+    "type": "mn",
+    "text": "Lazy Boys Play Basketball Peacefully",
+    "items": [
+     "Lazy = Lyman → n = 1, ultraviolet",
+     "Boys = Balmer → n = 2, visible",
+     "Play = Paschen → n = 3, infrared",
+     "Basketball = Brackett → n = 4, infrared",
+     "Peacefully = Pfund → n = 5, infrared"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "The series is named by the LOWER level the electron falls to. The first Balmer line (red, 656 nm) is n = 3 → 2. n = 5 → 3 is Paschen."
+   },
+   {
+    "type": "warn",
+    "text": "Longest λ in a series = smallest jump (Lyman: 2 → 1). Shortest λ (highest energy) in a series = series limit, ∞ → lower level (Lyman: ∞ → 1, 13.6 eV)."
+   }
+  ]
+ },
+ {
+  "id": "phy-16-c01",
+  "unit": "phy-16",
+  "kind": "table",
+  "title": "Alpha, beta and gamma",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "",
+     "α",
+     "β",
+     "γ"
+    ],
+    "rows": [
+     [
+      "Nature",
+      "helium nucleus ⁴₂He",
+      "fast electron",
+      "EM wave (photon)"
+     ],
+     [
+      "Change in A, Z",
+      "A − 4, Z − 2",
+      "A same, Z + 1",
+      "no change"
+     ],
+     [
+      "Stopped by",
+      "paper",
+      "few mm aluminium",
+      "thick lead (reduced only)"
+     ],
+     [
+      "Ionising power",
+      "highest",
+      "medium",
+      "lowest"
+     ],
+     [
+      "In E or B field",
+      "deflected",
+      "deflected (opposite, more)",
+      "undeflected"
+     ],
+     [
+      "Medical use",
+      "not used as an external beam (cannot pass skin)",
+      "I-131 thyroid therapy",
+      "Co-60 radiotherapy, Tc-99m tracer, sterilising"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Nucleus = protons (Z) + neutrons (A − Z). Isotopes: same Z, different neutrons, same chemistry."
+   },
+   {
+    "type": "tip",
+    "text": "Decay chains: no. of α = ΔA/4; no. of β = 2α − ΔZ. Th-232 → Pb-208: α = 6, β = 4."
+   }
+  ]
+ },
+ {
+  "id": "phy-16-c02",
+  "unit": "phy-16",
+  "kind": "formula",
+  "title": "Half-life and decay constant",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "λ = 0.693/T½ (λ = decay constant, unit s⁻¹; T½ = half-life, s)",
+     "N = N₀ (½)ⁿ, where n = t/T½ = number of half-lives",
+     "Activity A = λN, unit becquerel (1 Bq = 1 decay s⁻¹)",
+     "Absorbed dose: gray (1 Gy = 1 J kg⁻¹)"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Decay is random (can't predict which nucleus decays next) and spontaneous (rate not changed by heat, pressure or chemistry)."
+   },
+   {
+    "type": "tip",
+    "text": "Count halvings: 1 → ½ → ¼ → ⅛ → 1/16. 64 mg, T½ = 2 h, after 8 h → 4 mg. 15/16 decayed = 4 half-lives."
+   },
+   {
+    "type": "warn",
+    "text": "Half-life does NOT depend on the amount of sample. Double the mass → same T½."
+   }
+  ]
+ }
+]

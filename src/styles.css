@@ -152,3 +152,13 @@ h3.section{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:va
 .filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
 .chip{border:1.5px solid var(--line);background:var(--card);border-radius:20px;padding:6px 12px;font-size:13px;cursor:pointer}
 .chip.on{border-color:var(--brand);background:var(--brand-soft);color:var(--brand);font-weight:600}
+
+/* memory cheats */
+.cheat{margin-top:8px}
+.cheat table{font-size:13.5px}
+.cheat th,.cheat td{overflow-wrap:anywhere;hyphens:auto;padding:8px 4px}
+.mn{background:var(--brand-soft);border-radius:10px;padding:12px 14px;margin:12px 0}
+.mn .phrase{font-weight:700;font-size:16px;color:var(--brand)}
+.mn ul{margin:8px 0 0}
+.cnav{display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:8px;margin:14px 0}
+.cnav .btn{padding:12px 6px;font-size:14px;margin:0}

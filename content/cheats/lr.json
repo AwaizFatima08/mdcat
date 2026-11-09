@@ -1,0 +1,536 @@
+[
+ {
+  "id": "lr-01-c01",
+  "unit": "lr-01",
+  "kind": "table",
+  "title": "If–then: what must be true",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Rule given: \"If P, then Q.\" Only two moves are safe."
+   },
+   {
+    "type": "table",
+    "head": [
+     "You are told",
+     "Conclusion",
+     "Valid?"
+    ],
+    "rows": [
+     [
+      "P happened",
+      "So Q happened",
+      "✅ Yes"
+     ],
+     [
+      "Q did not happen",
+      "So P did not happen",
+      "✅ Yes"
+     ],
+     [
+      "Q happened",
+      "So P happened",
+      "❌ No"
+     ],
+     [
+      "P did not happen",
+      "So Q did not happen",
+      "❌ No"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Example: \"If it is a holiday, the bank is closed. The bank is open.\" → It is not a holiday (row 2)."
+   },
+   {
+    "type": "warn",
+    "text": "\"The bank is closed, so it is a holiday\" is the classic trap (row 3): the bank may close for other reasons."
+   },
+   {
+    "type": "tip",
+    "text": "In \"must be true\" questions, reject any option that needs outside knowledge or opinion."
+   }
+  ]
+ },
+ {
+  "id": "lr-01-c02",
+  "unit": "lr-01",
+  "kind": "trick",
+  "title": "Strong argument and hidden assumption",
+  "blocks": [
+   {
+    "type": "h",
+    "text": "Strong vs weak argument"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Strong: directly about the question, gives a real reason or fact, and matters.",
+     "Weak: uses \"always / never / only / all\" without proof, attacks a person, quotes popularity, or is off the point."
+    ]
+   },
+   {
+    "type": "h",
+    "text": "Finding the assumption"
+   },
+   {
+    "type": "list",
+    "items": [
+     "An assumption is what the speaker takes for granted without saying it.",
+     "Test: deny the option. If the statement then makes no sense, it is the assumption."
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Example: \"Bring your admit card to the exam hall.\" Assumed: admit cards will be checked at the hall. Deny it (\"no one checks\") and the notice is pointless."
+   },
+   {
+    "type": "warn",
+    "text": "An option can be true and still not be assumed. Pick only what the statement needs."
+   }
+  ]
+ },
+ {
+  "id": "lr-02-c01",
+  "unit": "lr-02",
+  "kind": "trick",
+  "title": "Number series: the difference ladder",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "1. Write the differences between terms. Constant → arithmetic.",
+     "2. Not constant? Take differences of the differences.",
+     "3. Growing fast? Try ratios (×2, ×3) or ×n then ± a number.",
+     "4. Near squares or cubes? Test n² ± 1, n³ ± 1.",
+     "5. Still stuck? Split odd and even places into two series."
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Example: 5, 7, 11, 17, 25, ? → differences 2, 4, 6, 8 → next +10 → 35."
+   },
+   {
+    "type": "table",
+    "head": [
+     "n",
+     "n²",
+     "n³"
+    ],
+    "rows": [
+     [
+      "4",
+      "16",
+      "64"
+     ],
+     [
+      "5",
+      "25",
+      "125"
+     ],
+     [
+      "6",
+      "36",
+      "216"
+     ],
+     [
+      "7",
+      "49",
+      "343"
+     ]
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Check your rule on every term, not just the first three; \"which number is wrong\" questions hide one bad term."
+   }
+  ]
+ },
+ {
+  "id": "lr-02-c02",
+  "unit": "lr-02",
+  "kind": "mnemonic",
+  "title": "Letter positions: EJOTY and 27 − n",
+  "blocks": [
+   {
+    "type": "mn",
+    "text": "EJOTY",
+    "items": [
+     "E = 5",
+     "J = 10",
+     "O = 15",
+     "T = 20",
+     "Y = 25"
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Opposite letter = 27 − position (pairs add to 27: A–Z, B–Y, C–X…)."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Letter",
+     "Position",
+     "Opposite"
+    ],
+    "rows": [
+     [
+      "E",
+      "5",
+      "V (22)"
+     ],
+     [
+      "J",
+      "10",
+      "Q (17)"
+     ],
+     [
+      "O",
+      "15",
+      "L (12)"
+     ],
+     [
+      "T",
+      "20",
+      "G (7)"
+     ],
+     [
+      "Y",
+      "25",
+      "B (2)"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Example: D, H, L, P, ? → 4, 8, 12, 16 → +4 → 20 = T."
+   },
+   {
+    "type": "warn",
+    "text": "Past Z, wrap round to A: Y + 3 = B (25 + 3 = 28 → 28 − 26 = 2)."
+   }
+  ]
+ },
+ {
+  "id": "lr-03-c01",
+  "unit": "lr-03",
+  "kind": "table",
+  "title": "Syllogism chains: what follows",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Statement 1",
+     "Statement 2",
+     "Conclusion"
+    ],
+    "rows": [
+     [
+      "All P are Q",
+      "All Q are R",
+      "All P are R"
+     ],
+     [
+      "All P are Q",
+      "No Q is R",
+      "No P is R"
+     ],
+     [
+      "Some P are Q",
+      "All Q are R",
+      "Some P are R"
+     ],
+     [
+      "Some P are Q",
+      "No Q is R",
+      "Some P are not R"
+     ],
+     [
+      "Some P are Q",
+      "Some Q are R",
+      "Nothing definite"
+     ],
+     [
+      "All P are Q",
+      "Some Q are R",
+      "Nothing definite"
+     ]
+    ]
+   },
+   {
+    "type": "list",
+    "items": [
+     "\"Some P are Q\" ↔ \"Some Q are P\" (both ways).",
+     "\"No P is Q\" ↔ \"No Q is P\" (both ways).",
+     "\"All P are Q\" turns round only as \"Some Q are P\" (exam convention), never \"All Q are P\"."
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "\"All P are Q\" never gives \"All Q are P\". And \"Some P are not Q\" cannot be turned round."
+   }
+  ]
+ },
+ {
+  "id": "lr-03-c02",
+  "unit": "lr-03",
+  "kind": "trick",
+  "title": "Ranks, rows and directions",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "Rank from bottom = total − rank from top + 1.",
+     "Total in a row = left rank + right rank − 1.",
+     "Turn right = 90° clockwise (N → E → S → W).",
+     "Straight-line distance: Pythagoras; watch for 3-4-5 and 6-8-10.",
+     "Blood relations: draw the family tree; mark male and female."
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Example: In a class of 35, Sara is 10th from the top → 35 − 10 + 1 = 26th from the bottom."
+   },
+   {
+    "type": "p",
+    "text": "Example: Ali walks 6 km north, turns right, walks 8 km → 10 km north-east of the start."
+   },
+   {
+    "type": "warn",
+    "text": "Facing south, your right hand points west. Always turn from the way the person is facing, not from north."
+   }
+  ]
+ },
+ {
+  "id": "lr-04-c01",
+  "unit": "lr-04",
+  "kind": "trick",
+  "title": "Puzzles: the slot-filling method",
+  "blocks": [
+   {
+    "type": "list",
+    "items": [
+     "1. Draw the slots (seats, floors, days) and list the people.",
+     "2. Place fixed clues first (\"Ali is in seat 2\").",
+     "3. Then linked clues (\"immediately right of\", \"opposite\").",
+     "4. Then negatives (\"not in seat 4\") to cut the choices.",
+     "5. Re-read every clue against the finished grid."
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Example: Seats 1–4 in a row, numbered left to right, all facing north. Ali is in seat 2. Sara is immediately right of Ali. Bilal is not in seat 4. Where is Hamza? → Sara 3; Bilal must take 1; Hamza is in seat 4."
+   },
+   {
+    "type": "warn",
+    "text": "\"Immediately right\" means the very next seat; \"to the right\" means anywhere on that side."
+   },
+   {
+    "type": "tip",
+    "text": "Round table, all facing the centre: a person's right is the anticlockwise direction."
+   }
+  ]
+ },
+ {
+  "id": "lr-04-c02",
+  "unit": "lr-04",
+  "kind": "table",
+  "title": "Coding–decoding: five common codes",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Code type",
+     "Example"
+    ],
+    "rows": [
+     [
+      "Shift each letter",
+      "DOG → EPH (+1)"
+     ],
+     [
+      "Write backwards",
+      "SALT → TLAS"
+     ],
+     [
+      "Opposite letter (27 − n)",
+      "BAD → YZW"
+     ],
+     [
+      "Add letter positions",
+      "BED → 2 + 5 + 4 = 11"
+     ],
+     [
+      "Word codes",
+      "\"ka lo\" = red pen, \"lo mi\" = pen box → lo = pen"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "For word codes, find the word the two sentences share; the code they share stands for it."
+   },
+   {
+    "type": "warn",
+    "text": "Test the rule on every letter. Wrong options often get the first two letters right and the rest wrong."
+   },
+   {
+    "type": "tip",
+    "text": "Decoding (code → word)? Run the rule backwards: if the code adds 1, subtract 1."
+   }
+  ]
+ },
+ {
+  "id": "lr-05-c01",
+  "unit": "lr-05",
+  "kind": "trick",
+  "title": "Does a course of action follow?",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "An action follows only if it passes all three tests:"
+   },
+   {
+    "type": "list",
+    "items": [
+     "1. Relevant: it tackles the problem in the statement.",
+     "2. Practical: it can really be done by the people named.",
+     "3. Proportionate: not extreme, and does not punish innocent people."
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Example: Patients wait hours at a hospital because only one registration counter is open. I. Open more counters at busy hours. II. Close the outpatient department. → Only I follows."
+   },
+   {
+    "type": "tip",
+    "text": "An immediate fix and a step to stop it happening again can both follow → \"Both I and II follow\"."
+   },
+   {
+    "type": "warn",
+    "text": "Judge only from the statement. Do not reject a sensible action just because it costs money."
+   }
+  ]
+ },
+ {
+  "id": "lr-05-c02",
+  "unit": "lr-05",
+  "kind": "table",
+  "title": "Flag words in courses of action",
+  "blocks": [
+   {
+    "type": "table",
+    "head": [
+     "Usually fails ❌",
+     "Usually follows ✅"
+    ],
+    "rows": [
+     [
+      "Ban for everyone",
+      "Inspect or test"
+     ],
+     [
+      "Close permanently / shut down",
+      "Repair or replace"
+     ],
+     [
+      "Shift to another city",
+      "Train or add staff"
+     ],
+     [
+      "Punish all, including the innocent",
+      "Act against those at fault"
+     ],
+     [
+      "Ignore the problem",
+      "Warn or advise the public"
+     ]
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Example: A few students used phones in a test. \"Ban phones in the whole city\" fails; \"check bags before future tests\" follows."
+   },
+   {
+    "type": "warn",
+    "text": "Flag words are a first filter, not proof. Always re-check the action against the exact problem."
+   }
+  ]
+ },
+ {
+  "id": "lr-06-c01",
+  "unit": "lr-06",
+  "kind": "table",
+  "title": "Cause and effect: the four verdicts",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Ask: Which came first? Can one directly produce the other? Could one third event explain both?"
+   },
+   {
+    "type": "table",
+    "head": [
+     "Verdict",
+     "Example pair"
+    ],
+    "rows": [
+     [
+      "I is the cause, II its effect",
+      "I. Snow blocked the mountain pass. II. Fruit trucks could not reach the town."
+     ],
+     [
+      "II is the cause, I its effect",
+      "I. The shop's fridge stopped working. II. The shop's power was cut."
+     ],
+     [
+      "Common cause",
+      "I. Schools in the city closed. II. Offices in the city closed. (e.g. a storm warning)"
+     ],
+     [
+      "Both are effects of independent causes",
+      "I. A Karachi team won a match. II. A bridge opened in Swat."
+     ]
+    ]
+   },
+   {
+    "type": "warn",
+    "text": "Two events on the same day are not cause and effect unless one can really bring about the other."
+   }
+  ]
+ },
+ {
+  "id": "lr-06-c02",
+  "unit": "lr-06",
+  "kind": "trick",
+  "title": "Breaking a false belief",
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Superstitions and weak cause claims usually rest on one of these:"
+   },
+   {
+    "type": "list",
+    "items": [
+     "Coincidence: two things happened together once or twice.",
+     "Selective memory: only the matching cases are remembered.",
+     "Hidden third factor: hot weather raises both ice-cream sales and fan sales.",
+     "No mechanism: nothing links the \"cause\" to the result."
+    ]
+   },
+   {
+    "type": "p",
+    "text": "Example: Umar thinks his green cap makes his cricket team win. Best answer: a cap worn by a spectator has no way to change how the players play."
+   },
+   {
+    "type": "warn",
+    "text": "An answer that mocks the believer (\"only foolish people think so\") is weak: it attacks the person, not the claim."
+   },
+   {
+    "type": "tip",
+    "text": "For positive thinking, pick the option showing effort changes the result."
+   }
+  ]
+ }
+]
