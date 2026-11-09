@@ -6,3 +6,4 @@ releases/
 android/app/build/
 android/.gradle/
 scripts/backup.log
+drafts/
