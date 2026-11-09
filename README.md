@@ -15,7 +15,8 @@ Offline Android app for MDCAT preparation (PM&DC Uniform Curriculum 2025). HomiL
 5. Physics bank (1,000 MCQs, 16 units, every key agreed by a blind re-check) — done 9 Nov 2026, Homi's spot check pending (`docs/review/phy-spotcheck.md`)
 6. English + Logical Reasoning banks (250 + 250 MCQs, every key agreed by a blind re-check) — done 9 Nov 2026, Homi's spot check pending (`docs/review/eng-spotcheck.md`, `docs/review/lr-spotcheck.md`)
 7. Mock exam engine (timed 180-question paper, grid, flags, auto-submit, results with subject/unit breakdown, weak units, review filters, aggregate estimate) — done 9 Nov 2026. Real mocks come in piece 8; `npm run build:test` adds a dev-only sample mock (`node scripts/make_test_mock.js`).
-8. 20 mocks · 9. Memory cheats · 10. Important topics · 11. Release (AdMob, store, mdcat.homilabs.org pages)
+8. 20 full mock papers (3,600 MCQs, separate from the practice bank, every key agreed by a blind re-check) — done 9 Nov 2026. Source pools: `content/mockpool/<unit>.json`; papers: `node scripts/assemble_mocks.js` → `content/mocks/mock-01…20.json` (exact 81/45/36/9/9, ~15/70/15, balanced answers). Overlap with the bank checked by `scripts/overlap_bank.js`.
+9. Memory cheats · 10. Important topics · 11. Release (AdMob, store, mdcat.homilabs.org pages)
 
 ## Android (debug)
 - Capacitor app id `com.homilabs.mdcatprep`. `npm run build` (or `build:test`) → `npx cap sync android` → `jobq run --name mdcat-debug-apk -- bash -c "cd android && ./gradlew assembleDebug"` → `adb -s <device> install -r android/app/build/outputs/apk/debug/app-debug.apk`.
