@@ -1533,97 +1533,693 @@
           "id": "phy-01",
           "n": 1,
           "name": "Vectors & Equilibrium",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-01-vectors",
+              "name": "Vector addition and products",
+              "los": [
+                {
+                  "code": "PHY-1.1",
+                  "text": "Determine the sum of vectors using perpendicular (rectangular) components."
+                },
+                {
+                  "code": "PHY-1.2",
+                  "text": "Describe the scalar product of two vectors in terms of the angle between them."
+                },
+                {
+                  "code": "PHY-1.3",
+                  "text": "Describe the vector product of two vectors in terms of the angle between them."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-02",
           "n": 2,
           "name": "Force & Motion",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-02-kinematics",
+              "name": "Displacement, velocity and acceleration",
+              "los": [
+                {
+                  "code": "PHY-2.1",
+                  "text": "Describe displacement."
+                },
+                {
+                  "code": "PHY-2.2",
+                  "text": "Describe the average velocity of objects."
+                },
+                {
+                  "code": "PHY-2.3",
+                  "text": "Interpret the displacement–time graph of objects moving along a straight line."
+                },
+                {
+                  "code": "PHY-2.4",
+                  "text": "Describe acceleration."
+                },
+                {
+                  "code": "PHY-2.5",
+                  "text": "Distinguish between uniform and variable acceleration."
+                }
+              ]
+            },
+            {
+              "id": "phy-02-projectile",
+              "name": "Projectile motion",
+              "los": [
+                {
+                  "code": "PHY-2.6",
+                  "text": "Explain that projectile motion is two-dimensional motion in a vertical plane."
+                },
+                {
+                  "code": "PHY-2.7",
+                  "text": "Describe a projectile in the absence of air resistance."
+                },
+                {
+                  "code": "PHY-2.8",
+                  "text": "Explain that the horizontal component of velocity is constant."
+                },
+                {
+                  "code": "PHY-2.9",
+                  "text": "Explain that the acceleration is vertical and equal to that of a freely falling object."
+                },
+                {
+                  "code": "PHY-2.10",
+                  "text": "Differentiate between the horizontal and vertical motions of a projectile."
+                },
+                {
+                  "code": "PHY-2.11",
+                  "text": "Use the equations of motion to find a projectile's maximum height, range, position at a given time and time of flight; the launch angle for maximum range and angles giving equal ranges."
+                }
+              ]
+            },
+            {
+              "id": "phy-02-newton",
+              "name": "Newton's laws, momentum and collisions",
+              "los": [
+                {
+                  "code": "PHY-2.12",
+                  "text": "Apply Newton's laws to explain the motion of objects in a variety of contexts."
+                },
+                {
+                  "code": "PHY-2.13",
+                  "text": "Describe Newton's second law as the rate of change of momentum."
+                },
+                {
+                  "code": "PHY-2.14",
+                  "text": "Correlate Newton's third law with conservation of momentum."
+                },
+                {
+                  "code": "PHY-2.15",
+                  "text": "Solve problems on elastic and inelastic collisions in one dimension using conservation of momentum."
+                },
+                {
+                  "code": "PHY-2.16",
+                  "text": "Describe momentum conservation in explosions."
+                },
+                {
+                  "code": "PHY-2.17",
+                  "text": "Identify that in a perfectly elastic collision the relative speed of approach equals the relative speed of separation."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-03",
           "n": 3,
           "name": "Work & Energy",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-03-work",
+              "name": "Work, energy and power",
+              "los": [
+                {
+                  "code": "PHY-3.1",
+                  "text": "Describe work as the product of force and displacement in the direction of the force."
+                },
+                {
+                  "code": "PHY-3.2",
+                  "text": "Describe energy."
+                },
+                {
+                  "code": "PHY-3.3",
+                  "text": "Explain kinetic energy."
+                },
+                {
+                  "code": "PHY-3.4",
+                  "text": "Explain the difference between potential energy and gravitational potential energy."
+                },
+                {
+                  "code": "PHY-3.5",
+                  "text": "Describe that gravitational potential energy is measured from a reference level and can be positive or negative."
+                },
+                {
+                  "code": "PHY-3.6",
+                  "text": "Express power as the scalar product of force and velocity."
+                }
+              ]
+            },
+            {
+              "id": "phy-03-losses",
+              "name": "Work–energy theorem, losses and efficiency",
+              "los": [
+                {
+                  "code": "PHY-3.7",
+                  "text": "Explain that work done against friction is dissipated as heat."
+                },
+                {
+                  "code": "PHY-3.8",
+                  "text": "State the implications of energy losses in practical devices; efficiency."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-04",
           "n": 4,
           "name": "Rotational & Circular Motion",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-04-angular",
+              "name": "Angular quantities",
+              "los": [
+                {
+                  "code": "PHY-4.1",
+                  "text": "Define angular displacement and express it in radians."
+                },
+                {
+                  "code": "PHY-4.2",
+                  "text": "Define revolution, degree and radian."
+                },
+                {
+                  "code": "PHY-4.3",
+                  "text": "Describe angular velocity."
+                },
+                {
+                  "code": "PHY-4.4",
+                  "text": "Relate linear and angular displacement, velocity and acceleration."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-05",
           "n": 5,
           "name": "Fluid Dynamics",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-05-drag",
+              "name": "Terminal velocity and fluid drag",
+              "los": [
+                {
+                  "code": "PHY-5.1",
+                  "text": "Describe the terminal velocity of an object."
+                },
+                {
+                  "code": "PHY-5.2",
+                  "text": "Define and explain fluid drag."
+                }
+              ]
+            },
+            {
+              "id": "phy-05-flow",
+              "name": "Fluid flow and continuity",
+              "los": [
+                {
+                  "code": "PHY-5.3",
+                  "text": "Define steady (streamline, laminar), incompressible and non-viscous flow of an ideal fluid."
+                },
+                {
+                  "code": "PHY-5.4",
+                  "text": "Explain the transition from laminar to turbulent flow at high velocity."
+                },
+                {
+                  "code": "PHY-5.5",
+                  "text": "Describe that most practical fluid flows are turbulent rather than laminar."
+                },
+                {
+                  "code": "PHY-5.6",
+                  "text": "Describe the equation of continuity Av = constant and solve problems with it."
+                },
+                {
+                  "code": "PHY-5.7",
+                  "text": "Identify the equation of continuity as conservation of mass."
+                }
+              ]
+            },
+            {
+              "id": "phy-05-bernoulli",
+              "name": "Bernoulli's equation",
+              "los": [
+                {
+                  "code": "PHY-5.8",
+                  "text": "Interpret and apply Bernoulli's effect, including in blood flow."
+                },
+                {
+                  "code": "PHY-5.9",
+                  "text": "Derive Bernoulli's equation for a horizontal tube of flow."
+                },
+                {
+                  "code": "PHY-5.10",
+                  "text": "Describe how a pressure difference can arise from different rates of flow (Bernoulli's effect)."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-06",
           "n": 6,
           "name": "Waves",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-06-progressive",
+              "name": "Progressive waves",
+              "los": [
+                {
+                  "code": "PHY-6.1",
+                  "text": "Describe wave motion as illustrated by vibrations in ropes and springs."
+                },
+                {
+                  "code": "PHY-6.2",
+                  "text": "Show that mechanical waves need a medium and electromagnetic waves do not."
+                },
+                {
+                  "code": "PHY-6.3",
+                  "text": "Define and apply medium, displacement, amplitude, period, compression, rarefaction, crest, trough, wavelength and velocity."
+                },
+                {
+                  "code": "PHY-6.4",
+                  "text": "Solve problems using v = fλ."
+                },
+                {
+                  "code": "PHY-6.5",
+                  "text": "Describe energy transfer by a progressive wave."
+                },
+                {
+                  "code": "PHY-6.6",
+                  "text": "Compare transverse and longitudinal waves."
+                }
+              ]
+            },
+            {
+              "id": "phy-06-sound",
+              "name": "Speed of sound",
+              "los": [
+                {
+                  "code": "PHY-6.7",
+                  "text": "Explain that the speed of sound depends on the medium; Newton's formula."
+                },
+                {
+                  "code": "PHY-6.8",
+                  "text": "Describe Laplace's correction to Newton's formula."
+                },
+                {
+                  "code": "PHY-6.9",
+                  "text": "Identify the factors on which the speed of sound in air depends."
+                }
+              ]
+            },
+            {
+              "id": "phy-06-superposition",
+              "name": "Superposition, interference and stationary waves",
+              "los": [
+                {
+                  "code": "PHY-6.10",
+                  "text": "Describe superposition of two waves from coherent sources."
+                },
+                {
+                  "code": "PHY-6.11",
+                  "text": "Describe interference of sound waves."
+                },
+                {
+                  "code": "PHY-6.12",
+                  "text": "Explain the formation of stationary waves."
+                },
+                {
+                  "code": "PHY-6.13",
+                  "text": "Define nodes and antinodes."
+                },
+                {
+                  "code": "PHY-6.14",
+                  "text": "Describe the modes of vibration of strings."
+                },
+                {
+                  "code": "PHY-6.15",
+                  "text": "Describe stationary waves in vibrating air columns (organ pipes)."
+                },
+                {
+                  "code": "PHY-6.16",
+                  "text": "Explain the principle of superposition."
+                }
+              ]
+            },
+            {
+              "id": "phy-06-shm",
+              "name": "Simple harmonic motion",
+              "los": [
+                {
+                  "code": "PHY-6.17",
+                  "text": "Explain simple harmonic motion and its characteristics."
+                },
+                {
+                  "code": "PHY-6.18",
+                  "text": "Describe that the projection of uniform circular motion on a diameter is SHM."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-07",
           "n": 7,
           "name": "Thermodynamics",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-07-heat",
+              "name": "Heat, specific heats and work",
+              "los": [
+                {
+                  "code": "PHY-7.1",
+                  "text": "Describe that thermal energy flows from higher to lower temperature."
+                },
+                {
+                  "code": "PHY-7.2",
+                  "text": "Differentiate between specific heat and molar specific heat."
+                },
+                {
+                  "code": "PHY-7.3",
+                  "text": "Calculate work done by a thermodynamic system during a volume change."
+                },
+                {
+                  "code": "PHY-7.6",
+                  "text": "Define specific heat and the molar specific heats of a gas."
+                }
+              ]
+            },
+            {
+              "id": "phy-07-firstlaw",
+              "name": "First law of thermodynamics",
+              "los": [
+                {
+                  "code": "PHY-7.4",
+                  "text": "Describe the first law in terms of change in internal energy, heat supplied and work done."
+                },
+                {
+                  "code": "PHY-7.5",
+                  "text": "Explain that the first law expresses conservation of energy."
+                },
+                {
+                  "code": "PHY-7.7",
+                  "text": "Apply the first law to derive Cp − Cv = R for an ideal gas."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-08",
           "n": 8,
           "name": "Electrostatics",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-08-field",
+              "name": "Coulomb's law and electric field",
+              "los": [
+                {
+                  "code": "PHY-8.1",
+                  "text": "State Coulomb's law and explain the reduced force in a medium."
+                },
+                {
+                  "code": "PHY-8.2",
+                  "text": "Describe the electric field as a field of force."
+                },
+                {
+                  "code": "PHY-8.3",
+                  "text": "Calculate the electric field at a point due to two charges of the same or opposite signs."
+                },
+                {
+                  "code": "PHY-8.4",
+                  "text": "Describe the field lines of two equal point charges of the same or opposite signs."
+                },
+                {
+                  "code": "PHY-8.5",
+                  "text": "Describe the electric field of an infinite charged conducting plate."
+                }
+              ]
+            },
+            {
+              "id": "phy-08-potential",
+              "name": "Electric potential and capacitors",
+              "los": [
+                {
+                  "code": "PHY-8.6",
+                  "text": "Define electric potential at a point as work done per unit positive charge from infinity."
+                },
+                {
+                  "code": "PHY-8.7",
+                  "text": "Define the unit of potential."
+                },
+                {
+                  "code": "PHY-8.8",
+                  "text": "Derive the expression for the potential due to a point charge."
+                },
+                {
+                  "code": "PHY-8.9",
+                  "text": "Describe charging and discharging of a capacitor through a resistance."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-09",
           "n": 9,
           "name": "Current Electricity",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-09-current",
+              "name": "Current, Ohm's law and resistivity",
+              "los": [
+                {
+                  "code": "PHY-9.1",
+                  "text": "Describe steady current."
+                },
+                {
+                  "code": "PHY-9.2",
+                  "text": "State Ohm's law."
+                },
+                {
+                  "code": "PHY-9.3",
+                  "text": "Define resistivity and explain its dependence on temperature."
+                }
+              ]
+            },
+            {
+              "id": "phy-09-sources",
+              "name": "Internal resistance and maximum power",
+              "los": [
+                {
+                  "code": "PHY-9.4",
+                  "text": "Explain the internal resistance of sources and its consequences."
+                },
+                {
+                  "code": "PHY-9.5",
+                  "text": "Describe the condition for maximum power transfer."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-10",
           "n": 10,
           "name": "Electromagnetism",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-10-flux",
+              "name": "Magnetic flux density and flux",
+              "los": [
+                {
+                  "code": "PHY-10.1",
+                  "text": "Define magnetic flux density and its units."
+                },
+                {
+                  "code": "PHY-10.2",
+                  "text": "Describe magnetic flux as the scalar product of B and A."
+                }
+              ]
+            },
+            {
+              "id": "phy-10-charges",
+              "name": "Charged particles in magnetic fields",
+              "los": [
+                {
+                  "code": "PHY-10.3",
+                  "text": "Describe the path of a charged particle shot perpendicular into a magnetic field."
+                },
+                {
+                  "code": "PHY-10.4",
+                  "text": "Explain the force on a charged particle in a uniform magnetic field."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-11",
           "n": 11,
           "name": "Electromagnetic Induction",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-11-faraday",
+              "name": "Faraday's and Lenz's laws",
+              "los": [
+                {
+                  "code": "PHY-11.1",
+                  "text": "State Faraday's law of electromagnetic induction."
+                },
+                {
+                  "code": "PHY-11.2",
+                  "text": "Use Lenz's law to predict the direction of induced current and relate it to conservation of energy."
+                }
+              ]
+            },
+            {
+              "id": "phy-11-transformer",
+              "name": "Transformers",
+              "los": [
+                {
+                  "code": "PHY-11.3",
+                  "text": "Describe the construction and working of a transformer."
+                },
+                {
+                  "code": "PHY-11.4",
+                  "text": "Describe how step-up and step-down transformers make power transmission efficient."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-12",
           "n": 12,
           "name": "Alternating Current",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-12-ac",
+              "name": "AC circuits and EM spectrum",
+              "los": [
+                {
+                  "code": "PHY-12.1",
+                  "text": "Describe the phase of AC and how phase lag and lead occur."
+                },
+                {
+                  "code": "PHY-12.2",
+                  "text": "Explain AC through resistors, capacitors and inductors."
+                },
+                {
+                  "code": "PHY-12.3",
+                  "text": "Describe the electromagnetic spectrum from radio waves to gamma rays."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-13",
           "n": 13,
           "name": "Electronics",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-13-diodes",
+              "name": "PN junction and rectification",
+              "los": [
+                {
+                  "code": "PHY-13.1",
+                  "text": "Define rectification and describe diodes in half- and full-wave rectification."
+                },
+                {
+                  "code": "PHY-13.2",
+                  "text": "Describe the PN junction and its forward and reverse biasing."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-14",
           "n": 14,
           "name": "Dawn of Modern Physics",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-14-photons",
+              "name": "Quantum theory of radiation",
+              "los": [
+                {
+                  "code": "PHY-14.1",
+                  "text": "Explain the particle model of light in terms of photons with energy."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-15",
           "n": 15,
           "name": "Atomic Spectra",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-15-spectra",
+              "name": "Atomic spectra",
+              "los": [
+                {
+                  "code": "PHY-15.1",
+                  "text": "Describe and explain atomic (line) spectra."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "phy-16",
           "n": 16,
           "name": "Nuclear Physics",
-          "topics": []
+          "topics": [
+            {
+              "id": "phy-16-nucleus",
+              "name": "Nucleus and radioactive decay",
+              "los": [
+                {
+                  "code": "PHY-16.1",
+                  "text": "Describe a simple model of the atom with protons, neutrons and electrons."
+                },
+                {
+                  "code": "PHY-16.2",
+                  "text": "Identify the spontaneous and random nature of nuclear decay."
+                },
+                {
+                  "code": "PHY-16.3",
+                  "text": "Describe half-life and solve problems using λ = 0.693/T½."
+                }
+              ]
+            },
+            {
+              "id": "phy-16-uses",
+              "name": "Biological effects and medical uses of radiation",
+              "los": [
+                {
+                  "code": "PHY-16.4",
+                  "text": "Describe the biological effects of radiation and its medical uses."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
