@@ -2233,19 +2233,154 @@
           "id": "eng-01",
           "n": 1,
           "name": "Reading & Thinking Skills",
-          "topics": []
+          "topics": [
+            {
+              "id": "eng-01-comprehension",
+              "name": "Reading comprehension",
+              "los": [
+                {
+                  "code": "ENG-1.1",
+                  "text": "Scan a passage to answer short questions."
+                },
+                {
+                  "code": "ENG-1.2",
+                  "text": "Deduce meanings from the context."
+                }
+              ]
+            },
+            {
+              "id": "eng-01-figurative",
+              "name": "Figurative language",
+              "los": [
+                {
+                  "code": "ENG-1.3",
+                  "text": "Analyse how a writer or poet uses language that appeals to the senses (figurative language)."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "eng-02",
           "n": 2,
           "name": "Formal & Lexical Aspects of Language",
-          "topics": []
+          "topics": [
+            {
+              "id": "eng-02-vocabulary",
+              "name": "Vocabulary and synonyms",
+              "los": [
+                {
+                  "code": "ENG-2.1",
+                  "text": "Deduce the meaning of difficult words from context clues."
+                },
+                {
+                  "code": "ENG-2.2",
+                  "text": "Use synonyms with varying shades of meaning, including for irony, parody and satire."
+                }
+              ]
+            },
+            {
+              "id": "eng-02-grammar",
+              "name": "Grammar: pronouns, tenses, verbals, adverbs, prepositions",
+              "los": [
+                {
+                  "code": "ENG-2.3",
+                  "text": "Use pronoun–antecedent agreement."
+                },
+                {
+                  "code": "ENG-2.4",
+                  "text": "Use tenses correctly."
+                },
+                {
+                  "code": "ENG-2.5",
+                  "text": "Use infinitives and infinitive phrases."
+                },
+                {
+                  "code": "ENG-2.6",
+                  "text": "Use gerunds and gerund phrases."
+                },
+                {
+                  "code": "ENG-2.7",
+                  "text": "Recognise the position of adverbs in sentences according to their kinds."
+                },
+                {
+                  "code": "ENG-2.8",
+                  "text": "Use prepositions of position, time, movement and direction."
+                }
+              ]
+            },
+            {
+              "id": "eng-02-sentences",
+              "name": "Transitions, punctuation and sentence structure",
+              "los": [
+                {
+                  "code": "ENG-2.9",
+                  "text": "Use appropriate transitional devices."
+                },
+                {
+                  "code": "ENG-2.10",
+                  "text": "Use punctuation marks correctly."
+                },
+                {
+                  "code": "ENG-2.11",
+                  "text": "Analyse sentence classes and phrases, and how their position changes meaning."
+                },
+                {
+                  "code": "ENG-2.12",
+                  "text": "Recognise and use sentence inversion."
+                }
+              ]
+            },
+            {
+              "id": "eng-02-voice",
+              "name": "Active/passive voice and direct/indirect speech",
+              "los": [
+                {
+                  "code": "ENG-2.13",
+                  "text": "Use active and passive voice appropriately."
+                },
+                {
+                  "code": "ENG-2.14",
+                  "text": "Use direct and indirect speech appropriately."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "eng-03",
           "n": 3,
           "name": "Writing Skills",
-          "topics": []
+          "topics": [
+            {
+              "id": "eng-03-editing",
+              "name": "Editing and sentence structure",
+              "los": [
+                {
+                  "code": "ENG-3.1",
+                  "text": "Proofread and edit text for errors of usage and style."
+                },
+                {
+                  "code": "ENG-3.2",
+                  "text": "Correct faulty sentence structure."
+                }
+              ]
+            },
+            {
+              "id": "eng-03-agreement",
+              "name": "Agreement, word forms and spelling",
+              "los": [
+                {
+                  "code": "ENG-3.3",
+                  "text": "Apply subject–verb agreement."
+                },
+                {
+                  "code": "ENG-3.4",
+                  "text": "Correct errors of word function and spelling."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2259,37 +2394,143 @@
           "id": "lr-01",
           "n": 1,
           "name": "Critical Thinking",
-          "topics": []
+          "topics": [
+            {
+              "id": "lr-01-critical",
+              "name": "Critical thinking",
+              "los": [
+                {
+                  "code": "LR-1.1",
+                  "text": "Develop logical arguments for statements to be true or false."
+                },
+                {
+                  "code": "LR-1.2",
+                  "text": "Give reasons for right beliefs."
+                },
+                {
+                  "code": "LR-1.3",
+                  "text": "Identify and evaluate false beliefs using logical reasoning."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "lr-02",
           "n": 2,
           "name": "Letter & Symbol Series",
-          "topics": []
+          "topics": [
+            {
+              "id": "lr-02-series",
+              "name": "Number, letter and symbol series",
+              "los": [
+                {
+                  "code": "LR-2.1",
+                  "text": "Apply arithmetic operations to number series."
+                },
+                {
+                  "code": "LR-2.2",
+                  "text": "Apply geometric progressions to number series."
+                },
+                {
+                  "code": "LR-2.3",
+                  "text": "Complete letter and symbol series by specific rules."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "lr-03",
           "n": 3,
           "name": "Logical Deductions",
-          "topics": []
+          "topics": [
+            {
+              "id": "lr-03-deductions",
+              "name": "Logical deductions",
+              "los": [
+                {
+                  "code": "LR-3.1",
+                  "text": "Predict new relations from given relations."
+                },
+                {
+                  "code": "LR-3.2",
+                  "text": "Build new structures from information in given structures."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "lr-04",
           "n": 4,
           "name": "Logical Problems",
-          "topics": []
+          "topics": [
+            {
+              "id": "lr-04-problems",
+              "name": "Logical problems and puzzles",
+              "los": [
+                {
+                  "code": "LR-4.1",
+                  "text": "Use the result of one problem to resolve another."
+                },
+                {
+                  "code": "LR-4.2",
+                  "text": "Solve puzzles by deductive reasoning."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "lr-05",
           "n": 5,
           "name": "Course of Action",
-          "topics": []
+          "topics": [
+            {
+              "id": "lr-05-action",
+              "name": "Course of action",
+              "los": [
+                {
+                  "code": "LR-5.1",
+                  "text": "Gather the different parts of the information given."
+                },
+                {
+                  "code": "LR-5.2",
+                  "text": "Use information to make decisions."
+                },
+                {
+                  "code": "LR-5.3",
+                  "text": "Judge courses of action using arguments."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "lr-06",
           "n": 6,
           "name": "Cause & Effect",
-          "topics": []
+          "topics": [
+            {
+              "id": "lr-06-cause",
+              "name": "Cause and effect",
+              "los": [
+                {
+                  "code": "LR-6.1",
+                  "text": "Give reasons for incidents, events and accidents."
+                },
+                {
+                  "code": "LR-6.2",
+                  "text": "Reject false beliefs through valid arguments."
+                },
+                {
+                  "code": "LR-6.3",
+                  "text": "Build positive thinking through strong arguments."
+                }
+              ]
+            }
+          ]
         }
       ]
     }
