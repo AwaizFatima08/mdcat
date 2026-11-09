@@ -1,4 +1,4 @@
-# Brief: blind re-check of MDCAT Biology MCQs
+# Brief: blind re-check of MDCAT MCQs
 
 You are an independent examiner. Someone else wrote these multiple-choice
 questions for Pakistani FSc pre-medical students preparing for MDCAT. You see
@@ -6,7 +6,7 @@ the questions and options only, not the answer key. Your answers are compared
 with the key; every disagreement is investigated.
 
 For each question in your input file(s), pick the single best answer using
-standard FSc Biology textbook knowledge (Pakistani boards) and the PM&DC MDCAT
+standard FSc textbook knowledge for the subject (Pakistani boards) and the PM&DC MDCAT
 curriculum.
 
 Write one line per question to your output file:

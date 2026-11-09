@@ -11,4 +11,5 @@ Offline Android app for MDCAT preparation (PM&DC Uniform Curriculum 2025). HomiL
 1. App shell + practice player + Biology Unit 1 sample (32 MCQs) — done 9 Nov 2026
 2. Rules & guidelines (9 sections) — done 9 Nov 2026
 3. Biology bank (2,250 MCQs, 16 units, every key agreed by a blind re-check) — done 9 Nov 2026, Homi's spot check pending (`docs/review/bio-spotcheck.md`)
-4. Chemistry · 5. Physics · 6. English + LR · 7. Mock engine · 8. 20 mocks · 9. Memory cheats · 10. Important topics · 11. Release (AdMob, store, mdcat.homilabs.org pages)
+4. Chemistry bank (1,250 MCQs, 20 units, every key agreed by a blind re-check) — done 9 Nov 2026, Homi's spot check pending (`docs/review/chem-spotcheck.md`)
+5. Physics · 6. English + LR · 7. Mock engine · 8. 20 mocks · 9. Memory cheats · 10. Important topics · 11. Release (AdMob, store, mdcat.homilabs.org pages)

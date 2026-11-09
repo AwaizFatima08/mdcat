@@ -87,8 +87,9 @@ function loadQuestions(units) {
         if (!Number.isInteger(q.a) || q.a < 0 || q.a > 3) throw new Error(`${at}: a must be 0-3`);
         if (String(q.q).trim().length < 10) throw new Error(`${at}: question text too short`);
         if (String(q.x).trim().length < 20) throw new Error(`${at}: explanation too short`);
-        const stem = String(q.q).trim().toLowerCase();
-        if (stems.has(stem)) throw new Error(`${at}: same question text as ${stems.get(stem)}`);
+        // Generic stems ("Which statement is correct?") may repeat; stem + options may not.
+        const stem = String(q.q).trim().toLowerCase() + "|" + [...norm].sort().join("|");
+        if (stems.has(stem)) throw new Error(`${at}: same question and options as ${stems.get(stem)}`);
         stems.set(stem, q.id);
         all.push({ ...q, unit: unitId, subject: subjectDir });
       });

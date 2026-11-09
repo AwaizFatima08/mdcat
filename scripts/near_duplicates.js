@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// near_duplicates.js — lists pairs of Biology stems with high word overlap (run from the project root).
+// near_duplicates.js — lists pairs of stems in one subject (arg: bio, chem, ...) with high word overlap (run from the project root).
 // Lists pairs of stems (any bio units) with high word overlap.
-const fs=require("fs");const dir="content/questions/bio/";
+const fs=require("fs");const dir="content/questions/"+(process.argv[2]||"bio")+"/";
 const all=[];for(const f of fs.readdirSync(dir))for(const q of JSON.parse(fs.readFileSync(dir+f)))all.push(q);
 const stop=new Set("the a an of in is are which following to and by for on as that with from its it be this at or".split(" "));
 const toks=s=>new Set(s.toLowerCase().replace(/[^a-z0-9 ]/g," ").split(/\s+/).filter(w=>w&&!stop.has(w)));
