@@ -7,3 +7,7 @@ android/app/build/
 android/.gradle/
 scripts/backup.log
 drafts/
+content/mocks/test-*
+android/build/
+android/local.properties
+android/app/src/main/assets/public/

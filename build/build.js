@@ -51,12 +51,34 @@ function indexSyllabus(syllabus) {
   return units;
 }
 
+// Checks one MCQ's fields and options; shared by the practice bank and mocks.
+// ids/stems are shared across both so a mock can never repeat a practice item.
+function checkMcq(q, at, info, unitId, ids, stems) {
+  for (const k of ["id", "topic", "lo", "d", "q", "o", "a", "x"]) {
+    if (!(k in q)) throw new Error(`${at}: missing "${k}"`);
+  }
+  if (ids.has(q.id)) throw new Error(`${at}: duplicate id`);
+  ids.add(q.id);
+  if (!info.topicIds.has(q.topic)) throw new Error(`${at}: topic "${q.topic}" is not in unit ${unitId}`);
+  if (info.loCodes.size && !info.loCodes.has(q.lo)) throw new Error(`${at}: LO "${q.lo}" is not in unit ${unitId}`);
+  if (!DIFFICULTIES.includes(q.d)) throw new Error(`${at}: d must be one of ${DIFFICULTIES.join("/")}`);
+  if (!Array.isArray(q.o) || q.o.length !== 4) throw new Error(`${at}: needs exactly 4 options`);
+  const norm = q.o.map((o) => String(o).trim().toLowerCase());
+  if (norm.some((o) => !o)) throw new Error(`${at}: empty option`);
+  if (new Set(norm).size !== 4) throw new Error(`${at}: options are not all different`);
+  if (!Number.isInteger(q.a) || q.a < 0 || q.a > 3) throw new Error(`${at}: a must be 0-3`);
+  if (String(q.q).trim().length < 10) throw new Error(`${at}: question text too short`);
+  if (String(q.x).trim().length < 20) throw new Error(`${at}: explanation too short`);
+  // Generic stems ("Which statement is correct?") may repeat; stem + options may not.
+  const stem = String(q.q).trim().toLowerCase() + "|" + [...norm].sort().join("|");
+  if (stems.has(stem)) throw new Error(`${at}: same question and options as ${stems.get(stem)}`);
+  stems.set(stem, q.id);
+}
+
 // Loads content/questions/<subject>/<unitId>.json and validates every MCQ.
-function loadQuestions(units) {
+function loadQuestions(units, ids, stems) {
   const qDir = path.join(CONTENT_DIR, "questions");
   const all = [];
-  const ids = new Set();
-  const stems = new Map();
   if (!fs.existsSync(qDir)) return all;
   for (const subjectDir of fs.readdirSync(qDir)) {
     const dir = path.join(qDir, subjectDir);
@@ -71,31 +93,51 @@ function loadQuestions(units) {
       if (!Array.isArray(items)) throw new Error(`${where} must be a JSON array`);
       items.forEach((q, i) => {
         const at = `${where} item ${i} (${q.id || "no id"})`;
-        for (const k of ["id", "topic", "lo", "d", "q", "o", "a", "x"]) {
-          if (!(k in q)) throw new Error(`${at}: missing "${k}"`);
-        }
-        if (ids.has(q.id)) throw new Error(`${at}: duplicate id`);
-        ids.add(q.id);
-        if (!q.id.startsWith(unitId + "-")) throw new Error(`${at}: id must start with "${unitId}-"`);
-        if (!info.topicIds.has(q.topic)) throw new Error(`${at}: topic "${q.topic}" is not in unit ${unitId}`);
-        if (info.loCodes.size && !info.loCodes.has(q.lo)) throw new Error(`${at}: LO "${q.lo}" is not in unit ${unitId}`);
-        if (!DIFFICULTIES.includes(q.d)) throw new Error(`${at}: d must be one of ${DIFFICULTIES.join("/")}`);
-        if (!Array.isArray(q.o) || q.o.length !== 4) throw new Error(`${at}: needs exactly 4 options`);
-        const norm = q.o.map((o) => String(o).trim().toLowerCase());
-        if (norm.some((o) => !o)) throw new Error(`${at}: empty option`);
-        if (new Set(norm).size !== 4) throw new Error(`${at}: options are not all different`);
-        if (!Number.isInteger(q.a) || q.a < 0 || q.a > 3) throw new Error(`${at}: a must be 0-3`);
-        if (String(q.q).trim().length < 10) throw new Error(`${at}: question text too short`);
-        if (String(q.x).trim().length < 20) throw new Error(`${at}: explanation too short`);
-        // Generic stems ("Which statement is correct?") may repeat; stem + options may not.
-        const stem = String(q.q).trim().toLowerCase() + "|" + [...norm].sort().join("|");
-        if (stems.has(stem)) throw new Error(`${at}: same question and options as ${stems.get(stem)}`);
-        stems.set(stem, q.id);
+        if (q.id && !String(q.id).startsWith(unitId + "-")) throw new Error(`${at}: id must start with "${unitId}-"`);
+        checkMcq(q, at, info, unitId, ids, stems);
         all.push({ ...q, unit: unitId, subject: subjectDir });
       });
     }
   }
   return all;
+}
+
+// Full mock papers: content/mocks/mock-NN.json, each exactly the real paper's
+// subject split. Files named test-*.json are dev-only samples (built from the
+// practice bank by scripts/make_test_mock.js) and are included only when
+// MDCAT_TEST_MOCKS=1, so a release build can never ship one.
+const PAPER = { bio: 81, chem: 45, phy: 36, eng: 9, lr: 9 };
+function loadMocks(units, ids, stems) {
+  const dir = path.join(CONTENT_DIR, "mocks");
+  if (!fs.existsSync(dir)) return [];
+  const withTests = process.env.MDCAT_TEST_MOCKS === "1";
+  const mocks = [];
+  for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
+    const isTest = f.startsWith("test-");
+    if (isTest && !withTests) continue;
+    const where = `mocks/${f}`;
+    const m = readJson(path.join(dir, f));
+    for (const k of ["id", "title", "questions"]) if (!(k in m)) throw new Error(`${where}: missing "${k}"`);
+    if (m.id !== f.replace(/\.json$/, "")) throw new Error(`${where}: id must be "${f.replace(/\.json$/, "")}"`);
+    const count = {};
+    // A test mock reuses practice questions, so it gets its own id/stem sets.
+    const mIds = isTest ? new Set() : ids, mStems = isTest ? new Map() : stems;
+    const questions = m.questions.map((q, i) => {
+      const at = `${where} item ${i} (${q.id || "no id"})`;
+      const info = units.get(q.unit);
+      if (!info) throw new Error(`${at}: unit "${q.unit}" is not in syllabus.json`);
+      if (!isTest && !String(q.id).startsWith(m.id + "-")) throw new Error(`${at}: id must start with "${m.id}-"`);
+      checkMcq(q, at, info, q.unit, mIds, mStems);
+      count[info.subject] = (count[info.subject] || 0) + 1;
+      return { id: q.id, unit: q.unit, topic: q.topic, lo: q.lo, d: q.d, q: q.q, o: q.o, a: q.a, x: q.x };
+    });
+    for (const [s, n] of Object.entries(PAPER)) {
+      if ((count[s] || 0) !== n) throw new Error(`${where}: needs ${n} ${s} questions, has ${count[s] || 0}`);
+    }
+    if (questions.length !== 180) throw new Error(`${where}: needs 180 questions, has ${questions.length}`);
+    mocks.push({ id: m.id, title: m.title, test: isTest || undefined, questions });
+  }
+  return mocks;
 }
 
 // Warns (does not fail) when answers bunch on one letter in a unit.
@@ -148,7 +190,11 @@ function main() {
   const guide = loadGuide();
   console.log(`  guide: ${guide.sections.length} sections`);
   const units = indexSyllabus(syllabus);
-  const questions = loadQuestions(units);
+  const ids = new Set();
+  const stems = new Map();
+  const questions = loadQuestions(units, ids, stems);
+  const mocks = loadMocks(units, ids, stems);
+  console.log(`  ${mocks.length} mock paper(s)${mocks.some((m) => m.test) ? " (incl. TEST mock — not for release)" : ""}`);
   const bySubject = {};
   for (const q of questions) bySubject[q.subject] = (bySubject[q.subject] || 0) + 1;
   console.log(`  ${units.size} units, ${questions.length} practice MCQs`, bySubject);
@@ -164,7 +210,8 @@ function main() {
   const contentJs =
     `const SYLLABUS = ${JSON.stringify(syllabus)};\n` +
     `const QUESTIONS = ${JSON.stringify(shipped)};\n` +
-    `const GUIDE = ${JSON.stringify(guide)};\n`;
+    `const GUIDE = ${JSON.stringify(guide)};\n` +
+    `const MOCKS = ${JSON.stringify(mocks)};\n`;
 
   const finalJs = appJs.replace("/* __CONTENT_INJECTION_POINT__ */", contentJs);
   if (finalJs === appJs) throw new Error("Content injection point missing from src/app.js");

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MDCAT Prep</string>
+    <string name="title_activity_main">MDCAT Prep</string>
+    <string name="package_name">com.homilabs.mdcatprep</string>
+    <string name="custom_url_scheme">com.homilabs.mdcatprep</string>
+</resources>
