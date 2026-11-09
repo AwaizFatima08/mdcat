@@ -13,4 +13,5 @@ Offline Android app for MDCAT preparation (PM&DC Uniform Curriculum 2025). HomiL
 3. Biology bank (2,250 MCQs, 16 units, every key agreed by a blind re-check) — done 9 Nov 2026, Homi's spot check pending (`docs/review/bio-spotcheck.md`)
 4. Chemistry bank (1,250 MCQs, 20 units, every key agreed by a blind re-check) — done 9 Nov 2026, Homi's spot check pending (`docs/review/chem-spotcheck.md`)
 5. Physics bank (1,000 MCQs, 16 units, every key agreed by a blind re-check) — done 9 Nov 2026, Homi's spot check pending (`docs/review/phy-spotcheck.md`)
-6. English + LR · 7. Mock engine · 8. 20 mocks · 9. Memory cheats · 10. Important topics · 11. Release (AdMob, store, mdcat.homilabs.org pages)
+6. English + Logical Reasoning banks (250 + 250 MCQs, every key agreed by a blind re-check) — done 9 Nov 2026, Homi's spot check pending (`docs/review/eng-spotcheck.md`, `docs/review/lr-spotcheck.md`)
+7. Mock engine · 8. 20 mocks · 9. Memory cheats · 10. Important topics · 11. Release (AdMob, store, mdcat.homilabs.org pages)
