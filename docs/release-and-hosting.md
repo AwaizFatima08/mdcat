@@ -114,6 +114,17 @@ MDCAT Prep is independent practice material by HomiLabs. It is not affiliated wi
    - add the Play link on the website;
    - list the app on homilabs.org.
 
+## Device test (10 Nov 2026, emulator `mdcat_api35`, Android 15)
+Debug build, Google's test unit, driven over WebView debugging:
+- **First ad:** consent check passed, the SDK started and a test interstitial loaded.
+- **Sets:** no ad after the 1st set; the "This is an interstitial test ad" screen after the 2nd. Closing it reloaded the next ad.
+- **Gap:** more sets and a second mock within 3 minutes showed no ad.
+- **After the gap:** two more sets showed the next ad. A finished mock on a fresh install showed an ad.
+- **Bug found and fixed:** the next ad used to be prepared while the current one was still on screen. The plugin dropped it on close, so every ad after the first failed ("No Interstitial can be shown"). Now the next ad loads only after the current one is closed. The cap resets only when an ad really showed.
+
+The release APK installed and started cleanly. It showed the home screen and sent its ad request. The emulator counts as a test device, so no live impression was recorded.
+
 ## Not checked by Claude
-- **Live ads.** The release build uses the live unit, so it can only be ad-tested after the Play store link. The debug build was tested with Google's test unit.
+- **Live ads.** These are served only after the Play store link.
 - **The consent form.** It only appears for EEA/UK users once the AdMob message is published.
+- **A real phone.** The Tab was locked during the test. The release APK has not been installed on it, because swapping it for the debug build would wipe the app's data there.

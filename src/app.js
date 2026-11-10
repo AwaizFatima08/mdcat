@@ -746,8 +746,12 @@ function adBreak(kind){
   const due = (kind === "mock" || st.sets >= AD_SETS) && Date.now() - st.last >= AD_GAP_MS;
   if(due && adOn && adReady){
     adReady = false;
-    st.sets = 0; st.last = Date.now();
-    setTimeout(() => AdMob.showInterstitial().catch(() => {}).finally(adLoad), 400);
+    // The next ad loads only once this one is dismissed: the plugin drops an
+    // ad prepared while another is still on screen. The cap counts only an ad
+    // that really showed.
+    setTimeout(() => AdMob.showInterstitial()
+      .then(() => { const s = adState(); s.sets = 0; s.last = Date.now(); adSave(s); })
+      .catch(adLoad), 400);
   }
   adSave(st);
 }

@@ -28,8 +28,9 @@ Locked with Homi on 10 Nov 2026. Modelled on the CSCA kit
 6. `docs/release-and-hosting.md`: store listing text, Data safety, content rating, target
    audience (16–17 and 18+), and Homi's upload steps.
 7. Phone screenshots (2–8) in `store-assets/screenshots/`.
-8. Release build smoke-tested on the Tab (ads appear on the test unit in a debug build; release
-   build starts and runs).
+8. Release build smoke-tested (ads appear on the test unit in a debug build; release build starts
+   and runs). Done 10 Nov 2026 on the emulator `mdcat_api35`, because the Tab was locked. See
+   "Device test" in `docs/release-and-hosting.md`.
 
 ## Not in this piece
 - Homi's content read-throughs (spot checks, cheats, topics) — before production, his call.
