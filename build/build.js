@@ -220,6 +220,15 @@ function loadTopics(syllabus) {
   return checkTopics(readJson(f), syllabus).map(({ unit, tier, why, focus }) => ({ unit, tier, why, focus }));
 }
 
+// Ads: Google's test interstitial unless MDCAT_ADS=live (release builds only).
+const AD_UNIT_LIVE = "ca-app-pub-2087846699268567/6626520380";
+const AD_UNIT_TEST = "ca-app-pub-3940256099942544/1033173712";
+function adConfig() {
+  const live = process.env.MDCAT_ADS === "live";
+  console.log(`  ads: ${live ? "LIVE unit (release)" : "Google test unit"}`);
+  return live ? { unit: AD_UNIT_LIVE, test: false } : { unit: AD_UNIT_TEST, test: true };
+}
+
 function main() {
   console.log("Loading content...");
   const syllabus = readJson(path.join(CONTENT_DIR, "syllabus.json"));
@@ -253,7 +262,9 @@ function main() {
     `const GUIDE = ${JSON.stringify(guide)};\n` +
     `const MOCKS = ${JSON.stringify(mocks)};\n` +
     `const CHEATS = ${JSON.stringify(cheats)};\n` +
-    `const TOPICS = ${JSON.stringify(topics)};\n`;
+    `const TOPICS = ${JSON.stringify(topics)};\n` +
+    `const ADS = ${JSON.stringify(adConfig())};\n` +
+    `const APP_VERSION = ${JSON.stringify(require("../package.json").version)};\n`;
 
   const finalJs = appJs.replace("/* __CONTENT_INJECTION_POINT__ */", contentJs);
   if (finalJs === appJs) throw new Error("Content injection point missing from src/app.js");

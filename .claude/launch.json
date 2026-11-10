@@ -1,6 +1,7 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "mdcat", "runtimeExecutable": "python3", "runtimeArgs": ["-m", "http.server", "8767", "--directory", "www"], "port": 8767 }
+    { "name": "mdcat", "runtimeExecutable": "python3", "runtimeArgs": ["-m", "http.server", "8767", "--directory", "www"], "port": 8767 },
+    { "name": "mdcat-site", "runtimeExecutable": "python3", "runtimeArgs": ["-m", "http.server", "8768", "--directory", "website"], "port": 8768 }
   ]
 }

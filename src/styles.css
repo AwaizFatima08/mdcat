@@ -173,3 +173,4 @@ h3.section{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:va
 .topic .mine{margin-top:10px}
 .tbtns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
 .tbtns .btn{padding:11px 6px;font-size:14px;margin:0}
+a.row{text-decoration:none;color:inherit;box-sizing:border-box}

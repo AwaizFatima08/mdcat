@@ -1,16 +1,20 @@
 {
   "name": "mdcat-prep",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "MDCAT Prep - offline MDCAT practice app (PM&DC 2025 curriculum)",
   "private": true,
   "scripts": {
     "build": "node build/build.js && mkdir -p www && cp dist/app.html www/index.html",
-    "build:test": "MDCAT_TEST_MOCKS=1 node build/build.js && mkdir -p www && cp dist/app.html www/index.html"
+    "build:test": "MDCAT_TEST_MOCKS=1 node build/build.js && mkdir -p www && cp dist/app.html www/index.html",
+    "build:release": "MDCAT_ADS=live node build/build.js && mkdir -p www && cp dist/app.html www/index.html"
   },
   "devDependencies": {
     "@capacitor/android": "^8.5.2",
     "@capacitor/app": "^8.1.2",
     "@capacitor/cli": "^7.6.9",
     "@capacitor/core": "^8.5.2"
+  },
+  "dependencies": {
+    "@capacitor-community/admob": "^8.3.0"
   }
 }

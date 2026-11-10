@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Open book with a heartbeat line; sits inside the adaptive-icon safe zone. -->
+  <path d="M500 392 C430 340 330 330 254 350 L254 702 C330 684 430 694 500 744 Z" fill="#ffffff"/>
+  <path d="M524 392 C594 340 694 330 770 350 L770 702 C694 684 594 694 524 744 Z" fill="#ffffff"/>
+  <polyline points="300,560 410,560 446,486 488,640 532,442 568,584 596,560 724,560"
+    fill="none" stroke="#0f5e6b" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

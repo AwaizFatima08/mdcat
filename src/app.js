@@ -87,7 +87,7 @@ function pickSet(pool, size){
    #/  #/s/bio  #/u/bio-01  #/play  #/results  #/mistakes  #/soon/<name>
    #/mocks  #/mock/<id>  #/mq  #/mgrid  #/mres/<id>/<attempt>
    #/cheats  #/cheats/<subject>  #/cheat/<card id>
-   #/topics  #/topics/<subject>
+   #/topics  #/topics/<subject>  #/about
    ====================================================================== */
 const app = document.getElementById("app");
 let session = null;   // current practice set: { title, back, items:[q], i, answers:[idx|null] }
@@ -121,6 +121,7 @@ function render(){
   if(parts[0] === "cheats") return subjectById[parts[1]] ? renderCheatSubject(parts[1]) : renderCheats();
   if(parts[0] === "cheat" && cheatById[parts[1]]) return renderCheat(parts[1]);
   if(parts[0] === "topics") return subjectById[parts[1]] ? renderTopicSubject(parts[1]) : renderTopics();
+  if(parts[0] === "about") return renderAbout();
   if(parts[0] === "soon") return renderSoon(decodeURIComponent(parts[1] || ""));
   return renderHome();
 }
@@ -158,6 +159,7 @@ function renderHome(){
     <button class="tile" data-go="#/guide"><div class="ic">📋</div><div class="title">Rules &amp; guidelines</div><div class="sub">format, passing, exam day</div></button>
     <button class="tile" data-go="#/cheats"><div class="ic">🧠</div><div class="title">Memory cheats</div><div class="sub">${CHEATS.length ? `${CHEATS.length} quick cards` : "coming soon"}</div></button>
     <button class="tile" data-go="#/topics"><div class="ic">⭐</div><div class="title">Important topics</div><div class="sub">${TOPICS.length ? "ranked by unit" : "coming soon"}</div></button>
+    <button class="tile" data-go="#/about"><div class="ic">ℹ️</div><div class="title">About</div><div class="sub">privacy, version, contact</div></button>
   </div>`;
   app.innerHTML = html;
 }
@@ -247,7 +249,7 @@ function pick(i){
 }
 function next(){
   if(session.i + 1 < session.items.length){ session.i++; renderPlayer(); window.scrollTo(0,0); }
-  else go("#/results");
+  else { go("#/results"); adBreak("set"); }
 }
 
 function renderResults(){
@@ -584,6 +586,7 @@ function submitMock(auto){
   saveProgress();
   // Replace, so Back from the results never lands on the finished paper.
   location.replace(`#/mres/${a.id}/${hist.length - 1}`);
+  adBreak("mock");
 }
 
 function renderMockResults(id, n){
@@ -719,6 +722,72 @@ app.addEventListener("input", e => {
   const k = e.target.dataset && e.target.dataset.agg;
   if(!k) return;
   progress[k] = e.target.value; saveProgress(); updateAgg();
+});
+
+/* ======================================================================
+   ADS — one AdMob interstitial at a natural break only: after every 2nd
+   finished practice set and after each finished mock, never within 3 min
+   of the last one, never during a set or a mock. Google UMP consent first.
+   In the browser there is no plugin, so all of this is a no-op.
+   ====================================================================== */
+const AD_GAP_MS = 3 * 60 * 1000, AD_SETS = 2, AD_KEY = "mdcat-ads-v1";
+const AdMob = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.AdMob;
+let adReady = false, adOn = false, adPrivacy = false, adNpa = false;
+function adState(){ try{ return JSON.parse(localStorage.getItem(AD_KEY)) || { sets:0, last:0 }; }catch(e){ return { sets:0, last:0 }; } }
+function adSave(st){ try{ localStorage.setItem(AD_KEY, JSON.stringify(st)); }catch(e){} }
+function adLoad(){
+  if(!adOn || adReady) return;
+  AdMob.prepareInterstitial({ adId: ADS.unit, isTesting: ADS.test, npa: adNpa }).then(() => { adReady = true; }).catch(() => {});
+}
+// Called once when a set or a mock has just finished.
+function adBreak(kind){
+  const st = adState();
+  if(kind === "set") st.sets++;
+  const due = (kind === "mock" || st.sets >= AD_SETS) && Date.now() - st.last >= AD_GAP_MS;
+  if(due && adOn && adReady){
+    adReady = false;
+    st.sets = 0; st.last = Date.now();
+    setTimeout(() => AdMob.showInterstitial().catch(() => {}).finally(adLoad), 400);
+  }
+  adSave(st);
+}
+(async function adStart(){
+  if(!AdMob) return;
+  // If the consent check itself fails (offline, or no AdMob message set up),
+  // fall back to non-personalised ads rather than none.
+  try{
+    let info = await AdMob.requestConsentInfo();
+    if(info.status === "REQUIRED" && info.isConsentFormAvailable) info = await AdMob.showConsentForm();
+    adPrivacy = info.privacyOptionsRequirementStatus === "REQUIRED";
+    if(!info.canRequestAds) return;
+  }catch(e){ adNpa = true; }
+  try{
+    await AdMob.initialize();
+    adOn = true;
+    AdMob.addListener && AdMob.addListener("interstitialAdDismissed", adLoad);
+    adLoad();
+  }catch(e){}
+})();
+
+/* ----- about ----- */
+const SITE = "https://mdcat.homilabs.org";
+function renderAbout(){
+  app.innerHTML = bar("About", "#/") + `<div class="card guide" style="padding:16px;margin-top:14px">
+    <h3 style="margin-top:0">MDCAT Prep</h3>
+    <p>Version ${esc(APP_VERSION)} · by HomiLabs</p>
+    <p>Practice for MDCAT on the PM&amp;DC 2025 curriculum: ${QUESTIONS.length.toLocaleString()} practice MCQs, ${MOCKS.length} full mock papers, memory cheats and important topics. Works offline; your progress stays on this phone.</p>
+    <p class="note">MDCAT Prep is independent practice material. It is not affiliated with, endorsed by or connected to the Pakistan Medical &amp; Dental Council (PM&amp;DC), any university or any admissions body. All questions are original practice items, not real or recalled papers. Always check pmdc.pk for official dates, fees and rules.</p>
+    <p class="note">Free with ads. Ads appear only between sessions, never during a question, a practice set or a mock.</p>
+  </div>
+  <div class="list" style="margin-top:14px">
+    <a class="row" href="${SITE}/privacy.html" target="_blank" rel="noopener"><span class="main"><span class="title">Privacy policy</span></span><span class="chev">›</span></a>
+    <a class="row" href="${SITE}/terms.html" target="_blank" rel="noopener"><span class="main"><span class="title">Terms of use</span></span><span class="chev">›</span></a>
+    ${adPrivacy ? `<button class="row" data-adprivacy="1"><span class="main"><span class="title">Privacy &amp; ad choices</span><div class="sub">change your ad consent</div></span><span class="chev">›</span></button>` : ""}
+    <a class="row" href="mailto:homilabs.smc@gmail.com?subject=MDCAT%20Prep"><span class="main"><span class="title">Contact us</span><div class="sub">homilabs.smc@gmail.com</div></span><span class="chev">›</span></a>
+  </div>`;
+}
+app.addEventListener("click", e => {
+  if(e.target.closest("[data-adprivacy]") && AdMob) AdMob.showPrivacyOptionsForm().catch(() => {});
 });
 
 render();
