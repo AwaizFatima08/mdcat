@@ -87,6 +87,7 @@ function pickSet(pool, size){
    #/  #/s/bio  #/u/bio-01  #/play  #/results  #/mistakes  #/soon/<name>
    #/mocks  #/mock/<id>  #/mq  #/mgrid  #/mres/<id>/<attempt>
    #/cheats  #/cheats/<subject>  #/cheat/<card id>
+   #/topics  #/topics/<subject>
    ====================================================================== */
 const app = document.getElementById("app");
 let session = null;   // current practice set: { title, back, items:[q], i, answers:[idx|null] }
@@ -119,6 +120,7 @@ function render(){
   if(parts[0] === "guide") return parts[1] ? renderGuideSection(parts[1]) : renderGuide();
   if(parts[0] === "cheats") return subjectById[parts[1]] ? renderCheatSubject(parts[1]) : renderCheats();
   if(parts[0] === "cheat" && cheatById[parts[1]]) return renderCheat(parts[1]);
+  if(parts[0] === "topics") return subjectById[parts[1]] ? renderTopicSubject(parts[1]) : renderTopics();
   if(parts[0] === "soon") return renderSoon(decodeURIComponent(parts[1] || ""));
   return renderHome();
 }
@@ -155,7 +157,7 @@ function renderHome(){
     <button class="tile" data-go="#/mocks"><div class="ic">⏱️</div><div class="title">Mock exams</div><div class="sub">${progress.mock.active ? "paper in progress" : MOCKS.length ? `${MOCKS.length} full paper${MOCKS.length===1?"":"s"}` : "coming soon"}</div></button>
     <button class="tile" data-go="#/guide"><div class="ic">📋</div><div class="title">Rules &amp; guidelines</div><div class="sub">format, passing, exam day</div></button>
     <button class="tile" data-go="#/cheats"><div class="ic">🧠</div><div class="title">Memory cheats</div><div class="sub">${CHEATS.length ? `${CHEATS.length} quick cards` : "coming soon"}</div></button>
-    <button class="tile" data-go="#/soon/Important%20topics"><div class="ic">⭐</div><div class="title">Important topics</div><div class="sub">coming soon</div></button>
+    <button class="tile" data-go="#/topics"><div class="ic">⭐</div><div class="title">Important topics</div><div class="sub">${TOPICS.length ? "ranked by unit" : "coming soon"}</div></button>
   </div>`;
   app.innerHTML = html;
 }
@@ -368,6 +370,56 @@ function renderCheat(id){
       ${(qByUnit[c.unit] || []).length ? `<button class="btn" data-start="unit:${c.unit}">Practise unit ${u.n}</button>` : ""}
       <button class="btn secondary" ${same(next) ? `data-go="#/cheat/${next.id}"` : "disabled"}>Next ›</button>
     </div>`;
+}
+
+/* ----- important topics: every unit in a tier, best first, with focus LOs ----- */
+const TIER = { 1:["Must-know","Big share of the syllabus or asked in most papers. Start here."],
+  2:["Important","A solid share and regularly asked."],
+  3:["Quick wins","Small units: quick to learn, still worth marks."] };
+const TOPICS_NOTE = "Our estimate, not official PM&DC weightage. PM&DC sets marks per subject only; we rank units by their share of the official learning outcomes (LOs) and by what MDCAT papers usually stress.";
+const loByCode = {};
+for(const u of Object.values(unitById)) for(const t of u.topics) for(const lo of t.los) loByCode[lo.code] = lo;
+function loCount(u){ return u.topics.reduce((n, t) => n + t.los.length, 0); }
+
+function renderTopics(){
+  let html = bar("Important topics", "#/") + `<p class="note">${esc(TOPICS_NOTE)}</p><div class="list">`;
+  for(const s of SYLLABUS.subjects){
+    const mine = TOPICS.filter(e => unitById[e.unit].subject === s.id);
+    const must = mine.filter(e => e.tier === 1).length;
+    html += `<button class="row${mine.length ? "" : " disabled"}" ${mine.length ? `data-go="#/topics/${s.id}"` : ""}>
+      <span class="badge" style="background:${SUBJECT_COLOR[s.id]}">${SUBJECT_ABBR[s.id]}</span>
+      <span class="main"><span class="title">${esc(s.name)}</span><div class="sub">${mine.length ? `${must} must-know of ${mine.length} units · ${s.mcqsInPaper} MCQs in paper` : "coming soon"}</div></span>
+      ${mine.length ? `<span class="chev">›</span>` : ""}</button>`;
+  }
+  app.innerHTML = html + `</div>`;
+}
+
+function renderTopicSubject(sid){
+  const s = subjectById[sid];
+  const totalLos = s.units.reduce((n, u) => n + loCount(u), 0);
+  let html = bar(`${s.name}: important topics`, "#/topics") + `<p class="note">${esc(TOPICS_NOTE)}</p>`;
+  for(const tier of [1, 2, 3]){
+    const list = TOPICS.filter(e => e.tier === tier && unitById[e.unit].subject === sid);
+    if(!list.length) continue;
+    html += `<h3 class="section">${TIER[tier][0]}</h3><p class="note tnote">${TIER[tier][1]}</p>`;
+    for(const e of list){
+      const u = unitById[e.unit], st = stats(qByUnit[u.id]);
+      const weak = st.done >= 10 && st.pct < 60;
+      html += `<div class="card topic">
+        <div class="thead"><span class="badge" style="background:${SUBJECT_COLOR[sid]}">${u.n}</span>
+          <span class="main"><span class="title">${esc(u.name)}</span><div class="sub">${loCount(u)} of ${totalLos} LOs</div></span></div>
+        <p class="why">${esc(e.why)}</p>
+        <div class="flabel">Focus on</div>
+        <ul class="lo">${e.focus.map(c => `<li><code>${esc(c)}</code>${esc(loByCode[c].text)}</li>`).join("")}</ul>
+        <div class="sub mine">${st.done ? `You: ${st.done}/${st.total} practised · ${st.pct}% right` : "You haven't practised this unit yet"}${weak ? ` <span class="tag fail">needs work</span>` : ""}</div>
+        <div class="tbtns">
+          ${st.total ? `<button class="btn" data-start="unit:${u.id}">Practise</button>` : ""}
+          <button class="btn secondary" data-go="#/u/${u.id}">Open unit</button>
+        </div>
+      </div>`;
+    }
+  }
+  app.innerHTML = html;
 }
 
 /* ======================================================================

@@ -14,6 +14,7 @@
 const fs = require("fs");
 const path = require("path");
 const { checkCard } = require("./cheats");
+const { checkTopics } = require("./topics");
 
 const ROOT = path.join(__dirname, "..");
 const CONTENT_DIR = path.join(ROOT, "content");
@@ -212,6 +213,13 @@ function loadCheats(syllabus, units) {
   return cards.sort((a, b) => order.indexOf(a.unit) - order.indexOf(b.unit) || a.id.localeCompare(b.id));
 }
 
+// Important topics: content/topics.json, every unit ranked into a tier.
+function loadTopics(syllabus) {
+  const f = path.join(CONTENT_DIR, "topics.json");
+  if (!fs.existsSync(f)) return [];
+  return checkTopics(readJson(f), syllabus).map(({ unit, tier, why, focus }) => ({ unit, tier, why, focus }));
+}
+
 function main() {
   console.log("Loading content...");
   const syllabus = readJson(path.join(CONTENT_DIR, "syllabus.json"));
@@ -224,6 +232,8 @@ function main() {
   const mocks = loadMocks(units, ids, stems);
   const cheats = loadCheats(syllabus, units);
   console.log(`  ${cheats.length} memory-cheat card(s)`);
+  const topics = loadTopics(syllabus);
+  console.log(`  ${topics.length} ranked unit(s) in important topics`);
   console.log(`  ${mocks.length} mock paper(s)${mocks.some((m) => m.test) ? " (incl. TEST mock — not for release)" : ""}`);
   const bySubject = {};
   for (const q of questions) bySubject[q.subject] = (bySubject[q.subject] || 0) + 1;
@@ -242,7 +252,8 @@ function main() {
     `const QUESTIONS = ${JSON.stringify(shipped)};\n` +
     `const GUIDE = ${JSON.stringify(guide)};\n` +
     `const MOCKS = ${JSON.stringify(mocks)};\n` +
-    `const CHEATS = ${JSON.stringify(cheats)};\n`;
+    `const CHEATS = ${JSON.stringify(cheats)};\n` +
+    `const TOPICS = ${JSON.stringify(topics)};\n`;
 
   const finalJs = appJs.replace("/* __CONTENT_INJECTION_POINT__ */", contentJs);
   if (finalJs === appJs) throw new Error("Content injection point missing from src/app.js");

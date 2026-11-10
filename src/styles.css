@@ -162,3 +162,14 @@ h3.section{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:va
 .mn ul{margin:8px 0 0}
 .cnav{display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:8px;margin:14px 0}
 .cnav .btn{padding:12px 6px;font-size:14px;margin:0}
+.tnote{margin:-4px 0 10px}
+.topic{padding:14px;margin-bottom:12px}
+.topic .thead{display:flex;align-items:center;gap:12px}
+.topic .thead .main{flex:1;min-width:0}
+.topic .thead .title{font-weight:600}
+.topic .sub{font-size:13px;color:var(--muted)}
+.topic .why{margin:10px 0 6px;font-size:14.5px}
+.topic .flabel{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-top:8px}
+.topic .mine{margin-top:10px}
+.tbtns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.tbtns .btn{padding:11px 6px;font-size:14px;margin:0}

@@ -1,0 +1,597 @@
+[
+ {
+  "unit": "bio-03",
+  "tier": 1,
+  "why": "The largest Biology unit by LO count: carbohydrates, proteins, lipids, water and nucleic acids. Its structures and bonds come back in enzymes, digestion and inheritance.",
+  "focus": [
+   "BIO-3.5",
+   "BIO-3.4",
+   "BIO-3.6"
+  ]
+ },
+ {
+  "unit": "bio-15",
+  "tier": 1,
+  "why": "Eight LOs on the kidney and thermoregulation. Nephron steps (filtration, reabsorption, secretion) and the two capillary beds are classic MCQ material.",
+  "focus": [
+   "BIO-15.2",
+   "BIO-15.1",
+   "BIO-15.4"
+  ]
+ },
+ {
+  "unit": "bio-10",
+  "tier": 1,
+  "why": "Seven LOs and a favourite for problem-style MCQs: Mendelian ratios, linkage and crossing over, and sex-linked traits such as hemophilia.",
+  "focus": [
+   "BIO-10.2",
+   "BIO-10.6",
+   "BIO-10.3"
+  ]
+ },
+ {
+  "unit": "bio-05",
+  "tier": 1,
+  "why": "Seven LOs covering neurons, nerve impulses, reflex arcs and brain parts. Matching brain regions to their functions is a common question type.",
+  "focus": [
+   "BIO-5.7",
+   "BIO-5.2",
+   "BIO-5.5"
+  ]
+ },
+ {
+  "unit": "bio-09",
+  "tier": 1,
+  "why": "Seven LOs on cartilage, bone, muscle and joints. Sarcomere structure and the sliding filament steps of contraction are detail-heavy and frequently tested.",
+  "focus": [
+   "BIO-9.5",
+   "BIO-9.4",
+   "BIO-9.3"
+  ]
+ },
+ {
+  "unit": "bio-06",
+  "tier": 2,
+  "why": "Only four LOs, but enzyme action, the effects of temperature and pH, and competitive versus non-competitive inhibition are asked regularly and link to Biological Molecules.",
+  "focus": [
+   "BIO-6.4",
+   "BIO-6.3",
+   "BIO-6.2"
+  ]
+ },
+ {
+  "unit": "bio-12",
+  "tier": 2,
+  "why": "One LO, but it spans a whole chapter: B and T cells, antibodies, active and passive immunity. Worth more time than its LO count suggests.",
+  "focus": [
+   "BIO-12.1"
+  ]
+ },
+ {
+  "unit": "bio-11",
+  "tier": 2,
+  "why": "Heart structure, phases of the heartbeat, vessels and the lymphatic system. Facts are concrete and easy to test as direct MCQs.",
+  "focus": [
+   "BIO-11.2",
+   "BIO-11.1",
+   "BIO-11.3"
+  ]
+ },
+ {
+  "unit": "bio-04",
+  "tier": 2,
+  "why": "Organelle structure and function, prokaryote versus eukaryote, and chromosomes. Basic cell knowledge that many other Biology units assume.",
+  "focus": [
+   "BIO-4.3",
+   "BIO-4.2",
+   "BIO-4.4"
+  ]
+ },
+ {
+  "unit": "bio-13",
+  "tier": 2,
+  "why": "Three LOs on the respiratory tract, gas exchange in the alveoli and the effects of smoking. Short, concrete and regularly asked.",
+  "focus": [
+   "BIO-13.2",
+   "BIO-13.1",
+   "BIO-13.3"
+  ]
+ },
+ {
+  "unit": "bio-16",
+  "tier": 2,
+  "why": "Vaccines, DNA probes, monoclonal antibodies and products such as insulin. Applied, medically relevant facts that suit straightforward MCQs.",
+  "focus": [
+   "BIO-16.2",
+   "BIO-16.1",
+   "BIO-16.3"
+  ]
+ },
+ {
+  "unit": "bio-08",
+  "tier": 3,
+  "why": "Three LOs: reproductive organs, hormones of the menstrual cycle and common STDs. A hormone timeline learnt once gives quick marks.",
+  "focus": [
+   "BIO-8.2",
+   "BIO-8.1",
+   "BIO-8.3"
+  ]
+ },
+ {
+  "unit": "bio-07",
+  "tier": 3,
+  "why": "Three LOs comparing Lamarck and Darwin plus origin of life. Mostly recall of theory points, so fast to learn.",
+  "focus": [
+   "BIO-7.3",
+   "BIO-7.2",
+   "BIO-7.1"
+  ]
+ },
+ {
+  "unit": "bio-01",
+  "tier": 3,
+  "why": "Two LOs: virus classification and HIV/AIDS transmission and symptoms. A small, factual unit that is quick to revise.",
+  "focus": [
+   "BIO-1.1",
+   "BIO-1.2"
+  ]
+ },
+ {
+  "unit": "bio-14",
+  "tier": 3,
+  "why": "Two LOs on the parts of the gut and its glands. Enzymes and secretions of each region are easy recall marks.",
+  "focus": [
+   "BIO-14.2",
+   "BIO-14.1"
+  ]
+ },
+ {
+  "unit": "bio-02",
+  "tier": 3,
+  "why": "A single LO on how proteins and fats enter respiration compared with glucose. Learn the entry points into glycolysis and the Krebs cycle.",
+  "focus": [
+   "BIO-2.1"
+  ]
+ },
+ {
+  "unit": "chem-14",
+  "tier": 1,
+  "why": "The biggest Chemistry unit with 19 LOs: alkanes, alkenes, alkynes and benzene. Reaction types and benzene substitution underpin all later organic units.",
+  "focus": [
+   "CHEM-14.12",
+   "CHEM-14.14",
+   "CHEM-14.6"
+  ]
+ },
+ {
+  "unit": "chem-10",
+  "tier": 1,
+  "why": "VSEPR shapes, hybridisation, sigma and pi bonds and polarity. Bonding ideas are needed across organic and inorganic chemistry.",
+  "focus": [
+   "CHEM-10.1",
+   "CHEM-10.3",
+   "CHEM-10.5"
+  ]
+ },
+ {
+  "unit": "chem-06",
+  "tier": 1,
+  "why": "Le Chatelier shifts, Ksp, common ion effect and buffers. Mostly concept MCQs, plus simple solubility product problems; links to kinetics and thermochemistry.",
+  "focus": [
+   "CHEM-6.3",
+   "CHEM-6.4",
+   "CHEM-6.6"
+  ]
+ },
+ {
+  "unit": "chem-02",
+  "tier": 1,
+  "why": "Eight LOs on orbitals, quantum numbers and electronic configuration. Aufbau, Pauli and Hund's rule questions are quick to set and common.",
+  "focus": [
+   "CHEM-2.7",
+   "CHEM-2.4",
+   "CHEM-2.8"
+  ]
+ },
+ {
+  "unit": "chem-03",
+  "tier": 1,
+  "why": "Nine LOs on gas laws, the ideal gas equation and real gases. Numericals with PV = nRT and units of R are standard.",
+  "focus": [
+   "CHEM-3.7",
+   "CHEM-3.8",
+   "CHEM-3.9"
+  ]
+ },
+ {
+  "unit": "chem-07",
+  "tier": 1,
+  "why": "Rate laws, order of reaction and activation energy. Seven LOs that mix concept questions with short calculations.",
+  "focus": [
+   "CHEM-7.4",
+   "CHEM-7.5",
+   "CHEM-7.3"
+  ]
+ },
+ {
+  "unit": "chem-01",
+  "tier": 1,
+  "why": "Mole ratios, limiting reagent and percentage yield. Stoichiometry numericals are fast marks once the method is practised.",
+  "focus": [
+   "CHEM-1.2",
+   "CHEM-1.4",
+   "CHEM-1.5"
+  ]
+ },
+ {
+  "unit": "chem-08",
+  "tier": 2,
+  "why": "Seven LOs on enthalpy, the first law and Hess's law. Energy cycles and definitions of state functions are regularly asked.",
+  "focus": [
+   "CHEM-8.6",
+   "CHEM-8.3",
+   "CHEM-8.5"
+  ]
+ },
+ {
+  "unit": "chem-16",
+  "tier": 2,
+  "why": "Six LOs on alcohols and phenols: reactivity, esters and ethers, and telling an alcohol from a phenol. Builds directly on hydrocarbons.",
+  "focus": [
+   "CHEM-16.2",
+   "CHEM-16.6",
+   "CHEM-16.4"
+  ]
+ },
+ {
+  "unit": "chem-17",
+  "tier": 2,
+  "why": "Six LOs on aldehydes and ketones. Nucleophilic addition and oxidation tests that distinguish the two are common reaction MCQs.",
+  "focus": [
+   "CHEM-17.4",
+   "CHEM-17.6",
+   "CHEM-17.3"
+  ]
+ },
+ {
+  "unit": "chem-15",
+  "tier": 2,
+  "why": "SN1, SN2, E1 and E2 mechanisms in four LOs. Mechanism comparison questions are popular and link alkanes to alcohols.",
+  "focus": [
+   "CHEM-15.3",
+   "CHEM-15.4",
+   "CHEM-15.2"
+  ]
+ },
+ {
+  "unit": "chem-09",
+  "tier": 2,
+  "why": "Oxidation numbers, redox and electrode potentials. Assigning oxidation numbers is quick to test and used throughout chemistry.",
+  "focus": [
+   "CHEM-9.3",
+   "CHEM-9.5",
+   "CHEM-9.4"
+  ]
+ },
+ {
+  "unit": "chem-11",
+  "tier": 2,
+  "why": "Periodic trends in radius, ionisation energy and electronegativity, plus Group I, II and IV reactions. Trend questions are common and quick.",
+  "focus": [
+   "CHEM-11.1",
+   "CHEM-11.3",
+   "CHEM-11.4"
+  ]
+ },
+ {
+  "unit": "chem-05",
+  "tier": 2,
+  "why": "Five LOs on crystal types, lattices and lattice energy. Comparing ionic and molecular crystals is straightforward recall.",
+  "focus": [
+   "CHEM-5.3",
+   "CHEM-5.5",
+   "CHEM-5.1"
+  ]
+ },
+ {
+  "unit": "chem-04",
+  "tier": 3,
+  "why": "Four LOs: vapour pressure, boiling point, hydrogen bonding and why water is densest at 4 °C. Short and easy to score.",
+  "focus": [
+   "CHEM-4.3",
+   "CHEM-4.2",
+   "CHEM-4.4"
+  ]
+ },
+ {
+  "unit": "chem-13",
+  "tier": 3,
+  "why": "Four LOs on classification, functional groups and stereoisomerism. A small unit that supports every organic chapter.",
+  "focus": [
+   "CHEM-13.4",
+   "CHEM-13.3",
+   "CHEM-13.2"
+  ]
+ },
+ {
+  "unit": "chem-18",
+  "tier": 3,
+  "why": "Three LOs on carboxylic acids and their derivatives. Learn the conversions to acyl halides, anhydrides, esters and amides as one chart.",
+  "focus": [
+   "CHEM-18.3",
+   "CHEM-18.2",
+   "CHEM-18.1"
+  ]
+ },
+ {
+  "unit": "chem-19",
+  "tier": 3,
+  "why": "Three LOs on proteins and enzymes, overlapping heavily with Biology. Revising one subject covers much of the other.",
+  "focus": [
+   "CHEM-19.1",
+   "CHEM-19.3",
+   "CHEM-19.2"
+  ]
+ },
+ {
+  "unit": "chem-20",
+  "tier": 3,
+  "why": "Three recall LOs on adhesives, dyes and polymers. Addition versus condensation polymers is the most useful distinction.",
+  "focus": [
+   "CHEM-20.3",
+   "CHEM-20.2",
+   "CHEM-20.1"
+  ]
+ },
+ {
+  "unit": "chem-12",
+  "tier": 3,
+  "why": "A single LO on d-block electronic configurations. Remember the chromium and copper exceptions and how ions lose 4s electrons first.",
+  "focus": [
+   "CHEM-12.1"
+  ]
+ },
+ {
+  "unit": "phy-06",
+  "tier": 1,
+  "why": "The largest Physics unit with 18 LOs: wave terms, speed of sound, stationary waves, organ pipes and SHM. Many short numericals with v = fλ.",
+  "focus": [
+   "PHY-6.15",
+   "PHY-6.4",
+   "PHY-6.17"
+  ]
+ },
+ {
+  "unit": "phy-02",
+  "tier": 1,
+  "why": "Seventeen LOs on kinematics, projectiles, Newton's laws and momentum. Projectile range and collision problems are favourite numericals.",
+  "focus": [
+   "PHY-2.11",
+   "PHY-2.15",
+   "PHY-2.13"
+  ]
+ },
+ {
+  "unit": "phy-05",
+  "tier": 1,
+  "why": "Ten LOs on fluid flow. The continuity equation and Bernoulli's effect, including blood flow, give both concept and numerical questions.",
+  "focus": [
+   "PHY-5.6",
+   "PHY-5.8",
+   "PHY-5.1"
+  ]
+ },
+ {
+  "unit": "phy-08",
+  "tier": 1,
+  "why": "Nine LOs on Coulomb's law, electric field, potential and capacitor charging and discharging. Field and potential calculations for point charges are standard.",
+  "focus": [
+   "PHY-8.1",
+   "PHY-8.3",
+   "PHY-8.6"
+  ]
+ },
+ {
+  "unit": "phy-03",
+  "tier": 1,
+  "why": "Eight LOs on work, kinetic and potential energy, power and efficiency. Formula-based questions that link closely to Force & Motion.",
+  "focus": [
+   "PHY-3.1",
+   "PHY-3.6",
+   "PHY-3.8"
+  ]
+ },
+ {
+  "unit": "phy-07",
+  "tier": 2,
+  "why": "First law of thermodynamics, work in a volume change and Cp − Cv = R. Seven LOs that overlap with Chemistry thermochemistry.",
+  "focus": [
+   "PHY-7.4",
+   "PHY-7.7",
+   "PHY-7.3"
+  ]
+ },
+ {
+  "unit": "phy-09",
+  "tier": 2,
+  "why": "Ohm's law, resistivity, internal resistance and maximum power transfer. Short numericals on circuits that are quick once the formulas are clear.",
+  "focus": [
+   "PHY-9.4",
+   "PHY-9.5",
+   "PHY-9.3"
+  ]
+ },
+ {
+  "unit": "phy-11",
+  "tier": 2,
+  "why": "Faraday's and Lenz's laws plus transformers. Turns-ratio problems and predicting the direction of induced current are common.",
+  "focus": [
+   "PHY-11.2",
+   "PHY-11.3",
+   "PHY-11.1"
+  ]
+ },
+ {
+  "unit": "phy-16",
+  "tier": 2,
+  "why": "Nuclear decay, half-life with λ = 0.693/T½, and medical uses of radiation. Half-life numericals are quick marks.",
+  "focus": [
+   "PHY-16.3",
+   "PHY-16.2",
+   "PHY-16.4"
+  ]
+ },
+ {
+  "unit": "phy-10",
+  "tier": 2,
+  "why": "Magnetic flux and the force on a moving charge in a magnetic field. The circular path of a charge is a classic short question.",
+  "focus": [
+   "PHY-10.4",
+   "PHY-10.3",
+   "PHY-10.2"
+  ]
+ },
+ {
+  "unit": "phy-04",
+  "tier": 3,
+  "why": "Four LOs on radians and the links between linear and angular quantities, v = rω and a = rα. Small and fast to learn, and used in circular motion and SHM.",
+  "focus": [
+   "PHY-4.4",
+   "PHY-4.1",
+   "PHY-4.3"
+  ]
+ },
+ {
+  "unit": "phy-01",
+  "tier": 3,
+  "why": "Three LOs on vector components and dot and cross products. Quick to learn and needed for work, power and magnetic force.",
+  "focus": [
+   "PHY-1.1",
+   "PHY-1.2",
+   "PHY-1.3"
+  ]
+ },
+ {
+  "unit": "phy-12",
+  "tier": 3,
+  "why": "Phase in AC circuits through R, L and C, plus the order of the electromagnetic spectrum. Mostly recall, so a fast win.",
+  "focus": [
+   "PHY-12.2",
+   "PHY-12.3",
+   "PHY-12.1"
+  ]
+ },
+ {
+  "unit": "phy-13",
+  "tier": 3,
+  "why": "Two LOs on the PN junction, biasing and rectification. Learn half-wave versus full-wave rectifiers for easy marks.",
+  "focus": [
+   "PHY-13.2",
+   "PHY-13.1"
+  ]
+ },
+ {
+  "unit": "phy-14",
+  "tier": 3,
+  "why": "One LO on photons with energy E = hf. A single idea that also supports atomic spectra and chemistry's atomic structure.",
+  "focus": [
+   "PHY-14.1"
+  ]
+ },
+ {
+  "unit": "phy-15",
+  "tier": 3,
+  "why": "One LO on line spectra, produced when electrons move between energy levels. Small and quick, and it links to hydrogen atom theory in Chemistry.",
+  "focus": [
+   "PHY-15.1"
+  ]
+ },
+ {
+  "unit": "eng-02",
+  "tier": 1,
+  "why": "Two-thirds of the English LOs: tenses, prepositions, voice, narration, punctuation and vocabulary in context. If the paper follows the LO share, this unit carries most of the English marks.",
+  "focus": [
+   "ENG-2.4",
+   "ENG-2.8",
+   "ENG-2.13"
+  ]
+ },
+ {
+  "unit": "eng-03",
+  "tier": 2,
+  "why": "Error spotting and sentence correction, especially subject–verb agreement. Practice with grammar rules from the lexical unit carries over directly.",
+  "focus": [
+   "ENG-3.3",
+   "ENG-3.2",
+   "ENG-3.1"
+  ]
+ },
+ {
+  "unit": "eng-01",
+  "tier": 3,
+  "why": "Three LOs on reading a passage and working out meaning from context. Careful reading rather than memorising earns these marks.",
+  "focus": [
+   "ENG-1.2",
+   "ENG-1.1",
+   "ENG-1.3"
+  ]
+ },
+ {
+  "unit": "lr-02",
+  "tier": 1,
+  "why": "Number, letter and symbol series follow fixed patterns such as arithmetic and geometric steps. Practice makes these some of the fastest marks in the paper.",
+  "focus": [
+   "LR-2.1",
+   "LR-2.3",
+   "LR-2.2"
+  ]
+ },
+ {
+  "unit": "lr-01",
+  "tier": 1,
+  "why": "Judging whether statements are true or false and spotting false beliefs. The core skill behind most other reasoning question types.",
+  "focus": [
+   "LR-1.1",
+   "LR-1.3",
+   "LR-1.2"
+  ]
+ },
+ {
+  "unit": "lr-06",
+  "tier": 2,
+  "why": "Three LOs on linking events to their causes and rejecting false explanations. Question patterns repeat, so practice pays off.",
+  "focus": [
+   "LR-6.1",
+   "LR-6.2",
+   "LR-6.3"
+  ]
+ },
+ {
+  "unit": "lr-05",
+  "tier": 2,
+  "why": "Three LOs on picking the most sensible action from given facts. Read every option against the information given, not personal opinion.",
+  "focus": [
+   "LR-5.3",
+   "LR-5.2",
+   "LR-5.1"
+  ]
+ },
+ {
+  "unit": "lr-03",
+  "tier": 3,
+  "why": "Two LOs on drawing new relations from given ones, such as orders and arrangements. Practise a few patterns for quick marks.",
+  "focus": [
+   "LR-3.1",
+   "LR-3.2"
+  ]
+ },
+ {
+  "unit": "lr-04",
+  "tier": 3,
+  "why": "Two LOs on deductive puzzles where one result unlocks the next. A grid or diagram makes them quick to solve.",
+  "focus": [
+   "LR-4.2",
+   "LR-4.1"
+  ]
+ }
+]
