@@ -59,7 +59,9 @@ Piece 11, prepared 10 Nov 2026 (plan: `docs/pipeline/RELEASE_PLAN.md`). Claude p
 - **Store settings and listing text, 14 Nov 2026:**
   - Store settings: category Education, contact email homilabs.smc@gmail.com, website https://mdcat.homilabs.org, no phone.
   - Default store listing (en-US): name, short and full description as below, saved as a draft.
-  - **Still needed:** icon, feature graphic, screenshots and the `.aab` upload. These are file uploads that the in-app browser cannot do.
+  - Homi uploaded the icon, feature graphic, 5 phone screenshots and the `.aab` (versionCode 1, 1.0.0, target SDK 36).
+  - Claude attached the bundle to a **production** release draft "1 (1.0.0)", with en-US release notes.
+  - **Still needed:** countries/regions (0 selected), then Preview and confirm, then Send for review.
 
 | Item | Value |
 |---|---|
