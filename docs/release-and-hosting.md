@@ -48,6 +48,7 @@ Piece 11, prepared 10 Nov 2026 (plan: `docs/pipeline/RELEASE_PLAN.md`). Claude p
 - **AdMob privacy URL** for the MDCAT Prep app was wrongly set to Medical Calc's policy. It was corrected to `https://mdcat.homilabs.org/privacy.html` on 14 Nov 2026.
 
 ## Play Console listing
+- **App created 14 Nov 2026:** account Homilabs (9161588402757830740), app ID 4974337124175943493. Settings: free, app (not game), default language en-US, package `com.homilabs.mdcatprep` (confirmed available). Homi ticked both declarations. Dashboard: https://play.google.com/console/u/0/developers/9161588402757830740/app/4974337124175943493/app-dashboard
 
 | Item | Value |
 |---|---|
