@@ -61,7 +61,9 @@ Piece 11, prepared 10 Nov 2026 (plan: `docs/pipeline/RELEASE_PLAN.md`). Claude p
   - Default store listing (en-US): name, short and full description as below, saved as a draft.
   - Homi uploaded the icon, feature graphic, 5 phone screenshots and the `.aab` (versionCode 1, 1.0.0, target SDK 36).
   - Claude attached the bundle to a **production** release draft "1 (1.0.0)", with en-US release notes.
-  - **Still needed:** countries/regions (0 selected), then Preview and confirm, then Send for review.
+  - **Sent for review 15 Nov 2026**, with Homi's go-ahead: 11 changes. The production full rollout of 1 (1.0.0) targets all 178 countries/regions, though the change list reads "177: Albania, Algeria and 175 more".
+  - Preview showed only the usual "no deobfuscation file" warning. Install size is 7.85 MB.
+  - Google's quick checks were still running when it was sent. Review usually takes up to 7 days.
 
 | Item | Value |
 |---|---|
