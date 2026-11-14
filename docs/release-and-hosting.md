@@ -44,6 +44,8 @@ Piece 11, prepared 10 Nov 2026 (plan: `docs/pipeline/RELEASE_PLAN.md`). Claude p
 - Hostinger subdomain `mdcat.homilabs.org`, document root `public_html/mdcat`, created 9 Nov 2026.
 - To publish: upload the **contents** of `website/` to `public_html/mdcat` (hPanel File Manager, or SSH port 65002 as for homilabs.org), then flush the CDN cache.
 - After the app is live, replace "Coming soon on Google Play" in `index.html` with the Play link.
+- **Published 14 Nov 2026** over SSH: `tar` of `website/` into `domains/homilabs.org/public_html/mdcat`. Hostinger's placeholder page was kept as `default.php.bak-2026-11-14`. All pages returned 200 over HTTPS. To re-publish: `cd website && tar czf - . | ssh -p 65002 u809141334@145.79.26.208 'cd domains/homilabs.org/public_html/mdcat && tar xzf -'`.
+- **AdMob privacy URL** for the MDCAT Prep app was wrongly set to Medical Calc's policy. It was corrected to `https://mdcat.homilabs.org/privacy.html` on 14 Nov 2026.
 
 ## Play Console listing
 
