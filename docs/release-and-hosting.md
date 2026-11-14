@@ -56,6 +56,10 @@ Piece 11, prepared 10 Nov 2026 (plan: `docs/pipeline/RELEASE_PLAN.md`). Claude p
   - Government, financial and health: none.
   - Data safety: App interactions and Device or other IDs, each collected and shared, not ephemeral, required, purpose Advertising or marketing. No accounts. Encrypted in transit. The optional deletion question is left blank.
   - Content ratings: IARC terms agreed with Homi's OK. Category All Other App Types, contact email homilabs.smc@gmail.com. Answered No to everything except "primarily educational" (Yes). Ratings: ESRB Everyone, PEGI 3, USK all ages, ClassInd all ages, IARC 3+.
+- **Store settings and listing text, 14 Nov 2026:**
+  - Store settings: category Education, contact email homilabs.smc@gmail.com, website https://mdcat.homilabs.org, no phone.
+  - Default store listing (en-US): name, short and full description as below, saved as a draft.
+  - **Still needed:** icon, feature graphic, screenshots and the `.aab` upload. These are file uploads that the in-app browser cannot do.
 
 | Item | Value |
 |---|---|
