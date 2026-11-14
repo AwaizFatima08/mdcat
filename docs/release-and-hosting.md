@@ -49,13 +49,13 @@ Piece 11, prepared 10 Nov 2026 (plan: `docs/pipeline/RELEASE_PLAN.md`). Claude p
 
 ## Play Console listing
 - **App created 14 Nov 2026:** account Homilabs (9161588402757830740), app ID 4974337124175943493. Settings: free, app (not game), default language en-US, package `com.homilabs.mdcatprep` (confirmed available). Homi ticked both declarations. Dashboard: https://play.google.com/console/u/0/developers/9161588402757830740/app/4974337124175943493/app-dashboard
-- **App content, 14 Nov 2026:** 9 of 10 declarations saved by Claude, as in the table below.
+- **App content, 14 Nov 2026:** all 10 declarations saved by Claude, as in the table below.
   - Privacy policy, Ads, Sign in details: none restricted.
   - Target audience: 16–17 and 18+.
   - Advertising ID: yes, purpose Advertising or marketing.
   - Government, financial and health: none.
   - Data safety: App interactions and Device or other IDs, each collected and shared, not ephemeral, required, purpose Advertising or marketing. No accounts. Encrypted in transit. The optional deletion question is left blank.
-  - **Still open: Content ratings.** It needs agreement to IARC's Terms of Use. Category: All Other App Types, contact email homilabs.smc@gmail.com.
+  - Content ratings: IARC terms agreed with Homi's OK. Category All Other App Types, contact email homilabs.smc@gmail.com. Answered No to everything except "primarily educational" (Yes). Ratings: ESRB Everyone, PEGI 3, USK all ages, ClassInd all ages, IARC 3+.
 
 | Item | Value |
 |---|---|
