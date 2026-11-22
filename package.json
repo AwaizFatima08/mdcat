@@ -1,6 +1,6 @@
 {
   "name": "mdcat-prep",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MDCAT Prep - offline MDCAT practice app (PM&DC 2025 curriculum)",
   "private": true,
   "scripts": {
@@ -15,6 +15,7 @@
     "@capacitor/core": "^8.5.2"
   },
   "dependencies": {
-    "@capacitor-community/admob": "^8.3.0"
+    "@capacitor-community/admob": "^8.3.0",
+    "@capacitor-community/in-app-review": "^8.0.0"
   }
 }

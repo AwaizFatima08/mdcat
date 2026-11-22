@@ -586,7 +586,8 @@ function submitMock(auto){
   saveProgress();
   // Replace, so Back from the results never lands on the finished paper.
   location.replace(`#/mres/${a.id}/${hist.length - 1}`);
-  adBreak("mock");
+  // The review sheet takes this break's place, so it never meets an interstitial.
+  if(!reviewBreak()) adBreak("mock");
 }
 
 function renderMockResults(id, n){
@@ -773,8 +774,36 @@ function adBreak(kind){
   }catch(e){}
 })();
 
+/* ======================================================================
+   REVIEW — Google Play's in-app review sheet after the 2nd finished mock,
+   then at most once every 60 days. Play also caps how often it really
+   appears. In the browser there is no plugin, so this is a no-op.
+   ====================================================================== */
+const REVIEW_KEY = "mdcat-review-v1", REVIEW_GAP_MS = 60 * 24 * 60 * 60 * 1000;
+const InAppReview = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.InAppReview;
+function shouldAskForReview(mocks, now, lastAsked){ return mocks >= 2 && (!lastAsked || now - lastAsked >= REVIEW_GAP_MS); }
+// Called once for every finished mock. True when the review sheet is asked for now.
+function reviewBreak(){
+  let st;
+  try{ st = JSON.parse(localStorage.getItem(REVIEW_KEY)) || { mocks:0, asked:0 }; }catch(e){ st = { mocks:0, asked:0 }; }
+  st.mocks++;
+  const ask = !!InAppReview && shouldAskForReview(st.mocks, Date.now(), st.asked);
+  if(ask) st.asked = Date.now();
+  try{ localStorage.setItem(REVIEW_KEY, JSON.stringify(st)); }catch(e){}
+  if(ask) setTimeout(() => InAppReview.requestReview().catch(() => {}), 400);
+  return ask;
+}
+
 /* ----- about ----- */
 const SITE = "https://mdcat.homilabs.org";
+// Related HomiLabs apps. Names are store titles. Play links are tagged so Play Console reports installs from this app.
+const MORE_APPS = [
+  { name:"USMLE Step 1 Prep: QBank Mocks", pkg:"com.homilabs.step1prep" },
+  { name:"PLAB 1 Simulator: UK Mocks", pkg:"com.homilabs.plab1prep" },
+  { name:"NLE & NRE Prep: Medical Mocks", pkg:"com.homilabs.nle_prep" },
+  { name:"MedCal: Medical Calculator", pkg:"com.homilabs.medicalcalc" },
+];
+function playLink(pkg){ return `https://play.google.com/store/apps/details?id=${pkg}&referrer=utm_source%3Dmdcatprep%26utm_medium%3Dapp%26utm_campaign%3Dcrosspromo`; }
 function renderAbout(){
   app.innerHTML = bar("About", "#/") + `<div class="card guide" style="padding:16px;margin-top:14px">
     <h3 style="margin-top:0">MDCAT Prep</h3>
@@ -788,7 +817,10 @@ function renderAbout(){
     <a class="row" href="${SITE}/terms.html" target="_blank" rel="noopener"><span class="main"><span class="title">Terms of use</span></span><span class="chev">›</span></a>
     ${adPrivacy ? `<button class="row" data-adprivacy="1"><span class="main"><span class="title">Privacy &amp; ad choices</span><div class="sub">change your ad consent</div></span><span class="chev">›</span></button>` : ""}
     <a class="row" href="mailto:homilabs.smc@gmail.com?subject=MDCAT%20Prep"><span class="main"><span class="title">Contact us</span><div class="sub">homilabs.smc@gmail.com</div></span><span class="chev">›</span></a>
-  </div>`;
+    <a class="row" href="${esc(playLink("com.homilabs.mdcatprep"))}" target="_blank" rel="noopener"><span class="main"><span class="title">Rate this app on Google Play</span></span><span class="chev">›</span></a>
+  </div>
+  <h3 class="section">More from HomiLabs</h3>
+  <div class="list">${MORE_APPS.map(x => `<a class="row" href="${esc(playLink(x.pkg))}" target="_blank" rel="noopener"><span class="main"><span class="title">${esc(x.name)}</span></span><span class="chev">↗</span></a>`).join("")}</div>`;
 }
 app.addEventListener("click", e => {
   if(e.target.closest("[data-adprivacy]") && AdMob) AdMob.showPrivacyOptionsForm().catch(() => {});
